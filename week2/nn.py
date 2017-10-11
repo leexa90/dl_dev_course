@@ -117,17 +117,17 @@ x_test = x_test.astype('float32')
 x_train /= 255
 x_test /= 255
 
-
+from keras.callbacks import EarlyStopping, ModelCheckpoint
 callbacks = [
-    keras.callbacks.EarlyStopping(monitor='val_acc', patience=5, verbose=0),
-    keras.callbacks.ModelCheckpoint(filepath='./weights.h5',
-                                    monitor='val_acc',
-                                    verbose=1, save_best_only=True)
+    EarlyStopping(monitor='val_acc', patience=5, verbose=0),
+#    ModelCheckpoint(filepath='./weights.h5',
+#                                    monitor='val_acc',
+#                                    verbose=1, save_best_only=True)
     ]
 
-hist = model.fit(x_train[::1000], y_train[::1000],batch_size=batch_size,
+hist = model.fit(x_train, y_train,batch_size=batch_size,
                            epochs=epochs,verbose = 2,
-                           validation_data=(x_test[::1000], y_test[::1000]),callbacks=callbacks)
+                           validation_data=(x_test, y_test),callbacks=callbacks)
 model.save_weights('./weight.h5')
 np.save('hist.npy',hist.history)
 ##hist = model.fit_generator(datagen.flow(x_train, y_train,
