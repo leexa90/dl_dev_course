@@ -8,3 +8,7 @@ pip install pyyaml h5py
 pip install keras
 pip install opencv-python
 pip install matplotlib seaborn argparse
+
+
+# image grabber
+fatkun chrome extenstion
