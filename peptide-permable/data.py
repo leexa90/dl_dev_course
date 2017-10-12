@@ -152,7 +152,7 @@ for CV in range(fold,fold+1):
         if i%10 == CV:
             X_val += [(x[0],x[1],x[2]),]
             y_val += [x[-1],]
-            if x[-1] == CV:
+            if x[-1] == 0:
                 X_val += [(x[0],x[1],x[2]),(x[0],x[1],x[2]),]
                 y_val += [x[-1],x[-1],]
         else:
