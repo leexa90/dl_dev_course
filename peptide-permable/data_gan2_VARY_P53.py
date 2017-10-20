@@ -60,7 +60,9 @@ np.array([[0.170, 0.500, 0.330, 0.000],
        [0.070, -0.460, -0.530, 0.000],
        [-0.940, -0.710, 0.230, 0.000]])
 
-
+'''
+SQETFSDLWKLLPEN
+'''
 X = []
 counter = 0
 for i in result:
@@ -108,19 +110,21 @@ float_formatter = lambda x: "%.3f" % x
 np.set_printoptions(formatter={'float_kind':float_formatter})
 with tf.name_scope('inputs') as scope:
     Inp0 = tf.placeholder(tf.int32,[None,None],name='sequence_factors1')
+    #Inp0b = tf.Variable(Inp0,tf.float32)
+    Inp0b = tf.Variable([[14, 12, 2, 16, 5, 14, 3, 10, 17, 8, 10, 10, 13, 2, 11]],dtype=tf.int32,name='sequence_factors11')
     #Inp1 = tf.placeholder(tf.float32,[None,4,None],name='sequence_factors2')
     labels = tf.placeholder(tf.float32 , [None,1],name='labels')
     dropout = tf.placeholder(tf.float32,name='dropout')
     #Inp2 = tf.placeholder(tf.float32, [None,4] ,name = 'globa_seq_info') # converted to embeddings
     hydro_embeddings = tf.Variable(hydropath_embed ,name = 'aa_embeddings', trainable = False, dtype = tf.float32)
     embedded_word_ids = tf.gather(hydro_embeddings,range(0,20))
-    Inp2_a = tf.nn.embedding_lookup(hydro_embeddings,Inp0,name='lookup')
+    Inp2_a = tf.nn.embedding_lookup(hydro_embeddings,Inp0b,name='lookup')
     Inp2 = tf.reduce_mean(Inp2_a,axis=1,name = 'globa_seq_info')
     Inp1 = tf.transpose(Inp2_a, (0,2,1), name= 'seq_factor2_embeddings')
 with tf.name_scope('embedding') as scope:
     aa_embeddings = tf.get_variable('aa_embeddings',[20, 5])
     embedded_word_ids = tf.gather(aa_embeddings,range(0,20))
-    embed0 = tf.nn.embedding_lookup(aa_embeddings,Inp0,name='lookup')
+    embed0 = tf.nn.embedding_lookup(aa_embeddings,Inp0b,name='lookup')
     embed1 = tf.transpose(embed0,(0,2,1))
     unstack0 = tf.unstack(Inp1,axis=-2,name='unstack0')
     unstack1 = tf.unstack(embed1 , axis=-2,name='unstack1')
@@ -128,7 +132,7 @@ with tf.name_scope('embedding') as scope:
 
 with tf.name_scope('layer1') as scope:
     layer1_norm = batch_normalization(layer0,'BN_layer0',feature_norm = True)
-    layer1 = tf.layers.conv2d(layer1_norm,128,(9,1),padding='valid',activation=tf.nn.relu)
+    layer1 = tf.layers.conv2d(layer1_norm,128,(9,1),padding='valid',activation=tf.nn.relu,trainable = False)
     layer1_DO = tf.layers.dropout(layer1,rate=dropout,name='Drop1')
 
 with tf.name_scope('layer2') as scope:
@@ -167,15 +171,19 @@ update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
 learning_rate = tf.Variable(0,dtype=tf.float32,name='learning_rate')
 
 with tf.control_dependencies(update_ops):
-        optimizer = tf.train.MomentumOptimizer(learning_rate=learning_rate,momentum=0.5).minimize(mean_loss)
+        optimizer = tf.train.MomentumOptimizer(learning_rate=learning_rate,momentum=0.5).minimize(mean_loss,var_list=tf.trainable_variables())
 with tf.name_scope('accuracy') as scope:
     predict_boo = tf.greater(out_softmax,0.5)
     predict = tf.cast(predict_boo, np.float32)
     acc = tf.reduce_mean(tf.cast(tf.equal(labels,predict),tf.float32),name='accuracy')
+var_grad = tf.gradients(loss, tf.trainable_variables()[0:1])
 import sklearn.metrics,random
 saver = tf.train.Saver()
 # Initializing the variables
 init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
+
+
+saver.restore(sess,'model.ckpt')
 
 
 RESULT = {}
@@ -235,9 +243,10 @@ for CV in range(10):
             Inp1_ = np.array([X_train[i][1]])
             labels_ = np.array([[y_train[i],]])
             _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,
-                                                               Inp1: Inp1_,
+                                                               #Inp1: Inp1_,
                                                                labels: labels_,
                                                                dropout : 0.4,learning_rate : lr})
+            die
 
         logit_train = []
         cost_train = []
@@ -307,6 +316,7 @@ for CV in range(10):
     for j in best_logit_test:
         test_emsemble += [j[3],]
     print sklearn.metrics.roc_auc_score(y_test,np.mean(np.array(test_emsemble),0))
+    save_path = saver.save(sess,'model.ckpt')
         
         
         
