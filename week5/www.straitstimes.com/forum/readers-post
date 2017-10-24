@@ -1,0 +1,2173 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9 is-ie"> <![endif]-->
+<!--[if IE 9]> <html class="no-js is-ie"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"  lang="en" dir="ltr" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema# schema: http://schema.org/"> <!--<![endif]-->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="/sites/all/themes/custom/bootdemo/js/ads_checker.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://static.straitstimes.com.sg/sites/all/themes/custom/bootdemo/images/icons/apple-touch-icon-60x60.png" type="image/png" />
+<meta name="description" content="Straits Times Reader&#039;s Post - Get latest Straits Times premium Reader&#039;s Post news &amp; top stories today at straitstimes.com." />
+<link rel="canonical" href="http://www.straitstimes.com/forum/readers-post" />
+<link rel="shortlink" href="http://www.straitstimes.com/taxonomy/term/78" />
+<meta property="fb:admins" content="100007469197550" />
+<meta property="fb:app_id" content="263116810509534" />
+<meta property="og:site_name" content="The Straits Times" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Latest Readers&#039; Post News &amp; Headlines, Top Stories Today - The Straits Times" />
+<meta property="og:url" content="http://www.straitstimes.com/forum/readers-post" />
+<meta property="og:description" content="Straits Times Reader&#039;s Post - Get latest Straits Times premium Reader&#039;s Post news &amp; top stories today at straitstimes.com." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@STCOM" />
+<meta name="twitter:title" content="Latest Readers&#039; Post News &amp; Headlines, Top Stories Today - The Straits Times" />
+<meta name="twitter:url" content="http://www.straitstimes.com/forum/readers-post" />
+<meta name="twitter:description" content="Straits Times Reader&#039;s Post - Get latest Straits Times premium Reader&#039;s Post news &amp; top stories today at straitstimes.com." />
+<meta itemprop="name" content="Readers&#039; Post" />
+<meta itemprop="description" content="Straits Times Reader&#039;s Post - Get latest Straits Times premium Reader&#039;s Post news &amp; top stories today at straitstimes.com." />
+<meta name="dcterms.title" content="Readers&#039; Post" />
+<meta name="dcterms.description" content="Straits Times Reader&#039;s Post - Get latest Straits Times premium Reader&#039;s Post news &amp; top stories today at straitstimes.com." />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="http://www.straitstimes.com/forum/readers-post" />
+<!-- Apple Touch Icons --><link rel="apple-touch-icon" href="/sites/all/themes/custom/bootdemo/images/icons/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/sites/all/themes/custom/bootdemo/images/icons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="/sites/all/themes/custom/bootdemo/images/icons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/sites/all/themes/custom/bootdemo/images/icons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/sites/all/themes/custom/bootdemo/images/icons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/sites/all/themes/custom/bootdemo/images/icons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/sites/all/themes/custom/bootdemo/images/icons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/sites/all/themes/custom/bootdemo/images/icons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/sites/all/themes/custom/bootdemo/images/icons/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="192x192" href="/sites/all/themes/custom/bootdemo/images/icons/apple-touch-icon-192x192.png" />
+<!-- Windows8 Tile Icons --><meta name="msapplication-square70x70logo" content="/sites/all/themes/custom/bootdemo/images/icons/smalltile.png" />
+<meta name="msapplication-square150x150logo" content="/sites/all/themes/custom/bootdemo/images/icons/mediumtile.png" />
+<meta name="msapplication-wide310x150logo" content="/sites/all/themes/custom/bootdemo/images/icons/widetile.png" />
+<meta name="msapplication-square310x310logo" content="/sites/all/themes/custom/bootdemo/images/icons/largetile.png" />
+        <title>Latest Readers' Post News & Headlines, Top Stories Today - The Straits Times</title>
+  <link type="text/css" rel="stylesheet" href="http://static1.straitstimes.com.sg/sites/default/files/css/css_Ma3HptkqhIxDNgJkUJNxfmp8t1p72d8aF0rHZc024Ho.css" media="all" />
+  
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!-- Defining _data variables starts -->
+  <script type="text/javascript">
+    window.getCookieByName = function(name) {
+      match = document.cookie.match(new RegExp(name + '=([^;]+)'));
+      if (match) return match[1];
+    }
+  </script>
+    <script  type="text/javascript">
+  var x13='';
+  if( window.canRunAds === undefined ){
+    x13 = 1;
+  }else{
+    x13 = 0;
+  }
+  var _data = {
+      "level2": "7",
+      "chapter1": "Forum",
+      "chapter2": "Reader_Post",
+      "chapter3": "",
+      "title": encodeURIComponent("Reader_Post_Index"),
+      "mc": "",
+      "np": "1",
+      "contenttype": "",
+      "pagination": "",
+      "author": "",
+      "contentcat": "1",
+      "articleid": "",
+      "articlecount": "0",
+      "printcat":"",
+      "keyword":"",
+      "adblocker": x13,
+      "pubdate":"",
+      "section": "",
+      "adunit": "",
+      "size": "",
+      "ad_display": "",
+      "pos": ""
+      }
+  </script>
+<!-- Defining _data variables ends -->
+
+  <!-- Begin Lotame ID -->
+  <script defer type="text/javascript" src="http://ad.crwdcntrl.net/5/c=4334/pe=y/var=ccauds">
+  </script>
+
+  <script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function() {
+    var lotame_id = '';
+    if (typeof(ccauds) != 'undefined') {
+      //console.log(ccauds.Profile.pid);
+      lotame_id = ccauds.Profile.pid;
+      _data.lotameid = lotame_id;
+      var lot_expiry = new Date();lot_expiry.setTime(lot_expiry.getTime() + (24*60*60*1000));
+      document.cookie = "STLotameID="+lotame_id+";path=/; expires=" + lot_expiry.toGMTString();
+      //googletagCmdPusher();
+    }
+  });
+  </script>
+  <!-- End Lotame ID -->
+  
+
+  <!--preview script -->
+  <script type="text/javascript">
+  function querystring(key) {
+     var re=new RegExp('(?:\\?|&)'+key+'=(.*?)(?=&|$)','gi');
+     var r=[], m;
+     while ((m=re.exec(document.location.search)) != null) r[r.length]=m[1];
+     return r;
+  }
+  var key ='dfp_preview';
+  var keycode = querystring(key);
+  </script>
+  <!--preview script -->
+    
+
+
+  <script src="http://adtag.asiaone.com/tag/st/js/prebid/prebid.js"></script>
+<script src="http://adtag.asiaone.com/tag/st/js/prebid/st_prebid_min.js"></script>
+<script src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script src="http://static.straitstimes.com.sg/sites/default/files/js/js_VJM8SrZE_fDBjvALrxW6YdC22bZPE8v_DzLxJ-POlqk.js"></script>
+<script>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];var isArticlePage = false;
+if (typeof _data != 'undefined' && typeof _data.articleid != 'undefined' && _data.articleid != "") {
+isArticlePage = true;
+}
+var fluid = 'fluid';
+googletag.slots = googletag.slots || {};</script>
+<script>function send_adload(ad_starttime,ad_endtime,dfp_id) {
+  var ad_LoadTime;
+  ad_LoadTime=ad_endtime-ad_starttime;
+  console.log(dfp_id + ": " + ad_LoadTime + "ms");
+  if (typeof window.ga == "function") { 
+    window["ga"]("ST.send", "timing", "Ad Load Time", dfp_id, ad_LoadTime);
+  }
+}
+function getreferrer() {
+  var refresponse="direct";
+  var siteref="";
+  if(document.referrer.split("/")[2]) {
+    siteref=document.referrer.split("/")[2];
+    if (/google/i.test(siteref)) {
+      refresponse="google";
+    }else if (/facebook/i.test(siteref)) {
+      refresponse="facebook";
+    }else {
+      refresponse="others";
+    }
+  }
+  return refresponse;
+}
+var tarref = getreferrer();
+</script>
+<script>var mapping = googletag.sizeMapping()
+  .addSize([1024, 0], [[970, 90], [728, 90], [970, 250]])
+  .addSize([740, 0], [728, 90])
+  .addSize([320, 0], [[320, 50], [320, 100]])
+  .addSize([0, 0], [[320, 50], [320, 100]])
+  .build();
+googletag.slots["lb1"] = googletag.defineSlot("/5908/st/lb1/forum/readers-post", [728, 90], "dfp-ad-lb1")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "1")
+  .defineSizeMapping(mapping);</script>
+<script>var dfp_preview_ids = querystring("dfp_preview"); var show_overlay=0; if (document.cookie.indexOf("topoverlayDisplayed=") == -1 || (dfp_preview_ids!= undefined && dfp_preview_ids.length!=0) ) {googletag.slots["topoverlay"] = googletag.defineSlot("/5908/st/topoverlay/forum/readers-post", [1, 1], "dfp-ad-topoverlay")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "topoverlay")
+  .setTargeting("referrer", tarref);expiry = new Date();expiry.setTime(expiry.getTime() + (overlay_validity*60*60*1000));
+                document.cookie = "topoverlayDisplayed=yes;path=/; expires=" + expiry.toGMTString(); show_overlay=1;}</script>
+<script>document.createElement( "picture" );</script>
+<script>googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().enableSingleRequest();
+  googletag.pubads().collapseEmptyDivs();
+});
+googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+
+//console.log(event.slot.C );
+
+if(googletag.slots["imu1"] == event.slot && event.size[0] == 300 && event.size[1] == 250) {
+document.getElementById("dfp-ad-imu1").className += " greywash";
+}
+});
+//function googletagCmdPusher() {
+var pathArray = window.location.pathname.split( '/' );
+if((pathArray[1] != "newslettr") && (pathArray[2] != "regform") ){
+googletag.cmd.push(function() {
+  googletag.pubads().setTargeting("dfp_cc_id", window.getCookieByName("STLotameID"));
+  googletag.pubads().setTargeting(key, keycode);
+});
+if(isArticlePage) { 
+googletag.pubads().setTargeting("gs_channels", gs_channels);
+}
+//googletag.companionAds().setRefreshUnfilledSlots(false);
+//}
+}
+if(isArticlePage) { 
+var gsMetaTag = document.createElement("meta");
+gsMetaTag.id = "grapeshot";
+gsMetaTag.name = "grapeshot_tag";
+gsMetaTag.content = gs_channels;
+document.getElementsByTagName("head")[0].appendChild(gsMetaTag);
+}
+googletag.enableServices();</script>
+<script><!--Visual Revenue Reader Response Tracking Script (v6) -->
+	var _vrq = _vrq || [];
+	_vrq.push(['id', 627]);
+	_vrq.push(['automate', false]);
+	_vrq.push(['track', function(){}]);
+	(function(d, a){
+		var s = d.createElement(a),
+		x = d.getElementsByTagName(a)[0];
+		s.async = true;
+		s.src = 'http://a.visualrevenue.com/vrs.js';
+		x.parentNode.insertBefore(s, x);
+	})(document, 'script');
+<!-- End of VR RR Tracking Script - All rights reserved --></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bootdemo","theme_token":"ZmVdWSJW8rO_cFlUSCcHoelITHDbWyuhlTSZ8m4XjHY","js":{"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.js":1,"sites\/all\/modules\/contrib\/picture\/picture.js":1,"sites\/all\/themes\/contrib\/bootstrap\/js\/bootstrap.js":1,"http:\/\/adtag.asiaone.com\/tag\/st\/js\/prebid\/prebid.js":1,"http:\/\/adtag.asiaone.com\/tag\/st\/js\/prebid\/st_prebid_min.js":1,"http:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/2.2\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/panopoly_theme\/js\/panopoly-accordion.js":1,"sites\/all\/modules\/contrib\/lazyloader\/jquery.lazyloader.js":1,"sites\/all\/modules\/contrib\/borealis\/borealis_ri\/js\/borealis_ri.js":1,"sites\/all\/libraries\/owl-carousel\/owl.carousel.min.js":1,"sites\/all\/themes\/custom\/bootdemo\/js\/iframeResizer\/js\/iframeResizer.min.js":1,"sites\/all\/themes\/custom\/bootdemo\/js\/jquery.marquee.js":1,"sites\/all\/themes\/custom\/bootdemo\/bootstrap\/js\/affix.js":1,"sites\/all\/themes\/custom\/bootdemo\/bootstrap\/js\/alert.js":1,"sites\/all\/themes\/custom\/bootdemo\/bootstrap\/js\/collapse.js":1,"sites\/all\/themes\/custom\/bootdemo\/bootstrap\/js\/dropdown.js":1,"sites\/all\/themes\/custom\/bootdemo\/bootstrap\/js\/modal.js":1,"sites\/all\/themes\/custom\/bootdemo\/bootstrap\/js\/tooltip.js":1,"sites\/all\/themes\/custom\/bootdemo\/bootstrap\/js\/scrollspy.js":1,"sites\/all\/themes\/custom\/bootdemo\/bootstrap\/js\/tab.js":1,"sites\/all\/themes\/custom\/bootdemo\/js\/jquery.cycle.all.js":1,"sites\/all\/themes\/custom\/bootdemo\/js\/bootdemo.js":1,"0":1,"1":1,"2":1,"3":1,"4":1,"5":1,"6":1},"css":{"modules\/system\/system.base.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.tabs.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/contrib\/cache_consistent\/css\/cache_consistent.css":1,"sites\/all\/themes\/custom\/bootdemo\/layouts\/multirow\/multirow.css":1,"sites\/all\/themes\/custom\/bootdemo\/css\/panel-styles.css":1,"sites\/all\/modules\/contrib\/borealis\/borealis_ri\/css\/borealis-ri_images.css":1,"sites\/all\/themes\/custom\/bootdemo\/css\/style.css":1,"sites\/all\/libraries\/owl-carousel\/owl.carousel.css":1,"sites\/all\/libraries\/owl-carousel\/owl.theme.css":1}},"borealis_ri":{"sizes":{"respondsmall":100,"respondmedium":150,"respondlarge":225,"respondxl":337.5,"respondxl2":506.25,"respondxl3":759.375,"respondxl4":1139.0625},"lazyload":true,"aspect_ratio":0.66666666666667},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+
+  <script type="text/javascript" src="//static.addtoany.com/menu/page.js" async></script>
+<!-- ### JS loaded check ### -->
+<!--Smart App Banner implementation -->
+  <script type="text/javascript">
+    if ( /(iPad).*AppleWebKit.*Mobile.*Safari/.test(navigator.userAgent) ) {
+      var headNode = document.getElementsByTagName("head")[0];
+      var sbNode = document.createElement('meta');
+      sbNode.name = 'apple-itunes-app';
+      sbNode.content = 'app-id=547459568';
+      headNode.appendChild(sbNode);
+    } else if ( /(iPhone|iPod).*AppleWebKit.*Mobile.*Safari/.test(navigator.userAgent) ) {
+      var headNode = document.getElementsByTagName("head")[0];
+      var sbNode = document.createElement('meta');
+      sbNode.name = 'apple-itunes-app';
+      sbNode.content = 'app-id=547465441';
+      headNode.appendChild(sbNode);
+    }
+  </script>
+
+     <!-- TMS script Starts -->
+  <script defer src="//nexus.ensighten.com/sph/stprod/Bootstrap.js"></script>
+  <!-- TMS implementation Ends -->
+  <!-- Smart tag script starts -->
+  <!-- <script src="//tag.aticdn.net/538291/smarttag.js"></script> -->
+  <!-- Smart tag script ends -->
+</head>
+<body class="html not-front not-logged-in no-sidebars page-taxonomy page-taxonomy-term page-taxonomy-term- page-taxonomy-term-78 tuesday context-forum context-day-tuesday" >
+  <div id="dfp-ad-topoverlay-wrapper" class="dfp-tag-wrapper"><div  id="dfp-ad-topoverlay" class="dfp-tag-wrapper">
+    
+  <script type="text/javascript">
+    
+    if (show_overlay==1 || (dfp_preview_ids!= undefined && dfp_preview_ids.length!=0)) {
+        googletag.cmd.push(function() {
+      googletag.display("dfp-ad-topoverlay");
+    });
+        }
+      </script>
+  </div>
+</div>  <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.async=true;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=263116810509534";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+        <style>div.rotator_title { font-size:18px; }</style>
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <header id="navbar" role="banner" class="navbar container navbar-default">
+  <div class="container">
+    <div class="navbar-header has-category-term">
+      
+            <h1 class="site-name"><a class="name navbar-brand" href="/" title="Home"><span>The Straits Times</span></a></h1>
+             <!--add win IFRA header -->
+        <!--add win IFRA header in tags pages -->
+            
+            <h2 class="web-category-name"><a href="/forum">Forum</a></h2>
+      
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+          <div class="navbar-collapse collapse has-category-term">
+        <nav role="navigation">
+                      <ul class="menu nav navbar-nav"><li class="first leaf nav-home"><a href="/">Home</a></li>
+<li class="collapsed no-dropdown nav-singapore"><a href="/singapore">Singapore</a></li>
+<li class="collapsed no-dropdown nav-politics"><a href="/politics">Politics</a></li>
+<li class="collapsed no-dropdown nav-asia"><a href="/asia">Asia</a></li>
+<li class="collapsed no-dropdown nav-world"><a href="/world">World</a></li>
+<li class="collapsed no-dropdown nav-videos"><a href="/videos">Videos</a></li>
+<li class="expanded no-dropdown nav-multimedia"><a href="/multimedia" class="hidden-md hidden-sm">Multimedia</a><ul class="subcat-menu" data-parent-menu="Multimedia"><li class="first leaf"><a href="/multimedia/photos">Photos</a></li>
+<li class="last leaf"><a href="/multimedia/graphics">Graphics</a></li>
+</ul></li>
+<li class="collapsed no-dropdown nav-lifestyle"><a href="/lifestyle">Lifestyle</a></li>
+<li class="leaf"><a href="/lifestyle/food">Food</a></li>
+<li class="expanded active-trail no-dropdown nav-forum active"><a href="/forum" class="hidden-sm active-trail">Forum</a><ul class="subcat-menu" data-parent-menu="Forum"><li class="first leaf"><a href="/forum/letters-in-print">Letters in Print</a></li>
+<li class="leaf"><a href="/forum/letters-on-the-web">Letters on the Web</a></li>
+<li class="last leaf active-trail active active"><a href="/forum/readers-post" class="active-trail active">Readers&#039; Post</a></li>
+</ul></li>
+<li class="expanded no-dropdown nav-opinion"><a href="/opinion" class="hidden-sm">Opinion</a><ul class="subcat-menu" data-parent-menu="Opinion"><li class="first leaf"><a href="/opinion/st-editorial">ST Editorial</a></li>
+<li class="last leaf"><a href="/opinion/cartoons">Cartoons</a></li>
+</ul></li>
+<li class="expanded no-dropdown nav-business"><a href="/business" class="hidden-sm">Business</a><ul class="subcat-menu" data-parent-menu="Business"><li class="first leaf"><a href="/business/companies-markets">Companies &amp; Markets</a></li>
+<li class="leaf"><a href="/business/economy">Economy</a></li>
+<li class="leaf"><a href="/business/banking">Banking</a></li>
+<li class="leaf"><a href="/business/property">Property</a></li>
+<li class="leaf"><a href="/business/invest">Invest</a></li>
+<li class="last leaf"><a href="/business/market">Market</a></li>
+</ul></li>
+<li class="expanded no-dropdown nav-sport"><a href="/sport" class="hidden-md hidden-sm">Sport</a><ul class="subcat-menu" data-parent-menu="Sport"><li class="first leaf"><a href="/sport/football">Football</a></li>
+<li class="leaf"><a href="/sport/tennis">Tennis</a></li>
+<li class="leaf"><a href="/sport/formula-one">Formula One</a></li>
+<li class="leaf"><a href="/sport/basketball">Basketball</a></li>
+<li class="leaf"><a href="/sport/golf">Golf</a></li>
+<li class="last leaf"><a href="/sport/schools">Schools</a></li>
+</ul></li>
+<li class="expanded no-dropdown nav-tech"><a href="/tech" class="hidden-md hidden-sm">Tech</a><ul class="subcat-menu" data-parent-menu="Tech"><li class="first leaf"><a href="/tech/smartphones">Smartphones</a></li>
+<li class="leaf"><a href="/tech/tablets">Tablets</a></li>
+<li class="leaf"><a href="/tech/pcs">PCs</a></li>
+<li class="leaf"><a href="/tech/cameras">Cameras</a></li>
+<li class="leaf"><a href="/tech/audio">Audio</a></li>
+<li class="leaf"><a href="/tech/wearables">Wearables</a></li>
+<li class="last leaf"><a href="/tech/games-apps">Games &amp; Apps</a></li>
+</ul></li>
+<li class="last expanded visible-sm visible-sm-block visible-md visible-md-block dropdown"><a href="/rss-feeds" data-target="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a href="/multimedia" class="more-item visible-sm visible-sm-block visible-md visible-md-block">Multimedia</a></li>
+<li class="leaf"><a href="/forum" class="hidden-md more-item">Forum</a></li>
+<li class="leaf"><a href="/opinion" class="hidden-md more-item">Opinion</a></li>
+<li class="leaf"><a href="/business" class="hidden-md more-item">Business</a></li>
+<li class="leaf"><a href="/sport" class="more-item">Sport</a></li>
+<li class="last leaf"><a href="/tech" class="more-item">Tech</a></li>
+</ul></li>
+</ul>                              <div class="block-sph-sites">
+            <div class="navbar-sph-sites">
+              <ul class="menu nav navbar-nav secondary"><li class="first last expanded dropdown"><a href="http://www.sph.com.sg/our-businesses/online/sph-digital/" class="sph-sites-toggle dropdown-toggle" target="_blank" data-target="#" data-toggle="dropdown">SPH Websites <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf"><a class="sph-stplus nolink">news with benefits</a></li>
+<li class="leaf"><a href="http://stwine.sg/" class="sph-stwine">ST Wine</a></li>
+<li class="leaf"><a href="http://www.straitstimes.com/tags/st-plus-rewards" class="sph-rewards">SPH Rewards</a></li>
+<li class="leaf"><a href="http://www.stjobs.sg/?utm_source=Straits+Times&amp;utm_medium=banner&amp;utm_campaign=ST_link_20131219" class="sph-jobs" target="_blank">STJobs</a></li>
+<li class="leaf"><a href="http://www.stcars.sg/?utm_source=Straits+Times&amp;utm_medium=banner&amp;utm_campaign=ST_link_20131219" class="sph-cars" target="_blank">STCars</a></li>
+<li class="leaf"><a href="http://www.stproperty.sg/?utm_source=Straits+Times&amp;utm_medium=banner&amp;utm_campaign=ST_link_20131219" class="sph-property" target="_blank">STProperty</a></li>
+<li class="leaf"><a href="http://www.stclassifieds.sg/?utm_source=Straits+Times&amp;utm_medium=banner&amp;utm_campaign=ST_link_20131219" class="sph-classifieds" target="_blank">STClassifieds</a></li>
+<li class="leaf"><a class="sph-sph nolink">SITES</a></li>
+<li class="leaf"><a href="http://www.asiaone.com/" class="sph-asiaone" target="_blank">AsiaOne</a></li>
+<li class="leaf"><a href="http://beritaharian.sg/" class="sph-berita" target="_blank">Berita Harian</a></li>
+<li class="leaf"><a href="http://www.hardwarezone.com.sg/" class="sph-hardware" target="_blank">Hardwarezone</a></li>
+<li class="leaf"><a href="http://www.wanbao.com.sg/" class="sph-wanbao" target="_blank">Lianhe Wanbao</a></li>
+<li class="leaf"><a href="http://www.omy.sg/" class="sph-omy" target="_blank">omy.sg</a></li>
+<li class="leaf"><a href="http://www.stomp.com.sg/" class="sph-stomp" target="_blank">STOMP</a></li>
+<li class="leaf"><a href="http://www.sgcarmart.com/" class="sph-sgcar" target="_blank">SGCarMart</a></li>
+<li class="leaf"><a href="http://www.shareinvestor.com/" class="sph-si" target="_blank">ShareInvestor</a></li>
+<li class="leaf"><a href="http://www.srx.com.sg/" class="sph-srx" target="_blank">SRX Property</a></li>
+<li class="leaf"><a href="http://www.tabla.com.sg/" class="sph-tabla" target="_blank">tabla</a></li>
+<li class="leaf"><a href="http://www.tamilmurasu.com.sg/" class="sph-tamil" target="_blank">Tamil Murasu</a></li>
+<li class="leaf"><a href="http://www.businesstimes.com.sg/" class="sph-bt" target="_blank">The Business Times</a></li>
+<li class="leaf"><a href="http://www.tnp.sg/" class="sph-tnp" target="_blank">The New Paper</a></li>
+<li class="leaf"><a href="http://www.zaobao.com" class="sph-zaobao" target="_blank">zaobao.sg</a></li>
+<li class="last leaf"><a href="http://www.straitstimes.com/advertise-with-the-straits-times">Advertise with us</a></li>
+</ul></li>
+</ul>            </div>
+          </div>
+                                <div class="block-user-menu">
+              <button type="button" class="navbar-toggle-user" data-toggle="dropdown" data-target=".navbar-user"></button>
+              <div class="navbar-user  dropdown-menu" role="menu">
+
+                <ul class="menu nav navbar-nav menu-user">
+                                      <!--li><a href="#" class="" data-toggle="modal" data-target="#ldapAlert">Log In</a></li-->
+                </ul>
+
+              </div>
+            </div>
+            <div class="block-nav-search mobileonly">
+              <button type="button" class="navbar-toggle-search" data-toggle="collapse" onclick="return false;"></button>
+            </div>
+            <div class="block-menu-paper">
+              <button type="button" class="navbar-toggle-paper" data-toggle="dropdown" data-target=".navbar-paper"></button>
+              <div class="navbar-paper  dropdown-menu" role="menu">
+                <ul class="menu nav navbar-nav menu-paper">
+                  <li class="nav-print-edition"><a href="/print-edition/">Print Edition</a></li>
+                  <li class="nav-epaper"><a href="http://stepaper.straitstimes.com" target="_blank">ePaper</a></li>
+                  <li class="nav-sti-index visible-xs"><a href="/business/market">ST Index</a></li>
+                </ul>
+              </div>
+            </div>
+                        <div class="block-nav-search">
+              <button type="button" class="navbar-toggle-search" data-toggle="collapse" data-target=".navbar-search"></button>
+            </div>
+
+            
+        </nav>
+      </div>
+      </div>
+</header>
+
+  <div class="highlighted hidden-print">
+    <div class="ads leaderboard lb-top">
+        <div class="region region-highlighted">
+    <section id="block-dfp-lb1" class="block block-dfp clearfix">
+
+      
+  <div id="dfp-ad-lb1-wrapper" class="dfp-tag-wrapper"><div  id="dfp-ad-lb1" class="dfp-tag-wrapper">
+    
+  <script type="text/javascript">
+        googletag.cmd.push(function() {
+      googletag.display("dfp-ad-lb1");
+    });
+      </script>
+  </div>
+</div>
+</section>
+  </div>
+    </div>
+  </div>
+
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+    
+      </header> <!-- /#page-header -->
+    <div class="row">
+
+        <section class="col-sm-12">
+
+            <a id="main-content"></a>
+
+                                                    <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <div class="view view-container-pages view-id-container_pages view-display-id-taxonomy_term_page_container view-dom-id-6c0020ffc16730a293424d16fb31ae4e">
+        
+  
+  
+      <div class="view-content" >
+        <div >
+    <div class="panel-display multirow-layout panel-1col clearfix" >
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div><div class="col-lg-12 classy-panel-styles region"><div class="region-inner">
+    <div class="panel-pane pane-fieldable-panels-pane pane-uuid-11326c50-1f45-4fc7-b823-0f3a83b04ff3 pane-bundle-container-headline" >
+
+              <h2 class="pane-title">
+          Readers' Post        </h2>
+              
+    </div>
+
+</div></div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 classy-panel-styles region"><div class="region-inner">
+            <div class="panel-pane pane-views-panes pane-articles-latest-keywords-from-config col-lg-8 col-md-8 col-sm-8 col-xs-12 image-float-left-30 background-grey small-headline classy-panel-styles-pane"  >
+
+      
+                  
+      
+      <div class="pane-content">
+        <div class="view view-articles view-id-articles view-display-id-latest_keywords_from_config view-dom-id-2a40d9bde9d101062eed28a3d0e4e1ed">
+        
+  
+  
+      <div class="view-content" >
+        <div class="views-row-odd views-row-first media  " >
+          <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/sunday-feature-on-infidelity-raises-readers-hackles">Sunday feature on infidelity raises reader&#039;s hackles....</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer ">
+                              <div class="node-postdate" data-lapsevalue="Jun 6, 2016, 5:00 am">Jun 6, 2016, 5:00 am</div>
+        <div class="story-assets">
+                  <span class="social-count social-count-261926" id="social-count-261926" data-social-nid="261926"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even views-row-last media  " >
+          <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/and-draws-praise-from-support-group">... and draws praise from support group</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer ">
+                              <div class="node-postdate" data-lapsevalue="Jun 6, 2016, 4:59 am">Jun 6, 2016, 4:59 am</div>
+        <div class="story-assets">
+                  <span class="social-count social-count-261927" id="social-count-261927" data-social-nid="261927"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>      </div>
+
+      
+          </div>
+    
+
+</div></div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 classy-panel-styles region"><div class="region-inner">
+            <div class="panel-pane pane-views-panes pane-articles-articles-queue-pane-nid col-lg-8 col-md-8 col-sm-8 col-xs-12 image-float-left-30 background-grey small-headline classy-panel-styles-pane"  >
+
+      
+                  
+      
+      <div class="pane-content">
+        <div class="view view-articles view-id-articles view-display-id-articles_queue_pane_nid view-dom-id-db69b27bcc832132d5e53cee2770e56e">
+        
+  
+  
+      <div class="view-content" >
+        <div class="views-row-odd views-row-first media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-193648" class="file file-image file-image-png">
+
+        <h2 class="element-invisible"><a href="/files/screengrabmyanmarpng">screengrabmyanmar.png</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/11/16/screengrabmyanmar.png?itok=ee4TpDPJ" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/11/16/screengrabmyanmar.png?itok=2PobkQl1" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/11/16/screengrabmyanmar.png?itok=zIjxihmJ" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/11/16/screengrabmyanmar.png?itok=dDG33vUB" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/11/16/screengrabmyanmar.png?itok=s1o4q9dR" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/11/16/screengrabmyanmar.png?itok=0SSfxSga" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/11/16/screengrabmyanmar.png?itok=sy1bP3qH" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/11/16/screengrabmyanmar.png?itok=luYV9kGq" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/myanmar-general-election-well-reported-online-and-in-print">Myanmar general election well reported online and in print</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-199820" id="social-count-199820" data-social-nid="199820"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-143511" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/st20150718raya18jkhl1522520jpg">ST_20150718_RAYA18JKHL_1522520.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/07/18/ST_20150718_RAYA18JKHL_1522520.jpg?itok=xu8ejgr_" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/07/18/ST_20150718_RAYA18JKHL_1522520.jpg?itok=Nzudw_nl" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/07/18/ST_20150718_RAYA18JKHL_1522520.jpg?itok=iSDsPePg" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/07/18/ST_20150718_RAYA18JKHL_1522520.jpg?itok=2HOCohoc" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/07/18/ST_20150718_RAYA18JKHL_1522520.jpg?itok=KQy4umno" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/07/18/ST_20150718_RAYA18JKHL_1522520.jpg?itok=scE3d2-2" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/07/18/ST_20150718_RAYA18JKHL_1522520.jpg?itok=fEd4m5uV" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt="Mr Ismail Awang, 64, embracing daughter-in-law Nur Dayan Danel, 30, as his children and their families asked him and his wife for their forgiveness for any wrongdoing committed in the past year."><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/07/18/ST_20150718_RAYA18JKHL_1522520.jpg?itok=s3adQ9ar" width="1536" height="1024" alt="Mr Ismail Awang, 64, embracing daughter-in-law Nur Dayan Danel, 30, as his children and their families asked him and his wife for their forgiveness for any wrongdoing committed in the past year."></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/be-mindful-when-using-certain-terms">Be mindful when using certain terms</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-167329" id="social-count-167329" data-social-nid="167329"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-93900" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/readingnewspaperjpg-0">readingnewspaper.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/29/readingnewspaper_0.jpg?itok=hqyMHNZo" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/29/readingnewspaper_0.jpg?itok=piJhCFFy" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/29/readingnewspaper_0.jpg?itok=U7nSXMNH" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/29/readingnewspaper_0.jpg?itok=5oEV8ta_" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/29/readingnewspaper_0.jpg?itok=Fbw6KtS0" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/29/readingnewspaper_0.jpg?itok=FuvXLqAM" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/29/readingnewspaper_0.jpg?itok=hxB4sj1K" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt="Reading ST" title="Reading ST"><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/29/readingnewspaper_0.jpg?itok=7w9llvtA" width="1536" height="1024" alt="Reading ST" title="Reading ST"></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/what-is-readers-post-and-how-to-reach-us">What is Readers&#039; Post and how to reach us</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-88715" id="social-count-88715" data-social-nid="88715"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-159422" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/lkywithdaughterpicjpg">lkywithdaughterpic.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/08/24/lkywithdaughterpic.jpg?itok=sx1IqZL3" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/08/24/lkywithdaughterpic.jpg?itok=vtYTyP5k" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/08/24/lkywithdaughterpic.jpg?itok=kQjKfQre" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/08/24/lkywithdaughterpic.jpg?itok=vI7yR7fh" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/08/24/lkywithdaughterpic.jpg?itok=zVeVSwWC" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/08/24/lkywithdaughterpic.jpg?itok=D-TovCwI" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/08/24/lkywithdaughterpic.jpg?itok=aMBaa_Gq" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/08/24/lkywithdaughterpic.jpg?itok=5044OYkK" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/dr-lee-wei-ling-thank-you-for-sharing">Dr Lee Wei Ling, thank you for sharing</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-173958" id="social-count-173958" data-social-nid="173958"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-159420" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/lkykisspicjpg">lkykisspic.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/08/24/lkykisspic.jpg?itok=gb_61KoX" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/08/24/lkykisspic.jpg?itok=QpGsU-xx" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/08/24/lkykisspic.jpg?itok=YYaKYh2Q" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/08/24/lkykisspic.jpg?itok=QavKwZaA" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/08/24/lkykisspic.jpg?itok=P1RTlF0s" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/08/24/lkykisspic.jpg?itok=RPh5EJZY" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/08/24/lkykisspic.jpg?itok=vTYSjfaT" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/08/24/lkykisspic.jpg?itok=kftDE1N9" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/words-and-pictures-that-speak-volumes-of-tender-love">Words and pictures that speak volumes of tender love</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-173956" id="social-count-173956" data-social-nid="173956"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-159417" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/barragepicnicpicjpg">barragepicnicpic.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/08/24/barragepicnicpic.jpg?itok=BpyukO_5" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/08/24/barragepicnicpic.jpg?itok=H7CBjUNl" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/08/24/barragepicnicpic.jpg?itok=l-eN0qVo" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/08/24/barragepicnicpic.jpg?itok=PjErWaV4" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/08/24/barragepicnicpic.jpg?itok=7DgxmLmy" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/08/24/barragepicnicpic.jpg?itok=_hjalg8i" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/08/24/barragepicnicpic.jpg?itok=RmflTAAD" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/08/24/barragepicnicpic.jpg?itok=teonzhpg" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/once-i-met-mr-lee-kuan-yew-at-marina-barrage">Once I met Mr Lee Kuan Yew at Marina Barrage</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-173955" id="social-count-173955" data-social-nid="173955"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-98051" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/dw-dicklee-150706jpg">dw-dicklee-150706.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/07/06/dw-dicklee-150706.jpg?itok=8rA5PKIa" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/07/06/dw-dicklee-150706.jpg?itok=He-us7lX" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/07/06/dw-dicklee-150706.jpg?itok=ipOWGgIY" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/07/06/dw-dicklee-150706.jpg?itok=Ed_LGwtI" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/07/06/dw-dicklee-150706.jpg?itok=9liudvWP" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/07/06/dw-dicklee-150706.jpg?itok=u_IEQs6j" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/07/06/dw-dicklee-150706.jpg?itok=S__c4P5p" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/07/06/dw-dicklee-150706.jpg?itok=IAGLqG7u" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/st-revamp-kudos-and-then-some-from-dick-lee">ST revamp: Kudos, and then some from Dick Lee</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-91208" id="social-count-91208" data-social-nid="91208"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-94625" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/jdlindside30jpg">jdlindside30.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/30/jdlindside30.jpg?itok=xsjVRoLn" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/30/jdlindside30.jpg?itok=Zael00Xw" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/30/jdlindside30.jpg?itok=8q7sJ97W" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/30/jdlindside30.jpg?itok=7aUG_JYi" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/30/jdlindside30.jpg?itok=NAs5x8Nc" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/30/jdlindside30.jpg?itok=Bs4dOfHV" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/30/jdlindside30.jpg?itok=QNOLdUAH" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/30/jdlindside30.jpg?itok=k49O50mS" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/humour-me-st">Why stop Jeremy Au Yong&#039;s Jay Talking column?</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-89212" id="social-count-89212" data-social-nid="89212"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-94427" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/stonline300615ejpg">stonline300615e.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/30/stonline300615e.jpg?itok=bKAJY-O2" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/30/stonline300615e.jpg?itok=_QzZHa4K" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/30/stonline300615e.jpg?itok=bj2TFAgy" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/30/stonline300615e.jpg?itok=dGpjUT0R" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/30/stonline300615e.jpg?itok=-h-qB2RP" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/30/stonline300615e.jpg?itok=rS3UVHWO" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/30/stonline300615e.jpg?itok=_G2VDyrr" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/30/stonline300615e.jpg?itok=7xyytxEj" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/confessions-of-a-young-adult-singaporean-reader">Confessions of a young adult Singaporean reader</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-89161" id="social-count-89161" data-social-nid="89161"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-94410" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/p1kudosjpg">p1kudos.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/30/p1kudos.jpg?itok=dV42KobX" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/30/p1kudos.jpg?itok=6RRJscug" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/30/p1kudos.jpg?itok=uN2Jy0uK" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/30/p1kudos.jpg?itok=LB35YYH3" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/30/p1kudos.jpg?itok=Ace99TGM" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/30/p1kudos.jpg?itok=hnb_GONU" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/30/p1kudos.jpg?itok=geDdNQ1r" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/30/p1kudos.jpg?itok=uht_UgPX" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/a-heartwarming-choice-that-reflects-spirit-of-ramadan">A heartwarming choice that reflects spirit of Ramadan</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-89158" id="social-count-89158" data-social-nid="89158"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-93864" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/marias29jpg">marias29.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/29/marias29.jpg?itok=FfdJ3KWI" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/29/marias29.jpg?itok=VIQPNCm1" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/29/marias29.jpg?itok=oqdPSxWR" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/29/marias29.jpg?itok=LpNv4xuz" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/29/marias29.jpg?itok=-tHQQMe1" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/29/marias29.jpg?itok=nBycqV0Q" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/29/marias29.jpg?itok=MXGXSOrJ" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/29/marias29.jpg?itok=yl2x-UVv" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/st-should-say-sorry-for-calling-tennis-stars-beauties">ST explains why tennis players are called beauties in the paper</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70029" id="social-count-70029" data-social-nid="70029"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-75252" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/oldestcontributor150624jpg">oldestcontributor150624.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/24/oldestcontributor150624.jpg?itok=mmHEwz3p" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/24/oldestcontributor150624.jpg?itok=rTh4wBUy" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/24/oldestcontributor150624.jpg?itok=oyUEJ6Bo" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/24/oldestcontributor150624.jpg?itok=v_sblgxM" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/24/oldestcontributor150624.jpg?itok=wtG8jfEM" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/24/oldestcontributor150624.jpg?itok=phfSIO-Y" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/24/oldestcontributor150624.jpg?itok=golAAKcs" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/24/oldestcontributor150624.jpg?itok=hdX6GzwI" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/photographs-and-memories-from-our-oldest-contributor">The times my friends and I used to spend in the Botanical Gardens</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70034" id="social-count-70034" data-social-nid="70034"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-75224" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/facebook4567jpg">facebook4567.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/24/facebook4567.jpg?itok=h6wRgMXJ" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/24/facebook4567.jpg?itok=vYROsSHZ" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/24/facebook4567.jpg?itok=ehvCdR6U" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/24/facebook4567.jpg?itok=NTmfePsZ" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/24/facebook4567.jpg?itok=pQvx4hvA" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/24/facebook4567.jpg?itok=BkuBLo3d" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/24/facebook4567.jpg?itok=B0lrkLvy" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/24/facebook4567.jpg?itok=VII6ZdtT" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/a-winning-journalists-back-story">A winning journalist&#039;s back story </a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70021" id="social-count-70021" data-social-nid="70021"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+          <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/separate-readers-posts-sections-for-different-generations">Separate Readers&#039; Posts sections for different generations</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer ">
+        <div class="story-assets">
+                  <span class="social-count social-count-70027" id="social-count-70027" data-social-nid="70027"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+          <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/what-penny-stocks-speculators-have-in-common-with-sardines">What penny stocks speculators have in common with sardines</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer ">
+        <div class="story-assets">
+                  <span class="social-count social-count-70041" id="social-count-70041" data-social-nid="70041"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+          <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/whats-sts-policy-on-pronouns-and-transgenders">What&#039;s ST&#039;s policy on pronouns and transgenders?</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer ">
+        <div class="story-assets">
+                  <span class="social-count social-count-70028" id="social-count-70028" data-social-nid="70028"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-75241" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/sjreaders06jpg-0">sjreaders06.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/24/sjreaders06_0.jpg?itok=KUZFMYF0" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/24/sjreaders06_0.jpg?itok=jvZl6m49" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/24/sjreaders06_0.jpg?itok=bV_E_Jqj" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/24/sjreaders06_0.jpg?itok=maeMOUV4" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/24/sjreaders06_0.jpg?itok=dj80tbwR" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/24/sjreaders06_0.jpg?itok=U9dPmQdb" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/24/sjreaders06_0.jpg?itok=WeyVK7py" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/24/sjreaders06_0.jpg?itok=LQRBtMqF" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/be-mindful-of-local-sensitivities">Be mindful of local sensitivities</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70030" id="social-count-70030" data-social-nid="70030"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-75242" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/tlc45457jpg">tlc45457.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/24/tlc45457.jpg?itok=db8VPFGS" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/24/tlc45457.jpg?itok=GlPQDdB_" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/24/tlc45457.jpg?itok=GJb2Uu_P" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/24/tlc45457.jpg?itok=V1JxMSzP" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/24/tlc45457.jpg?itok=osbq3DIy" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/24/tlc45457.jpg?itok=v8Hk7iNh" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/24/tlc45457.jpg?itok=fOJzUc1j" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/24/tlc45457.jpg?itok=WrvkzSql" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/why-cite-media-site-that-linked-hacked-info">Why cite media site that linked hacked info?</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70031" id="social-count-70031" data-social-nid="70031"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-75227" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/kbox240615jpg">kbox240615.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/24/kbox240615.jpg?itok=fd77m0D7" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/24/kbox240615.jpg?itok=tJsG8tC3" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/24/kbox240615.jpg?itok=yDDLo5Gn" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/24/kbox240615.jpg?itok=MtNssc2y" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/24/kbox240615.jpg?itok=Y7b3QyF5" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/24/kbox240615.jpg?itok=SJK1MADy" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/24/kbox240615.jpg?itok=k-m7Ojs9" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/24/kbox240615.jpg?itok=tA8RCVWL" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/drawing-the-line-between-privacy-and-public-interest">Drawing the line between privacy and public interest</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70020" id="social-count-70020" data-social-nid="70020"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-75248" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/tlc45458jpg">tlc45458.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/24/tlc45458.jpg?itok=qw_j5gFi" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/24/tlc45458.jpg?itok=RvXtN4XH" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/24/tlc45458.jpg?itok=naOlmO0G" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/24/tlc45458.jpg?itok=ociSwRfo" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/24/tlc45458.jpg?itok=oMx2ysiN" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/24/tlc45458.jpg?itok=dB7_8FmO" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/24/tlc45458.jpg?itok=RtQWdzH0" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/24/tlc45458.jpg?itok=qf8RDh2W" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/city-harvest-church-coverage">City Harvest Church coverage</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70033" id="social-count-70033" data-social-nid="70033"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-75233" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/papers150625jpg">papers150625.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/24/papers150625.jpg?itok=_pnkUVfW" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/24/papers150625.jpg?itok=UFhPEHZK" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/24/papers150625.jpg?itok=TkAxfQ8m" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/24/papers150625.jpg?itok=z0YhDql2" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/24/papers150625.jpg?itok=H7GDuSKL" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/24/papers150625.jpg?itok=fhpMxXST" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/24/papers150625.jpg?itok=CJg7tSDV" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/24/papers150625.jpg?itok=cqBizK0X" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/be-careful-about-publishing-photos-of-fatal-victims">Be careful about publishing photos of fatal victims</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70023" id="social-count-70023" data-social-nid="70023"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-75234" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/facebook45713324jpg">facebook45713324.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/24/facebook45713324.jpg?itok=IT5rqFKf" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/24/facebook45713324.jpg?itok=rR7EFeKC" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/24/facebook45713324.jpg?itok=aeRk8CWQ" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/24/facebook45713324.jpg?itok=dUDBZ-aZ" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/24/facebook45713324.jpg?itok=KNxg2HwN" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/24/facebook45713324.jpg?itok=5Ia0NFYA" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/24/facebook45713324.jpg?itok=wyXiOtxZ" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/24/facebook45713324.jpg?itok=3iLcVtib" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/publishing-photographs-how-st-decides">Publishing photographs: How ST decides</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70022" id="social-count-70022" data-social-nid="70022"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-75236" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/tlc45456jpg">tlc45456.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/24/tlc45456.jpg?itok=_sT9YyJU" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/24/tlc45456.jpg?itok=iLcuJ2FC" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/24/tlc45456.jpg?itok=6wuLOFoz" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/24/tlc45456.jpg?itok=i42lhfTA" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/24/tlc45456.jpg?itok=_B4wmVJd" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/24/tlc45456.jpg?itok=9HgD_Jyu" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/24/tlc45456.jpg?itok=2BzmEAAC" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/24/tlc45456.jpg?itok=c2E231YU" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/alternative-media-tests-picture-editing-boundaries">Alternative media tests picture-editing boundaries</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70024" id="social-count-70024" data-social-nid="70024"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-75235" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/facebook45713325jpg">facebook45713325.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/24/facebook45713325.jpg?itok=bD7gogFF" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/24/facebook45713325.jpg?itok=-F63_gIF" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/24/facebook45713325.jpg?itok=IVcWJE7o" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/24/facebook45713325.jpg?itok=TMK83-E5" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/24/facebook45713325.jpg?itok=ZZf0bESQ" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/24/facebook45713325.jpg?itok=svQkBi-q" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/24/facebook45713325.jpg?itok=7FUgI-m5" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/24/facebook45713325.jpg?itok=aLNI9TQN" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/a-russian-perspective-on-media-coverage-of-the-crisis-in-ukraine">A Russian perspective on media coverage of the crisis in Ukraine</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70025" id="social-count-70025" data-social-nid="70025"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-75237" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/radhabasu240615jpg">radhabasu240615.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/24/radhabasu240615.jpg?itok=9kzwKLai" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/24/radhabasu240615.jpg?itok=CsjE-R0z" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/24/radhabasu240615.jpg?itok=wpxz26dl" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/24/radhabasu240615.jpg?itok=7e1pup9V" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/24/radhabasu240615.jpg?itok=sjRNFIha" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/24/radhabasu240615.jpg?itok=RsIu2W9v" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/24/radhabasu240615.jpg?itok=AMuoLINE" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/24/radhabasu240615.jpg?itok=gR4dn5Th" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/who-it-takes-to-inspire-a-winning-story">Who it takes to inspire a winning story</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70026" id="social-count-70026" data-social-nid="70026"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-75255" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/littleindia150624jpg">littleindia150624.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/24/littleindia150624.jpg?itok=EJMPr1Rd" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/24/littleindia150624.jpg?itok=Vc1n29MR" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/24/littleindia150624.jpg?itok=jyaAQnbL" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/24/littleindia150624.jpg?itok=fNdmy3cw" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/24/littleindia150624.jpg?itok=NDrRAphq" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/24/littleindia150624.jpg?itok=jR3fORmG" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/24/littleindia150624.jpg?itok=rDZ-bnHX" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/24/littleindia150624.jpg?itok=QWqv9MpL" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/little-india-well-done-media-and-singaporeans">Little India: Well done media and Singaporeans</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-70036" id="social-count-70036" data-social-nid="70036"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-92161" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/liriot2506jpg-0">liriot2506.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/25/liriot2506_0.jpg?itok=FpAgVna-" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/25/liriot2506_0.jpg?itok=B_mKv9hi" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/25/liriot2506_0.jpg?itok=vboG8_8v" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/25/liriot2506_0.jpg?itok=9Q1meBdT" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/25/liriot2506_0.jpg?itok=PnUI1sj7" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/25/liriot2506_0.jpg?itok=BUzotTpK" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/25/liriot2506_0.jpg?itok=R5uzKlrg" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/25/liriot2506_0.jpg?itok=r27-YKib" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/its-not-about-us-versus-them">It&#039;s not about &#039;us&#039; versus &#039;them&#039;</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-87501" id="social-count-87501" data-social-nid="87501"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-69289" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/st20131211wswong113957665e2xjpg">ST_20131211_WSWONG11_3957665e_2x.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2013/12/11/ST_20131211_WSWONG11_3957665e_2x.jpg?itok=Qg9XxupJ" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2013/12/11/ST_20131211_WSWONG11_3957665e_2x.jpg?itok=g-6SUpxr" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2013/12/11/ST_20131211_WSWONG11_3957665e_2x.jpg?itok=_FXIRfkn" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2013/12/11/ST_20131211_WSWONG11_3957665e_2x.jpg?itok=Hx5aUxx0" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2013/12/11/ST_20131211_WSWONG11_3957665e_2x.jpg?itok=0TmKdgUw" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2013/12/11/ST_20131211_WSWONG11_3957665e_2x.jpg?itok=3u-qoVsh" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2013/12/11/ST_20131211_WSWONG11_3957665e_2x.jpg?itok=5wd58ATo" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2013/12/11/ST_20131211_WSWONG11_3957665e_2x.jpg?itok=PO223sXg" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/singapore/man-in-plaid-shirt-saved-my-life-says-bus-helper">Man in plaid shirt saved my life, says bus helper</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-62436" id="social-count-62436" data-social-nid="62436"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-odd media  " >
+          <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/allow-athletes-more-time-to-complete-studies">Allow athletes more time to complete studies</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer ">
+        <div class="story-assets">
+                  <span class="social-count social-count-87505" id="social-count-87505" data-social-nid="87505"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+  <div class="views-row-even views-row-last media  " >
+        <div class="pull-left">
+  <div class="media-single"><ul><li><div id="file-92165" class="file file-image file-image-jpeg">
+
+        <h2 class="element-invisible"><a href="/files/cly2506jpg">cly2506.jpg</a></h2>
+    
+  
+  <div class="content">
+    <div class="borealis image-style-retina_large borealis-js loading borealis-wrapper"><img class="borealis image-style-retina_large borealis-js img-responsive" data-borealis-respondsmall="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondsmall/public/articles/2015/06/25/cly2506.jpg?itok=u-irjURK" data-borealis-respondmedium="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondmedium/public/articles/2015/06/25/cly2506.jpg?itok=PA1CpitT" data-borealis-respondlarge="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondlarge/public/articles/2015/06/25/cly2506.jpg?itok=O413MLLs" data-borealis-respondxl="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl/public/articles/2015/06/25/cly2506.jpg?itok=8mhfvuhr" data-borealis-respondxl2="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2015/06/25/cly2506.jpg?itok=vclqfk2-" data-borealis-respondxl3="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl3/public/articles/2015/06/25/cly2506.jpg?itok=IpN8IS7v" data-borealis-respondxl4="http://static.straitstimes.com.sg/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2015/06/25/cly2506.jpg?itok=lmdqULxj" typeof="foaf:Image" src="/sites/all/modules/contrib/borealis/borealis_ri/images/blank.png" alt=""><noscript><img class="borealis image-style-retina_large img-responsive" typeof="foaf:Image" src="http://static.straitstimes.com.sg/sites/default/files/styles/retina_large/public/articles/2015/06/25/cly2506.jpg?itok=pDz5nGhU" width="1536" height="1024" alt=""></noscript></div>  </div>
+
+  
+</div>
+</li></ul></div>  </div>
+      <div class="media-body ">
+
+    
+        <div class="media-heading ">
+                    <h3 class="story-title">
+
+                <span class="story-headline">
+        
+                  <a href="/forum/readers-post/thanks-for-giving-me-a-comprehensive-menu-of-news">Thanks for giving me a comprehensive menu of news</a>                </span>
+      </h3>
+          </div>
+    
+        
+  
+  
+  </div>
+  
+  <div class="media-footer has_media">
+        <div class="story-assets">
+                  <span class="social-count social-count-87507" id="social-count-87507" data-social-nid="87507"></span>
+              <i></i>
+    </div>
+  </div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>      </div>
+
+      
+          </div>
+    
+
+</div></div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+  <div class="panel-panel panel-row">
+    <div></div>
+  </div>
+
+</div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</section>
+  </div>
+    </section>
+
+    
+  </div>
+</div>
+<footer class="footer container">
+
+  <div class="footer-banner-wrapper hidden-print">
+    <div class="footer-banner-block">
+<section id="block-block-6" class="block block-block clearfix">
+
+      
+  <div class="footer-subscribe-block">
+    <h4>Subscribe to <span>The Straits Times</span></h4>
+    <div class="footer-subscribe-block--call"> 
+        call <span class="tel" style="font-size:24px;">6388-3838</span> or <a href="http://www.sphsubscription.com.sg/eshop/?r=products/newsubscriptionpackages&pcode=ST&utm_medium=online&utm_source=homepagefooter&utm_campaign=stproductpage&utm_term=tactical" target="_blank">click here</a>
+     </div>
+</div>
+
+<div class="footer-apps-block">
+    <div class="footer-apps-block--ios">
+        <div class="footer-apps-block--ios-text"><a href="https://itunes.apple.com/sg/app/the-straits-times-for-iphone/id547465441?mt=8" target="_blank">Available for<br /> iPhones and iPads</a></div>
+    </div>
+    <div class="footer-apps-block--android">
+        <div class="footer-apps-block--android-text"><a href="https://play.google.com/store/apps/details?id=com.buuuk.st&hl=en" target="_blank">Available in<br /> Google Play</a></div>
+    </div>
+</div>
+</section>
+    </div>
+  </div>
+  <div class="back-to-top hidden-print">
+    <a href="#main-content" class="hidden-xs">Back to the top</a>
+    <a href="#main-content" class="visible-xs"><img src="/sites/all/themes/custom/bootdemo/images/arrow-up.svg"/></a>
+  </div>
+  <div class="wrapper row">
+    <div class="col-lg-12">
+  <div class="footer-menu hidden-print"><div class="row"><ul class="col-lg-2 col-md-2 col-sm-2 col-xs-6 list-group list-footer"><li class="item-874 list-group-item"><a href="/singapore">Singapore</a></li><li class="item-19765 list-group-item"><a href="/politics">Politics</a></li><li class="item-19759 list-group-item"><a href="/asia">Asia</a></li></ul><ul class="col-lg-2 col-md-2 col-sm-2 col-xs-6 list-group list-footer"><li class="item-873 list-group-item"><a href="/world">World</a></li><li class="item-19776 list-group-item"><a href="/videos">Videos</a></li><li class="item-19774 list-group-item"><a href="/multimedia">Multimedia</a></li></ul><ul class="col-lg-2 col-md-2 col-sm-2 col-xs-6 list-group list-footer"><li class="item-877 list-group-item"><a href="/lifestyle">Lifestyle</a></li><li class="item-19767 list-group-item"><a href="/lifestyle/food">Food</a></li><li class="item-19778 list-group-item"><a href="/forum">Forum</a></li></ul><ul class="col-lg-2 col-md-2 col-sm-2 col-xs-6 list-group list-footer"><li class="item-875 list-group-item"><a href="/opinion">Opinion</a></li><li class="item-19741 list-group-item"><a href="/business">Business</a></li><li class="item-878 list-group-item"><a href="/sport">Sport</a></li></ul><ul class="col-lg-2 col-md-2 col-sm-2 col-xs-6 list-group list-footer"><li class="item-19782 list-group-item"><a href="/tech">Tech</a></li></ul></div></div>
+    <div class="region region-footer">
+    <section id="block-block-4" class="block block-block follow-st hidden-print clearfix">
+
+        <h2 class="block-title">Follow ST</h2>
+    
+  <ul class="social-buttons list-inline">
+  <li class="btn btn-twitter"><a href="http://twitter.com/stcom"  target="_blank" class="fa fa-twitter"></a></li>
+  <li class="btn btn-facebook"><a href="http://www.facebook.com/TheStraitsTimes" target="_blank" class="fa fa-facebook"></a></li>
+  <li class="btn btn-pinterest"><a href="http://www.pinterest.com/thestraitstimes" target="_blank" class="fa fa-pinterest"></a></li>
+  <li class="btn btn-instagram"><a href="http://instagram.com/straits_times" target="_blank" class="fa fa-instagram"></a></li>
+  <li class="btn btn-rss"><a href="/RSS-Feeds" target="_blank" class="fa fa-rss"></a></li>
+</ul>
+</section>
+<section id="block-block-2" class="block block-block site-title clearfix">
+
+        <h2 class="block-title">The Straits Times</h2>
+    
+  <p class="copy">SPH Digital News / Copyright © 2017 Singapore Press Holdings Ltd. Co. Regn. No. 198402868E. <br> All rights reserved | <a href="http://sph.com.sg/legal/website_tnc.html" target="_blank">Terms &amp; Conditions</a>&nbsp;| <a href="http://sph.com.sg/legal/pdpa.html" target="_blank">Data Protection Policy</a>&nbsp;| <a href="//www.straitstimes.com/advertise-with-the-straits-times" target="_blank">Advertise with us</a></p>
+
+</section>
+  </div>
+    </div>
+  </div>
+</footer><!-- Modal -->
+<div class="modal fade" id="ldapAlert" tabindex="-1" role="dialog" aria-labelledby="ldapAlertLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p>We have been experiencing some problems with subscriber log-ins and apologise for the inconvenience caused. Until we resolve the issues, subscribers need not log in to access ST Digital articles. But a log-in is still required for our PDFs.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+.modal-backdrop{
+  z-index: 10000000;
+}
+.modal {
+  z-index: 10000001;
+  font-family: Curator;
+  font-size: 16px;
+}
+</style>
+  <script src="http://static.straitstimes.com.sg/sites/default/files/js/js_bK_LwYueczIHJRRBhtEMWajaWnrtOXF2pjKpHJSHBCg.js"></script>
+    <script>
+    (function($) {
+      window.paywallSdkCallbackHandler = paywallSdkCallbackHandler;
+      var quotaValue;
+      function getQuotaValue(){
+        return quotaValue;
+      }
+      function htmlEncode(value){
+        //create a in-memory div, set it's inner text(which jQuery automatically encodes)
+        //then grab the encoded contents back out.  The div never exists on the page.
+        return $('<div/>').text(value).html();
+      }
+      function paywallSdkCallbackHandler(loginError, err, quota) {
+      quotaValue = quota;
+
+      var userSession = PaywallSdk.userSession();
+
+      ////////////////////////////////////////////////////////////////////////////////////////
+      // stubs for different user type flows
+      // for free or not metered article/pages
+      // do NOT show the paywall if article is free or not metered
+      if (quota.articleInfo.isFree ||
+                quota.articleInfo.paid === 0) {
+            switch (userSession.userType) {
+                case 'subscribed':
+                    // show the article
+                    break;
+                case 'registered':
+                    if (quota.usage.quotaExceeded) {
+                    }
+                    else {
+                    }
+                    break;
+                case 'anonymous_without_quota':
+                    // is an anonymous user who is inside a geofence and do NOT have quota due to the geolocation entitlement
+                    break;
+                case 'registered_without_quota':
+                    // is a registered user who is inside a geofence and do NOT have quota due to the geolocation entitlement
+                    break;
+                default: // defaults to 'anonymous'
+                    if (quota.usage.quotaExceeded) {
+                    }
+                    else {
+                    }
+                    break;
+            }
+        }
+        // else this article is metered
+        else {
+            switch (userSession.userType) {
+                case 'subscribed':
+                    // show the article
+                    break;
+                // is an anonymous user who is inside a geofence and do NOT have quota due to the geolocation entitlement
+                case 'anonymous_without_quota':
+                    // show the article
+                    break;
+                // is a registered user who is inside a geofence and do NOT have quota due to the geolocation entitlement
+                case 'registered_without_quota':
+                    // show the article
+                    break;
+
+                // show the paywall for registered and anonymous users
+                case 'registered':
+                default: // defaults to 'anonymous'
+                    if (quota.usage.quotaExceeded && loginError == null) {
+
+                        var $hardPaywallModal = $('#hardPaywallModal');
+
+                        if ($hardPaywallModal && $hardPaywallModal.modal) {
+                            $hardPaywallModal.modal();
+                        }
+                    }
+                    else if (quota.message && loginError == null) {
+                        $('.paywall-fixed-popup').removeClass('hidden');
+                    }
+
+                    if ((quota.usage.quotaExceeded || quota.message) && loginError == null) {
+                        var popup_ati_tag = '';
+                        if(userSession.userType=='anonymous'){
+                          popup_ati_tag= '<img width="1" height="1" alt="" src="http://logw348.ati-host.net/hit.xiti?s=538340&s2=12&p=Paywall_level_1&x1=Paywall_level_1&x6=1&x10='+encodeURIComponent(userSession.deviceId)+'&di=&at=&ac=" >';
+                        }else if(userSession.userType=='registered'){
+                          popup_ati_tag= '<img width="1" height="1" alt="" src="http://logw348.ati-host.net/hit.xiti?s=538340&s2=12&p=Paywall_level_2&x1=Paywall_level_2&x6=2&x10='+encodeURIComponent(userSession.deviceId)+'&at='+encodeURIComponent(userSession.companyVisitorId)+'&di=&ac=" >';
+                        }
+                        $('.paywall-message-text').html(quota.message+popup_ati_tag);
+                        var secondMsg = quota.secondaryMessage;
+                        $('.paywall-secondaryMessage-text').html(secondMsg);
+                        $('.paywall-login-link').on('click', function(e) {
+                            e.preventDefault();
+
+                            PaywallSdk.login();
+                        });
+
+                        $('.paywall-subscribe-link').on('click', function(e){
+                            e.preventDefault();
+
+                            PaywallSdk.subscribe();
+                        });
+
+                        $('.paywall-register-link').on('click', function(e){
+                            e.preventDefault();
+
+                            PaywallSdk.register();
+                        });
+
+                        $('.paywall-close-button').on('click', function(e) {
+                            e.preventDefault();
+
+                            $('.paywall-fixed-popup').addClass('hidden');
+                        });
+                        content_body=document.getElementsByClassName("field-name-body");  // Find the element
+                        if(content_body[0]) content_body[0].innerHTML="";
+                        content_post_date=document.getElementsByClassName("group-story-timestamp");
+                        if(content_post_date[0])content_post_date[0].innerHTML="";
+                        content_media=document.getElementsByClassName("media-entity");
+                        if(content_media[0])content_media[0].innerHTML="";
+
+                    }
+                    break;
+            }
+        }
+
+      // Login & Logout :)
+      if ((userSession.userType != 'anonymous') && (userSession.userType != 'anonymous_without_quota')) {
+        var st_login_info = '<li class="nav-user"><a href="https://acc-reg.sphdigital.com/RegAuth2/sphChangePassword.html?svc=stp" name="login-user-name">'+htmlEncode(userSession.username)+'</a></li>'+
+        '<li class="nav-logout"><a href="#">Logout</a></li>';
+        $('.menu-user').html(st_login_info);
+      } else {
+        var st_login_info = '<li class="nav-login"><a href="#">Login</a></li>'+
+        '<li class="nav-subscribe"><a href="http://www.sphsubscription.com.sg/eshop/?r=products/newsubscriptionpackages&pcode=ST&utm_medium=online&utm_source=homepageheader&utm_campaign=stproductpage&utm_term=tactical" target="_blank">Subscribe</a></li>';
+        $('.menu-user').html(st_login_info);
+      }
+
+      // Login
+      $('.menu-user .nav-login a').on('click', function (e) {
+        e.preventDefault();
+        PaywallSdk.login();
+      });
+      $('.popup-login').on('click', function (e) {
+        e.preventDefault();
+        PaywallSdk.login();
+      });
+
+      // Logout
+      $('.menu-user .nav-logout a').on('click', function (e) {
+        e.preventDefault();
+        PaywallSdk.logout();
+      });
+
+      }
+    })(jQuery);
+  </script>
+
+
+    <script src="//straitstimes-mobilegateway-api-SIN-LIVE.stapi.straitstimes.com/scripts/paywall-sdk/dist/paywallSdk.min.js?2017102415"
+      data-name="paywallSdk"
+            data-apiBaseUrl="https://straitstimes-mobilegateway-api-SIN-LIVE.stapi.straitstimes.com"
+      data-oauthBaseUrl="https://acc-auth.sphdigital.com/amserver/oauth2"
+      data-loginBaseUrl="https://acc-reg.sphdigital.com/RegAuth2"
+      data-logoutUrl="https://acc-auth.sphdigital.com/amserver/UI/Logout"
+            data-publication="ST"
+      data-subdomain=""
+      data-articleId=""
+      data-isMetered="false"
+      data-callback="paywallSdkCallbackHandler">
+    </script>
+      
+<!-- mainWrapper end --> 
+</div><!-- mainWrapper end -->
+<img src="//amplifypixel.outbrain.com/pixel?mid=00529a8e9e01c3bfad3c4bd7ec1ab148f6" style="display:none;">
+</body>
+
+<!-- Start TMS and Smart tagging -->
+<script  type="text/javascript">
+  //var tag;
+    (function($) {
+      //For smart taging
+      //tag = new ATInternet.Tracker.Tag();
+      var ac = '';
+      var ldapw = "";
+      var visitorcat = 1;
+      if(typeof PaywallSdk=='object'){
+        var paywallUserSession = PaywallSdk.userSession();
+        //console.log(paywallUserSession);
+        if (paywallUserSession) {
+          if(paywallUserSession.companyVisitorId)
+            ldapw = paywallUserSession.companyVisitorId;
+
+          if(ldapw){
+            var meta = document.createElement('meta');
+            meta.name = 'ldapw';
+            meta.content = ldapw;
+            document.getElementsByTagName('head')[0].appendChild(meta);
+          }
+          if(paywallUserSession.userType=='anonymous'){
+            visitorcat = 1;
+          }else if(paywallUserSession.userType=='registered'){
+            visitorcat = 3;
+          }else if(paywallUserSession.userType=='anonymous_without_quota'){
+            visitorcat = 4;
+          }else{
+            visitorcat = 2;
+          }
+        }
+
+      } else {
+        //console.log("Paywall object not loaded");
+      }
+
+      if(ldapw != "")
+          ac = "2";
+
+
+      //Updating data variable
+      _data.at = encodeURIComponent(ldapw);
+      _data.ac =  ac;
+      _data.visitorcat = visitorcat;
+      _data.deviceid = encodeURIComponent(paywallUserSession.deviceId);
+
+     //  var tag_page_vars = {
+     //                      level2:_data.level2,
+     //                      name: _data.title
+     //                      };
+     //  if(_data.chapter1 != "")
+     //    tag_page_vars.chapter1 = _data.chapter1;
+     //  if(_data.chapter2 != "")
+     //    tag_page_vars.chapter2 = _data.chapter2;
+
+     //  tag.page.set(tag_page_vars);
+
+     // tag.customVars.set({
+     //    site: {
+     //      1: _data.title,
+     //      2: encodeURIComponent(document.location.href),
+     //      3: _data.contenttype, //content type, 1->article, 2->photo, 3->video
+     //      4: _data.pagination,  //pagination
+     //      5: _data.author,  //author
+     //      6: _data.visitorcat,  //visitor category, 1->free, 2->premium
+     //      7: _data.contentcat,  //content category, 1->free, 2->premium
+     //      8: _data.lotameid,  //lotame id
+     //      9: _data.articleid,
+     //      10: _data.articlecount,
+     //      11: _data.printcat,
+     //      12: _data.keyword,
+     //      13: _data.adblocker,
+     //      14: _data.pubdate
+     //    }
+     //  });
+
+     //  //visitor login id
+     //  tag.identifiedVisitor.set ({
+     //      id: _data.at,
+     //      category: _data.ac
+     //  });
+
+
+     //  tag.dispatch();
+     })(jQuery);
+
+     // function virtualPV(element) {
+     //  //console.log("VirtualPV called");
+     //  //console.log(element);
+     //    return tag.page.send({
+     //      elem: element,
+     //      level2: _data.level2,
+     //      name: _data.title,  //same value as site custom variable 1 or x1
+     //      chapter1: _data.chapter1,   //comment out if no values for chapter1, chapter2, chapter3
+     //      chapter2: _data.chapter2,
+     //      customVars: {
+     //        site: {
+     //          1: _data.title,
+     //          2: encodeURIComponent(document.location.href),
+     //          3: 2, //content type, 1->article, 2->photo, 3->video
+     //          4: _data.pagination,  //pagination
+     //          5: _data.author,  //author
+     //          6: _data.visitorcat,  //visitor category, 1->free, 2->premium
+     //          7: _data.contentcat,  //content category, 1->free, 2->premium
+     //          8: _data.lotameid,  //lotame id
+     //          9: _data.articleid,
+     //          10: _data.articlecount,
+     //          11: _data.printcat,
+     //          12: _data.keyword,
+     //          13: _data.adblocker,
+     //          14: _data.pubdate
+     //        }
+     //      }
+     //    });
+     //  }
+
+  </script>
+<!-- End TMS Tagging -->
+
+<!-- Begin comScore Tag -->
+<script>
+document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script>
+<script>
+COMSCORE.beacon({c1:2,c2:6288331,c3:"",c4:"",c5:"",c6:"",c15:""});
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&c2=6288331&c3=&c4=&c5=&c6=&c15=&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+<!-- START: paywall css -->
+  <link rel="stylesheet" href="//straitstimes-mobilegateway-api-SIN-LIVE.stapi.straitstimes.com/scripts/paywall-sdk/st/css/paywall-popup.css?2017102415">
+  <!--[if gte IE 9]>
+  <style type="text/css">
+      .paywall-gradient {
+          filter: none;
+      }
+  </style>
+  <![endif]-->
+<!-- END: paywall css -->
+
+<!-- Start Querly Tag -->
+<script type="text/javascript" src="http://www.queryly.com/js/queryly.v2.js" defer></script>
+<script type="text/javascript" src="http://www.queryly.com/js/straitstimes-advanced-search.js" defer></script>
+<script type="text/javascript">
+var js_sph_base_url = "http://www.straitstimes.com";
+</script>
+<script type="text/javascript" src="/sites/all/themes/custom/bootdemo/js/querylyiniter.js" defer></script>
+<!-- End Querly Tag -->
+<script type="text/javascript">
+(function($) {
+var pathArray = window.location.pathname.split( '/' );
+var secondLevelLocation = pathArray[2];
+if((pathArray[1]=='newsletter') && (pathArray[2]=='regform') ){
+    $("script[src='http://www.googletagservices.com/tag/js/gpt.js']").remove();
+    $("script[src='http://partner.googleadservices.com/gpt/pubads_impl_94.js']").remove();
+}
+})(jQuery);
+</script>
+<script type="text/javascript">
+(function($) {
+if($('#food-search').length >= 1){
+$('#food-search').keypress(function(e) {
+    if (e.which === 13) {
+        if ($('#food-search').value != "") {
+          var food = $('#food-search').val();
+            window.location = "http://www.straitstimes.com/search?searchkey="+ food + "&groups=/lifestyle/food/";
+        }
+        }
+    });
+  }
+ })(jQuery);
+</script>
+</html>
