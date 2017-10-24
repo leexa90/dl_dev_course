@@ -16,8 +16,8 @@ driver.maximize_window()
 import time
 def main():
     for year in ['2016',]:
-        for month in ['jan','feb','march','april','may','june','july','august'\
-                      'sept','oct','nov','dec'][:]:
+        for month in ['jan','feb','march','april','may','june','july','august',\
+                      'sept','oct','nov','dec'][7:]:
             f1=open(month+year+'.txt','w')
             for i in range(1,32):
                 print (month,i)
