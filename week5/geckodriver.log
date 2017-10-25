@@ -23214,3 +23214,440 @@ JavaScript error: https://cdn.ampproject.org/amp4ads-v0.js, line 5: Error: amp-a
 1508859218887	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.straitstimes.com/singapore/st-now-news-as-it-happens-dec-31-2016"
 1508859219201	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147510710"
 1508859219854	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.straitstimes.com/singapore/st-now-news-as-it-happens-dec-31-2016"
+1508896394484	geckodriver	INFO	Listening on 127.0.0.1:53658
+1508896395548	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.1loIHQCe55bw
+1508896395548	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1508896395550	geckodriver::marionette	INFO	Connecting to Marionette on localhost:50390
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508896396424	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1508896399977	Marionette	INFO	Listening on port 50390
+1508896400291	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-jan-2-2016, line 992: TypeError: paywallUserSession is null
+JavaScript error: https://cdn.go.affec.tv/sigad/assets/scripts/iab.js, line 101: TypeError: wrapperElem is null
+
+(firefox:11532): Gtk-CRITICAL **: gtk_clipboard_set_with_data: assertion 'targets != NULL' failed
+1508896509184	geckodriver	INFO	Listening on 127.0.0.1:46961
+1508896510223	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.Vnq7CJLbj9fl
+1508896510224	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1508896510225	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40890
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508896511068	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1508896514418	Marionette	INFO	Listening on port 40890
+1508896514465	Marionette	WARN	TLS certificate errors will be ignored for this session
+1508896519499	Marionette	INFO	Ceased listening
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11532): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-jan-1-2017, line 1002: TypeError: paywallUserSession is null
+JavaScript error: https://cdn.go.affec.tv/sigad/assets/scripts/iab.js, line 101: TypeError: wrapperElem is null
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://s0.2mdn.net/4815643/1504167160407/index.html, line 1941: ReferenceError: EB is not defined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://cdn.ampproject.org/amp4ads-v0.js, line 5: Error: amp-analytics is already registered. The script tag for amp-analytics is likely included twice in the page.
+JavaScript error: https://s0.2mdn.net/4815643/1504166969533/index.html, line 2326: ReferenceError: EB is not defined
+JavaScript error: https://cdn.ampproject.org/amp4ads-v0.js, line 5: Error: amp-analytics is already registered. The script tag for amp-analytics is likely included twice in the page.
+JavaScript error: https://cdn.ampproject.org/amp4ads-v0.js, line 5: Error: amp-analytics is already registered. The script tag for amp-analytics is likely included twice in the page.
+JavaScript error: https://cdn.ampproject.org/amp4ads-v0.js, line 5: Error: amp-analytics is already registered. The script tag for amp-analytics is likely included twice in the page.
+JavaScript error: https://s0.2mdn.net/4815643/1504167218518/index.html, line 1838: ReferenceError: EB is not defined
+JavaScript error: https://s0.2mdn.net/4815643/1504166969533/index.html, line 2326: ReferenceError: EB is not defined
+1508898338397	geckodriver	INFO	Listening on 127.0.0.1:47600
+1508898339455	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.8h0rGXy19jRB
+1508898339457	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1508898339460	geckodriver::marionette	INFO	Connecting to Marionette on localhost:60560
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508898340071	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1508898342764	Marionette	INFO	Listening on port 60560
+1508898342841	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1508898343331	Marionette	INFO	Ceased listening
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:11694): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-march-1-2017, line 1003: TypeError: paywallUserSession is null
+JavaScript error: https://cdn.go.affec.tv/sigad/assets/scripts/iab.js, line 101: TypeError: wrapperElem is null
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-april-9-2017, line 826: TypeError: $(...).offset(...) is undefined
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-april-16-2017, line 826: TypeError: $(...).offset(...) is undefined
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-april-17-2017, line 826: TypeError: $(...).offset(...) is undefined
+JavaScript error: https://s0.2mdn.net/4815643/1504167160407/index.html, line 1941: ReferenceError: EB is not defined
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-april-23-2017, line 826: TypeError: $(...).offset(...) is undefined
+JavaScript error: https://s0.2mdn.net/4815643/1504166969533/index.html, line 2326: ReferenceError: EB is not defined
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: send@http://static.straitstimes.com.sg/sites/default/files/js/js_9c5prkTR18O5b2rDwbBwV42-1w47edNU7HxfJAl9ipY.js:4:15964
+ajax@http://static.straitstimes.com.sg/sites/default/files/js/js_9c5prkTR18O5b2rDwbBwV42-1w47edNU7HxfJAl9ipY.js:4:11516
+@http://www.straitstimes.com/singapore/st-now-news-as-it-happens-april-27-2017:260:9
+i@http://static.straitstimes.com.sg/sites/default/files/js/js_9c5prkTR18O5b2rDwbBwV42-1w47edNU7HxfJAl9ipY.js:2:27146
+fireWith@http://static.straitstimes.com.sg/sites/default/files/js/js_9c5prkTR18O5b2rDwbBwV42-1w47edNU7HxfJAl9ipY.js:2:27914
+ready@http://static.straitstimes.com.sg/sites/default/files/js/js_9c5prkTR18O5b2rDwbBwV42-1w47edNU7HxfJAl9ipY.js:2:29705
+J@http://static.straitstimes.com.sg/sites/default/files/js/js_9c5prkTR18O5b2rDwbBwV42-1w47edNU7HxfJAl9ipY.js:2:29890
+
+*************************
+JavaScript error: https://s0.2mdn.net/4815643/1504167160407/index.html, line 1941: ReferenceError: EB is not defined
+JavaScript error: https://cdn.ampproject.org/amp4ads-v0.js, line 5: Error: amp-analytics is already registered. The script tag for amp-analytics is likely included twice in the page.
+JavaScript error: http://media.innity.net/201709_21158/71995/proxy_192769.js?ord=[timestamp], line 588: TypeError: c192769_getObj(...) is null
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-june-18-2017, line 820: TypeError: $(...).offset(...) is undefined
+JavaScript error: https://drive.google.com/static/file/client/js/3915401005-projector_viewer.js, line 239: Error: AppContext is disposed.
+JavaScript error: http://www.straitstimes.com/, line 1334: TypeError: myPlayer is undefined
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js, line 4: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://s.atemda.com/Admeta.js, line 84: TypeError: e is null
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: SecurityError: Permission denied to access property "href" on cross-origin object
+JavaScript error: http://us-ads.openx.net/w/1.0/jstag, line 7: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://s.atemda.com/Admeta.js, line 84: TypeError: e is null
+JavaScript error: http://us-ads.openx.net/w/1.0/jstag, line 7: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://s.atemda.com/Admeta.js, line 84: TypeError: e is null
+1508902405830	Marionette	INFO	Ceased listening
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:14050): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508902539844	geckodriver	INFO	Listening on 127.0.0.1:38750
+1508902539892	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.IRF5Vk8Terdm
+1508902539893	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1508902539895	geckodriver::marionette	INFO	Connecting to Marionette on localhost:47146
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508902541000	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1508902543622	Marionette	INFO	Listening on port 47146
+1508902543713	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-may-1-2017, line 1002: TypeError: paywallUserSession is null
+JavaScript error: https://cdn.go.affec.tv/sigad/assets/scripts/iab.js, line 101: TypeError: wrapperElem is null
+JavaScript error: http://tpc.googlesyndication.com/safeframe/1-0-13/html/container.html, line 14: SecurityError: Permission denied to access property "pbjs" on cross-origin object
+JavaScript error: http://tpc.googlesyndication.com/safeframe/1-0-13/html/container.html, line 14: SecurityError: Permission denied to access property "pbjs" on cross-origin object
+JavaScript error: http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3, line 60: Error: invalid version specified
+JavaScript error: http://www.straitstimes.com/, line 1334: TypeError: myPlayer is undefined
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js, line 4: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js?v=719, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+JavaScript error: http://www.straitstimes.com/, line 1334: TypeError: myPlayer is undefined
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: http://platform.twitter.com/widgets.js, line 9: Error: Network error.
+JavaScript error: http://www.straitstimes.com/, line 1334: TypeError: myPlayer is undefined
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js, line 4: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: resource://app/modules/BrowserUsageTelemetry.jsm, line 252: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIAutoCompleteController.getStyleAt]
+JavaScript warning: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js?v=719, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://fw.adsafeprotected.com/rjss/www.googletagservices.com/81507/14317668/dcm/dcmads.js, line 209: NS_ERROR_NOT_INITIALIZED: 
+1508903836531	Marionette	INFO	Ceased listening
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17090): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508903838893	geckodriver	INFO	Listening on 127.0.0.1:33340
+1508903839932	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.c5NThbX51BdH
+1508903839932	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1508903839935	geckodriver::marionette	INFO	Connecting to Marionette on localhost:53047
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508903840521	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1508903843091	Marionette	INFO	Listening on port 53047
+1508903843194	Marionette	WARN	TLS certificate errors will be ignored for this session
+1508903871917	geckodriver	INFO	Listening on 127.0.0.1:42078
+1508903872955	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.09U49sm4t8id
+1508903872956	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1508903872958	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46259
+
+(firefox:17961): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17961): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17961): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17961): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508903873490	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1508903875950	Marionette	INFO	Listening on port 46259
+1508903875991	Marionette	WARN	TLS certificate errors will be ignored for this session
+1508903879736	Marionette	INFO	Ceased listening
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17845): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-may-1-2017, line 998: TypeError: paywallUserSession is null
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+JavaScript error: https://acc-reg.sphdigital.com/RegAuth2/sphPasswordChallenge.html?svc=sts, line 1: ReferenceError: submitenter is not defined
+
+(firefox:17961): Gtk-CRITICAL **: gtk_clipboard_set_with_data: assertion 'targets != NULL' failed
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 104: TypeError: this._recipeManager is null
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 104: TypeError: this._recipeManager is null
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 104: TypeError: this._recipeManager is null
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 104: TypeError: this._recipeManager is null
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 104: TypeError: this._recipeManager is null
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 104: TypeError: this._recipeManager is null
+1508906095564	geckodriver	INFO	Listening on 127.0.0.1:50032
+1508906096603	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.OlwiNslczxm1
+1508906096604	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1508906096605	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46868
+
+(firefox:19015): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:19015): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:19015): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:19015): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508906097247	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1508906099813	Marionette	INFO	Listening on port 46868
+1508906099924	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-may-1-2017?login=true, line 998: TypeError: paywallUserSession is null
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-may-1-2017, line 14: ReferenceError: osdlfm is not defined
+JavaScript error: https://cdn.go.affec.tv/sigad/assets/scripts/iab.js, line 101: TypeError: wrapperElem is null
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: uncaught exception: undefined
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+JavaScript error: https://s0.2mdn.net/4844110/1506613650319/728x90_v2/CX_Brand_728x90_2img_en.js, line 1334: TypeError: this.frame is undefined
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-june-18-2017, line 816: TypeError: $(...).offset(...) is undefined
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-june-21-2017, line 796: TypeError: quota is undefined
+1508917454586	geckodriver	INFO	Listening on 127.0.0.1:39345
+1508917455631	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.xduNPnu3WpMv
+1508917455631	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1508917455634	geckodriver::marionette	INFO	Connecting to Marionette on localhost:51581
+
+(firefox:23091): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:23091): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:23091): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:23091): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508917456226	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1508917459095	Marionette	INFO	Listening on port 51581
+1508917459181	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-may-1-2017?login=true, line 998: TypeError: paywallUserSession is null
+JavaScript error: http://www.straitstimes.com/sites/all/themes/custom/bootdemo/js/querylyiniter.js, line 1: ReferenceError: queryly is not defined
+JavaScript error: https://cdn.go.affec.tv/sigad/assets/scripts/iab.js, line 101: TypeError: wrapperElem is null
+1508917529771	geckodriver	INFO	Listening on 127.0.0.1:37112
+1508917530812	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.Lx0M6xaL6QtW
+1508917530813	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1508917530815	geckodriver::marionette	INFO	Connecting to Marionette on localhost:54075
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508917531423	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1508917533949	Marionette	INFO	Listening on port 54075
+1508917534049	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.straitstimes.com/singapore/st-now-news-as-it-happens-may-1-2017?login=true, line 998: TypeError: paywallUserSession is null
+JavaScript error: http://www.straitstimes.com/, line 1337: TypeError: myPlayer is undefined
+JavaScript error: http://static.straitstimes.com.sg/sites/default/files/js/js_VJM8SrZE_fDBjvALrxW6YdC22bZPE8v_DzLxJ-POlqk.js, line 5733: TypeError: getComputedStyle(...) is null
+JavaScript error: http://static.straitstimes.com.sg/sites/default/files/js/js_VJM8SrZE_fDBjvALrxW6YdC22bZPE8v_DzLxJ-POlqk.js, line 5733: TypeError: getComputedStyle(...) is null
+JavaScript error: http://static.straitstimes.com.sg/sites/default/files/js/js_VJM8SrZE_fDBjvALrxW6YdC22bZPE8v_DzLxJ-POlqk.js, line 5733: TypeError: getComputedStyle(...) is null
+JavaScript error: http://liveblog.straitstimes.com/js/liveblog_widget.js, line 176: ReferenceError: io is not defined
+1508917586290	Marionette	INFO	Ceased listening
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:23298): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508921002121	geckodriver	INFO	Listening on 127.0.0.1:42900
+1508921003160	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.snY75tLt1l3C
+1508921003160	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1508921003162	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40672
+
+(firefox:25053): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:25053): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:25053): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:25053): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1508921005264	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1508921008048	Marionette	INFO	Listening on port 40672
+1508921008093	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 104: TypeError: this._recipeManager is null
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+
+(firefox:25053): Gtk-CRITICAL **: gtk_clipboard_set_with_data: assertion 'targets != NULL' failed
+
+(firefox:25053): Gtk-CRITICAL **: gtk_clipboard_set_with_data: assertion 'targets != NULL' failed
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
