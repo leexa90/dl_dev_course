@@ -136,3 +136,10 @@ JavaScript error: http://www.straitstimes.com/?login=true, line 1473: TypeError:
 JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js, line 4: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
 JavaScript error: https://cdn.ampproject.org/amp4ads-v0.js, line 5: Error: amp-analytics is already registered. The script tag for amp-analytics is likely included twice in the page.
 JavaScript error: https://cdn.ampproject.org/amp4ads-v0.js, line 5: Error: amp-analytics is already registered. The script tag for amp-analytics is likely included twice in the page.
+JavaScript error: https://s0.2mdn.net/4815643/1504166969533/index.html, line 2326: ReferenceError: EB is not defined
+JavaScript error: https://s2.adform.net/stoat/603/s2.adform.net/load/v/0.0.140/e/.gCDgJA/i/8IG-iAAAAEAA/r:types/ThirdParty, line 77: TypeError: a is undefined
+JavaScript error: https://s0.2mdn.net/4815643/1504167160407/index.html, line 1941: ReferenceError: EB is not defined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yR/r/VUIOEYYeFTh.js, line 131: Error: Destroyed!
+JavaScript error: http://liveblog.straitstimes.com/js/liveblog_widget.js, line 80: TypeError: authorsArr[elem.created_by] is undefined
+JavaScript error: https://s0.2mdn.net/4815643/1504167160407/index.html, line 1941: ReferenceError: EB is not defined

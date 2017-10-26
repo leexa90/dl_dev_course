@@ -33,8 +33,10 @@ def main(i,):
                 P = True
                 result = ''
                 counter = 0
+                time.sleep(2)
                 while result == '' and counter <= 5:
                     if counter >= 1:
+                        driver.get(page)
                         time.sleep(2)
                     counter += 1
                     for line in driver.page_source.split('\n'):
