@@ -18,15 +18,15 @@ driver.get(page)
 
 import time
 def main(i,):
-    for year in ['2017',]:
+    for year in ['2015',]:
         for month in ['jan','feb','march','april','may','june','july','august',\
                       'sept','oct','nov','dec'][i:i+1]:
             f1=open(month+year+'.txt','w')
             for i in range(1,32):
                 print (month,i)
-                page = 'http://www.straitstimes.com/singapore/st-now-news-as-it-happens-%s-%s-%s' %(month,i,year)
-                
-                
+                page = 'www.straitstimes.com/singapore/st-now-news-as-it-happens-%s-%s-%s' %(month,i,year)
+                page = 'http://webcache.googleusercontent.com/search?q=cache:' + page
+                print page
                 # navigate to the application home page
                 driver.get(page)
                 #driver.implicitly_wait(2)
@@ -35,7 +35,7 @@ def main(i,):
                 counter = 0
                 time.sleep(2)
                 while result == '' and counter <= 5:
-                    if counter >= 1:
+                    if counter == 1:
                         driver.get(page)
                         time.sleep(2)
                     counter += 1

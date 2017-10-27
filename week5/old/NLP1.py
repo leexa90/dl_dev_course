@@ -42,7 +42,7 @@ def get_link(j):
     return result
 
 df = pd.DataFrame([[np.nan,]*6],columns=['year','date','time','data','site','site2'])
-for year in ['2016','2017','2015']:
+for year in ['2016','2017']:
     for file in [x for x in os.listdir('.') if year+'.txt' in x]:
         dictt={}
         for line in open(file,'r'):

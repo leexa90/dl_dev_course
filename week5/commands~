@@ -1,0 +1,21 @@
+https://windscribe.com/guides/linux#how-to
+
+ 4. Run apt-get update
+
+sudo apt-get update
+
+5. Install windscribe-cli
+
+sudo apt-get install windscribe-cli
+
+6. Login to Windscribe
+
+windscribe login
+
+7. Connect to Windscribe
+
+windscribe connect
+
+Need help?
+
+windscribe --help
