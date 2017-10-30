@@ -7,7 +7,7 @@ import tensorflow.contrib.keras as keras
 import numpy as np
 import pickle
 
-SENTENCE_LENGTH_MAX = 32
+SENTENCE_LENGTH_MAX = 80
 EMBEDDING_DIM=50
 
 
@@ -20,7 +20,8 @@ tokens_input = Input(shape=(SENTENCE_LENGTH_MAX,), dtype='int32', name="Sentence
 
 sentence_splitter = nltk.data.load('tokenizers/punkt/english.pickle')
 data = np.load('file.npy')
-data = pd.DataFrame(data,columns=['year', 'date', 'time', 'data', 'site', 'site2', 'date2', 'Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume']) 
+data = pd.DataFrame(data,columns=['year', 'date', 'time', 'data', 'site', 'site2', 'date2', 'Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume','Change']) 
+
 import string
 printable = set(string.printable)
 def remove_nonprintable(s):
@@ -35,6 +36,7 @@ def tokenizer(s):
         return None
     return TreebankWordTokenizer().tokenize(s)
 data['data_clean_tok'] = data['data_clean'].apply(tokenizer)
+data = data[~data['data_clean'].isin([None,])]
 
 import sys
 sys.path.append('/media/leexa/97ba6a6b-3f4d-4528-84ca-50200ba4594f/Dropbox/dl_dev_course/deep-learning-workshop/notebooks/5-RNN/glove-python')
@@ -52,7 +54,7 @@ word_embedding.word_vectors.shape
 def word_idx_rnn(list):
     if list is None:
         return None
-    return map(lambda word : word_embedding.dictionary.get(word.lower(),-1),list)
+    return map(lambda word : 2+word_embedding.dictionary.get(word.lower(),-1),list) #0 for mask 1 for unknown
 
 word_embedding_rnn = np.vstack([ 
         np.zeros( (1, EMBEDDING_DIM,), dtype='float32'),   # This is the 'zero' value (used as a mask in Keras)
@@ -62,6 +64,9 @@ word_embedding_rnn = np.vstack([
 word_embedding_rnn.shape
 
 data['wordVec'] =  map(word_idx_rnn, data['data_clean_tok'].iloc[:])
+data = data[data['wordVec'].apply(len) <= SENTENCE_LENGTH_MAX]
+# pad sequences to length 32
+data['wordVec2'] = map(lambda x :x + (SENTENCE_LENGTH_MAX - len(x)) * [0,],data['wordVec'])
 from tensorflow.contrib.keras.python.keras.utils.np_utils import to_categorical
 tokens_input = Input(shape=(SENTENCE_LENGTH_MAX,), dtype='int32', name="SentencesTokens")
 
@@ -77,14 +82,33 @@ embedded_sequences = Embedding(word_embedding_rnn.shape[0],
 
 #extra_input = ...
 aggregate_vectors = embedded_sequences # concat...
+TAG_SET_SIZE = 3
+BATCH_SIZE = 32
+RNN_HIDDEN_SIZE = 33
+#return sequences retrun full or just inal output
+masked = keras.layers.Masking(mask_value=0.0,name='masked') (aggregate_vectors)
+rnn_outputs = Bidirectional( GRU(RNN_HIDDEN_SIZE, return_sequences=False),  merge_mode='concat' )(masked)
+if True:
+##    is_ner_outputs  = TimeDistributed( Dense(3, activation='softmax'), 
+##                                       input_shape=(BATCH_SIZE, SENTENCE_LENGTH_MAX, RNN_HIDDEN_SIZE*2),
+##                                       name='POS-class')(rnn_outputs)
+    rnn_outputs2 = keras.layers.Dropout(0.5,name='drop')(rnn_outputs)
+    is_ner_outputs = Dense(1, activation=None,name='out')(rnn_outputs2)
+    model = Model(inputs=[tokens_input], outputs=[is_ner_outputs])
+    model.summary()
+    model.compile(loss='mse', optimizer="adam")  # , metrics=['accuracy']
 
-rnn_outputs = Bidirectional( GRU(49, return_sequences=True),  merge_mode='concat' )(aggregate_vectors)
+X = np.stack(map(np.array,data.wordVec2))
+y = data.Change.astype(np.float32)*100
 
-is_ner_outputs  = TimeDistributed( Dense(TAG_SET_SIZE, activation='softmax'), 
-                                   input_shape=(BATCH_SIZE, SENTENCE_LENGTH_MAX, RNN_HIDDEN_SIZE*2),
-                                   name='POS-class')(rnn_outputs)
+from sklearn.model_selection import train_test_split
+X_train,X_test,y_train,y_test = train_test_split(X,y,test_size = 0.2, random_state = 5)
+history  = model.fit(x=X_train,y=y_train,
+                     epochs = 20,verbose = 2,
+                     batch_size = 320,
+                     validation_data = (X_test,y_test))
 ######################
-die 
+die
 df2 = pd.read_csv('ES3.SI.csv')
 print df2
 from datetime import date as DATE

@@ -6,6 +6,17 @@ import pandas as pd
 sentence_splitter = nltk.data.load('tokenizers/punkt/english.pickle')
 
 df2 = pd.read_csv('ES3.SI.csv')
+# fill up change
+result = np.array(df2['Adj Close'])
+for i in range(8,len(result)):
+    if result[i] == 'null':
+        result[i] = result[i-1]
+df2['Adj Close'] = map(np.float,result)
+result = [0,]
+for i in range(1,len(df2)):
+	result += [df2['Adj Close'].iloc[i]- df2['Adj Close'].iloc[i-1],]
+df2['change'] = result
+
 print df2
 from datetime import date as DATE
 import datetime
