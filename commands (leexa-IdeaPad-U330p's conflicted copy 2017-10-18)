@@ -1,0 +1,23 @@
+conda create --name tensorflow35 python=3.5
+conda activate tensorflow35
+conda install jupyter
+conda install scipy
+conda install spyder
+pip install tensorflow 
+pip install pyyaml h5py
+pip install keras
+pip install opencv-python
+pip install matplotlib seaborn argparse
+
+
+# image grabber
+fatkun chrome extenstion
+https://software.intel.com/en-us/forums/intel-nervana-ai-academy/topic/746657
+
+conda config --add channels intel
+conda install  intelpython3_full
+
+tensorflow nightly
+
+pip install tf-nightly
+pip install tf-nightly-gpu

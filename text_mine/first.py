@@ -13,7 +13,7 @@ def fetchByQuery(query,days):
     queryKey=searchResults["QueryKey"]
     batchSize=10
     try:
-        fetchHandle = Entrez.efetch(db="pmc", retmax=1000000000, retmode="xml", webenv=webEnv, query_key=queryKey)
+        fetchHandle = Entrez.efetch(db="pmc", retmax=10, retmode="xml", webenv=webEnv, query_key=queryKey)
         data=fetchHandle.read()
         fetchHandle.close()
         return data
@@ -22,7 +22,8 @@ def fetchByQuery(query,days):
 
 days=10000 #looking for papers in the last 100 days
 termList=["tpp","riboswitch"]
-termList=["p53"] 
+termList=["p53"]
+termList=['test',] 
 terms = ''
 for i in termList:
     terms += i

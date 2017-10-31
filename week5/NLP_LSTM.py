@@ -69,6 +69,8 @@ data = data[data['wordVec'].apply(len) <= SENTENCE_LENGTH_MAX]
 data['wordVec2'] = map(lambda x :x + (SENTENCE_LENGTH_MAX - len(x)) * [0,],data['wordVec'])
 from tensorflow.contrib.keras.python.keras.utils.np_utils import to_categorical
 tokens_input = Input(shape=(SENTENCE_LENGTH_MAX,), dtype='int32', name="SentencesTokens")
+### I want to predict if someone died in the article
+
 
 # load pre-trained word embeddings into an Embedding layer
 #   note that we set trainable = False so as to keep the embeddings fixed

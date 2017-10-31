@@ -1,0 +1,26 @@
+Compulsory Projects : github
+
+1. Main 
+
+Predicting Cell membrane permability of peptides.
+
+
+There are three main classes of medicinal drugs with very different sizes (0.1 - 150kda). These drugs are small molecules (<0.9kDa) , peptides ~1kda and large antibodies ~150kda. Small molecules easily enter cells but have less specific avtivity due to their small size, while large antibodies are very specific but do not enter cells at all. Peptides are the middle ground being specific yet small enough to enter the cells. 
+
+However, the mechanism in which peptides enter cell are unknown, and under active research. I wish to see if deep learning can find features or patterns to explain why certain peptides enter cell and others do not. More importantly is that i wish to optimize a p53 peptide (ETFSDLWKLLPEN) to enter cells. The p53 peptide is a precursor to an anti-cancer drug already in clinical trials and also a peptide i am famillar with and can be a good proof of concept.
+
+Data format
+Data are present as amino acid sequences. Amino acids contain 21 non-unique characters (ACDEFGHIKLMNPQRSTVWYX), and these sequences are usually from 10-25 amino acids long. Furthermore, as amino acids are well characterized experimentally, additional biochemistry features will be given (m features). The data format will be one hot encoded to a {(21 + m) * length} matrix.  
+
+outputs will be permable or non-permable classification
+
+Database : There are two databases, one which contains 1500 permable peptides, while another which contains a mixed dataset of 150 peptides. The latter is a published SVM paper in 2011 useful for benchmarking performance against deep learning while the former is just a large database.   
+
+
+Method :  CNN , or text methods?.
+
+ 
+
+
+
+

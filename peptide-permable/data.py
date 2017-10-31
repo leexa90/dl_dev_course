@@ -128,22 +128,22 @@ with tf.name_scope('embedding') as scope:
 
 with tf.name_scope('layer1') as scope:
     layer1_norm = batch_normalization(layer0,'BN_layer0',feature_norm = True)
-    layer1 = tf.layers.conv2d(layer1_norm,128,(9,1),padding='valid',activation=tf.nn.relu)
+    layer1 = tf.layers.conv2d(layer1_norm,16,(9,1),padding='valid',activation=tf.nn.relu)
     layer1_DO = tf.layers.dropout(layer1,rate=dropout,name='Drop1')
 
 with tf.name_scope('layer2') as scope:
     layer2_norm = batch_normalization(layer1_DO,'BN_layer1')
-    layer2 = tf.layers.conv2d(layer2_norm,128,(1,7),padding='same',activation=tf.nn.relu)
+    layer2 = tf.layers.conv2d(layer2_norm,16,(1,3),padding='same',activation=tf.nn.relu)
     layer2_DO = tf.layers.dropout(layer2,rate=dropout,name='Drop2')
 
 with tf.name_scope('layer3') as scope:
     layer3_norm = batch_normalization(layer2_DO,'BN_layer1')
-    layer3 = tf.layers.conv2d(layer3_norm,128,(1,7),padding='same',activation=tf.nn.relu)
+    layer3 = tf.layers.conv2d(layer3_norm,16,(1,3),padding='same',activation=tf.nn.relu)
     layer3_DO = tf.layers.dropout(layer3,rate=dropout,name='Drop3')
 
 with tf.name_scope('layer4') as scope:
     layer4_norm = batch_normalization(layer3_DO,'BN_layer2')
-    layer4 = tf.layers.conv2d(layer4_norm,128,(1,3),padding='same',activation=tf.nn.relu)
+    layer4 = tf.layers.conv2d(layer4_norm,16,(1,3),padding='same',activation=tf.nn.relu)
     layer4_DO = tf.layers.dropout(layer4,rate=dropout,name='Drop4')
 
 with tf.name_scope('dense') as scope:
@@ -151,7 +151,7 @@ with tf.name_scope('dense') as scope:
     globalmaxpooling = tf.reduce_mean(layer4[:,:,:,1::2],(1,2),name='globalmaxpooling')
     gbmp_extra = tf.concat([Inp2,globalmaxpooling,globalmeanpooling],axis = 1, name ='gbmp_extra')
     layer5_DO = tf.layers.dropout(gbmp_extra,rate=dropout,name='Drop5')
-    dense1 = tf.layers.dense(layer5_DO,4 , name = 'dense1' )
+    dense1 = tf.layers.dense(layer5_DO, 8 , name = 'dense1' )
     layer6_DO = tf.layers.dropout(dense1,rate=dropout,name='Drop6')
     dense2 = tf.layers.dense(layer6_DO,1 , name = 'dense2' )
 ##    dense3 = tf.layers.dense(dense2,1 , name = 'dense3' )
@@ -177,6 +177,15 @@ saver = tf.train.Saver()
 # Initializing the variables
 init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
 
+total_parameters = 0
+for variable in tf.trainable_variables():
+    # shape is an array of tf.Dimension
+    shape = variable.get_shape()
+    variable_parameters = 1
+    for dim in shape:
+        variable_parameters *= dim.value
+    total_parameters += variable_parameters
+print(total_parameters)
 
 RESULT = {}
 import sys
@@ -300,7 +309,7 @@ for CV in range(10):
 ##                                   %(fold,test,epoch,int(100*np.mean(best_roc_val[0])),
 ##                                     int(100*np.mean(best_roc_val[1])),int(100*np.mean(best_roc_val[2]))))
         if roc_val <= 0.5:
-            None#init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
+            init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
         RESULT[CV] += [[roc_train,roc_val,roc_test],]
         #print logit_val
     best_logit_test = sorted([best_roc_val[ep] for ep in best_roc_val], key = lambda x :x[1])[-3:]
