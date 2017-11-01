@@ -1,2 +1,6 @@
-model_checkpoint_path: "model_2_0_0.768_0.751_0.742.ckpt"
-all_model_checkpoint_paths: "model_2_0_0.768_0.751_0.742.ckpt"
+model_checkpoint_path: "model_2_0_0.943_0.874_0.857.ckpt"
+all_model_checkpoint_paths: "model_2_0_0.886_0.835_0.820.ckpt"
+all_model_checkpoint_paths: "model_2_0_0.900_0.859_0.850.ckpt"
+all_model_checkpoint_paths: "model_2_0_0.899_0.863_0.846.ckpt"
+all_model_checkpoint_paths: "model_2_0_0.933_0.865_0.845.ckpt"
+all_model_checkpoint_paths: "model_2_0_0.943_0.874_0.857.ckpt"

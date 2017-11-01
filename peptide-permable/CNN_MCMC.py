@@ -62,6 +62,11 @@ print 'removing these number of non-cannonical peptides' ,len(data[data['seq'].a
 data = data[data['seq'].apply(fn2) == 0] # remove peptides with weird chemical bonds , and non-cannonical res (mostly negavtives)
 data['len'] = data.seq.apply(len)
 data = data.sort_values(by = ['len','source']).reset_index(drop=True)
+import sys
+sys.path.append('pairwise-alignment-in-python/')
+import alignment
+p53= 'ETFSDLWKLLPEN'
+
 # get frequencies of amino acids
 all = np.concatenate([data.seq])
 result = {}
@@ -80,23 +85,28 @@ print result
 X = []
 counter = 0
 
-for idx in range(len(data)):
-    i = data.iloc[idx]['seq']
-    temp = np.zeros((len(i),5))
-    for j in  range(len(i)):
-        res = dictt[i[j]]
-        temp[j][0] = res
-        #temp[j][-1] = len(i)*0.01
-        temp[j][-4:] = dictt_hydropathy[i[j]]
-    alternative = [len(i),np.sum(temp[-1]),np.sum(temp[-2]),np.sum(temp[-3])]
-    per = data.iloc[idx]['source'] == 2 
-    temp = temp.T
-    X += [[temp[0],temp[1:],alternative,i,per*1],]
-    #print '> %s\n%s' %(i,i)
-    counter += 1
-data['X'] = X
+def make(seq,per=0):
+        i = seq
+        temp = np.zeros((len(i),5))
+        for j in  range(len(i)):
+            res = dictt[i[j]]
+            temp[j][0] = res
+            #temp[j][-1] = len(i)*0.01
+            temp[j][-4:] = dictt_hydropathy[i[j]]
+        alternative = [len(i),np.sum(temp[-1]),np.sum(temp[-2]),np.sum(temp[-3])]
+        per = per
+        temp = temp.T
+        X = [temp[0],temp[1:],alternative,i,per*1]
+        #print '> %s\n%s' %(i,i)
+        return X
 
-
+result = []
+for i in data.seq:
+    result += [ alignment.needle(i,p53)[-1],]
+data['1']= result
+data.sort_values('1')
+p53 = make(p53)
+die
 print len(result)
 
 epsilon = 1e-3
@@ -213,6 +223,31 @@ def get_data_from_X(X,y): #get tensor inputs from X and y
 folds= 5
 
 saver = tf.train.Saver()
+
+sess.Restore('model_2_0_0.943_0.874_0.857.ckpt')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+die
+
 for repeat in range(0,folds): #perform 5 repeats
     for CV in range(folds): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)
       if CV != test: # 
