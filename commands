@@ -27,3 +27,5 @@ conda install pytorch torchvision -c soumith
 glove-python
 I got it to work.
 I guess the problem was that I did not execute the 'pip install .' command in the cloned repository, instead executed the command before cloning it. Anyways got it to work by copying the contents of '/usr/local/lib/python2.7/dist-packages' (This directory containing the required modules like Cython and glove) and pasting it in the cloned repository. Say yes to all the prompts to merge the directories or replacing the files and it would work
+
+SSD,yolo, Mask R-CNN - objective detection in box
