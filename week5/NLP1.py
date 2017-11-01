@@ -92,5 +92,17 @@ df = df.iloc[1:]
 df['date2'] = df['date'][:].apply(fun)
 df['Date'] = map(lambda x :x[1]['year']+'-'+ x[1]['date2'][0]+'-'+ x[1]['date2'][1],df.iloc[:].iterrows())
 df_comb = pd.merge(df,df2,'left',on='Date')
+# add full stop after header. eg diedThe should be died. The
+def add_fullstop(str):
+    if str is None:
+        return None
+    result = ''
+    for i in range(0,len(str)-1):
+        if str[i].islower() and str[i+1].isupper() :
+            result += '. '
+        else:
+            result += str[i]
+    return result
+df_comb['data'] =  df_comb.data.apply(add_fullstop)
 np.save('file.npy',np.array(df_comb))
 df_comb.to_csv('Data.csv')
