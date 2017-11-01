@@ -6,7 +6,7 @@ for line in open('peptide_bioactive','r'):
         line = line[:-1]
     neg += [line,]
 def smaller_than_31(x):
-    if len(x) <= 31:
+    if len(x) <= 30:
         return x
 neg = map(smaller_than_31,neg)
 neg_seq = list(set(neg))
@@ -27,7 +27,7 @@ for line in open('peptide2.csv','r'):
     if '>' not in line:
         neg += [line,]
 def smaller_than_31(x):
-    if len(x) <= 31:
+    if len(x) <= 30:
         return x
 neg = [x for x in map(smaller_than_31,neg) if x is not None]
 neg_seq = list(set(neg))

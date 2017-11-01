@@ -59,8 +59,9 @@ def fn2(str): # find if sequence has weird bonds
 data['type_aa'] = data['seq'].apply(fn1)
 data = data[data['type_aa'] >= 4]
 print 'removing these number of non-cannonical peptides' ,len(data[data['seq'].apply(fn2) == 1])
-data = data[data['seq'].apply(fn2) == 0].reset_index(drop=True) # remove peptides with weird chemical bonds , and non-cannonical res (mostly negavtives)
-
+data = data[data['seq'].apply(fn2) == 0] # remove peptides with weird chemical bonds , and non-cannonical res (mostly negavtives)
+data['len'] = data.seq.apply(len)
+data = data.sort_values(by = 'len').reset_index(drop=True)
 # get frequencies of amino acids
 all = np.concatenate([data.seq])
 result = {}
@@ -78,6 +79,7 @@ print result
 ######### Start of initilziing data ###
 X = []
 counter = 0
+
 for idx in range(len(data)):
     i = data.iloc[idx]['seq']
     temp = np.zeros((len(i),5))
@@ -89,11 +91,11 @@ for idx in range(len(data)):
     alternative = [len(i),np.sum(temp[-1]),np.sum(temp[-2]),np.sum(temp[-3])]
     per = data.iloc[idx]['source'] == 2 
     temp = temp.T
-
     X += [[temp[0],temp[1:],alternative,i,per*1],]
     #print '> %s\n%s' %(i,i)
     counter += 1
-        
+data['X'] = X
+
 
 print len(result)
 
@@ -182,6 +184,15 @@ import sklearn.metrics,random
 saver = tf.train.Saver()
 # Initializing the variables
 init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
+total_parameters = 0
+for variable in tf.trainable_variables():
+    # shape is an array of tf.Dimension
+    shape = variable.get_shape()
+    variable_parameters = 1
+    for dim in shape:
+        variable_parameters *= dim.value
+    total_parameters += variable_parameters
+print(total_parameters)
 
 
 RESULT = {}
@@ -199,9 +210,9 @@ def get_data_from_X(X,y): #get tensor inputs from X and y
     Inp2_ = np.array([X[i][2]])
     labels_ = np.array([[y[i],]])
     return Inp0_,Inp1_,Inp2_,labels_
-
-for repeat in range(0,5): #perform 5 repeats
-    for CV in range(5): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)
+folds= 5
+for repeat in range(0,folds): #perform 5 repeats
+    for CV in range(folds): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)
       if CV != test: # 
         init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
         RESULT[CV] = []
@@ -235,14 +246,19 @@ for repeat in range(0,5): #perform 5 repeats
             shuffle = range(len(X_train))
             random.shuffle(shuffle)
             counter = 0
-            for i in shuffle: #training
-                lr = ((1+np.cos(1.0*counter*3.142/len(shuffle)))**3)*0.0007*((51.0-epoch)/50)**2
+            for i in shuffle[::10]: #training
+                lr = ((1+np.cos(1.0*counter*3.142/len(shuffle)))**3)*0.007*((51.0-epoch)/50)**2
                 counter += 1
                 Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train)
+                if labels_[0][0] == 1:
+                    lr = lr * 8.5 #reweigh LR for pos
+                else:
+                    lr = lr * 0.5 #reweigh LR for neg 
                 _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,Inp2: Inp2_,
                                                                    Inp1: Inp1_,
                                                                    labels: labels_,
                                                                    dropout : 0.4,learning_rate : lr})
+                
             logit_train = []
             cost_train = []
             lr = 0 #train error
@@ -277,8 +293,8 @@ for repeat in range(0,5): #perform 5 repeats
             roc_train = sklearn.metrics.roc_auc_score(y_train,logit_train)
             roc_val   = sklearn.metrics.roc_auc_score(y_val,logit_val)
             roc_test   = sklearn.metrics.roc_auc_score(y_test,logit_test)
-            #print np.mean(cost_train),np.mean(cost_val)
-            #print roc_train,roc_val,roc_test
+            print np.mean(cost_train),np.mean(cost_val)
+            print roc_train,roc_val,roc_test
             best_roc_val[epoch] = [roc_train,roc_val,roc_test,logit_test]
             all_data += [[roc_train,roc_val,roc_test],]
             #best_logit_test += [logit_test,]
