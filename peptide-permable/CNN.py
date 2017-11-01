@@ -61,7 +61,7 @@ data = data[data['type_aa'] >= 4]
 print 'removing these number of non-cannonical peptides' ,len(data[data['seq'].apply(fn2) == 1])
 data = data[data['seq'].apply(fn2) == 0] # remove peptides with weird chemical bonds , and non-cannonical res (mostly negavtives)
 data['len'] = data.seq.apply(len)
-data = data.sort_values(by = 'len').reset_index(drop=True)
+data = data.sort_values(by = ['len','source']).reset_index(drop=True)
 # get frequencies of amino acids
 all = np.concatenate([data.seq])
 result = {}
@@ -211,6 +211,8 @@ def get_data_from_X(X,y): #get tensor inputs from X and y
     labels_ = np.array([[y[i],]])
     return Inp0_,Inp1_,Inp2_,labels_
 folds= 5
+
+saver = tf.train.Saver()
 for repeat in range(0,folds): #perform 5 repeats
     for CV in range(folds): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)
       if CV != test: # 
@@ -246,7 +248,7 @@ for repeat in range(0,folds): #perform 5 repeats
             shuffle = range(len(X_train))
             random.shuffle(shuffle)
             counter = 0
-            for i in shuffle[::10]: #training
+            for i in shuffle[::10]: #training with bagging
                 lr = ((1+np.cos(1.0*counter*3.142/len(shuffle)))**3)*0.007*((51.0-epoch)/50)**2
                 counter += 1
                 Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train)
@@ -257,12 +259,12 @@ for repeat in range(0,folds): #perform 5 repeats
                 _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,Inp2: Inp2_,
                                                                    Inp1: Inp1_,
                                                                    labels: labels_,
-                                                                   dropout : 0.4,learning_rate : lr})
+                                                                   dropout : 0.4,learning_rate : lr}) #sgd 
                 
             logit_train = []
             cost_train = []
-            lr = 0 #train error
-            for i in range(len(X_train)): 
+            lr = 0 
+            for i in range(len(X_train)): #train error
                 Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train)
                 c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
                                               Inp1: Inp1_,Inp2: Inp2_,
@@ -306,7 +308,11 @@ for repeat in range(0,folds): #perform 5 repeats
 ##            if roc_val <= 0.85 :
 ##                RESULT[CV] += [[roc_train,roc_val,roc_test],]
             #print logit_val
-        best_logit_test = sorted([best_roc_val[ep] for ep in best_roc_val], key = lambda x :x[1])[-3:]
+            best_logit_test = sorted([best_roc_val[ep] for ep in best_roc_val], key = lambda x :x[1])[-3:]
+            if len(best_logit_test) >=3 and best_logit_test[2][1] <= roc_val:
+                model_name = 'model_%s_%s_%s_%s_%s.ckpt' %(test,CV,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
+                saver.save(sess,model_name),
+                print 'SAVED\n'
         for j in best_logit_test:
             test_emsemble += [j[3],]
         print [x[1:3] for x in best_logit_test]
