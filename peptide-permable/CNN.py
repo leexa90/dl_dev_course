@@ -181,7 +181,7 @@ with tf.name_scope('accuracy') as scope:
     predict = tf.cast(predict_boo, np.float32)
     acc = tf.reduce_mean(tf.cast(tf.equal(labels,predict),tf.float32),name='accuracy')
 import sklearn.metrics,random
-saver = tf.train.Saver()
+saver = tf.train.Saver( max_to_keep=1000)
 # Initializing the variables
 init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
 total_parameters = 0
@@ -204,125 +204,119 @@ else:
 
 all_data =[]
 test_emsemble= []
-def get_data_from_X(X,y): #get tensor inputs from X and y
+def get_data_from_X(X,y,i): #get tensor inputs from X and y
     Inp0_ = np.array([X[i][0]])
     Inp1_ = np.array([X[i][1]])
     Inp2_ = np.array([X[i][2]])
     labels_ = np.array([[y[i],]])
     return Inp0_,Inp1_,Inp2_,labels_
 folds= 5
+# ensure no leakage of train to test, was getting 95 AUC
+X_test = []
+y_test = []
+print 'train_val_test size:' , len(X)
+for i in range(test,len(X),folds):
+    if i%5 == test:
+        x = X[i]
+        X_test += [(x[0],x[1],x[2]),]
+        y_test += [x[-1],]
+        X[i] = 'test'
+X = [x for x in X if x != 'test']
+print 'train+val  size :', len(X)
+saver = tf.train.Saver( max_to_keep=5000)
+repeat = 0 #for repeat in range(0,folds): #perform 5 repeats
+for CV in range(folds-1): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)# 
+    init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
+    RESULT[CV] = []
+    X_train = []
+    y_train = []
+    X_val = []
+    y_val = []    
+    for i in range(len(X)):
+        x = X[i]
+        if i%5 == CV:
+            X_val += [(x[0],x[1],x[2]),]
+            y_val += [x[-1],]
+        else:
+            X_train += [(x[0],x[1],x[2]),]
+            y_train += [x[-1],]
 
-saver = tf.train.Saver()
-for repeat in range(0,folds): #perform 5 repeats
-    for CV in range(folds): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)
-      if CV != test: # 
-        init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
-        RESULT[CV] = []
-        X_train = []
-        y_train = []
-        X_val = []
-        y_val = []
-        X_test = []
-        y_test = []    
-        for i in range(len(X)):
-            x = X[i]
-            if i%5 == CV:
-                X_val += [(x[0],x[1],x[2]),]
-                y_val += [x[-1],]
-
-            elif i%5 == test:
-                X_test += [(x[0],x[1],x[2]),]
-                y_test += [x[-1],]
-
+    best_roc_val = {}     # stores val ROC for trainnig epochs per CV+repeat run
+    for epoch in range(training_epochs):#training_epochs):
+        if epoch%20 ==0 :
+            init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
+        logit_train = []
+        cost_train = []
+        random.seed(epoch)
+        shuffle = range(len(X_train)) #shuffle index of X_train
+        random.shuffle(shuffle)
+        counter = 0
+        for i in shuffle[::10]: #training with bagging
+            lr = ((1+np.cos(1.0*counter*3.142/len(shuffle)))**3)*0.007*((51.0-epoch)/50)**2
+            counter += 1
+            Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train,i)
+            if labels_[0][0] == 1:
+                lr = lr * 8.5 #reweigh LR for pos
             else:
-                X_train += [(x[0],x[1],x[2]),]
-                y_train += [x[-1],]
+                lr = lr * 0.5 #reweigh LR for neg 
+            _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,Inp2: Inp2_,
+                                                               Inp1: Inp1_,
+                                                               labels: labels_,
+                                                               dropout : 0.4,learning_rate : lr}) #sgd 
+        logit_train = []
+        cost_train = []
+        lr = 0 
+        for i in range(len(X_train)): #train error
+            Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train,i)
+            c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
+                                          Inp1: Inp1_,Inp2: Inp2_,
+                                                  labels: labels_,
+                                                  dropout : 1,learning_rate : lr})
+            cost_train += [c,]
+            logit_train += [ out[0][0],]
+        logit_val = []
+        cost_val = []
+        for i in range(len(X_val)): #val error
+            Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_val,y_val,i)
+            c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
+                                          Inp1: Inp1_,Inp2: Inp2_,
+                                                  labels: labels_,
+                                                  dropout : 1,learning_rate : lr})
+            cost_val += [c,]
+            logit_val += [ out[0][0],]
+        logit_test = []
+        cost_test = []
+        for i in range(len(X_test)): #test errror
+            Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_test,y_test,i)
+            c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
+                                          Inp1: Inp1_,Inp2: Inp2_,
+                                                  labels: labels_,
+                                                  dropout : 1,learning_rate : lr})
+            cost_test += [c,]
+            logit_test += [ out[0][0],]
+        roc_train = sklearn.metrics.roc_auc_score(y_train,logit_train)
+        roc_val   = sklearn.metrics.roc_auc_score(y_val,logit_val)
+        roc_test   = sklearn.metrics.roc_auc_score(y_test,logit_test)
+        print np.mean(cost_train),np.mean(cost_val)
+        print roc_train,roc_val,roc_test
+        best_roc_val[epoch] = [roc_train,roc_val,roc_test,logit_test]
+        all_data += [[roc_train,roc_val,roc_test],]
+        #best_logit_test += [logit_test,]
+##            save_path = saver.save(sess,'model_%s_%s_%s_%s_%s_%s.ckpt' \
+##                                   %(fold,test,epoch,int(100*np.mean(best_roc_val[0])),
+##                                     int(100*np.mean(best_roc_val[1])),int(100*np.mean(best_roc_val[2]))))
+        if roc_val <= 0.5: # if val worst then chance, reinitalize tarining
+            init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
+        best_logit_test = sorted([best_roc_val[ep] for ep in best_roc_val], key = lambda x :x[1])[-3:]
+        if len(best_logit_test) >=3 and best_logit_test[0][1] <= roc_val:
+            model_name = 'model_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
+            saver.save(sess,model_name),
+            print 'SAVED\n'
+    for j in best_logit_test:
+        test_emsemble += [j[3],]
+    print [x[1:3] for x in best_logit_test]
+    print sklearn.metrics.roc_auc_score(y_test,np.mean(np.array(test_emsemble),0))
 
-        best_roc_val = {}       
-        for epoch in range(training_epochs):#training_epochs):
-            if epoch%20 ==0 :
-                init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
-            logit_train = []
-            cost_train = []
-            random.seed(epoch)
-            shuffle = range(len(X_train))
-            random.shuffle(shuffle)
-            counter = 0
-            for i in shuffle[::10]: #training with bagging
-                lr = ((1+np.cos(1.0*counter*3.142/len(shuffle)))**3)*0.007*((51.0-epoch)/50)**2
-                counter += 1
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train)
-                if labels_[0][0] == 1:
-                    lr = lr * 8.5 #reweigh LR for pos, equailavent to class reweight
-                else:
-                    lr = lr * 0.5 #reweigh LR for neg 
-                _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,Inp2: Inp2_,
-                                                                   Inp1: Inp1_,
-                                                                   labels: labels_,
-                                                                   dropout : 0.4,learning_rate : lr}) #sgd 
-                
-            logit_train = []
-            cost_train = []
-            lr = 0 
-            for i in range(len(X_train)): #train error
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train)
-                c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                              Inp1: Inp1_,Inp2: Inp2_,
-                                                      labels: labels_,
-                                                      dropout : 1,learning_rate : lr})
-                cost_train += [c,]
-                logit_train += [ out[0][0],]
-            logit_val = []
-            cost_val = []
-            for i in range(len(X_val)): #val error
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_val,y_val)
-                c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                              Inp1: Inp1_,Inp2: Inp2_,
-                                                      labels: labels_,
-                                                      dropout : 1,learning_rate : lr})
-                cost_val += [c,]
-                logit_val += [ out[0][0],]
-            logit_test = []
-            cost_test = []
-            for i in range(len(X_test)): #test errror
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_val,y_val)
-                c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                              Inp1: Inp1_,Inp2: Inp2_,
-                                                      labels: labels_,
-                                                      dropout : 1,learning_rate : lr})
-                cost_test += [c,]
-                logit_test += [ out[0][0],]
-            roc_train = sklearn.metrics.roc_auc_score(y_train,logit_train)
-            roc_val   = sklearn.metrics.roc_auc_score(y_val,logit_val)
-            roc_test   = sklearn.metrics.roc_auc_score(y_test,logit_test)
-            print np.mean(cost_train),np.mean(cost_val)
-            print roc_train,roc_val,roc_test
-            best_roc_val[epoch] = [roc_train,roc_val,roc_test,logit_test]
-            all_data += [[roc_train,roc_val,roc_test],]
-            #best_logit_test += [logit_test,]
-    ##            save_path = saver.save(sess,'model_%s_%s_%s_%s_%s_%s.ckpt' \
-    ##                                   %(fold,test,epoch,int(100*np.mean(best_roc_val[0])),
-    ##                                     int(100*np.mean(best_roc_val[1])),int(100*np.mean(best_roc_val[2]))))
-            if roc_val <= 0.5: # if val worst then chance, reinitalize tarining
-                init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
-##            if roc_val <= 0.85 :
-##                RESULT[CV] += [[roc_train,roc_val,roc_test],]
-            #print logit_val
-            best_logit_test = sorted([best_roc_val[ep] for ep in best_roc_val], key = lambda x :x[1])[-3:]
-            if len(best_logit_test) >=3 and best_logit_test[2][1] <= roc_val:
-                model_name = 'model_%s_%s_%s_%s_%s.ckpt' %(test,CV,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
-                saver.save(sess,model_name),
-                print 'SAVED\n'
-        for j in best_logit_test:
-            test_emsemble += [j[3],]
-        print [x[1:3] for x in best_logit_test]
-        print sklearn.metrics.roc_auc_score(y_test,np.mean(np.array(test_emsemble),0))
-import pandas as pd
-data = pd.DataFrame(all_data)
-for i in range(40,100,1):
-    impt = data[ (data[1] > 1.0*i/100) & (data[1] < 1.0*i/100+0.01)][data[0] > 0.95]
-    print i,np.mean( impt[2]),len(impt)
-    #print i,np.mean( impt[2]),len(impt)
 	
         
         

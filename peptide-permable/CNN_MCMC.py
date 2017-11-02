@@ -106,8 +106,24 @@ for i in data.seq:
 data['1']= result
 data.sort_values('1')
 p53 = make(p53)
-die
+
 print len(result)
+
+
+epsilon = 1e-3
+def batch_normalization(x,name='batchnorm',feature_norm = False):
+    #epsilon = tf.Variable(tf.constant([1e-3,]*x.shape[0]))
+    if feature_norm : #only works for fizxed batch size 1
+        mean,var = tf.nn.moments(x,[0,2,3],keep_dims=True)
+        scale = tf.Variable(tf.ones([1,x.shape[1],1,1]))
+        beta = tf.Variable(tf.zeros([1,x.shape[1],1,1]))
+        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
+    else:
+        mean,var = tf.nn.moments(x,[0,1,2],keep_dims=False)
+        scale = tf.Variable(tf.ones([x.shape[-1]]))
+        beta = tf.Variable(tf.zeros([x.shape[-1]]))
+        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
+    return x
 
 epsilon = 1e-3
 def batch_normalization(x,name='batchnorm',feature_norm = False):
@@ -206,159 +222,95 @@ print(total_parameters)
 
 
 RESULT = {}
-import sys
-if len(sys.argv)==2:
-    test = int(sys.argv[1])
-else:
-    test = 2
+
 
 all_data =[]
 test_emsemble= []
-def get_data_from_X(X,y): #get tensor inputs from X and y
+def get_data_from_X(X,y,i=i): #get tensor inputs from X and y
     Inp0_ = np.array([X[i][0]])
     Inp1_ = np.array([X[i][1]])
     Inp2_ = np.array([X[i][2]])
     labels_ = np.array([[y[i],]])
     return Inp0_,Inp1_,Inp2_,labels_
 folds= 5
-
-saver = tf.train.Saver()
-
-sess.Restore('model_2_0_0.943_0.874_0.857.ckpt')
-
-
+lr = 0
+XX = [(p53[0],p53[1],p53[2]),]
+yy = [p53[-1],]
+Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
 
 
+saver.restore(sess,'models/model_2_0_0.899_0.863_0.846.ckpt')
 
+hydropath = np.array([[0.170, 0.500, 0.330, 0.000],
+       [-0.240, -0.020, 0.220, 0.000],
+       [2.020, 3.630, 1.610, -1.000],
+       [1.230, 3.640, 2.410, -1.000],
+       [0.010, 1.150, 1.140, 0.000],
+       [-1.130, -1.710, -0.580, 0.000],
+       [-0.310, -1.120, -0.810, 0.000],
+       [0.960, 2.330, 1.370, 0.000],
+       [0.990, 2.800, 1.810, 1.000],
+       [-0.230, -0.670, -0.440, 0.000],
+       [-0.560, -1.250, -0.690, 0.000],
+       [0.420, 0.850, 0.430, 0.000],
+       [0.580, 0.770, 0.190, 0.000],
+       [0.450, 0.140, -0.310, 0.000],
+       [0.130, 0.460, 0.330, 0.000],
+       [0.810, 1.810, 1.000, 1.000],
+       [0.140, 0.250, 0.110, 0.000],
+       [-1.850, -2.090, -0.240, 0.000],
+       [0.070, -0.460, -0.530, 0.000],
+       [-0.940, -0.710, 0.230, 0.000]])
+dictt_inv = {0: 'A', 1: 'C', 2: 'E', 3: 'D', 4: 'G', 5: 'F', 6: 'I', 7: 'H', 8: 'K', 9: 'M',
+             10: 'L', 11: 'N', 12: 'Q', 13: 'P', 14: 'S', 15: 'R', 16: 'T', 17: 'W', 18: 'V', 19: 'Y'}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+def mutate(seq,unchanged=(2,6,9)):
+    new = np.random.randint(0,20,size=(len(seq),10))
+    X_0 = new
+    new = np.transpose(np.eye(20)[new],(1,2,0))
+    temp = np.matmul(np.array([hydropath.T,]*10) , new)
+    length = np.array([[len(seq)],]*10)
+    alternative = np.sum(temp[:,1:,:],2)
+    X_2 = np.concatenate((length,alternative),1)
+    X_1 = temp
+    return X_0,X_1,X_2
+def mutate(seq,unchanged=(2,6,9)):
+    resn = unchanged[0]
+    while resn in unchanged:
+        resn = np.random.randint(0,len(seq))
+    aa = np.random.randint(0,20)
+    seq = seq[0:resn] + dictt_inv[aa] + seq[resn+1:]
+    return seq
+p53_seq='ETFSDLWKLLPEN'
+p53 = make(p53_seq)
+XX = [(p53[0],p53[1],p53[2]),]
+yy = [p53[-1],]
+Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
+a,b, = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
+                                                                Inp1: Inp1_,Inp2: Inp2_,
+                                                                labels: labels_,
+                                                                dropout : 1,learning_rate : lr})
+energy = b[0][0]
+Temp = 0.2
+result = []
+for i in range(0,100000):
+    p53_seq_new= mutate(p53_seq)
+    p53 = make(p53_seq)
+    XX = [(p53[0],p53[1],p53[2]),]
+    yy = [p53[-1],]
+    Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
+    a,b, = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
+                                                                    Inp1: Inp1_,Inp2: Inp2_,
+                                                                    labels: labels_,
+                                                                    dropout : 1,learning_rate : lr})
+    proposed_E = b[0][0]
+    if np.random.uniform() <= np.exp((proposed_E-energy)/Temp):
+        p53_seq = p53_seq_new
+        energy = proposed_E
+        if  energy >= 0.9:
+            result += [p53_seq,energy,]
+            print p53_seq, energy
 
 
 die
 
-for repeat in range(0,folds): #perform 5 repeats
-    for CV in range(folds): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)
-      if CV != test: # 
-        init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
-        RESULT[CV] = []
-        X_train = []
-        y_train = []
-        X_val = []
-        y_val = []
-        X_test = []
-        y_test = []    
-        for i in range(len(X)):
-            x = X[i]
-            if i%5 == CV:
-                X_val += [(x[0],x[1],x[2]),]
-                y_val += [x[-1],]
-
-            elif i%5 == test:
-                X_test += [(x[0],x[1],x[2]),]
-                y_test += [x[-1],]
-
-            else:
-                X_train += [(x[0],x[1],x[2]),]
-                y_train += [x[-1],]
-
-        best_roc_val = {}       
-        for epoch in range(training_epochs):#training_epochs):
-            if epoch%20 ==0 :
-                init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
-            logit_train = []
-            cost_train = []
-            random.seed(epoch)
-            shuffle = range(len(X_train))
-            random.shuffle(shuffle)
-            counter = 0
-            for i in shuffle[::10]: #training with bagging
-                lr = ((1+np.cos(1.0*counter*3.142/len(shuffle)))**3)*0.007*((51.0-epoch)/50)**2
-                counter += 1
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train)
-                if labels_[0][0] == 1:
-                    lr = lr * 8.5 #reweigh LR for pos, equailavent to class reweight
-                else:
-                    lr = lr * 0.5 #reweigh LR for neg 
-                _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,Inp2: Inp2_,
-                                                                   Inp1: Inp1_,
-                                                                   labels: labels_,
-                                                                   dropout : 0.4,learning_rate : lr}) #sgd 
-                
-            logit_train = []
-            cost_train = []
-            lr = 0 
-            for i in range(len(X_train)): #train error
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train)
-                c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                              Inp1: Inp1_,Inp2: Inp2_,
-                                                      labels: labels_,
-                                                      dropout : 1,learning_rate : lr})
-                cost_train += [c,]
-                logit_train += [ out[0][0],]
-            logit_val = []
-            cost_val = []
-            for i in range(len(X_val)): #val error
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_val,y_val)
-                c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                              Inp1: Inp1_,Inp2: Inp2_,
-                                                      labels: labels_,
-                                                      dropout : 1,learning_rate : lr})
-                cost_val += [c,]
-                logit_val += [ out[0][0],]
-            logit_test = []
-            cost_test = []
-            for i in range(len(X_test)): #test errror
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_val,y_val)
-                c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                              Inp1: Inp1_,Inp2: Inp2_,
-                                                      labels: labels_,
-                                                      dropout : 1,learning_rate : lr})
-                cost_test += [c,]
-                logit_test += [ out[0][0],]
-            roc_train = sklearn.metrics.roc_auc_score(y_train,logit_train)
-            roc_val   = sklearn.metrics.roc_auc_score(y_val,logit_val)
-            roc_test   = sklearn.metrics.roc_auc_score(y_test,logit_test)
-            print np.mean(cost_train),np.mean(cost_val)
-            print roc_train,roc_val,roc_test
-            best_roc_val[epoch] = [roc_train,roc_val,roc_test,logit_test]
-            all_data += [[roc_train,roc_val,roc_test],]
-            #best_logit_test += [logit_test,]
-    ##            save_path = saver.save(sess,'model_%s_%s_%s_%s_%s_%s.ckpt' \
-    ##                                   %(fold,test,epoch,int(100*np.mean(best_roc_val[0])),
-    ##                                     int(100*np.mean(best_roc_val[1])),int(100*np.mean(best_roc_val[2]))))
-            if roc_val <= 0.5: # if val worst then chance, reinitalize tarining
-                init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
-##            if roc_val <= 0.85 :
-##                RESULT[CV] += [[roc_train,roc_val,roc_test],]
-            #print logit_val
-            best_logit_test = sorted([best_roc_val[ep] for ep in best_roc_val], key = lambda x :x[1])[-3:]
-            if len(best_logit_test) >=3 and best_logit_test[2][1] <= roc_val:
-                model_name = 'model_%s_%s_%s_%s_%s.ckpt' %(test,CV,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
-                saver.save(sess,model_name),
-                print 'SAVED\n'
-        for j in best_logit_test:
-            test_emsemble += [j[3],]
-        print [x[1:3] for x in best_logit_test]
-        print sklearn.metrics.roc_auc_score(y_test,np.mean(np.array(test_emsemble),0))
-import pandas as pd
-data = pd.DataFrame(all_data)
-for i in range(40,100,1):
-    impt = data[ (data[1] > 1.0*i/100) & (data[1] < 1.0*i/100+0.01)][data[0] > 0.95]
-    print i,np.mean( impt[2]),len(impt)
-    #print i,np.mean( impt[2]),len(impt)
-	
-        
-        
-        
