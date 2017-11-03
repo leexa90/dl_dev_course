@@ -8,7 +8,14 @@ dictt = {'A': 0, 'C': 1, 'E': 2, 'D': 3, 'G': 4,
          'R': 15, 'T': 16, 'W': 17, 'V': 18, 'Y': 19  }
 result2 = map(lambda x: map(lambda x : dictt[x],x) , map(lambda x :x , result[::2]))
 result2 = np.array(result2)
+f1=open('p53.fa','w')
 
+for i in result[::2]:
+    
+    f1.write('> afsa\n'+i+'\n')
+f1.close()
+    
+die
 result =[]
 for i in range(13):
     temp = []

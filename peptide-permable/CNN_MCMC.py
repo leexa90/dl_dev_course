@@ -237,79 +237,93 @@ lr = 0
 XX = [(p53[0],p53[1],p53[2]),]
 yy = [p53[-1],]
 Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
+import os
+all_models = [x[:-5] for x in os.listdir('.') if '.ckpt.meta' in x]
+dictt_model = {}
+result_models = []
+for i in range(0,4):
+    for j in all_models:
+        if j[8] == str(i) :
+            if i not in dictt_model:
+                dictt_model[i] = []
+            else:
+                dictt_model[i] += [j,]
+for j in dictt_model:
+    for file in  sorted(dictt_model[j],
+                        key = lambda x : np.float(x[:-5].split('_')[1:][-2]))[-3:]:
 
+        die
+        saver.restore(sess,file)
+        print file
+        hydropath = np.array([[0.170, 0.500, 0.330, 0.000],
+               [-0.240, -0.020, 0.220, 0.000],
+               [2.020, 3.630, 1.610, -1.000],
+               [1.230, 3.640, 2.410, -1.000],
+               [0.010, 1.150, 1.140, 0.000],
+               [-1.130, -1.710, -0.580, 0.000],
+               [-0.310, -1.120, -0.810, 0.000],
+               [0.960, 2.330, 1.370, 0.000],
+               [0.990, 2.800, 1.810, 1.000],
+               [-0.230, -0.670, -0.440, 0.000],
+               [-0.560, -1.250, -0.690, 0.000],
+               [0.420, 0.850, 0.430, 0.000],
+               [0.580, 0.770, 0.190, 0.000],
+               [0.450, 0.140, -0.310, 0.000],
+               [0.130, 0.460, 0.330, 0.000],
+               [0.810, 1.810, 1.000, 1.000],
+               [0.140, 0.250, 0.110, 0.000],
+               [-1.850, -2.090, -0.240, 0.000],
+               [0.070, -0.460, -0.530, 0.000],
+               [-0.940, -0.710, 0.230, 0.000]])
+        dictt_inv = {0: 'A', 1: 'C', 2: 'E', 3: 'D', 4: 'G', 5: 'F', 6: 'I', 7: 'H', 8: 'K', 9: 'M',
+                     10: 'L', 11: 'N', 12: 'Q', 13: 'P', 14: 'S', 15: 'R', 16: 'T', 17: 'W', 18: 'V', 19: 'Y'}
 
-saver.restore(sess,'models/model_2_0_0.899_0.863_0.846.ckpt')
+        def mutate(seq,unchanged=(2,6,9)):
+            new = np.random.randint(0,20,size=(len(seq),10))
+            X_0 = new
+            new = np.transpose(np.eye(20)[new],(1,2,0))
+            temp = np.matmul(np.array([hydropath.T,]*10) , new)
+            length = np.array([[len(seq)],]*10)
+            alternative = np.sum(temp[:,1:,:],2)
+            X_2 = np.concatenate((length,alternative),1)
+            X_1 = temp
+            return X_0,X_1,X_2
+        def mutate(seq,unchanged=(2,6,9)):
+            resn = unchanged[0]
+            while resn in unchanged:
+                resn = np.random.randint(0,len(seq))
+            aa = np.random.randint(0,20)
+            seq = seq[0:resn] + dictt_inv[aa] + seq[resn+1:]
+            return seq
+        p53_seq='ETFSDLWKLLPEN'
+        p53 = make(p53_seq)
+        XX = [(p53[0],p53[1],p53[2]),]
+        yy = [p53[-1],]
+        Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
+        a,b, = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
+                                                                        Inp1: Inp1_,Inp2: Inp2_,
+                                                                        labels: labels_,
+                                                                        dropout : 1,learning_rate : lr})
+        energy = b[0][0]
+        Temp = 0.2
 
-hydropath = np.array([[0.170, 0.500, 0.330, 0.000],
-       [-0.240, -0.020, 0.220, 0.000],
-       [2.020, 3.630, 1.610, -1.000],
-       [1.230, 3.640, 2.410, -1.000],
-       [0.010, 1.150, 1.140, 0.000],
-       [-1.130, -1.710, -0.580, 0.000],
-       [-0.310, -1.120, -0.810, 0.000],
-       [0.960, 2.330, 1.370, 0.000],
-       [0.990, 2.800, 1.810, 1.000],
-       [-0.230, -0.670, -0.440, 0.000],
-       [-0.560, -1.250, -0.690, 0.000],
-       [0.420, 0.850, 0.430, 0.000],
-       [0.580, 0.770, 0.190, 0.000],
-       [0.450, 0.140, -0.310, 0.000],
-       [0.130, 0.460, 0.330, 0.000],
-       [0.810, 1.810, 1.000, 1.000],
-       [0.140, 0.250, 0.110, 0.000],
-       [-1.850, -2.090, -0.240, 0.000],
-       [0.070, -0.460, -0.530, 0.000],
-       [-0.940, -0.710, 0.230, 0.000]])
-dictt_inv = {0: 'A', 1: 'C', 2: 'E', 3: 'D', 4: 'G', 5: 'F', 6: 'I', 7: 'H', 8: 'K', 9: 'M',
-             10: 'L', 11: 'N', 12: 'Q', 13: 'P', 14: 'S', 15: 'R', 16: 'T', 17: 'W', 18: 'V', 19: 'Y'}
-
-def mutate(seq,unchanged=(2,6,9)):
-    new = np.random.randint(0,20,size=(len(seq),10))
-    X_0 = new
-    new = np.transpose(np.eye(20)[new],(1,2,0))
-    temp = np.matmul(np.array([hydropath.T,]*10) , new)
-    length = np.array([[len(seq)],]*10)
-    alternative = np.sum(temp[:,1:,:],2)
-    X_2 = np.concatenate((length,alternative),1)
-    X_1 = temp
-    return X_0,X_1,X_2
-def mutate(seq,unchanged=(2,6,9)):
-    resn = unchanged[0]
-    while resn in unchanged:
-        resn = np.random.randint(0,len(seq))
-    aa = np.random.randint(0,20)
-    seq = seq[0:resn] + dictt_inv[aa] + seq[resn+1:]
-    return seq
-p53_seq='ETFSDLWKLLPEN'
-p53 = make(p53_seq)
-XX = [(p53[0],p53[1],p53[2]),]
-yy = [p53[-1],]
-Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
-a,b, = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                                                Inp1: Inp1_,Inp2: Inp2_,
-                                                                labels: labels_,
-                                                                dropout : 1,learning_rate : lr})
-energy = b[0][0]
-Temp = 0.2
-result = []
-for i in range(0,100000):
-    p53_seq_new= mutate(p53_seq)
-    p53 = make(p53_seq)
-    XX = [(p53[0],p53[1],p53[2]),]
-    yy = [p53[-1],]
-    Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
-    a,b, = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                                                    Inp1: Inp1_,Inp2: Inp2_,
-                                                                    labels: labels_,
-                                                                    dropout : 1,learning_rate : lr})
-    proposed_E = b[0][0]
-    if np.random.uniform() <= np.exp((proposed_E-energy)/Temp):
-        p53_seq = p53_seq_new
-        energy = proposed_E
-        if  energy >= 0.9:
-            result += [p53_seq,energy,]
-            print p53_seq, energy
+        for i in range(0,1000000):
+            p53_seq_new= mutate(p53_seq)
+            p53 = make(p53_seq)
+            XX = [(p53[0],p53[1],p53[2]),]
+            yy = [p53[-1],]
+            Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
+            a,b, = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
+                                                                            Inp1: Inp1_,Inp2: Inp2_,
+                                                                            labels: labels_,
+                                                                            dropout : 1,learning_rate : lr})
+            proposed_E = b[0][0]
+            if np.random.uniform() <= np.exp((proposed_E-energy)/Temp):
+                p53_seq = p53_seq_new
+                energy = proposed_E
+                if  energy >= 0.9:
+                    result_models += [p53_seq,energy,]
+                    print p53_seq, energy
 
 
 die

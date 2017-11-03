@@ -112,33 +112,22 @@ print len(result)
 
 epsilon = 1e-3
 def batch_normalization(x,name='batchnorm',feature_norm = False):
-    #epsilon = tf.Variable(tf.constant([1e-3,]*x.shape[0]))
-    if feature_norm : #only works for fizxed batch size 1
-        mean,var = tf.nn.moments(x,[0,2,3],keep_dims=True)
-        scale = tf.Variable(tf.ones([1,x.shape[1],1,1]))
-        beta = tf.Variable(tf.zeros([1,x.shape[1],1,1]))
-        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
+    # ideally i want to do batch norm per row per sample
+    #epsilon = tf.Variable(tf.constant([1e-3,]*x.shape[0])) 
+    if feature_norm : 
+##        mean,var = tf.nn.moments(x,[2,3],keep_dims=True)
+##        scale = tf.Variable(tf.ones([1,x.shape[1],1,1]))
+##        beta = tf.Variable(tf.zeros([1,x.shape[1],1,1]))
+##        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
+        x = tf.contrib.layers.layer_norm (x,trainable=False)
     else:
-        mean,var = tf.nn.moments(x,[0,1,2],keep_dims=False)
-        scale = tf.Variable(tf.ones([x.shape[-1]]))
-        beta = tf.Variable(tf.zeros([x.shape[-1]]))
-        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
+        x = tf.contrib.layers.layer_norm (x,trainable=False)
+##        mean,var = tf.nn.moments(x,[1,2],keep_dims=True)
+##        scale = tf.Variable(tf.ones([1,1,1,x.shape[-1]]))
+##        beta = tf.Variable(tf.zeros([1,1,1,x.shape[-1]]))
+##        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
     return x
 
-epsilon = 1e-3
-def batch_normalization(x,name='batchnorm',feature_norm = False):
-    #epsilon = tf.Variable(tf.constant([1e-3,]*x.shape[0]))
-    if feature_norm : #only works for fizxed batch size 1
-        mean,var = tf.nn.moments(x,[0,2,3],keep_dims=True)
-        scale = tf.Variable(tf.ones([1,x.shape[1],1,1]))
-        beta = tf.Variable(tf.zeros([1,x.shape[1],1,1]))
-        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
-    else:
-        mean,var = tf.nn.moments(x,[0,1,2],keep_dims=False)
-        scale = tf.Variable(tf.ones([x.shape[-1]]))
-        beta = tf.Variable(tf.zeros([x.shape[-1]]))
-        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
-    return x
 
 learning_rate = 0.00001
 training_epochs = 100
@@ -185,9 +174,9 @@ with tf.name_scope('dense') as scope:
     globalmeanpooling = tf.reduce_mean(layer4[:,:,:,0::2],(1,2),name='globalmaxpooling')
     globalmaxpooling = tf.reduce_mean(layer4[:,:,:,1::2],(1,2),name='globalmaxpooling')
     gbmp_extra = tf.concat([Inp2,globalmaxpooling,globalmeanpooling],axis = 1, name ='gbmp_extra')
-    layer4_DO = tf.layers.dropout(gbmp_extra,rate=dropout,name='Drop4')
+    layer5_DO = tf.layers.dropout(gbmp_extra,rate=dropout,name='Drop5')
     dense1 = tf.layers.dense(layer4_DO,16,activation = tf.nn.relu , name = 'dense1' )
-    layer5_DO = tf.layers.dropout(dense1,rate=dropout,name='Drop5')
+    layer6_DO = tf.layers.dropout(dense1,rate=dropout,name='Drop6')
     dense2 = tf.layers.dense(globalmaxpooling,1 , name = 'dense2' )
 with tf.name_scope('loss') as scope:
     loss = tf.nn.sigmoid_cross_entropy_with_logits(labels=labels,
@@ -239,7 +228,7 @@ yy = [p53[-1],]
 Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
 
 
-saver.restore(sess,'models/model_2_0_0.899_0.863_0.846.ckpt')
+saver.restore(sess,'model2_2_0_0_0.802_0.754_0.779.ckpt')
 
 hydropath = np.array([[0.170, 0.500, 0.330, 0.000],
        [-0.240, -0.020, 0.220, 0.000],
@@ -287,39 +276,66 @@ def mutate(seq,resnum,aa,unchanged=(2,6,9)):
         if i not in unchanged:
             seq = seq[0:i]+  dictt_inv[j] +seq[i+1:]
     return seq
-p53_seq='ETFSDLWKLLPEN'
 
-iterate  = []
+def make_batch400(seq,c1,c2,per=0):
+        assert (c1 < c2)
+        seq_array = np.array([[dictt[x] for x in seq],]*400) #(400,Length)
+        aa = 0
+        names = np.array([seq,]*400) #(400)
+        for i in range(0,400,20):
+            for j in range(0,20):
+                seq_array[i+j,c1] = aa #c1 resi
+                seq_array[i+j,c2] = j #c2 resi
+                names[i+j] = names[i+j][:c1]  + dictt_inv[aa] + names[i+j][c1+1:]
+                names[i+j] = names[i+j][:c2]  + dictt_inv[j] + names[i+j][c2+1:]
+            aa += 1
+        seq_tensor = np.transpose(np.eye(20)[seq_array.T],(1,2,0)) # (400, 20, Length)
+        seq_hydropath = np.matmul(np.array([hydropath.T,]*400) , seq_tensor) #(400, 4, Length)
+        combined = np.mean(seq_hydropath,2)
+        names = np.reshape(names,(400,1))
+        return seq_array,seq_hydropath,combined,names,[0,]*400
+p53_seq='ETFSDLWKLLPEN'
+unchanged=(2,6,9)
+iterate  = {}
 for i in range(0,13):
-    for j in range(0,20):
-        iterate += [[i,j],]
+    iterate[i] = []
+    if i not in (2,6,9): # exclude impt residues
+        for j in range(0,20):
+            iterate[i] += [[i,j],]
 resnum ,aa = [],[]
 result = []
-for c1 in range(len(iterate)):
-    for c2 in range(c1,len(iterate)):
-        for c3 in range(c2,len(iterate)):
-            z1,z2,z3 = iterate[c1],iterate[c2],iterate[c3]
-            resnum =[z1[0],]
-            aa = [z1[1],]
-            resnum +=[z2[0],]
-            aa += [z2[1],]
-            resnum +=[z3[0],]
-            aa += [z3[1],]
-            p53_seq_mod = mutate(p53_seq,resnum,aa)
-            p53 = make(p53_seq_mod)
-            XX = [(p53[0],p53[1],p53[2]),]
-            yy = [p53[-1],]
-            Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
-            a,b, = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                                                            Inp1: Inp1_,Inp2: Inp2_,
-                                                                            labels: labels_,
-                                                                            dropout : 1,learning_rate : lr})
-            if b[0][0] >= 0.6:
-                print p53_seq
-                print p53_seq_mod,b[0][0],'\n'
-                result += [[p53_seq_mod,b[0][0]],]
+def generator(start,end):
+    for i in range(start,end):
+        for j in iterate[i]:
+            yield j
+def test(seq):
+    p53 = make(seq)
+    X = [(p53[0],p53[1],p53[2])]
+    y = [p53[-1],]
+    Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X,y,0)
+    b = sess.run (out_softmax, feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,dropout : 1,learning_rate : lr})
+    return b,p53
+for c1 in range(0,13): #first three res
+    for c2 in range(c1+1,13):
+        if c2 not in unchanged and c1 not in unchanged: #readable but slower
+            for c3 in generator(c2+1,13):
+                z1,z2,z3 = c1,c2,c3
+                resnum =[z3[0]]
+                aa = [z3[1]]
+                
+                p53_seq_mod = mutate(p53_seq,resnum,aa)
+                Inp0_,Inp1_,Inp2_,names,labels_ = make_batch400(p53_seq_mod,c1,c2)
+                b = sess.run (out_softmax, feed_dict={Inp0: Inp0_,
+                                                                Inp1: Inp1_,Inp2: Inp2_,
+                                                                dropout : 1,learning_rate : lr})
+                for mod_seq,prob in zip(names[b>0.7],b[b>0.7]):
+                    print p53_seq
+                    print mod_seq,prob,'\n'
+                    print test(mod_seq)[0]
+                    result += [[p53_seq_mod,prob],]
 np.save('p53_3_mutations.npy',result)            
 die
+
 p53 = make(p53_seq)
 XX = [(p53[0],p53[1],p53[2]),]
 yy = [p53[-1],]
