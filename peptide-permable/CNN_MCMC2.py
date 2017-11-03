@@ -228,7 +228,7 @@ yy = [p53[-1],]
 Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
 
 
-saver.restore(sess,'model2_2_0_0_0.908_0.849_0.872.ckpt')
+saver.restore(sess,'temp_models/model2_2_0_0_0.908_0.849_0.872.ckpt')
 
 hydropath = np.array([[0.170, 0.500, 0.330, 0.000],
        [-0.240, -0.020, 0.220, 0.000],
@@ -294,6 +294,19 @@ def make_batch400(seq,c1,c2,per=0):
         combined = np.mean(seq_hydropath,2)
         names = np.reshape(names,(400,1))
         return seq_array,seq_hydropath,combined,names,[0,]*400
+
+def make_batch8000(seq,resnum,per=0):
+        num = 20**len(resnum)
+        seq_array = np.array([[dictt[x] for x in seq],]*num) #(400,Length)
+        names = np.array([seq,]*num) #(400)
+        for position in range(len(resnum)):
+            for aa in range(0,20): None
+
+        seq_tensor = np.transpose(np.eye(20)[seq_array.T],(1,2,0)) # (400, 20, Length)
+        seq_hydropath = np.matmul(np.array([hydropath.T,]*num) , seq_tensor) #(400, 4, Length)
+        combined = np.mean(seq_hydropath,2)
+        names = np.reshape(names,(num,1))
+        return seq_array,seq_hydropath,combined,names,[0,]*num
 p53_seq='ETFSDLWKLLPEN'
 unchanged=(2,6,9)
 iterate  = {}
