@@ -228,7 +228,7 @@ yy = [p53[-1],]
 Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
 
 
-saver.restore(sess,'model2_2_0_0_0.802_0.754_0.779.ckpt')
+saver.restore(sess,'model2_2_0_0_0.908_0.849_0.872.ckpt')
 
 hydropath = np.array([[0.170, 0.500, 0.330, 0.000],
        [-0.240, -0.020, 0.220, 0.000],
@@ -316,6 +316,7 @@ def test(seq):
     b = sess.run (out_softmax, feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,dropout : 1,learning_rate : lr})
     return b,p53
 for c1 in range(0,13): #first three res
+    print c1
     for c2 in range(c1+1,13):
         if c2 not in unchanged and c1 not in unchanged: #readable but slower
             for c3 in generator(c2+1,13):

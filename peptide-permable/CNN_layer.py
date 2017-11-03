@@ -201,7 +201,7 @@ if len(sys.argv)==2:
     test = int(sys.argv[1])
 else:
     test = 2
-
+print "TEST IS",test
 all_data =[]
 test_emsemble= []
 def get_data_from_X(X,y,i): #get tensor inputs from X and y
