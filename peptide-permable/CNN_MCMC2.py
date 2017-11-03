@@ -296,14 +296,21 @@ def make_batch400(seq,c1,c2,per=0):
         return seq_array,seq_hydropath,combined,names,[0,]*400
 
 def make_batch8000(seq,resnum,per=0):
-        num = 20**len(resnum)
-        seq_array = np.array([[dictt[x] for x in seq],]*num) #(400,Length)
-        names = np.array([seq,]*num) #(400)
-        for position in range(len(resnum)):
-            for aa in range(0,20): None
+##        num = 20**len(resnum) #resnum example is 3
+##        seq_array = np.array([[dictt[x] for x in seq],]*num) #(8000,Length)
+##        names = np.array([seq,]*num) # ignored
+##        for aa in range(0,20):
+##            wanted = range(aa,num,20)
+##            for i in resnum:
+##               seq_array[aa::20,i] = aa
+##               print seq_array
+##               seq_array = np.sort(seq_array,0)
+        
+               
+               
 
-        seq_tensor = np.transpose(np.eye(20)[seq_array.T],(1,2,0)) # (400, 20, Length)
-        seq_hydropath = np.matmul(np.array([hydropath.T,]*num) , seq_tensor) #(400, 4, Length)
+        seq_tensor = np.transpose(np.eye(20)[seq_array.T],(1,2,0)) # (8000, 20, Length)
+        seq_hydropath = np.matmul(np.array([hydropath.T,]*num) , seq_tensor) #(8000, 4, Length)
         combined = np.mean(seq_hydropath,2)
         names = np.reshape(names,(num,1))
         return seq_array,seq_hydropath,combined,names,[0,]*num
