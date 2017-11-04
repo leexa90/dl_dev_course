@@ -296,24 +296,25 @@ def make_batch400(seq,c1,c2,per=0):
         return seq_array,seq_hydropath,combined,names,[0,]*400
 
 def make_batch8000(seq,resnum,per=0):
-##        num = 20**len(resnum) #resnum example is 3
-##        seq_array = np.array([[dictt[x] for x in seq],]*num) #(8000,Length)
-##        names = np.array([seq,]*num) # ignored
-##        for aa in range(0,20):
-##            wanted = range(aa,num,20)
-##            for i in resnum:
-##               seq_array[aa::20,i] = aa
-##               print seq_array
-##               seq_array = np.sort(seq_array,0)
-        
-               
-               
-
-        seq_tensor = np.transpose(np.eye(20)[seq_array.T],(1,2,0)) # (8000, 20, Length)
-        seq_hydropath = np.matmul(np.array([hydropath.T,]*num) , seq_tensor) #(8000, 4, Length)
+        num = 20**len(resnum) #resnum example is 3
+        seq_array = np.array([[dictt[x] for x in seq],]*num) #(8000,Length)
+        names = np.array([seq,]*num) # ignored
+        seq_array[:,resnum] = np.array(recursive_tree(len(resnum)))
+        seq_tensor = np.transpose(np.eye(20)[seq_array.T],(1,2,0)) # (400, 20, Length)
+        seq_hydropath = np.matmul(np.array([hydropath.T,]*num) , seq_tensor) #(400, 4, Length)
         combined = np.mean(seq_hydropath,2)
         names = np.reshape(names,(num,1))
         return seq_array,seq_hydropath,combined,names,[0,]*num
+
+def recursive_tree(seq,ans = []):
+     if len(ans)  == seq -1:
+         return [ans+[x,] for x in range(0,20)]
+     else:
+        temp = []
+        for i in range(0,20):
+            temp += recursive_tree(seq,ans + [i,])
+        return  temp
+
 p53_seq='ETFSDLWKLLPEN'
 unchanged=(2,6,9)
 iterate  = {}
@@ -324,10 +325,12 @@ for i in range(0,13):
             iterate[i] += [[i,j],]
 resnum ,aa = [],[]
 result = []
-def generator(start,end):
-    for i in range(start,end):
-        for j in iterate[i]:
-            yield j
+def string(arr):
+    result = ''
+    for i in arr:
+        result += dictt_inv[i]
+    return result
+        
 def test(seq):
     p53 = make(seq)
     X = [(p53[0],p53[1],p53[2])]
@@ -335,25 +338,47 @@ def test(seq):
     Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X,y,0)
     b = sess.run (out_softmax, feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,dropout : 1,learning_rate : lr})
     return b,p53
+
+import os
+all_models = [x[:-5] for x in os.listdir('.') if ('.ckpt.meta' in x and x.startswith('model2'))]
+dictt_model = {}
+for i1 in range(0,4): #test set
+    for i2 in range(0,4): #CV set
+        for j in all_models: #find if model they belong to that set
+            if j[7] == str(i1) and  j[9] == str(i2) :
+                if (i1,i2) not in dictt_model:
+                    dictt_model[(i1,i2)] = []
+                else:
+                    dictt_model[(i1,i2)] += [j,]
 for c1 in range(0,13): #first three res
-    print c1
     for c2 in range(c1+1,13):
-        if c2 not in unchanged and c1 not in unchanged: #readable but slower
-            for c3 in generator(c2+1,13):
-                z1,z2,z3 = c1,c2,c3
-                resnum =[z3[0]]
-                aa = [z3[1]]
-                
-                p53_seq_mod = mutate(p53_seq,resnum,aa)
-                Inp0_,Inp1_,Inp2_,names,labels_ = make_batch400(p53_seq_mod,c1,c2)
-                b = sess.run (out_softmax, feed_dict={Inp0: Inp0_,
-                                                                Inp1: Inp1_,Inp2: Inp2_,
-                                                                dropout : 1,learning_rate : lr})
-                for mod_seq,prob in zip(names[b>0.7],b[b>0.7]):
-                    print p53_seq
-                    print mod_seq,prob,'\n'
-                    print test(mod_seq)[0]
-                    result += [[p53_seq_mod,prob],]
+        for c3 in range(c2+1,13):
+             if c2 not in unchanged and c1 not in unchanged and c3 not in unchanged: #readable but slower
+                print 'Run :',c1,c2,c3,
+                Inp0_,Inp1_,Inp2_,names,labels_ = make_batch8000(p53_seq,(c1,c2,c3))
+                data= pd.DataFrame(Inp0_,columns=range(13))
+                data['prob']  = 0
+                counter =0 
+                for test_fold in dictt_model:
+                    for file in  sorted(dictt_model[test_fold],
+                        key = lambda x : np.float(x[:-5].split('_')[1:][-2]))[-3:]:
+                        saver.restore(sess,file)
+                        b = sess.run (out_softmax, feed_dict={Inp0: Inp0_,
+                                                                        Inp1: Inp1_,Inp2: Inp2_,
+                                                                        dropout : 1,learning_rate : lr})
+                        thres = 0.7
+                        data['prob'] = np.reshape(b,(8000)) + data['prob']
+                        data['fold'+str(counter) ] = b
+                        counter += 1
+                data['prob'] =  data['prob'] /counter
+                data.to_csv('results/results_%s_%s_%s.csv' %(c1,c2,c3),index=0)
+                print data.sort_values('prob')[-5:]['prob'].values
+##                for mod_seq,prob in zip(pd.DataFrame(Inp0_,columns=range(13))[b>thres].values,b[b>thres]):
+##                    print p53_seq
+##                    mod_seq = string(mod_seq)
+##                    print mod_seq,prob,'\n'
+                    #print test(mod_seq)[0]
+
 np.save('p53_3_mutations.npy',result)            
 die
 
