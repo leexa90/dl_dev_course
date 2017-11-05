@@ -68,16 +68,16 @@ LETTERS = {
         "H" : TextPath((-0.35, 0), "H", size=1, prop=fp) ,
         "K" : TextPath((-0.35, 0), "K", size=1, prop=fp),
         "M" : TextPath((-0.35, 0), "M", size=1, prop=fp),
-        "L" : TextPath((-0.35, 0), "L", size=1, prop=fp),
+        "L" : TextPath((-0.35, 0.003), "L", size=1, prop=fp),
         "N" : TextPath((-0.35, 0), "N", size=1, prop=fp) ,
-        "Q" : TextPath((-0.35, 0), "Q", size=1, prop=fp),
+        "Q" : TextPath((-0.35, 0.01), "Q", size=1, prop=fp),
         "P" : TextPath((-0.35, 0), "P", size=1, prop=fp),
-        "S" : TextPath((-0.35, 0), "S", size=1, prop=fp),
+        "S" : TextPath((-0.35, 0.01), "S", size=1, prop=fp),
         "R" : TextPath((-0.35, 0), "R", size=1, prop=fp),
         "T" : TextPath((-0.35, 0), "T", size=1, prop=fp),
         "W" : TextPath((-0.35, 0), "W", size=1, prop=fp),
         "V" : TextPath((-0.35, 0), "V", size=1, prop=fp),
-        "Y" : TextPath((-0.35, 0), "Ys", size=1, prop=fp) }
+        "Y" : TextPath((-0.35, 0), "Y", size=1, prop=fp) }
 COLOR_SCHEME = {'A': 'grey', 'C': 'lightBlue', 'E': 'red', 'D': 'red',
                 'G': 'grey', 'F': 'green', 'I': 'grey', 'H': 'blue', 'K': 'blue',
                 'M': 'grey', 'L': 'grey', 'N': 'lightBlue', 'Q': 'lightBlue', 'P': 'orange',
@@ -101,7 +101,7 @@ def plot(thres=0.05,name='temp'):
     fig, ax = plt.subplots(figsize=(10,8))
     for i in range(0,13):
         y = 0
-        for aa in range(0,20)[::-1]:
+        for aa in np.argsort(score[i,:]):#for aa in range(0,20)[::-1]:
             temp_score = score[i,aa]
             if temp_score >= thres:
                 letter = dictt_inv[aa]
@@ -114,4 +114,5 @@ def plot(thres=0.05,name='temp'):
     plt.savefig(name+'.png',dpi=300)
     plt.show()
     plt.close()
-plot(0.05,'Fig_30percent_thres5_var')
+for i in range(2,9):
+    plot(i*1.0/100,'Fig_30percent_thres%s_var'%i)
