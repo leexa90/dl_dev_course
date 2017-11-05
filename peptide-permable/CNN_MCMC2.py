@@ -350,7 +350,7 @@ for i1 in range(0,4): #test set
                     dictt_model[(i1,i2)] = []
                 else:
                     dictt_model[(i1,i2)] += [j,]
-for c1 in range(0,13): #first three res
+for c1 in range(7,13): #first three res #start from4
     for c2 in range(c1+1,13):
         for c3 in range(c2+1,13):
              if c2 not in unchanged and c1 not in unchanged and c3 not in unchanged: #readable but slower
