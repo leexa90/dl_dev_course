@@ -32,6 +32,7 @@ def string(arr):
 
 p53_seq='ETFSDLWKLLPEN'
 p53_seq_vec = np.array([2., 16., 5., 14., 3., 10., 17., 8., 10., 10., 13., 2., 11.])
+data['var'] = map(np.std, np.array(data[data.keys()[14:-1]]))
 best = data.sort_values('prob')[list(data.keys()[0:14])+['diff',]].reset_index(drop=True)
 def get_diff(x):
     return np.argsort(p53_seq_vec != x[[str(y) for y in range(13)]].values)[-3:]
@@ -41,7 +42,7 @@ for i in range(1,10):
     print np.argsort(p53_seq_vec != best.iloc[-i][range(0,13)].values)[-3:],'\n'
     print string(best.iloc[-i][range(0,13)].values), best.iloc[-i].prob,'\n'
 #best['prob'] =  np.log10(best['prob']+0.01)
-above_30 = best[best.prob >= 0.5]
+above_30 = data[data['prob']-data['var'] >= 0.3]
 score = np.zeros((13,20))
 float_formatter = lambda x: "%.3f" % x
 np.set_printoptions(formatter={'float_kind':float_formatter})
@@ -113,4 +114,4 @@ def plot(thres=0.05,name='temp'):
     plt.savefig(name+'.png',dpi=300)
     plt.show()
     plt.close()
-plot(0.05,'Fig_30percent_thres5')
+plot(0.05,'Fig_30percent_thres5_var')
