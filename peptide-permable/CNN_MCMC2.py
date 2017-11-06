@@ -39,6 +39,15 @@ dictt_hydropathy  = {
 'B' : [ 0.825,  2.245,  1.42 , -0.5  ], #D or N (mass spec data cannot differentiate)
 'X' : [0,0,0,0]} 
 data = pd.read_csv('bioactive_PDB_cpp.csv').dropna()
+
+def fn1_ED(str):
+    num=0.0
+    for i in str:
+        if i.upper() == 'E' or i.upper() == 'D':
+            num += 1
+    if num/len(str) > 0.333: #should be tweaked
+        return 0
+    return len(set(str))
 def fn1(str):
     num=0.0
     for i in str:
@@ -102,11 +111,15 @@ def make(seq,per=0):
 
 result = []
 for i in data.seq:
-    result += [ alignment.needle(i,p53)[-1],]
+    result += [ alignment.needle(p53,i)[-1],]
+    if alignment.needle(p53,i)[-1]>= 40:
+        print alignment.needle(p53,i)[0]
+        print alignment.needle(p53,i)[1],
+        print alignment.needle(p53,i)[2],'\n'
 data['1']= result
 data.sort_values('1')
 p53 = make(p53)
-
+die
 print len(result)
 
 
@@ -342,7 +355,7 @@ def test(seq):
 import os
 all_models = [x[:-5] for x in os.listdir('.') if ('.ckpt.meta' in x and x.startswith('model2'))]
 dictt_model = {}
-for i1 in range(0,4): #test set
+for i1 in range(0,5): #test set
     for i2 in range(0,4): #CV set
         for j in all_models: #find if model they belong to that set
             if j[7] == str(i1) and  j[9] == str(i2) :
@@ -350,7 +363,7 @@ for i1 in range(0,4): #test set
                     dictt_model[(i1,i2)] = []
                 else:
                     dictt_model[(i1,i2)] += [j,]
-for c1 in range(7,13): #first three res #start from4
+for c1 in range(0,13): #first three res #start from4
     for c2 in range(c1+1,13):
         for c3 in range(c2+1,13):
              if c2 not in unchanged and c1 not in unchanged and c3 not in unchanged: #readable but slower
@@ -371,7 +384,7 @@ for c1 in range(7,13): #first three res #start from4
                         data['fold'+str(counter) ] = b
                         counter += 1
                 data['prob'] =  data['prob'] /counter
-                data.to_csv('results/results_%s_%s_%s.csv' %(c1,c2,c3),index=0)
+                data.to_csv('results/results5_%s_%s_%s.csv' %(c1,c2,c3),index=0)
                 print data.sort_values('prob')[-5:]['prob'].values
 ##                for mod_seq,prob in zip(pd.DataFrame(Inp0_,columns=range(13))[b>thres].values,b[b>thres]):
 ##                    print p53_seq
