@@ -1,0 +1,118 @@
+1509959780968	geckodriver	INFO	Listening on 127.0.0.1:58561
+1509959782004	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.0uCtEAVJHDgK
+1509959782005	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1509959782008	geckodriver::marionette	INFO	Connecting to Marionette on localhost:50018
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1509959785085	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1509959789184	Marionette	INFO	Listening on port 50018
+1509959789234	Marionette	WARN	TLS certificate errors will be ignored for this session
+1509959935134	geckodriver	INFO	Listening on 127.0.0.1:52460
+1509959936175	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.ygFWJpL9yDCA
+1509959936176	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1509959936177	geckodriver::marionette	INFO	Connecting to Marionette on localhost:50262
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1509959936749	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1509959939477	Marionette	INFO	Listening on port 50262
+1509959939520	Marionette	WARN	TLS certificate errors will be ignored for this session
+1509959941398	Marionette	INFO	Ceased listening
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4289): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1509959942183	Marionette	INFO	Ceased listening
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4167): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1509959943865	geckodriver	INFO	Listening on 127.0.0.1:53630
+1509959944903	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.n03cI0bMPZRH
+1509959944904	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1509959944905	geckodriver::marionette	INFO	Connecting to Marionette on localhost:56441
+
+(firefox:4442): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4442): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4442): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4442): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1509959945450	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1509959947979	Marionette	INFO	Listening on port 56441
+1509959948088	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1509961009282	geckodriver	INFO	Listening on 127.0.0.1:54189
+1509961010357	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.V2KcICvTG6NR
+1509961010358	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1509961010376	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46983
+
+(firefox:4941): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4941): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4941): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4941): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1509961013743	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1509961016992	Marionette	INFO	Listening on port 46983
+1509961017111	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.lifetein.com/js/jquery.dropdown.js, line 3: ReferenceError: $ is not defined
+JavaScript error: https://www.lifetein.com/js/combined.min.js, line 5: TypeError: (intermediate value)(...) is not a function
+JavaScript warning: https://static.pubmed.gov/portal/portal3rc.fcgi/4166260/js/3812534/4087685/3812535/4155155/3990644/3812291/3908752/3879255/4121861/4123007/4010399/4110099/4010270/4076480/4001808.js, line 1197: unreachable code after return statement
+JavaScript warning: https://static.pubmed.gov/portal/portal3rc.fcgi/4166260/js/3812534/4087685/3812535/4155155/3990644/4123007/4010399/4110099/4080513/3990642/4069329/4161496/4076482/2486879/2600938/3758627/20927/3812291/3908752/3423/4018706/4010028/4011871/4015648/4159983/3920825/3989002/4120364/4001808.js, line 4898: unreachable code after return statement
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://cdn.els-cdn.com/sd/js/sd_1710R1.js, line 389: unreachable code after return statement
+JavaScript warning: http://sciverse-shindig.elsevier.com/gadgets/ifr?container=default&mid=0&nocache=1&country=ALL&lang=ALL&view=profile&parent=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0005273600002169%3A%2F%2Fwww.sciencedirect.com&up_SiteCatalyst=http%3A%2F%2Fcdn.els-cdn.com%2Fgadgets%2Fprod%2Fjs%2Fv3%2Fs_code_1.js&up_Beacon=http%3A%2F%2Fcdn.els-cdn.com%2Fgadgets%2Fprod%2Fjs%2Fv1%2Fs_beacon.js&up_gadgetId=299100&up_startMeInvisible=y&st=john.doe:john.doe:appid:cont:url:0:default&url=http%3A%2F%2Fae-content.elsevier.com%2Fsvapp%2F299100%2Fprod%2Fprivate%2Fspec.xml#rpctoken=1586241590, line 2244: unreachable code after return statement
+JavaScript warning: https://static.pubmed.gov/portal/portal3rc.fcgi/4166260/js/3812534/4087685/3812535/4155155/3990644/3812291/3908752/3879255/4121861/4123007/4010399/4110099/4010270/4076480/4001808.js, line 1197: unreachable code after return statement
+JavaScript warning: https://static.pubmed.gov/portal/portal3rc.fcgi/4166260/js/3812534/4087685/3812535/4155155/3990644/4123007/4010399/4110099/4080513/3990642/4069329/4161496/4076482/2486879/2600938/3758627/20927/3812291/3908752/3423/4018706/4010028/4011871/4015648/4159983/3920825/3989002/4120364/4001808.js, line 4898: unreachable code after return statement
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead

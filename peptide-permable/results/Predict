@@ -1,0 +1,14 @@
+peptide seq,prob,std of 60 model predictions,comments
+ETFSDLWKLLPEN,0.15,0.095,original peptide already one of the worst
+NTFSGLWKLLPGN,0.28,0.1,lowest without any ionic residues
+GTFSSLWKLLPGN,0.32,0.107,lowest with two glycines instead of 3
+RTFSGLWKLLPGN,0.33,0.12,lowest with an arginine, Ooo
+GTFSGLWKLLPHN,0.33,0.102,lowest with one glycine instead of 3
+NTFSCLWKLLPSN,0.47,0.111,lowest without glycine
+LTFSLLWKLLPRN,O.8,0.085 
+LTFSILWKLLPRN,O.8,0.083 
+WTFSLLWKLLPRN,O.8,0.089 
+WTFSILWKLLPRN,O.8,0.088 
+ITFSLLWKLLPRN,O.79,0.086 
+LTFSWLWKLLPRN,O.79,0.091 
+LTFSILWKLLPPN,0.77,0.084,has a proline at the end...weird...

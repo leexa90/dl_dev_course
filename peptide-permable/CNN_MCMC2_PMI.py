@@ -71,6 +71,9 @@ print 'removing these number of non-cannonical peptides' ,len(data[data['seq'].a
 data = data[data['seq'].apply(fn2) == 0] # remove peptides with weird chemical bonds , and non-cannonical res (mostly negavtives)
 data['len'] = data.seq.apply(len)
 data = data.sort_values(by = ['len','source']).reset_index(drop=True)
+data2 = pd.read_csv('CPP_DATABSE.csv')
+data3 = data.merge(data2,on='seq')
+die
 import sys
 sys.path.append('pairwise-alignment-in-python/')
 import alignment

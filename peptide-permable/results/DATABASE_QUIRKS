@@ -1,0 +1,164 @@
+N TERMINAL MODIFICATION
+Acetylation                                                             20
+Biotinyl-Gly-Gly-N 25galanin(1-29)                                       2
+Biotinylation                                                           18
+Biotinylation (Labeled with Biotinyl-beta-Alanine)                       3
+Biotinylation at amino group of Lys                                     14
+Biotinylation or Conjugation with TMR                                    1
+Bromoacetylation                                                         3
+Conjugated to nanoparticles                                              2
+Conjugated with EGFP                                                     6
+Conjugated with FITC labelled streptavidin                               1
+Conjugation with 5(6)-Carboxyfluorescein                                20
+Conjugation with 6-carboxytetramethyl rhodamine                          6
+Conjugation with DNA                                                     1
+Conjugation with EGFP                                                    9
+Conjugation with FITC                                                   42
+Conjugation with FITC labelled streptavidin                              2
+Conjugation with Oregon Green 488                                        1
+Conjugation with TAMRA                                                   2
+Conjugation with fluorescein                                           119
+Conjugation with fluorescein/ FITC/texas red                             1
+Conjugation with fluorescein/ rhodamine B                                1
+Conjugation with fluorescein/FITC                                        4
+Conjugation with hca (4-(7-hydroxycoumaryl)-acetyl)                      1
+Conjugation with rhodamine B                                            20
+Cysteine addition                                                        1
+FITC linked to a beta-Alanine residue                                    1
+Free                                                                   135
+Free (peptide coated FITC labelled microspheres)                        17
+Maleimide addition                                                       3
+N-terminal acylation of peptide with 6-carboxy-tetramethylrhodamine      1
+Stearylation                                                             7
+dtype: int64
+>>> data4.groupby(['C TERMINAL MODIFICATION']).apply(len)
+C TERMINAL MODIFICATION
+Amidation                                                   209
+Conjugation to solid lipid nanoparticle                       1
+Conjugation with Avidin-FITC                                  1
+Conjugation with ELP-Rho                                      2
+Conjugation with FAM to ε-NH2 group of additional lysine      2
+Conjugation with FITC at C-terminal cysteamide                4
+Conjugation with PEI                                          1
+Conjugation with Texas Red                                    2
+Conjugation with fluorescein                                  1
+Conjugation with fluorescein by C-terminal Gly Cys amide      1
+Conjugation with nanoparticle                                12
+Conjugation with rhodamine LP                                 1
+Cysteamide group                                             11
+Free                                                        209
+Unknown                                                       3
+dtype: int64
+
+N TERMINAL MODIFICATION                                              C TERMINAL MODIFICATION                                 
+Acetylation                                                          Amidation                                                    4
+                                                                     Conjugation with FITC at C-terminal cysteamide               4
+                                                                     Conjugation with fluorescein                                 1
+                                                                     Cysteamide group                                            10
+                                                                     Free                                                         1
+Biotinyl-Gly-Gly-N 25galanin(1-29)                                   Free                                                         2
+Biotinylation                                                        Amidation                                                   13
+                                                                     Free                                                         5
+Biotinylation (Labeled with Biotinyl-beta-Alanine)                   Amidation                                                    3
+Biotinylation at amino group of Lys                                  Free                                                        14
+Biotinylation or Conjugation with TMR                                Free                                                         1
+Bromoacetylation                                                     Amidation                                                    3
+Conjugated to nanoparticles                                          Amidation                                                    2
+Conjugated with EGFP                                                 Free                                                         6
+Conjugated with FITC labelled streptavidin                           Amidation                                                    1
+Conjugation with 5(6)-Carboxyfluorescein                             Amidation                                                   16
+                                                                     Free                                                         4
+Conjugation with DNA                                                 Conjugation with PEI                                         1
+Conjugation with EGFP                                                Free                                                         9
+Conjugation with FITC                                                Amidation                                                   35
+                                                                     Free                                                         3
+Conjugation with FITC labelled streptavidin                          Amidation                                                    2
+Conjugation with Oregon Green 488                                    Amidation                                                    1
+Conjugation with TAMRA                                               Amidation                                                    2
+Conjugation with fluorescein                                         Amidation                                                   49
+                                                                     Free                                                        69
+Conjugation with fluorescein/ FITC/texas red                         Amidation                                                    1
+Conjugation with fluorescein/ rhodamine B                            Free                                                         1
+Conjugation with fluorescein/FITC                                    Amidation                                                    4
+Conjugation with hca (4-(7-hydroxycoumaryl)-acetyl)                  Amidation                                                    1
+Conjugation with rhodamine B                                         Amidation                                                   18
+                                                                     Free                                                         2
+Free                                                                 Amidation                                                   42
+                                                                     Conjugation to solid lipid nanoparticle                      1
+                                                                     Conjugation with Avidin-FITC                                 1
+                                                                     Conjugation with ELP-Rho                                     2
+                                                                     Conjugation with Texas Red                                   2
+                                                                     Conjugation with fluorescein by C-terminal Gly Cys amide     1
+                                                                     Conjugation with nanoparticle                               12
+                                                                     Conjugation with rhodamine LP                                1
+                                                                     Cysteamide group                                             1
+                                                                     Free                                                        72
+Free (peptide coated FITC labelled microspheres)                     Free                                                        17
+Maleimide addition                                                   Amidation                                                    3
+N-terminal acylation of peptide with 6-carboxy-tetramethylrhodamine  Amidation                                                    1
+Stearylation                                                         Amidation                                                    5
+                                                                     Conjugation with FAM to ε-NH2 group of additional lysine     2
+
+CARGO
+32 Biotin 
+1 Fluorophor (TMR) 
+2 Fluorophore (5-Carboxyfluorescein) 
+1 Fluorophore (6-carboxy-tetramethylrhodamine) 
+1 Fluorophore (6-carboxyfluorescene) 
+2 Fluorophore (Alexa488), Protein (bovine serum albumin) and Nanoparticle (quantum dots) 
+2 Fluorophore (Carboxyfluorescein) 
+1 Fluorophore (FAM) 
+79 Fluorophore (FITC) 
+4 Fluorophore (FITC- and TAMRA) 
+20 Fluorophore (Fluorescein) 
+1 Fluorophore (Hilyteflour) 
+1 Fluorophore (Hilytefluor 488 and TAMARA) 
+1 Fluorophore (Oregon Green 488) 
+1 Fluorophore (Red fluorophor Dy550) 
+16 Fluorophore (Rhodamine) 
+2 Fluorophore (TAMARA) 
+14 Fluorophore (TAMRA) 
+2 Fluorophore (Texas Red) 
+122 Fluorophore (fluorescein) 
+4 Fluorophore (fluorescein/ FITC) 
+1 Fluorophore (fluoresceine/ FITC/texas red) 
+1 Fluorophore (fluoresceine/ rhodamine) 
+1 Fluorophore (iodine) 
+3 Fluorophore (rhodamine) 
+2 Fluorophore [5(6)-carboxyfluorescein] 
+1 Fluorophore [hca (4-(7-hydroxycoumaryl)-acetyl)] 
+31 NA 
+10 Nanoparticle 
+1 Nanoparticle (Cy3-labeled nanoparticles complexed with DNA) 
+4 Nanoparticle (Gold) 
+1 Nanoparticle (Liposome) 
+1 Nanoparticle (Liposomes and folic acid) 
+4 Nanoparticle (Liposomes) 
+1 Nanoparticle (PEG-PCL) 
+2 Nanoparticle (Quantum dots) 
+17 Nanoparticle [(FITC)-labeled latex microspheres] 
+1 Nanoparticle, Protein (eGFP) 
+2 Nucelic acid (pGL3 plasmid, SCO) 
+4 Nucleic acid 
+1 Nucleic acid (DNA), PEI 
+1 Nucleic acid (Plasmid DNA and siRNA) 
+7 Nucleic acid (Plasmid DNA) 
+4 Nucleic acid (SCO) 
+1 Nucleic acid (pDNA) 
+2 Nucleic acid (pGL3, siRNA, SCO) 
+34 Nucleic acid (siRNA) 
+1 Nucleic acid (ssDNA oligonucleotide labelled with Alexa-488) 
+10 PNA 
+1 Peptide (Mitochondrial Target Domain of NOXA) 
+2 Peptide (Rhodamine labeled ELP) 
+51 Phages 
+1 Protein (?-glucuronidase enzyme, ?-galactosidase) 
+4 Protein (ATTO488-BSA, ?-galactosidase) 
+1 Protein (Avidin-FITC) 
+1 Protein (Calcetonin) 
+1 Protein (FITC-sCT), Nanoparticle( SLN) 
+1 Protein (GFP) 
+1 Protein (His-tagged Cre protein) 
+5 Protein (Streptavidin conjugated with FITC) 
+15 Protein (eGFP) 
+2 Protein (eGFP), Phage 

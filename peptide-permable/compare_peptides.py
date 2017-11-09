@@ -21,7 +21,7 @@ plt.hist(map(len,neg_seq),bins=28);#plt.show()
 neg2 = neg_seq
 
 neg = []
-for line in open('peptide2.csv','r'):
+for line in open('peptide2.csv','r'): #PDB
     if '\n' in line:
         line = line[:-1]
     if '>' not in line:
