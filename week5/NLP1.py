@@ -99,7 +99,7 @@ def add_fullstop(str):
     result = ''
     for i in range(0,len(str)-1):
         if str[i].islower() and str[i+1].isupper() :
-            result += '. '
+            result += str[i]+'. '
         else:
             result += str[i]
     return result
