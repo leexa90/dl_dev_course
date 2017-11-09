@@ -113,11 +113,14 @@ for i in dictt:
 features += ['length','netcharge','Gwif','Goct']
 for i in ['length','netcharge','Gwif','Goct']:
     data[i] = 0
+data['y'] = 0
 for i in range(0,len(data)):
     temp = data.iloc[i]['X'][-3]
     zz = data.set_value(i,['length','netcharge','Gwif','Goct'],temp)
+    zz = data.set_value(i,'y',data.iloc[i]['X'][-1])
     
-data['y'] = 1.0*(data.source ==2 )
+
+
 
 
 X = data[features+['y']].copy().values
