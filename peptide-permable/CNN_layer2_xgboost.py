@@ -89,9 +89,9 @@ for idx in range(len(data)):
         temp[j][0] = res
         #temp[j][-1] = len(i)*0.01
         temp[j][-4:] = dictt_hydropathy[i[j]]
+    temp = temp.T
     alternative = [len(i),np.sum(temp[:,-1]),np.sum(temp[:,-2]),np.sum(temp[:,-3])]
     per = data.iloc[idx]['source'] == 2 
-    temp = temp.T
     X += [[temp[0],temp[1:],alternative,i,per*1],]
     #print '> %s\n%s' %(i,i)
     counter += 1

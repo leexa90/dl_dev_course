@@ -89,9 +89,9 @@ for idx in range(len(data)):
         temp[j][0] = res
         #temp[j][-1] = len(i)*0.01
         temp[j][-4:] = dictt_hydropathy[i[j]]
+    temp = temp.T
     alternative = [len(i),np.sum(temp[-1,:]),np.sum(temp[-2,:]),np.sum(temp[-3,:])]
     per = data.iloc[idx]['source'] == 2 
-    temp = temp.T
     X += [[temp[0],temp[1:],alternative,i,per*1],]
     #print '> %s\n%s' %(i,i)
     counter += 1
@@ -134,22 +134,24 @@ with tf.name_scope('embedding') as scope:
     
 with tf.name_scope('layer1') as scope:
     layer1_norm = batch_normalization(layer0,'BN_layer0',feature_norm = True)
-    layer1 = tf.layers.conv2d(layer0,32,(9,1),padding='valid',activation=tf.nn.relu)
+    layer1a = tf.layers.conv2d(layer1_norm,32,(1,1),padding='same',activation=None)
+    layer1 = tf.layers.conv2d(layer1a,64,(9,1),padding='valid',activation=tf.nn.relu)
     layer1_DO = tf.layers.dropout(layer1,rate=dropout,name='Drop1')
 
 with tf.name_scope('layer2') as scope:
     layer2_norm = batch_normalization(layer1_DO,'BN_layer1',feature_norm = True)
-    layer2 = tf.layers.conv2d(layer2_norm,64,(1,3),padding='same',activation=tf.nn.relu)
+    layer2a = tf.layers.conv2d(layer2_norm,96,(1,1),padding='same',activation=None)
+    layer2 = tf.layers.conv2d(layer2a,128,(1,3),padding='same',activation=tf.nn.relu)
     layer2_DO = tf.layers.dropout(layer2,rate=dropout,name='Drop2')
 
 with tf.name_scope('layer3') as scope:
     layer3_norm = batch_normalization(layer2_DO,'BN_layer1')
-    layer3 = tf.layers.conv2d(layer3_norm,128,(1,3),padding='same',activation=tf.nn.relu)
+    layer3 = tf.layers.conv2d(layer3_norm,256,(1,3),padding='same',activation=tf.nn.relu)
     layer3_DO = tf.layers.dropout(layer3,rate=dropout,name='Drop3')
 
 with tf.name_scope('layer4') as scope:
     layer4_norm = batch_normalization(layer3_DO,'BN_layer2')
-    layer4 = tf.layers.conv2d(layer4_norm,256,(1,3),padding='same',activation=tf.nn.relu)
+    layer4 = tf.layers.conv2d(layer4_norm,512,(1,3),padding='same',activation=tf.nn.relu)
     layer4_DO = tf.layers.dropout(layer4,rate=dropout,name='Drop4')
 
 with tf.name_scope('dense') as scope:
@@ -210,6 +212,12 @@ def get_data_from_X(X,y,i): #get tensor inputs from X and y
     Inp2_ = np.array([X[i][2]])
     labels_ = np.array([[y[i],]])
     return Inp0_,Inp1_,Inp2_,labels_
+def get_batch_from_X(Xy): #get batch tensor inputs from X and y
+    Inp0_ = np.array([x[0][0] for x in Xy])
+    Inp1_ = np.array([x[0][1] for x in Xy])
+    Inp2_ = np.array([x[0][2] for x in Xy])
+    labels_ = np.array([[x[1] for x in Xy],])
+    return Inp0_,Inp1_,Inp2_,labels_.T
 folds= 5
 # ensure no leakage of train to test, was getting 95 AUC
 X_test = []
@@ -231,8 +239,8 @@ for repeat in range(0,1): #perform 5 repeats
         RESULT[CV] = []
         X_train = []
         y_train = []
-        X_train_small = []
-        y_train_small = []
+        X_train_weighted = []
+        y_train_weighted = []
         X_val = []
         y_val = []    
         for i in range(len(X)):
@@ -244,11 +252,11 @@ for repeat in range(0,1): #perform 5 repeats
                 if x[-1] == 1:
                     mul = 18 #ratio of pos to neg is 1:18.4
                 else: mul = 1
-                X_train += [(x[0],x[1],x[2]),]*mul
-                y_train += [x[-1],]*mul
-                X_train_small += [(x[0],x[1],x[2]),]
-                y_train_small += [x[-1],]
-        print 'size of different sets:',len(X_train),len(X_val),len(X_test)
+                X_train += [(x[0],x[1],x[2]),]
+                y_train += [x[-1],]
+                X_train_weighted += [(x[0],x[1],x[2]),]*mul
+                y_train_weighted += [x[-1],]*mul
+        print 'size of different sets:',len(X_train_weighted),len(X_val),len(X_test)
 
         best_roc_val = {}     # stores val ROC for trainnig epochs per CV+repeat run
         for epoch in range(training_epochs):#training_epochs):
@@ -257,51 +265,88 @@ for repeat in range(0,1): #perform 5 repeats
             logit_train = []
             cost_train = []
             random.seed(epoch)
-            shuffle = range(len(X_train)) #shuffle index of X_train
+            shuffle = range(len(X_train_weighted)) #shuffle index of X_train
             random.shuffle(shuffle)
             counter = 0
             for i in shuffle[::10]: #training with bagging
                 lr = 0.0015*(1-1.0*counter/len(shuffle[::10]))
                 counter += 1
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train,i)        
+                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train_weighted,y_train_weighted,i)        
                 _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,Inp2: Inp2_,
                                                                    Inp1: Inp1_,
                                                                    labels: labels_,
                                                                    dropout : 0.4,learning_rate : lr}) #sgd
             logit_train = []
             cost_train = []
-            lr = 0 
-            for i in range(len(X_train_small)): #train error
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train_small,y_train_small,i)
-                c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                              Inp1: Inp1_,Inp2: Inp2_,
-                                                      labels: labels_,
-                                                      dropout : 1,learning_rate : lr})
-                cost_train += [c,]
-                logit_train += [ out[0][0],]
+            lr = 0
+            sorted_data = sorted(zip(X_train,y_train),key = lambda x : x[0][-1][0])
+            initial=0
+            y_temp = []
+            for i in range(0,len(sorted_data)-1): #train error
+                if sorted_data[i+1][0][-1][0] == sorted_data[i][0][-1][0] and i!= len(sorted_data)-2: #getting same length together
+                    None
+                else:
+                    if i == len(sorted_data)-2:
+                        i = len(sorted_data) #there is a case whereby last in loop is of diff length, will break this code
+                    Inp0_,Inp1_,Inp2_,labels_ = get_batch_from_X(sorted_data[initial:i+1])
+                    c, out = sess.run ([acc, out_softmax],
+                                       feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,
+                                        labels: labels_,dropout : 1,learning_rate : lr})
+                    initial = i+1
+                    cost_train += [c,]*len(Inp0_)
+                    logit_train += list(out[:,0])
+                    y_temp += list(labels_[:,0])
+            roc_train   = sklearn.metrics.roc_auc_score(y_temp,logit_train)
+                    
             logit_val = []
             cost_val = []
-            for i in range(len(X_val)): #val error
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_val,y_val,i)
-                c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                              Inp1: Inp1_,Inp2: Inp2_,
-                                                      labels: labels_,
-                                                      dropout : 1,learning_rate : lr})
-                cost_val += [c,]
-                logit_val += [ out[0][0],]
+            sorted_data = sorted(zip(X_val,y_val),key = lambda x : x[0][-1][0])
+            initial=0
+            y_temp = []
+            for i in range(0,len(sorted_data)-1): #train error
+                if sorted_data[i+1][0][-1][0] == sorted_data[i][0][-1][0] and i!= len(sorted_data)-2: #getting same length together
+                    None
+                else:
+                    if i == len(sorted_data)-2:
+                        i = len(sorted_data) #there is a case whereby last in loop is of diff length, will break this code
+                    Inp0_,Inp1_,Inp2_,labels_ = get_batch_from_X(sorted_data[initial:i+1])
+                    c, out = sess.run ([acc, out_softmax],
+                                       feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,
+                                        labels: labels_,dropout : 1,learning_rate : lr})
+                    initial = i+1
+                    cost_val += [c,]*len(Inp0_)
+                    logit_val += list(out[:,0])
+                    y_temp += list(labels_[:,0])
+            roc_val   = sklearn.metrics.roc_auc_score(y_temp,logit_val)
+
             logit_test = []
             cost_test = []
-            for i in range(len(X_test)): #test errror
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_test,y_test,i)
-                c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                              Inp1: Inp1_,Inp2: Inp2_,
-                                                      labels: labels_,
-                                                      dropout : 1,learning_rate : lr})
-                cost_test += [c,]
-                logit_test += [ out[0][0],]
-            roc_train = sklearn.metrics.roc_auc_score(y_train,logit_train)
-            roc_val   = sklearn.metrics.roc_auc_score(y_val,logit_val)
-            roc_test   = sklearn.metrics.roc_auc_score(y_test,logit_test)
+            if False: #single is slow
+                for i in range(len(X_test)): #test errror
+                    Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_test,y_test,i)
+                    c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
+                                                  Inp1: Inp1_,Inp2: Inp2_,
+                                                          labels: labels_,
+                                                          dropout : 1,learning_rate : lr})
+            sorted_data = sorted(zip(X_test,y_test),key = lambda x : x[0][-1][0])
+            initial=0
+            y_temp = []
+            for i in range(0,len(sorted_data)-1): #train error
+                if sorted_data[i+1][0][-1][0] == sorted_data[i][0][-1][0] and i!= len(sorted_data)-2: #getting same length together
+                    None
+                else:
+                    if i == len(sorted_data)-2:
+                        i = len(sorted_data) #there is a case whereby last in loop is of diff length, will break this code 
+                    Inp0_,Inp1_,Inp2_,labels_ = get_batch_from_X(sorted_data[initial:i+1])
+                    c, out = sess.run ([acc, out_softmax],
+                                       feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,
+                                        labels: labels_,dropout : 1,learning_rate : lr})
+                    initial = i+1
+                    cost_test += [c,]*len(Inp0_)
+                    logit_test += list(out[:,0])
+                    y_temp += list(labels_[:,0])
+            roc_test   = sklearn.metrics.roc_auc_score(y_temp,logit_test)
+                    
             print np.mean(cost_train),np.mean(cost_val)
             print roc_train,roc_val,roc_test
             best_roc_val[epoch] = [roc_train,roc_val,roc_test,logit_test]
@@ -315,7 +360,7 @@ for repeat in range(0,1): #perform 5 repeats
             best_logit_test = sorted([best_roc_val[ep] for ep in best_roc_val], key = lambda x :x[1])[-3:]
             if len(best_logit_test) >=3 and best_logit_test[0][1] <= roc_val:
                 #model_name = 'model3_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
-                saver.save(sess,model_name),
+                #saver.save(sess,model_name),
                 print 'SAVED\n'
         for j in best_logit_test:
             test_emsemble += [j[3],]
