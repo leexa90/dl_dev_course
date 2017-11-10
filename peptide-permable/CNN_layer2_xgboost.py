@@ -44,7 +44,7 @@ def fn1(str):
     for i in str:
         if i.upper() == 'R' or i.upper() == 'K':
             num += 1
-    if num/len(str) > 0.333: #should be tweaked
+    if num/len(str) > 0.334: #should be tweaked
         return 0
     return len(set(str))
 def fn2(str): # find if sequence has weird bonds
@@ -143,7 +143,7 @@ def get_data_from_X(X,y,i): #get tensor inputs from X and y
     labels_ = np.array([[y[i],]])
     return Inp0_,Inp1_,Inp2_,labels_
 folds= 5
-['per_A', 'num_A', 'per_C', 'num_C', 'per_E', 'num_E', 'per_D', 'num_D', 'per_G', 'num_G',
+features=['per_A', 'num_A', 'per_C', 'num_C', 'per_E', 'num_E', 'per_D', 'num_D', 'per_G', 'num_G',
  'per_F', 'num_F', 'per_I', 'num_I', 'per_H', 'num_H', 'per_K', 'num_K', 'per_M', 'num_M',
  'per_L', 'num_L', 'per_N', 'num_N', 'per_Q', 'num_Q', 'per_P', 'num_P', 'per_S', 'num_S', 'per_R', 'num_R', 'per_T', 'num_T',
  'per_W', 'num_W', 'per_V', 'num_V', 'per_Y', 'num_Y',  'netcharge', 'Gwif', 'Goct']
@@ -165,7 +165,7 @@ for test in range(0,5):
     test_emsemble= []
 
     for repeat in range(0,1): #perform 5 repeats
-        for CV in range(folds-1): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)# 
+        for CV in range(folds): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)# 
             RESULT[CV] = []
             X_train = []
             y_train = []
@@ -188,7 +188,7 @@ for test in range(0,5):
             params = {}
             params["objective"] =  "binary:logistic"
             params["eta"] = 0.01
-            params["min_child_weight"] = 1
+            params["min_child_weight"] = 2
             params["subsample"] = 0.7
             params["colsample_bytree"] = 0.7
             params["scale_pos_weight"] = 1.0
@@ -204,7 +204,7 @@ for test in range(0,5):
                 result_d=xgb.train(plst,xgtrain,2200,watchlist,
                                    early_stopping_rounds=early_stopping_rounds,
                                    evals_result=a,maximize=0,verbose_eval=500)
-                result_d.get_fscore()
+                print result_d.get_fscore()
                 logit_train = []
                 pred = result_d.predict(xgtrain)
                 roc_train = sklearn.metrics.roc_auc_score(y_train,pred)
@@ -217,11 +217,13 @@ for test in range(0,5):
                 all_data += [[roc_train,roc_val,roc_test],]
 
                 test_emsemble += [result_d.predict(xgtest),]
-
+                model_name = 'XGB1_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
+                result_d.save_model(model_name)
+                del result_d
             print sklearn.metrics.roc_auc_score(y_test,np.mean(np.array(test_emsemble),0))
 
     zz=data.set_value(range(test,len(data),5),'testPred',np.mean(np.array(test_emsemble),0))
     zz=data.set_value(range(test,len(data),5),'testY',y_test)
     data.iloc[range(test,len(data),5)].to_csv('XGB_%s.csv' %test,index=0)
 print sklearn.metrics.roc_auc_score(data.testY,data.testPred)
-        
+data.to_csv('XGB_all.csv',index=0)

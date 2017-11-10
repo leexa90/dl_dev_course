@@ -45,7 +45,7 @@ def fn1(str):
     for i in str:
         if i.upper() == 'R' or i.upper() == 'K':
             num += 1
-    if num/len(str) > .333: #should be tweaked
+    if num/len(str) > .334: #should be tweaked
         return 0
     return len(set(str))
 def fn2(str): # find if sequence has weird bonds
@@ -97,7 +97,7 @@ for idx in range(len(data)):
     counter += 1
 data['X'] = X
 
-batch_size = 1
+batch_size = None
 epsilon = 1e-3
 def batch_normalization(x,name='batchnorm',feature_norm = False):
     # ideally i want to do batch norm per row per sample
@@ -144,21 +144,21 @@ with tf.name_scope('layer2') as scope:
 
 with tf.name_scope('layer3') as scope:
     layer3_norm = batch_normalization(layer2_DO,'BN_layer1')
-    layer3 = tf.layers.conv2d(layer3_norm,96,(1,3),padding='same',activation=tf.nn.relu)
+    layer3 = tf.layers.conv2d(layer3_norm,128,(1,3),padding='same',activation=tf.nn.relu)
     layer3_DO = tf.layers.dropout(layer3,rate=dropout,name='Drop3')
 
 with tf.name_scope('layer4') as scope:
     layer4_norm = batch_normalization(layer3_DO,'BN_layer2')
-    layer4 = tf.layers.conv2d(layer4_norm,128,(1,3),padding='same',activation=tf.nn.relu)
+    layer4 = tf.layers.conv2d(layer4_norm,256,(1,3),padding='same',activation=tf.nn.relu)
+    layer4_DO = tf.layers.dropout(layer4,rate=dropout,name='Drop4')
 
 with tf.name_scope('dense') as scope:
-    globalmeanpooling = tf.reduce_mean(layer4[:,:,:,0::2],(1,2),name='globalmeanpooling')
-    globalmaxpooling = tf.reduce_mean(layer4[:,:,:,1::2],(1,2),name='globalmaxpooling')
-    gbmp_extra = tf.concat([Inp2,globalmaxpooling,globalmeanpooling],axis = 1, name ='gbmp_extra')
+    globalmaxpooling = tf.reduce_mean(layer4_DO,(1,2),name='globalmaxpooling')
+    gbmp_extra = tf.concat([Inp2,globalmaxpooling],axis = 1, name ='gbmp_extra')
     layer5_DO = tf.layers.dropout(gbmp_extra,rate=dropout,name='Drop5')
     dense1 = tf.layers.dense(layer5_DO,16,activation = None , name = 'dense1' )
     layer6_DO = tf.layers.dropout(dense1,rate=dropout,name='Drop6')
-    dense2 = tf.layers.dense(globalmaxpooling,1 , name = 'dense2' )
+    dense2 = tf.layers.dense(layer6_DO,1 , name = 'dense2' )
 with tf.name_scope('loss') as scope:
     loss = tf.nn.sigmoid_cross_entropy_with_logits(labels=labels,
                                                       logits = dense2,
@@ -226,11 +226,13 @@ print 'train+val  size :', len(X)
 saver = tf.train.Saver( max_to_keep=5000)
 repeat = 0
 for repeat in range(0,1): #perform 5 repeats
-    for CV in range(folds-1): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)# 
+    for CV in range(folds): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)# 
         init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
         RESULT[CV] = []
         X_train = []
         y_train = []
+        X_train_small = []
+        y_train_small = []
         X_val = []
         y_val = []    
         for i in range(len(X)):
@@ -239,12 +241,18 @@ for repeat in range(0,1): #perform 5 repeats
                 X_val += [(x[0],x[1],x[2]),]
                 y_val += [x[-1],]
             else:
-                X_train += [(x[0],x[1],x[2]),]
-                y_train += [x[-1],]
+                if x[-1] == 1:
+                    mul = 18 #ratio of pos to neg is 1:18.4
+                else: mul = 1
+                X_train += [(x[0],x[1],x[2]),]*mul
+                y_train += [x[-1],]*mul
+                X_train_small += [(x[0],x[1],x[2]),]
+                y_train_small += [x[-1],]
+        print 'size of different sets:',len(X_train),len(X_val),len(X_test)
 
         best_roc_val = {}     # stores val ROC for trainnig epochs per CV+repeat run
         for epoch in range(training_epochs):#training_epochs):
-            if epoch%20 ==0 :
+            if epoch%25 ==0 :
                 init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
             logit_train = []
             cost_train = []
@@ -253,25 +261,18 @@ for repeat in range(0,1): #perform 5 repeats
             random.shuffle(shuffle)
             counter = 0
             for i in shuffle[::10]: #training with bagging
-                lr = ((1+np.cos(1.0*counter*3.142/len(shuffle)))**3)*0.0007*((51.0-epoch)/50)**2
+                lr = 0.0015*(1-1.0*counter/len(shuffle[::10]))
                 counter += 1
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train,i)
-                if labels_[0][0] == 1:
-                    lr = lr * 8.5 #reweigh LR for pos
-                else:
-                    lr = lr * 0.5 #reweigh LR for neg
-                
+                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train,i)        
                 _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,Inp2: Inp2_,
                                                                    Inp1: Inp1_,
                                                                    labels: labels_,
-                                                                   dropout : 0.4,learning_rate : lr}) #sgd 
-
-
+                                                                   dropout : 0.4,learning_rate : lr}) #sgd
             logit_train = []
             cost_train = []
             lr = 0 
-            for i in range(len(X_train)): #train error
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train,y_train,i)
+            for i in range(len(X_train_small)): #train error
+                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train_small,y_train_small,i)
                 c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
                                               Inp1: Inp1_,Inp2: Inp2_,
                                                       labels: labels_,
@@ -313,7 +314,7 @@ for repeat in range(0,1): #perform 5 repeats
                 init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
             best_logit_test = sorted([best_roc_val[ep] for ep in best_roc_val], key = lambda x :x[1])[-3:]
             if len(best_logit_test) >=3 and best_logit_test[0][1] <= roc_val:
-                model_name = 'model3_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
+                #model_name = 'model3_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
                 saver.save(sess,model_name),
                 print 'SAVED\n'
         for j in best_logit_test:

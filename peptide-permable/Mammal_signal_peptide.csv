@@ -1,0 +1,1928 @@
+ID,entry name,protein name,organism,len,status,seq
+P58294,PROK1_HUMAN,Prokineticin-1,Homo sapiens,19,confirmed,MRGATRVSIMLLLVTVSDC
+Q01151,CD83_HUMAN,CD83 antigen,Homo sapiens,19,confirmed,MSRGLQLLLLSCAYSLAPA
+P01729,LV2B_MOUSE,Ig lambda-2 chain V region MOPC 315,Mus musculus,19,confirmed,MAWTSLILSLLALCSGASS
+Q9NWM8,FKB14_HUMAN,FK506-binding protein 14,Homo sapiens,19,confirmed,MRLFLWNAVLTLFVTSLIG
+P01749,HVM05_MOUSE,Ig heavy chain V region 3,Mus musculus,19,confirmed,MGWSCIILFLVATATGVHS
+P18530,HVM59_MOUSE,Ig heavy chain V region 7-39,Mus musculus,19,confirmed,MNFGLSLIFLVLILKGVQC
+P19788,MGP_MOUSE,Matrix Gla protein,Mus musculus,19,confirmed,MKSLLPLAILAALAVATLC
+P11627,L1CAM_MOUSE,Neural cell adhesion molecule L1,Mus musculus,19,confirmed,MVVMLRYVWPLLLCSPCLL
+P20918,PLMN_MOUSE,Plasminogen,Mus musculus,19,confirmed,MDHKEVILLFLLLLKPGQG
+O46655,WAP_PIG,Whey acidic protein,Sus scrofa,19,confirmed,MRFLTSLALALIALEAALA
+P01267,THYG_BOVIN,Thyroglobulin,Bos taurus,19,confirmed,MALALWVFGLLDLICLASA
+P02672,FIBA_BOVIN,Fibrinogen alpha chain,Bos taurus,19,confirmed,MFSVRDLCLVLSLVGAIKT
+P02724,GLPA_HUMAN,Glycophorin-A,Homo sapiens,19,confirmed,MYGKIIFVLLLSAIVSISA
+P15515,HIS1_HUMAN,Histatin-1,Homo sapiens,19,confirmed,MKFFVFALVLALMISMISA
+P01819,HVM43_MOUSE,Ig heavy chain V region MOPC 141,Mus musculus,19,confirmed,MAVLALLFCLATFPSCILS
+P09848,LPH_HUMAN,Lactase-phlorizin hydrolase,Homo sapiens,19,confirmed,MELSWHVVFIALLSFSCWG
+P02761,MUP_RAT,Major urinary protein,Rattus norvegicus,19,confirmed,MKLLLLLLCLGLTLVCGHA
+P36955,PEDF_HUMAN,Pigment epithelium-derived factor,Homo sapiens,19,confirmed,MQALVLLLCIGALLGHSSC
+P08519,APOA_HUMAN,Apolipoprotein(a),Homo sapiens,19,confirmed,MEHKEVVLLLLLFLKSAAP
+P01266,THYG_HUMAN,Thyroglobulin,Homo sapiens,19,confirmed,MALVLEIFTLLASICWVSA
+Q16627,CCL14_HUMAN,C-C motif chemokine 14,Homo sapiens,19,confirmed,MKISVAAIPFFLLITIALG
+P81605,DCD_HUMAN,Dermcidin,Homo sapiens,19,confirmed,MRFMTLLFLTALAGALVCA
+P01178,NEU1_HUMAN,Oxytocin-neurophysin 1,Homo sapiens,19,confirmed,MAGPSLACCLLGLLALTSA
+P23083,HV103_HUMAN,Ig heavy chain V-I region V35,Homo sapiens,19,confirmed,MDWTWRILFLVAAATGAHS
+P13504,IL1R1_MOUSE,Interleukin-1 receptor type I,Mus musculus,19,confirmed,MENMKVLLGLICLMVPLLS
+Q29145,LALBA_TRIVU,Alpha-lactalbumin,Trichosurus vulpecula,19,confirmed,MMSLLPLLLIGIVLPATQA
+P09923,PPBI_HUMAN,Intestinal alkaline phosphatase,Homo sapiens,19,confirmed,MQGPWVLLLLGLRLQLSLG
+P31235,CASQ2_RABIT,Calsequestrin-2,Oryctolagus cuniculus,19,confirmed,MKRAHLFVVGVYLLSSCRA
+P22458,VTNC_RABIT,Vitronectin,Oryctolagus cuniculus,19,confirmed,MAPLRPIFTLALLLWVVLA
+P13595,NCAM1_MOUSE,Neural cell adhesion molecule 1,Mus musculus,19,confirmed,MLRTKDLIWTLFFLGTAVS
+P04785,PDIA1_RAT,Protein disulfide-isomerase,Rattus norvegicus,19,confirmed,MLSRALLCLALAWAARVGA
+Q8TDQ1,CLM1_HUMAN,CMRF35-like molecule 1,Homo sapiens,19,confirmed,MPLLTLYLLLFWLSGYSIA
+P21692,MMP1_PIG,Interstitial collagenase,Sus scrofa,19,confirmed,MFSLLLLLLLLCNTGSHGF
+P08494,MGP_RAT,Matrix Gla protein,Rattus norvegicus,19,confirmed,MKSLLPLAILAALAVAALC
+Q6UW10,SFTPG_HUMAN,Surfactant-associated protein G,Homo sapiens,19,confirmed,MGSGLPLVLLLTLLGSSHG
+Q9BCL8,Q9BCL8_RAT,n/a,Rattus norvegicus,19,confirmed,SCVAAVILLLTVLSPPVAL
+Q9JJS8,MASP2_RAT,Mannan-binding lectin serine protease 2,Rattus norvegicus,19,confirmed,MRLLIVLGLLWSLVATLLG
+P19134,TRFE_RABIT,Serotransferrin,Oryctolagus cuniculus,19,confirmed,MRLAAGALLACAALGLCLA
+P01820,HVM44_MOUSE,Ig heavy chain V region PJ14,Mus musculus,19,confirmed,MAVLALLFCLVTFPSCILS
+P20029,GRP78_MOUSE,78 kDa glucose-regulated protein,Mus musculus,19,confirmed,MMKFTVVAAALLLLGAVRA
+P07507,MGP_BOVIN,Matrix Gla protein,Bos taurus,19,confirmed,MKSLLLLSILAALAVAALC
+P09849,LPH_RABIT,Lactase-phlorizin hydrolase,Oryctolagus cuniculus,19,confirmed,MELFWSIVFTVLLSFSCRG
+P02743,SAMP_HUMAN,Serum amyloid P-component,Homo sapiens,19,confirmed,MNKPLLWISVLTSLLEAFA
+O97763,NPC2_PIG,Epididymal secretory protein E1,Sus scrofa,19,confirmed,MHFLAAAFLLLTLSASALA
+P19801,ABP1_HUMAN,Amiloride-sensitive amine oxidase [copper-containing],Homo sapiens,19,confirmed,MPALGWAVAAILMLQTAMA
+O43866,CD5L_HUMAN,CD5 antigen-like,Homo sapiens,19,confirmed,MALLFSLILAICTRPGFLA
+P01177,NEU1_PIG,Oxytocin-neurophysin 1,Sus scrofa,19,confirmed,MAGPSLACCLLGLLALTSA
+P01821,HVM45_MOUSE,Ig heavy chain V region MC101,Mus musculus,19,confirmed,MAVLGLLFCLVTFPSCVLS
+Q01339,APOH_MOUSE,Beta-2-glycoprotein 1,Mus musculus,19,confirmed,MVSPVLALFSAFLCHVAIA
+P23470,PTPRG_HUMAN,Receptor-type tyrosine-protein phosphatase gamma,Homo sapiens,19,confirmed,MRRLLEPCWWILFLKITSS
+P35248,SFTPD_RAT,Pulmonary surfactant-associated protein D,Rattus norvegicus,19,confirmed,MLHFLSMLVLLVQPLGDLG
+P14272,KLKB1_RAT,Plasma kallikrein,Rattus norvegicus,19,confirmed,MILFKQVGYFVSLFATVSC
+P05546,HEP2_HUMAN,Heparin cofactor 2,Homo sapiens,19,confirmed,MKHSLNALLIFLIITSAWG
+Q03401,CRIS1_MOUSE,Cysteine-rich secretory protein 1,Mus musculus,19,confirmed,MALMLVLFFLAAVLPPSLL
+P00714,LALBA_RAT,Alpha-lactalbumin,Rattus norvegicus,19,confirmed,MMRFVPLFLACISLPAFQA
+P20917,MAG_MOUSE,Myelin-associated glycoprotein,Mus musculus,19,confirmed,MIFLATLPLFWIMISASRG
+P06319,LV605_HUMAN,Ig lambda chain V-VI region EB4,Homo sapiens,19,confirmed,MAWAPLLLTLLAHCTDCWA
+P01179,NEU1_RAT,Oxytocin-neurophysin 1,Rattus norvegicus,19,confirmed,MACPSLACCLLGLLALTSA
+P04918,SAA3_MOUSE,Serum amyloid A-3 protein,Mus musculus,19,confirmed,MKPSIAIILCILILGVDSQ
+P01753,HVM09_MOUSE,Ig heavy chain V region 186-1,Mus musculus,19,confirmed,MGWSCIMLFLAATATGVHS
+P15421,GLPE_HUMAN,Glycophorin-E,Homo sapiens,19,confirmed,MYGKIIFVLLLSGIVSISA
+P49908,SEPP1_HUMAN,Selenoprotein P,Homo sapiens,19,confirmed,MWRSLGLALALCLLPSGGT
+P01175,NEU1_BOVIN,Oxytocin-neurophysin 1,Bos taurus,19,confirmed,MAGSSLACCLLGLLALTSA
+P06327,HVM52_MOUSE,Ig heavy chain V region VH558 A1/A4,Mus musculus,19,confirmed,MGWRWIFLFLLSGTAGVHC
+P00713,LALBA_CAVPO,Alpha-lactalbumin,Cavia porcellus,19,confirmed,MMSFFPLLLVGILFPAVQA
+P12637,CASQ2_CANFA,Calsequestrin-2,Canis familiaris,19,confirmed,MKRTHLFIAGLYLLASCRA
+O88188,LY86_MOUSE,Lymphocyte antigen 86,Mus musculus,19,confirmed,MNGVAAALLVWILTSPSSS
+P01751,HVM07_MOUSE,Ig heavy chain V region B1-8/186-2,Mus musculus,19,confirmed,MGWSCIMLFLAATATGVHS
+P14847,CRP_MOUSE,C-reactive protein,Mus musculus,19,confirmed,MEKLLWCLLIMISFSRTFG
+P05154,IPSP_HUMAN,Plasma serine protease inhibitor,Homo sapiens,19,confirmed,MQLFLLLCLVLLSPQGASL
+P08700,IL3_HUMAN,Interleukin-3,Homo sapiens,19,confirmed,MSRLPVLLLLQLLVRPGLQ
+P01227,FSHB_SHEEP,Follitropin subunit beta,Ovis aries,19,confirmed,MKSVQFCFLFCCWRAICCR
+P01754,HVM10_MOUSE,Ig heavy chain V region 145,Mus musculus,19,confirmed,MGWSCIMLFLAATATGVHF
+P06320,TVB7_MOUSE,T-cell receptor beta chain V region CTL-F3,Mus musculus,19,confirmed,MAPRLLFCLVLCFLRAEPT
+Q04857,CO6A1_MOUSE,Collagen alpha-1(VI) chain,Mus musculus,19,confirmed,MRLAHALLPLLLQACWVAT
+P38660,PDIA6_MESAU,Protein disulfide-isomerase A6,Mesocricetus auratus,19,confirmed,MARLGFGLVSCTFFLAASG
+Q61508,ECM1_MOUSE,Extracellular matrix protein 1,Mus musculus,19,confirmed,MGTVSRAALILACLALASA
+Q62230,SN_MOUSE,Sialoadhesin,Mus musculus,19,confirmed,MCVLFSLLLLASVFSLGQT
+P01829,HV2C_RABIT,Ig heavy chain V-A2 region P-MU-3,Oryctolagus cuniculus,19,confirmed,METGLRWLLLVAVLKGVQC
+Q9HBE5,IL21R_HUMAN,Interleukin-21 receptor,Homo sapiens,19,confirmed,MPRGWAAPLLLLLLQGGWG
+P0C0L4,CO4A_HUMAN,Complement C4-A,Homo sapiens,19,confirmed,MRLLWGLIWASSFFTLSLQ
+P80035,LIPG_CANFA,Gastric triacylglycerol lipase,Canis familiaris,19,confirmed,MWLLLTAASVISTLGTTHG
+Q96LA5,FCRL2_HUMAN,Fc receptor-like protein 2,Homo sapiens,19,confirmed,MLLWSLLVIFDAVTEQADS
+P05366,SAA1_MOUSE,Serum amyloid A-1 protein,Mus musculus,19,confirmed,MKLLTSLVFCSLLLGVCHG
+P09462,LALBA_SHEEP,Alpha-lactalbumin,Ovis aries,19,confirmed,MMSFVSLLLVGILFHATQA
+P12346,TRFE_RAT,Serotransferrin,Rattus norvegicus,19,confirmed,MRFAVGALLACAALGLCLA
+P08493,MGP_HUMAN,Matrix Gla protein,Homo sapiens,19,confirmed,MKSLILLAILAALAVVTLC
+P14780,MMP9_HUMAN,Matrix metalloproteinase-9,Homo sapiens,19,confirmed,MSLWQPLVLVLLVLGCCFA
+Q03402,CRIS3_MOUSE,Cysteine-rich secretory protein 3,Mus musculus,19,confirmed,MALMLVLFFLAAVLPPSLL
+P98140,FA12_BOVIN,Coagulation factor XII,Bos taurus,19,confirmed,MRALLLLGALLVSLESTVS
+P08582,TRFM_HUMAN,Melanotransferrin,Homo sapiens,19,confirmed,MRGPSGALWLLLALRTVLG
+P02760,AMBP_HUMAN,Protein AMBP,Homo sapiens,19,confirmed,MRSLGALLLLLSACLAVSA
+P15812,CD1E_HUMAN,T-cell surface glycoprotein CD1e,Homo sapiens,19,confirmed,MLLLFLLFEGLCCPGENTA
+P00711,LALBA_BOVIN,Alpha-lactalbumin,Bos taurus,19,confirmed,MMSFVSLLLVGILFHATQA
+P18529,HVM58_MOUSE,Ig heavy chain V region 5-76,Mus musculus,19,confirmed,MNFVLSLIFLALILKGVQC
+Q8NI17,IL31R_HUMAN,Interleukin-31 receptor A,Homo sapiens,19,confirmed,MMWTWALWMLPSLCKFSLA
+P15702,LEUK_MOUSE,Leukosialin,Mus musculus,19,confirmed,MALHLLLLFGACWVQVASP
+P02671,FIBA_HUMAN,Fibrinogen alpha chain,Homo sapiens,19,confirmed,MFSMRIVCLVLSVVGTAWT
+O14773,TPP1_HUMAN,Tripeptidyl-peptidase 1,Homo sapiens,19,confirmed,MGLQACLLGLFALILSGKC
+P00712,LALBA_CAPHI,Alpha-lactalbumin,Capra hircus,19,confirmed,MMSFVSLLLVGILFHATQA
+P0C0L5,CO4B_HUMAN,Complement C4-B,Homo sapiens,19,confirmed,MRLLWGLIWASSFFTLSLQ
+P01743,HV102_HUMAN,Ig heavy chain V-I region HG3,Homo sapiens,19,confirmed,MDWTWRVFCLLAVAPGAHS
+P05113,IL5_HUMAN,Interleukin-5,Homo sapiens,19,confirmed,MRMLLHLSLLALGAAYVYA
+P01727,LV1E_MOUSE,Ig lambda-1 chain V region S43,Mus musculus,19,confirmed,MAWISLILSLLALSSGAIS
+P19111,PPBI_BOVIN,Intestinal alkaline phosphatase,Bos taurus,19,confirmed,MQGACVLLLLGLHLQLSLG
+P06316,LV107_HUMAN,Ig lambda chain V-I region BL2,Homo sapiens,19,confirmed,MTCSPLLLTLLIHCTGSWA
+P48819,VTNC_PIG,Vitronectin,Sus scrofa,19,confirmed,MAPLRPLLMLALLAWVALA
+P05367,SAA2_MOUSE,Serum amyloid A-2 protein,Mus musculus,19,confirmed,MKLLTSLVFCSLLLGVCHG
+P14091,CATE_HUMAN,Cathepsin E,Homo sapiens,19,confirmed,MKTLLLLLLVLLELGEAQG
+P23946,CMA1_HUMAN,Chymase,Homo sapiens,19,confirmed,MLLLPLPLLLFLLCSRAEA
+P07093,GDN_HUMAN,Glia-derived nexin,Homo sapiens,19,confirmed,MNWHLPLFLLASVTLPSIC
+Q60675,LAMA2_MOUSE,Laminin subunit alpha-2,Mus musculus,19,confirmed,MPAATAGILLLLLLGTLEG
+P07722,MAG_RAT,Myelin-associated glycoprotein,Rattus norvegicus,19,confirmed,MIFLTTLPLFWIMISASRG
+P25796,CATE_CAVPO,Cathepsin E,Cavia porcellus,19,confirmed,MKTFLLLLLVLLELGQAPG
+P31836,NCAM1_BOVIN,Neural cell adhesion molecule 1,Bos taurus,19,confirmed,MLQTKNLIWTLFFLGTAVS
+P12020,CRIS1_RAT,Cysteine-rich secretory protein 1,Rattus norvegicus,19,confirmed,MALMLVLLFLAAVLPPSLL
+P15516,HIS3_HUMAN,Histatin-3,Homo sapiens,19,confirmed,MKFFVFALILALMLSMTGA
+P26010,ITB7_HUMAN,Integrin beta-7,Homo sapiens,19,confirmed,MVALPMVLVLLLVLSRGES
+P01029,CO4B_MOUSE,Complement C4-B,Mus musculus,19,confirmed,MRLLWGLAWVFSFCASSLQ
+P16150,LEUK_HUMAN,Leukosialin,Homo sapiens,19,confirmed,MATLLLLLGVLVVSPDALG
+P06028,GLPB_HUMAN,Glycophorin-B,Homo sapiens,19,confirmed,MYGKIIFVLLLSEIVSISA
+P79345,NPC2_BOVIN,Epididymal secretory protein E1,Bos taurus,19,confirmed,MRFLTVAFLFLALSASALA
+P01750,HVM06_MOUSE,Ig heavy chain V region 102,Mus musculus,19,confirmed,MGWSCIILFLVATATGVHS
+Q9BX93,PG12B_HUMAN,Group XIIB secretory phospholipase A2-like protein,Homo sapiens,19,confirmed,MKLASGFLVLWLSLGGGLA
+Q9N2I2,IPSP_BOVIN,Plasma serine protease inhibitor,Bos taurus,19,confirmed,MRLCLFLCLVLLGPRMATL
+P24627,TRFL_BOVIN,Lactotransferrin,Bos taurus,19,confirmed,MKLFVPALLSLGALGLCLA
+P07897,PGCA_RAT,Aggrecan core protein,Rattus norvegicus,19,confirmed,MTTLLLVFVTLRVIAAVIS
+P08571,CD14_HUMAN,Monocyte differentiation antigen CD14,Homo sapiens,19,confirmed,MERASCLLLLLLPLVHVSA
+P17559,UTER_RAT,Uteroglobin,Rattus norvegicus,19,confirmed,MKIAITITVLMLSICCSSA
+P22272,IL6RA_MOUSE,Interleukin-6 receptor subunit alpha,Mus musculus,19,confirmed,MLTVGCTLLVALLAAPAVA
+P01301,PAHO_SHEEP,Pancreatic prohormone,Ovis aries,19,confirmed,LLLSTCVALLLQPPLGALG
+P04438,HV208_HUMAN,Ig heavy chain V-II region SESS,Homo sapiens,19,confirmed,MDILCSTLLLLTVPSGVLS
+Q86YT9,JAML1_HUMAN,Junctional adhesion molecule-like,Homo sapiens,19,confirmed,MFCPLKLILLPVLLDYSLG
+P01755,HVM11_MOUSE,Ig heavy chain V region S43,Mus musculus,19,confirmed,MGWSCIMLFLAATATGVHS
+P20916,MAG_HUMAN,Myelin-associated glycoprotein,Homo sapiens,19,confirmed,MIFLTALPLFWIMISASRG
+O43852,CALU_HUMAN,Calumenin,Homo sapiens,19,confirmed,MDLRQFLMCLSLCTAFALS
+P06867,PLMN_PIG,Plasminogen,Sus scrofa,19,confirmed,MDHKEVVLLLLLFLKSGLG
+P01728,LV2A_MOUSE,Ig lambda-2 chain V region,Mus musculus,19,confirmed,MAWTSLILSLLALCSGASS
+P12109,CO6A1_HUMAN,Collagen alpha-1(VI) chain,Homo sapiens,19,confirmed,MRAARALLPLLLQACWTAA
+P18525,HVM54_MOUSE,Ig heavy chain V region 5-84,Mus musculus,19,confirmed,MNFGLSLIFLVLVLKGVLC
+P01174,WAP_RAT,Whey acidic protein,Rattus norvegicus,19,confirmed,MRCSISLVLGLLALEVALA
+Q3V4E3,Q3V4E3_HUMAN,n/a,Homo sapiens,19,confirmed,MKSVLLLTTLLVPAHLVAA
+P17690,APOH_BOVIN,Beta-2-glycoprotein 1,Bos taurus,19,confirmed,MPPPALVLLLGFLCHVAIA
+O62643,THY1_MACMU,Thy-1 membrane glycoprotein,Macaca mulatta,19,confirmed,MNLAISIALLLTVLQVSRG
+P00450,CERU_HUMAN,Ceruloplasmin,Homo sapiens,19,confirmed,MKILILGIFLFLCSTPAWA
+P01758,HVM14_MOUSE,Ig heavy chain V region 108A,Mus musculus,19,confirmed,MGWSWIFLFLLSGTAGVHS
+P10323,ACRO_HUMAN,Acrosin,Homo sapiens,19,confirmed,MVEMLPTAILLVLAVSVVA
+P06911,LCN5_RAT,Epididymal-specific lipocalin-5,Rattus norvegicus,19,confirmed,MENIMPFALLGLCVGLAAG
+P22000,SAA2_RABIT,Serum amyloid A-2 protein,Oryctolagus cuniculus,19,confirmed,MKLLSGLLLCSLVLGVSGQ
+P01185,NEU2_HUMAN,Vasopressin-neurophysin 2-copeptin,Homo sapiens,19,confirmed,MPDTMLPACFLGLLAFSSA
+P03952,KLKB1_HUMAN,Plasma kallikrein,Homo sapiens,19,confirmed,MILFKQATYFISLFATVSC
+P26842,CD27_HUMAN,CD27 antigen,Homo sapiens,19,confirmed,MARPHPWWLCVLGTLVGLS
+P23578,ACRO_MOUSE,Acrosin,Mus musculus,19,confirmed,MVEMLPTVAVLVLAVSVVA
+P18137,LALBA_PIG,Alpha-lactalbumin,Sus scrofa,19,confirmed,MMSFVSLLVVGILFPAIQA
+P00451,FA8_HUMAN,Coagulation factor VIII,Homo sapiens,19,confirmed,MQIELSTCFFLCLLRFCFS
+P01759,HVM15_MOUSE,Ig heavy chain V region BCL1,Mus musculus,19,confirmed,MGWSCIIFFLVATATGVHS
+P22273,IL6RA_RAT,Interleukin-6 receptor subunit alpha,Rattus norvegicus,19,confirmed,MLAVGCTLLVALLAAPAVA
+P02788,TRFL_HUMAN,Lactotransferrin,Homo sapiens,19,confirmed,MKLVFLVLLFLGALGLCLA
+P08887,IL6RA_HUMAN,Interleukin-6 receptor subunit alpha,Homo sapiens,19,confirmed,MLAVGCALLAALLAAPGAA
+P01183,NEU2_PIG,Vasopressin-neurophysin 2-copeptin,Sus scrofa,19,confirmed,MPDATLPACFLGLLALTSA
+P01805,HVR01_RAT,Ig heavy chain V region IR2,Rattus norvegicus,19,confirmed,MDLRLTYVFIVAILKGVLC
+Q02596,GLCM1_MOUSE,Glycosylation-dependent cell adhesion molecule 1,Mus musculus,19,confirmed,MKFFTVLLFVSLAATSLAL
+Q9BQ51,PD1L2_HUMAN,Programmed cell death 1 ligand 2,Homo sapiens,19,confirmed,MIFLLLMLSLELQLHQIAA
+P01795,HVM26_MOUSE,Ig heavy chain V region M167,Mus musculus,19,confirmed,MKMWLNWVFLLTLLHGIQC
+P25236,SEPP1_RAT,Selenoprotein P,Rattus norvegicus,19,confirmed,MWRSLGLALALCLLPYGGA
+P07098,LIPG_HUMAN,Gastric triacylglycerol lipase,Homo sapiens,19,confirmed,MWLLLTMASLISVLGTTHG
+P14632,TRFL_PIG,Lactotransferrin,Sus scrofa,19,confirmed,MKLFIPALLFLGTLGLCLA
+P01830,THY1_RAT,Thy-1 membrane glycoprotein,Rattus norvegicus,19,confirmed,MNPVISITLLLSVLQMSRG
+P04004,VTNC_HUMAN,Vitronectin,Homo sapiens,19,confirmed,MAPLRPLLILALLAWVALA
+P18524,HVM53_MOUSE,Ig heavy chain V region RF,Mus musculus,19,confirmed,MNFGLRLIFLVLVLKGVLC
+P06331,HV209_HUMAN,Ig heavy chain V-II region ARH-77,Homo sapiens,19,confirmed,MKHLWFLLLWCQLPDVGVL
+P04216,THY1_HUMAN,Thy-1 membrane glycoprotein,Homo sapiens,19,confirmed,MNLAISIALLLTVLQVSRG
+Q9Y279,VSIG4_HUMAN,V-set and immunoglobulin domain-containing protein 4,Homo sapiens,19,confirmed,MGILLGLLLLGHLTVDTYG
+P01744,HV104_HUMAN,Ig heavy chain V-I region ND,Homo sapiens,19,confirmed,MDWTXXXXFLVAAATRVHS
+P21842,CMA1_CANFA,Chymase,Canis familiaris,19,confirmed,MHCLPLTLLLLLLCSRAEA
+P59666,DEF3_HUMAN,Neutrophil defensin 3,Homo sapiens,19,confirmed,MRTLAILAAILLVALQAQA
+P02702,FOLR1_BOVIN,Folate receptor alpha,Bos taurus,19,confirmed,MAWQMTQLLLLALVAAAWG
+P20702,ITAX_HUMAN,Integrin alpha-X,Homo sapiens,19,confirmed,MTRTRAALLLFTALATSLG
+P01180,NEU2_BOVIN,Vasopressin-neurophysin 2-copeptin,Bos taurus,19,confirmed,MPDATLPACFLSLLAFTSA
+P51740,PPBJ_RAT,Intestinal alkaline phosphatase 2,Rattus norvegicus,19,confirmed,MQGAWVLLLLGFRLQLSLS
+P18526,HVM55_MOUSE,Ig heavy chain V region 345,Mus musculus,19,confirmed,MNFGLRLIFLVLTLKGVKC
+P00709,LALBA_HUMAN,Alpha-lactalbumin,Homo sapiens,19,confirmed,MRFFVPLFLVGILFPAILA
+P00748,FA12_HUMAN,Coagulation factor XII,Homo sapiens,19,confirmed,MRALLLLGFLLVSLESTLS
+P01748,HVM04_MOUSE,Ig heavy chain V region 23,Mus musculus,19,confirmed,MGWSCIILFLVAAANGVHS
+P01831,THY1_MOUSE,Thy-1 membrane glycoprotein,Mus musculus,19,confirmed,MNPAISVALLLSVLQVSRG
+P01726,LV1D_MOUSE,Ig lambda-1 chain V region H2020,Mus musculus,19,confirmed,MAWISLILSLLALSSGAIS
+P03956,MMP1_HUMAN,Interstitial collagenase,Homo sapiens,19,confirmed,MHSFPPLLLLLFWGVVSHS
+P02749,APOH_HUMAN,Beta-2-glycoprotein 1,Homo sapiens,19,confirmed,MISPVLILFSSFLCHVAIA
+P13389,NEU1_SHEEP,Oxytocin-neurophysin 1,Ovis aries,19,confirmed,MAGSSLACCLLGLLALTSA
+P59665,DEF1_HUMAN,Neutrophil defensin 1,Homo sapiens,19,confirmed,MRTLAILAAILLVALQAQA
+P02809,STAT_MACFA,Statherin,Macaca fascicularis,19,confirmed,MXFLXFXLXLLXMXXMXXX
+P15697,FP_CRIMI,Female protein,Cricetulus migratorius,19,confirmed,MDKMLLLLGVSILLSEVFA
+P01746,HVM02_MOUSE,Ig heavy chain V region 93G7,Mus musculus,19,confirmed,MGWSFIFLFLLSVTAGVHS
+P29788,VTNC_MOUSE,Vitronectin,Mus musculus,19,confirmed,MAPLRPFFILALVAWVSLA
+P26262,KLKB1_MOUSE,Plasma kallikrein,Mus musculus,19,confirmed,MILFNRVGYFVSLFATVSC
+P00716,LALBA_RABIT,Alpha-lactalbumin,Oryctolagus cuniculus,19,confirmed,MMPLVPLLLVSIVFPGIQA
+P06399,FIBA_RAT,Fibrinogen alpha chain,Rattus norvegicus,19,confirmed,MLSLRVACLILSLASTVWT
+P01724,LV1B_MOUSE,Ig lambda-1 chain V regions MOPC 104E/RPC20/J558/S104,Mus musculus,19,confirmed,MAWISLILSLLALSSGAIS
+P00747,PLMN_HUMAN,Plasminogen,Homo sapiens,19,confirmed,MEHKEVVLLLLLFLKSGQG
+P02808,STAT_HUMAN,Statherin,Homo sapiens,19,confirmed,MKFLVFAFILALMVSMIGA
+Q08334,I10R2_HUMAN,Interleukin-10 receptor beta chain,Homo sapiens,19,confirmed,MAWSLGSWLGGCLLVSALG
+P01764,HV303_HUMAN,Ig heavy chain V-III region VH26,Homo sapiens,19,confirmed,MEFGLSWLFLVAILKGVQC
+P02787,TRFE_HUMAN,Serotransferrin,Homo sapiens,19,confirmed,MRLAVGALLVCAVLGLCLA
+P26011,ITB7_MOUSE,Integrin beta-7,Mus musculus,19,confirmed,MVDSSTVLIFLLVLGGGQS
+P32004,L1CAM_HUMAN,Neural cell adhesion molecule L1,Homo sapiens,19,confirmed,MVVALRYVWPLLLCSPCLL
+P79119,EPYC_BOVIN,Epiphycan,Bos taurus,19,confirmed,MKALARLIVGLLILDAAVT
+P15589,STS_RAT,Steryl-sulfatase,Rattus norvegicus,19,confirmed,MLWPCLLALLLSQLNFLCA
+P06328,HVM49_MOUSE,Ig heavy chain V region VH558 B4,Mus musculus,19,confirmed,MGWSCIMLFLAATATGVHS
+O77698,TRFL_BUBBU,Lactotransferrin,Bubalus bubalis,19,confirmed,MKLFVPALLSLGALGLCLA
+P04434,KV310_HUMAN,Ig kappa chain V-III region VH,Homo sapiens,20,confirmed,MEAPAQLLFLLLLWLPDTTR
+P26202,P15A_RABIT,15 kDa protein A,Oryctolagus cuniculus,20,confirmed,MAGVWKVLVVLVGLAVVACA
+Q13145,BAMBI_HUMAN,BMP and activin membrane-bound inhibitor homolog,Homo sapiens,20,confirmed,MDRHSSYIFIWLQLELCAMA
+P01627,KV2A2_MOUSE,Ig kappa chain V-II region VKappa167,Mus musculus,20,confirmed,MRCSLQFLGVLMFWISGVSG
+P01232,LSHB_PIG,Lutropin subunit beta,Sus scrofa,20,confirmed,MEMLQGLLLWLLLSVAGVWA
+P06322,TVA1_RABIT,T-cell receptor alpha chain V region RL-5,Oryctolagus cuniculus,20,confirmed,MFSASCSVTVVVLLITVRRT
+O02826,MSMB_PIG,Beta-microseminoprotein,Sus scrofa,20,confirmed,MKFLLGTLVVLATFVTLCNS
+P07360,CO8G_HUMAN,Complement component C8 gamma chain,Homo sapiens,20,confirmed,MLPPGTATLLTLLLAAGSLG
+P02767,TTHY_RAT,Transthyretin,Rattus norvegicus,20,confirmed,MASLRLFLLCLAGLIFASEA
+P02708,ACHA_HUMAN,Acetylcholine receptor subunit alpha,Homo sapiens,20,confirmed,MEPWPLLLLFSLCSAGLVLG
+P28325,CYTD_HUMAN,Cystatin-D,Homo sapiens,20,confirmed,MMWPMHTPLLLLTALMVAVA
+P22894,MMP8_HUMAN,Neutrophil collagenase,Homo sapiens,20,confirmed,MFSLKTLPFLLLLHVQISKA
+P01036,CYTS_HUMAN,Cystatin-S,Homo sapiens,20,confirmed,MARPLCTLLLLMATLAGALA
+P12303,TTHY_SHEEP,Transthyretin,Ovis aries,20,confirmed,MASFRLLLLCLAGLVFVSEA
+P05556,ITB1_HUMAN,Integrin beta-1,Homo sapiens,20,confirmed,MNLQPIFWIGLISSVCCVFA
+Q6UWL6,KIRR2_HUMAN,Kin of IRRE-like protein 2,Homo sapiens,20,confirmed,MLRMRVPALLVLLFCFRGRA
+P14555,PA2GA_HUMAN,"Phospholipase A2, membrane associated",Homo sapiens,20,confirmed,MKTLLLLAVIMIFGLLQAHG
+P29392,SPAD1_BOVIN,Spermadhesin-1,Bos taurus,20,confirmed,MKLSSVIPWALLLSTATVDS
+P25942,TNR5_HUMAN,Tumor necrosis factor receptor superfamily member 5,Homo sapiens,20,confirmed,MVRLPLQCVLWGCLLTAVHP
+Q6UWI2,PARM1_HUMAN,Protein PARM-1,Homo sapiens,20,confirmed,MVYKTLFALCILTAGWRVQS
+O95399,UTS2_HUMAN,Urotensin-2,Homo sapiens,20,confirmed,MYKLASCCLLFIGFLNPLLS
+P23389,SCG1_BOVIN,Secretogranin-1,Bos taurus,20,confirmed,MQPAALLGLLGATVVAAVSS
+P01233,CGHB_HUMAN,Choriogonadotropin subunit beta,Homo sapiens,20,confirmed,MEMFQGLLLLLLLSMGGTWA
+P02656,APOC3_HUMAN,Apolipoprotein C-III,Homo sapiens,20,confirmed,MQPRVLLVVALLALLASARA
+Q8MJ25,GLUC_SHEEP,Glucagon,Ovis aries,20,confirmed,MKSLYFVAGLLVMLAQGSWQ
+P51456,RELH_RABIT,Relaxin-like protein SQ10,Oryctolagus cuniculus,20,confirmed,MPALLFYLLGFCLLQGQVTG
+P16872,IL7RA_MOUSE,Interleukin-7 receptor subunit alpha,Mus musculus,20,confirmed,MMALGRAFAIVFCLIQAVSG
+Q96PD4,IL17F_HUMAN,Interleukin-17F,Homo sapiens,20,confirmed,MVKYLLLSILGLAFLSEAAA
+P07309,TTHY_MOUSE,Transthyretin,Mus musculus,20,confirmed,MASLRLFLLCLAGLVFVSEA
+P10820,PERF_MOUSE,Perforin-1,Mus musculus,20,confirmed,MATCLFLLGLFLLLPRPVPA
+P06314,KV404_HUMAN,Ig kappa chain V-IV region B17,Homo sapiens,20,confirmed,MVLQTQVFISLLLWISGAYG
+P79139,CASK_CAMDR,Kappa-casein,Camelus dromedarius,20,confirmed,MKSFFLVVTILALTLPFLGA
+P05060,SCG1_HUMAN,Secretogranin-1,Homo sapiens,20,confirmed,MQPTLLLSLLGAVGLAAVNS
+P20033,PDGFA_MOUSE,Platelet-derived growth factor subunit A,Mus musculus,20,confirmed,MRTWACLLLLGCGYLAHALA
+P08427,SFTPA_RAT,Pulmonary surfactant-associated protein A,Rattus norvegicus,20,confirmed,MSLCSLAFTLFLTVVAGIKC
+Q9H1M4,DB127_HUMAN,Beta-defensin 127,Homo sapiens,20,confirmed,MGLFMIIAILLFQKPTVTEQ
+Q05589,UROK_BOVIN,Urokinase-type plasminogen activator,Bos taurus,20,confirmed,MRVLLACLLVCALVVSDSDG
+Q9WUZ6,Q9WUZ6_MOUSE,n/a,Mus musculus,20,confirmed,MRSLQMLLLAALLLGTFLQH
+P51460,INSL3_HUMAN,Insulin-like 3,Homo sapiens,20,confirmed,MDPRLPAWALVLLGPALVFA
+P04756,ACHA_MOUSE,Acetylcholine receptor subunit alpha,Mus musculus,20,confirmed,MELSTVLLLLGLCSAGLVLG
+P55774,CCL18_HUMAN,C-C motif chemokine 18,Homo sapiens,20,confirmed,MKGLAAALLVLVCTMALCSC
+P24643,CALX_CANFA,Calnexin,Canis familiaris,20,confirmed,MEGKWLLCMLLVLGTTIVQA
+Q12841,FSTL1_HUMAN,Follistatin-related protein 1,Homo sapiens,20,confirmed,MWKRWLALALALVAVAWVRA
+P23805,CONG_BOVIN,Conglutinin,Bos taurus,20,confirmed,MLLLPLSVLLLLTQPWRSLG
+P07995,INHBA_BOVIN,Inhibin beta A chain,Bos taurus,20,confirmed,MPLLWLRGFLLASCWIIVRS
+P26776,AWN_PIG,Carbohydrate-binding protein AWN,Sus scrofa,20,confirmed,MKLAAPSLALLLSTATLVSG
+P01642,KV5A9_MOUSE,Ig kappa chain V-V region L7,Mus musculus,20,confirmed,MVSTPQFLVFLLFWIPASRG
+P06727,APOA4_HUMAN,Apolipoprotein A-IV,Homo sapiens,20,confirmed,MFLKAVVLTLALVAVAGARA
+P01723,LV1A_MOUSE,Ig lambda-1 chain V region,Mus musculus,20,confirmed,MAWISLILSLLALSSGGAIS
+P05110,GLUC_CAVPO,Glucagon,Cavia porcellus,20,confirmed,MKSVYFVAGLFIMLAQGSWQ
+P03980,HVM48_MOUSE,Ig heavy chain V region TEPC 1017,Mus musculus,20,confirmed,MGWSYIILFLVATATDVHSQ
+P08751,LSHB_HORSE,Lutropin/choriogonadotropin subunit beta,Equus caballus,20,confirmed,METLQGLLLWMLLSVGGVWA
+P01228,FSHB_PIG,Follitropin subunit beta,Sus scrofa,20,confirmed,MKSLQFCFLFCCWKAICCNS
+P01037,CYTN_HUMAN,Cystatin-SN,Homo sapiens,20,confirmed,MAQHLSTLLLLLATLAVALA
+P04214,TVB6_MOUSE,T-cell receptor beta chain V region E1,Mus musculus,20,confirmed,MWQFCILCLCVLMASVATDP
+Q86Y34,GPR97_HUMAN,Probable G-protein coupled receptor 97,Homo sapiens,20,confirmed,MATPRGLGALLLLLLLPTSG
+Q95121,PEDF_BOVIN,Pigment epithelium-derived factor,Bos taurus,20,confirmed,MQALVLLLWTGALLGFGRCQ
+P01635,KV5A3_MOUSE,Ig kappa chain V-V region K2,Mus musculus,20,confirmed,MSVLTQVLALLLLWLTGARC
+P01734,TVB1_MOUSE,T-cell receptor beta chain V region 3H.25,Mus musculus,20,confirmed,MATRLLCYTVLCLLGARILN
+P01127,PDGFB_HUMAN,Platelet-derived growth factor subunit B,Homo sapiens,20,confirmed,MNRCWALFLSLCCYLRLVSA
+P82187,CASK_HORSE,Kappa-casein,Equus caballus,20,confirmed,MKSFFLVVNILALTLPFLGA
+P35577,THBG_RAT,Thyroxine-binding globulin,Rattus norvegicus,20,confirmed,MSMFFYLFLLVLGLQATIHC
+P04436,TVA1_HUMAN,T-cell receptor alpha chain V region HPB-MLT,Homo sapiens,20,confirmed,IFASLLRAVIASICVVSSMA
+P12656,TSHB_MOUSE,Thyrotropin subunit beta,Mus musculus,20,confirmed,MSAAVLLSVLFALACGQAAS
+P02651,APOA4_RAT,Apolipoprotein A-IV,Rattus norvegicus,20,confirmed,MFLKAVVLTVALVAITGTQA
+P20974,NAR2B_RAT,T-cell ecto-ADP-ribosyltransferase 2,Rattus norvegicus,20,confirmed,MPSNICKFFLTWWLIQQVTG
+P18659,APOC3_MACFA,Apolipoprotein C-III,Macaca fascicularis,20,confirmed,MQPRVLLVAALLSLLASARA
+Q99P87,RETN_MOUSE,Resistin,Mus musculus,20,confirmed,MKNLSFPLLFLFFLVPELLG
+P42916,CL43_BOVIN,Collectin-43,Bos taurus,20,confirmed,MLPLPLSILLLLTQSQSFLG
+P18135,KV312_HUMAN,Ig kappa chain V-III region HAH,Homo sapiens,20,confirmed,METPAQLLFLLLLWLPDTTG
+P01275,GLUC_HUMAN,Glucagon,Homo sapiens,20,confirmed,MKSIYFVAGLFVMLVQGSWQ
+P01737,TVA3_HUMAN,T-cell receptor alpha chain V region PY14,Homo sapiens,20,confirmed,MLLLLVPVLEVIFTLGGTRA
+P01222,TSHB_HUMAN,Thyrotropin subunit beta,Homo sapiens,20,confirmed,MTALFLMSMLFGLACGQAMS
+Q62005,ZP1_MOUSE,Zona pellucida sperm-binding protein 1,Mus musculus,20,confirmed,MAWGCFVVLLLLAAAPLRLG
+O35310,HS3S1_MOUSE,Heparan sulfate glucosamine 3-O-sulfotransferase 1,Mus musculus,20,confirmed,MTLLLLGAVLLVAQPQLVHS
+P15169,CBPN_HUMAN,Carboxypeptidase N catalytic chain,Homo sapiens,20,confirmed,MSDLLSVFLHLLLLFKLVAP
+P20023,CR2_HUMAN,Complement receptor type 2,Homo sapiens,20,confirmed,MGAAGLLGVFLALVAPGVLG
+P26203,P15B_RABIT,15 kDa protein B,Oryctolagus cuniculus,20,confirmed,MAGVWKVLVVLVGLAVVACA
+Q04844,ACHE_HUMAN,Acetylcholine receptor subunit epsilon,Homo sapiens,20,confirmed,MARAPLGVLLLLGLLGRGVG
+P04207,KV308_HUMAN,Ig kappa chain V-III region CLL,Homo sapiens,20,confirmed,MEAPAQLLFLLLLWLPDTTG
+P01229,LSHB_HUMAN,Lutropin subunit beta,Homo sapiens,20,confirmed,MEMLQGLLLLLLLSMGGAWA
+P04651,LSHB_BOVIN,Lutropin subunit beta,Bos taurus,20,confirmed,MEMFQGLLLWLLLGVAGVWA
+P00749,UROK_HUMAN,Urokinase-type plasminogen activator,Homo sapiens,20,confirmed,MRALLARLLLCVLVVSDSKG
+P08118,MSMB_HUMAN,Beta-microseminoprotein,Homo sapiens,20,confirmed,MNVLLGSVVIFATFVTLCNA
+P05013,IFNA6_HUMAN,Interferon alpha-6,Homo sapiens,20,confirmed,MALPFALLMALVVLSCKSSC
+P05090,APOD_HUMAN,Apolipoprotein D,Homo sapiens,20,confirmed,MVMLLLLLSALAGLFGAAEG
+O75711,SCRG1_HUMAN,Scrapie-responsive protein 1,Homo sapiens,20,confirmed,MKLMVLVFTIGLTLLLGVQA
+P01274,GLUC_PIG,Glucagon,Sus scrofa,20,confirmed,MKTIYFVAGLFVMLVQGSWQ
+P01738,TVA1_MOUSE,T-cell receptor alpha chain V region PHDS58,Mus musculus,20,confirmed,MLLALLPVLGIHFVLRDAQA
+P35225,IL13_HUMAN,Interleukin-13,Homo sapiens,20,confirmed,MALLLTTVIALTCLGGFASP
+P01661,KV3A9_MOUSE,Ig kappa chain V-III region MOPC 63,Mus musculus,20,confirmed,METDTLLLWVLLLWVPGSTG
+P01230,LSHB_RAT,Lutropin subunit beta,Rattus norvegicus,20,confirmed,MERLQGLLLWLLLSPSVVWA
+P18427,FSHB_RAT,Follitropin subunit beta,Rattus norvegicus,20,confirmed,MMKSIQLCILLWCLRAVCCH
+Q14210,LY6D_HUMAN,Lymphocyte antigen 6D,Homo sapiens,20,confirmed,MRTALLLLAALAVATGPALT
+P12246,SAMP_MOUSE,Serum amyloid P-component,Mus musculus,20,confirmed,MDKLLLWMFVFTSLLSEAFC
+P14763,TSHR_CANFA,Thyrotropin receptor,Canis familiaris,20,confirmed,MRPPPLLHLALLLALPRSLG
+P04351,IL2_MOUSE,Interleukin-2,Mus musculus,20,confirmed,MYSMQLASCVTLTLVLLVNS
+P01273,GLUC_MESAU,Glucagon,Mesocricetus auratus,20,confirmed,MKNIYIVAGFFVVLVQGSWQ
+O60602,TLR5_HUMAN,Toll-like receptor 5,Homo sapiens,20,confirmed,MGDHLDLLLGVVLMAGPVFG
+P02766,TTHY_HUMAN,Transthyretin,Homo sapiens,20,confirmed,MASHRLLLLCLAGLVFVSEA
+P09055,ITB1_MOUSE,Integrin beta-1,Mus musculus,20,confirmed,MNLQLVSWIGLISLICSVFG
+P61769,B2MG_HUMAN,Beta-2-microglobulin,Homo sapiens,20,confirmed,MSRSVALAVLALLSLSGLEA
+P01637,KV5A5_MOUSE,Ig kappa chain V-V region T1,Mus musculus,20,confirmed,MRTPAQFLGILLLWFPGIKC
+Q6UX52,CQ099_HUMAN,Uncharacterized protein C17orf99,Homo sapiens,20,confirmed,MGLPGLFCLAVLAASSFSKA
+P16871,IL7RA_HUMAN,Interleukin-7 receptor subunit alpha,Homo sapiens,20,confirmed,MTILGTTFGMVFSLLQVVSG
+Q9MYN8,TTHY_ERIEU,Transthyretin,Erinaceus europaeus,20,confirmed,MASHRLFLLCLAGLVFMSEA
+O95711,LY86_HUMAN,Lymphocyte antigen 86,Homo sapiens,20,confirmed,MKGFTATLFLWTLIFPSCSG
+P49141,TTHY_MONDO,Transthyretin,Monodelphis domestica,20,confirmed,MAFHSLLLLGLASLLFVSDA
+P09228,CYTT_HUMAN,Cystatin-SA,Homo sapiens,20,confirmed,MAWPLCTLLLLLATQAVALA
+P01638,KV5A6_MOUSE,Ig kappa chain V-V region L6,Mus musculus,20,confirmed,MRTPAQFLGILLLWFPGIKC
+P17981,NAR2A_MOUSE,T-cell ecto-ADP-ribosyltransferase 1,Mus musculus,20,confirmed,MPSNNFKFFLTWWLTQQVTG
+P29752,LALBA_MOUSE,Alpha-lactalbumin,Mus musculus,20,confirmed,MMHFVPLFLVCILSLPAFQA
+P01224,TSHB_PIG,Thyrotropin subunit beta,Sus scrofa,20,confirmed,MTAIFLMSMLFGLACGQAMS
+P13611,CSPG2_HUMAN,Versican core protein,Homo sapiens,20,confirmed,MFINIKSILWMCSTLIVTHA
+P29794,GLUC_CANFA,Glucagon,Canis familiaris,20,confirmed,MKSIYFVAGLFVMLVQGSWQ
+P01658,KV3A6_MOUSE,Ig kappa chain V-III region MOPC 321,Mus musculus,20,confirmed,METDTLLLWVLLLWVPGSTG
+P02781,PSC2_RAT,Prostatic steroid-binding protein C2,Rattus norvegicus,20,confirmed,MRLSLCLLTILVVCCYEANG
+Q8IWL2,SFTA1_HUMAN,Pulmonary surfactant-associated protein A1,Homo sapiens,20,confirmed,MWLCPLALNLILMAASGAVC
+P04652,TSHB_RAT,Thyrotropin subunit beta,Rattus norvegicus,20,confirmed,MNAVVLFSVLFALACGQVSS
+P23593,APOD_RAT,Apolipoprotein D,Rattus norvegicus,20,confirmed,MATMLLLLATLAGLFTTTEG
+P51688,SPHM_HUMAN,N-sulphoglucosamine sulphohydrolase,Homo sapiens,20,confirmed,MSCPVPACCALLLVLGLCRA
+P17982,NAR2A_RAT,T-cell ecto-ADP-ribosyltransferase 1,Rattus norvegicus,20,confirmed,MPSNICKFFLTWWLIQQVTG
+P01888,B2MG_BOVIN,Beta-2-microglobulin,Bos taurus,20,confirmed,MARFVALVLLGLLSLSGLDA
+P23680,SAMP_RAT,Serum amyloid P-component,Rattus norvegicus,20,confirmed,MDKLLLWMSVFTSLLSEAFA
+O95994,AGR2_HUMAN,Anterior gradient protein 2 homolog,Homo sapiens,20,confirmed,MEKIPVSAFLLLVALSYTLA
+Q8N4F0,BPIL1_HUMAN,Bactericidal/permeability-increasing protein-like 1,Homo sapiens,20,confirmed,MAWASRLGLLLALLLPVVGA
+P09889,PPA5_PIG,Tartrate-resistant acid phosphatase type 5,Sus scrofa,20,confirmed,MDTWTVLLILQASLVLPGAV
+P07750,IL4_MOUSE,Interleukin-4,Mus musculus,20,confirmed,MGLNPQLVVILLFFLECTRS
+P05543,THBG_HUMAN,Thyroxine-binding globulin,Homo sapiens,20,confirmed,MSPFLYLVLLVLGLHATIHC
+P05307,PDIA1_BOVIN,Protein disulfide-isomerase,Bos taurus,20,confirmed,MLRRALLCLALTALFRAGAG
+P04433,KV309_HUMAN,Ig kappa chain V-III region VG,Homo sapiens,20,confirmed,MEAPAQLLFLLLLWLPDTTG
+O35314,SCG1_RAT,Secretogranin-1,Rattus norvegicus,20,confirmed,MQRAMLLGLLGAAALAAVIS
+P01739,TVA2_MOUSE,T-cell receptor alpha chain V region 2B4,Mus musculus,20,confirmed,MKSLSVSLVVLWLLLNWVNS
+P56513,PLM_CANFA,Phospholemman,Canis familiaris,20,confirmed,MAPLHHILVLCVGFLTTATA
+Q96QR1,SG3A1_HUMAN,Secretoglobin family 3A member 1,Homo sapiens,20,confirmed,MKLAALLGLCVALSCSSAAA
+P06307,CCKN_HUMAN,Cholecystokinin,Homo sapiens,20,confirmed,MNSGVCLCVLMAVLAAGALT
+P18136,KV313_HUMAN,Ig kappa chain V-III region HIC,Homo sapiens,20,confirmed,METPAQLLFLLLLWLPDTTG
+P29320,EPHA3_HUMAN,Ephrin type-A receptor 3,Homo sapiens,20,confirmed,MDCQLSILLLLSCSVLDSFG
+P22890,GLUC_OCTDE,Glucagon,Octodon degus,20,confirmed,MKSIYFVAGLFVMLVQGSWQ
+Q8IWL1,SFTA2_HUMAN,Pulmonary surfactant-associated protein A2,Homo sapiens,20,confirmed,MWLCPLALNLILMAASGAAC
+O43653,PSCA_HUMAN,Prostate stem cell antigen,Homo sapiens,20,confirmed,MKAVLLALLMAGLALQPGTA
+P05160,F13B_HUMAN,Coagulation factor XIII B chain,Homo sapiens,20,confirmed,MRLKNLTFIIILIISGELYA
+P11226,MBL2_HUMAN,Mannose-binding protein C,Homo sapiens,20,confirmed,MSLFPSLPLLLLSMVAASYS
+Q29143,ELAC_TRIVU,Early lactation protein,Trichosurus vulpecula,20,confirmed,MKFTIIALCLALSLVGMTSS
+P07151,B2MG_RAT,Beta-2-microglobulin,Rattus norvegicus,20,confirmed,MARSVTVIFLVLVSLAVVLA
+P01223,TSHB_BOVIN,Thyrotropin subunit beta,Bos taurus,20,confirmed,MTATFLMSMIFGLACGQAMS
+P12960,CNTN1_MOUSE,Contactin-1,Mus musculus,20,confirmed,MKMPLLVSHLLLISLTSCLG
+P06310,KV206_HUMAN,Ig kappa chain V-II region RPMI 6410,Homo sapiens,20,confirmed,MRLPAQLLGLLMLWVPGSSG
+Q8NAC3,I17RC_HUMAN,Interleukin-17 receptor C,Homo sapiens,20,confirmed,MPVPWFLLSLALGRSPVVLS
+P21460,CYTC_MOUSE,Cystatin-C,Mus musculus,20,confirmed,MASPLRSLLFLLAVLAVAWA
+P01231,LSHB_SHEEP,Lutropin subunit beta,Ovis aries,20,confirmed,MEMLQGLLLWLLLGVAGVWA
+Q96DR8,MUCL1_HUMAN,Mucin-like protein 1,Homo sapiens,20,confirmed,MKFLAVLVLLGVSIFLVSAQ
+P01213,PDYN_HUMAN,Beta-neoendorphin-dynorphin,Homo sapiens,20,confirmed,MAWQGLVLAACLLMFPSTTA
+P02715,ACHE_BOVIN,Acetylcholine receptor subunit epsilon,Bos taurus,20,confirmed,MAGALLCALLLLQLLGRGEG
+Q7TMF5,SPA12_MOUSE,Serpin A12,Mus musculus,20,confirmed,MTRMLDLGLFLAGLLTVKGL
+P41520,CCKN_BOVIN,Cholecystokinin,Bos taurus,20,confirmed,MNRGVCLCLLMAVLAAGALA
+P28825,MEP1A_MOUSE,Meprin A subunit alpha,Mus musculus,20,confirmed,MLWIQPACLLSLIFSAHIAA
+P02709,ACHA_BOVIN,Acetylcholine receptor subunit alpha,Bos taurus,20,confirmed,MEPRPLLLLLGLCSAGLVLG
+Q02247,BCP4_RABIT,Blastocyst protein 4,Oryctolagus cuniculus,20,confirmed,MGAVFAIIGGFALDSPILRL
+P15693,PPBI_RAT,Intestinal alkaline phosphatase 1,Rattus norvegicus,20,confirmed,MQGDWVLLLLLGLRIHLSFG
+P07882,CEL_RAT,Bile salt-activated lipase,Rattus norvegicus,20,confirmed,MGRLEVLFLGLTCCLAAACA
+P16014,SCG1_MOUSE,Secretogranin-1,Mus musculus,20,confirmed,MQPAMLLGLLGAAALAAVSS
+P06681,CO2_HUMAN,Complement C2,Homo sapiens,20,confirmed,MGPLMVLFCLLFLYPGLADS
+P06315,KV501_HUMAN,Ig kappa chain V region EV15,Homo sapiens,20,confirmed,MGSQVHLLSFLLLWISDTRA
+O15533,TPSN_HUMAN,Tapasin,Homo sapiens,20,confirmed,MKSLSLLLAVALGLATAVSA
+P06311,KV311_HUMAN,Ig kappa chain V-III region IARC/BL41,Homo sapiens,20,confirmed,METPAQLLFLLLLWLPDTTG
+P06728,APOA4_MOUSE,Apolipoprotein A-IV,Mus musculus,20,confirmed,MFLKAAVLTLALVAITGTRA
+P20782,ACHE_MOUSE,Acetylcholine receptor subunit epsilon,Mus musculus,20,confirmed,MAGALLGALLLLTLFGRSQG
+P04211,LV001_HUMAN,Ig lambda chain V region 4A,Homo sapiens,20,confirmed,MAWTPLFLFLLTCCPGGSNS
+P19835,CEL_HUMAN,Bile salt-activated lipase,Homo sapiens,20,confirmed,MGRLQLVVLGLTCCWAVASA
+P80188,NGAL_HUMAN,Neutrophil gelatinase-associated lipocalin,Homo sapiens,20,confirmed,MPLGLLWLGLALLGALHAQA
+P60568,IL2_HUMAN,Interleukin-2,Homo sapiens,20,confirmed,MYRMQLLSCIALSLALVTNS
+P49259,PLA2R_BOVIN,Secretory phospholipase A2 receptor,Bos taurus,20,confirmed,MPLLSLSLLLLLLQVPAGSA
+P07498,CASK_HUMAN,Kappa-casein,Homo sapiens,20,confirmed,MKSFLLVVNALALTLPFLAV
+P06313,KV403_HUMAN,Ig kappa chain V-IV region JI,Homo sapiens,20,confirmed,MVLQTQVFISLLLWISGAYG
+P01272,GLUC_BOVIN,Glucagon,Bos taurus,20,confirmed,MKSLYFVAGLFVMLVQGSWQ
+P04085,PDGFA_HUMAN,Platelet-derived growth factor subunit A,Homo sapiens,20,confirmed,MRTLACLLLLGCGYLAHVLA
+P04401,IL5_MOUSE,Interleukin-5,Mus musculus,20,confirmed,MRRMLLHLSVLTLSCVWATA
+Q12860,CNTN1_HUMAN,Contactin-1,Homo sapiens,20,confirmed,MKMWLLVSHLVIISITTCLA
+P02742,CRP_RABIT,C-reactive protein,Oryctolagus cuniculus,20,confirmed,MEKLLWCFLTLVSFSNMSDQ
+Q8HYA9,GKN1_PIG,Gastrokine-1,Sus scrofa,20,confirmed,MKFTIAFAGLLGVFLTPALA
+P05545,SPA3K_RAT,Serine protease inhibitor A3K,Rattus norvegicus,20,confirmed,MAFIAALGLLMAGICPAVLC
+O54766,ZP1_RAT,Zona pellucida sperm-binding protein 1,Rattus norvegicus,20,confirmed,MAWGCFVVLLLLVAAPLRLG
+P20774,MIME_HUMAN,Mimecan,Homo sapiens,20,confirmed,MKTLQSTLLLLLLVPLIKPA
+Q02496,MUC1_MOUSE,Mucin-1,Mus musculus,20,confirmed,MTPGIRAPFFLLLLLASLKG
+P10145,IL8_HUMAN,Interleukin-8,Homo sapiens,20,confirmed,MTSKLAVALLAAFLISAALC
+P03979,TVC_HUMAN,T-cell receptor gamma chain V region PT-gamma-1/2,Homo sapiens,20,confirmed,MRWALLVLLAFLSPASQKSS
+P16473,TSHR_HUMAN,Thyrotropin receptor,Homo sapiens,20,confirmed,MRPADLLQLVLLLDLPRDLG
+Q62192,CD180_MOUSE,CD180 antigen,Mus musculus,20,confirmed,MAPDISCFFLVALFLASCRA
+P06883,GLUC_RAT,Glucagon,Rattus norvegicus,20,confirmed,MKTVYIVAGLFVMLVQGSWQ
+P01887,B2MG_MOUSE,Beta-2-microglobulin,Mus musculus,20,confirmed,MARSVTLVFLVLVSLTGLYA
+P06312,KV401_HUMAN,Ig kappa chain V-IV region,Homo sapiens,20,confirmed,MVLQTQVFISLLLWISGAYG
+P21741,MK_HUMAN,Midkine,Homo sapiens,20,confirmed,MQHRGFLLLTLLALLALTSA
+Q9R1T7,ICOS_RAT,Inducible T-cell costimulator,Rattus norvegicus,20,confirmed,MKPYFSCVFVFCFLIKLLTG
+Q01344,IL5RA_HUMAN,Interleukin-5 receptor subunit alpha,Homo sapiens,20,confirmed,MIIVAHVLLILLGATEILQA
+P12279,APOC3_CANFA,Apolipoprotein C-III,Canis familiaris,20,confirmed,MQPRVLLVAALLALLASARA
+Q29422,CD1B2_SHEEP,T-cell surface glycoprotein CD1b-2,Ovis aries,20,confirmed,MLLLPLLLLGVILPGGDNED
+Q6UWE3,CF126_HUMAN,Colipase-like protein C6orf126,Homo sapiens,21,confirmed,MAAALALVAGVLSGAVLPLWS
+P14222,PERF_HUMAN,Perforin-1,Homo sapiens,21,confirmed,MAARLLLLGILLLLLPLPVPA
+Q28949,MA2B2_PIG,Epididymis-specific alpha-mannosidase,Sus scrofa,21,confirmed,MGPHSWLPLFMQLALLGPQWA
+P35590,TIE1_HUMAN,Tyrosine-protein kinase receptor Tie-1,Homo sapiens,21,confirmed,MVWRVPPFLLPILFLASHVGA
+Q99731,CCL19_HUMAN,C-C motif chemokine 19,Homo sapiens,21,confirmed,MALLLALSLLVLWTSPAPTLS
+Q9Y240,CLC11_HUMAN,C-type lectin domain family 11 member A,Homo sapiens,21,confirmed,MQAAWLLGALVVPQLLGFGHG
+P36222,CH3L1_HUMAN,Chitinase-3-like protein 1,Homo sapiens,21,confirmed,MGVKASQTGFVVLVLLQCCSA
+P01574,IFNB_HUMAN,Interferon beta,Homo sapiens,21,confirmed,MTNKCLLQIALLLCFSTTALS
+Q6UWV6,ENPP7_HUMAN,Ectonucleotide pyrophosphatase/phosphodiesterase family member 7,Homo sapiens,21,confirmed,MRGLAVLLTVALATLLAPGAG
+P12342,IL2RA_BOVIN,Interleukin-2 receptor alpha chain,Bos taurus,21,confirmed,MEPSLLMWRFFVFIVVPGCVT
+P24668,MPRD_MOUSE,Cation-dependent mannose-6-phosphate receptor,Mus musculus,21,confirmed,MFPFSGCWRTELLLLLLLAVA
+P30922,CH3L1_BOVIN,Chitinase-3-like protein 1,Bos taurus,21,confirmed,MGLRAAHTGFVVLVLLQSCAA
+Q9UBD3,XCL2_HUMAN,Cytokine SCM-1 beta,Homo sapiens,21,confirmed,MRLLILALLGICSLTAYIVEG
+P13686,PPA5_HUMAN,Tartrate-resistant acid phosphatase type 5,Homo sapiens,21,confirmed,MDMWTALLILQALLLPSLADG
+P02670,CASK_CAPHI,Kappa-casein,Capra hircus,21,confirmed,MMKSFFLVVTILALTLPFLGA
+P07759,SPA3K_MOUSE,Serine protease inhibitor A3K,Mus musculus,21,confirmed,MAFIVAMGMILMAGICPAVLC
+P02778,CXL10_HUMAN,C-X-C motif chemokine 10,Homo sapiens,21,confirmed,MNQTAILICCLIFLTLSGIQG
+Q05895,TSP3_MOUSE,Thrombospondin-3,Mus musculus,21,confirmed,MEKPELWGVLALLLLCSYTCG
+P81827,UP1_RAT,Urinary protein 1,Rattus norvegicus,21,confirmed,MGKPILLLPLGLSLLMSSLLA
+P19377,CD3D_RAT,T-cell surface glycoprotein CD3 delta chain,Rattus norvegicus,21,confirmed,MEHYGILVSLLLATVLPQGSP
+P15156,CASP_MESAU,Calcium-dependent serine proteinase,Mesocricetus auratus,21,confirmed,MGKSSEAWCIVLFSVFASFSA
+P34953,ISK2_MACFA,Serine protease inhibitor Kazal-type 2,Macaca fascicularis,21,confirmed,MALAVLRLALLLLAVTFAGPL
+P01575,IFNB_MOUSE,Interferon beta,Mus musculus,21,confirmed,MNNRWILHAAFLLCFSTTALS
+Q60477,CRIS2_CAVPO,Cysteine-rich secretory protein 2,Cavia porcellus,21,confirmed,MALLPVVVFLITMLLPCVLTN
+Q29411,CH3L1_PIG,Chitinase-3-like protein 1,Sus scrofa,21,confirmed,MGLRVAQTGFVALVLLQSCAA
+P04223,HA1K_MOUSE,"H-2 class I histocompatibility antigen, K-K alpha chain",Mus musculus,21,confirmed,MAPCMLLLLLAAALAPTQTRA
+P05012,IFNB_HORSE,Interferon beta,Equus caballus,21,confirmed,MTYRWILPMALLLCFSTTALS
+Q3UN54,SSLP1_MOUSE,Secreted seminal-vesicle Ly-6 protein 1,Mus musculus,21,confirmed,MEKYLLLLLLGIFLRVGFLQA
+P48357,LEPR_HUMAN,Leptin receptor,Homo sapiens,21,confirmed,MICQKFCVVLLHWEFIYVITA
+P35318,ADML_HUMAN,ADM,Homo sapiens,21,confirmed,MKLVSVALMYLGSLAFLGADT
+O35744,CH3L3_MOUSE,Chitinase-3-like protein 3,Mus musculus,21,confirmed,MAKLILVTGLAILLNVQLGSS
+Q6E0U4,DMKN_HUMAN,Dermokine,Homo sapiens,21,confirmed,MKFQGPLACLLLALCLGSGEA
+Q6UWM7,LCTL_HUMAN,Lactase-like protein,Homo sapiens,21,confirmed,MKPVWVATLLWMLLLVPRLGA
+P16581,LYAM2_HUMAN,E-selectin,Homo sapiens,21,confirmed,MIASQFLSALTLVLLIKESGA
+P29020,CD3H_MOUSE,T-cell surface glycoprotein CD3 eta chain,Mus musculus,21,confirmed,MKWKVSVLACILHVRFPGAEA
+P81828,UP2_RAT,Urinary protein 2,Rattus norvegicus,21,confirmed,MGKHILLLPLGLSLLMSSLLA
+P10300,CD8B_MOUSE,T-cell surface glycoprotein CD8 beta chain,Mus musculus,21,confirmed,MQPWLWLVFSMKLAALWSSSA
+P04212,TVB4_MOUSE,T-cell receptor beta chain V region LB2,Mus musculus,21,confirmed,MNKWVFCWVTLCLLTVETTHG
+O55038,CXL13_MOUSE,C-X-C motif chemokine 13,Mus musculus,21,confirmed,MRLSTATLLLLLASCLSPGHG
+Q6YHK3,CD109_HUMAN,CD109 antigen,Homo sapiens,21,confirmed,MQGPPLLTAAHLLCVCTAALA
+P21803,FGFR2_MOUSE,Fibroblast growth factor receptor 2,Mus musculus,21,confirmed,MVSWGRFICLVLVTMATLSLA
+Q969J5,I22R2_HUMAN,Interleukin-22 receptor subunit alpha-2,Homo sapiens,21,confirmed,MMPKHCFLGFLISFFLTGVAG
+P13747,HLAE_HUMAN,"HLA class I histocompatibility antigen, alpha chain E",Homo sapiens,21,confirmed,MVDGTLLLLLSEALALTQTWA
+P05452,TETN_HUMAN,Tetranectin,Homo sapiens,21,confirmed,MELWGAYLLLCLFSLLTQVTT
+O77801,INSL3_BOVIN,Insulin-like 3,Bos taurus,21,confirmed,MDRRPLTWALVLLGPALAIAL
+Q96FE7,P3IP1_HUMAN,Phosphoinositide-3-kinase-interacting protein 1,Homo sapiens,21,confirmed,MLLAWVQAFLVSNMLLAEAYG
+P16225,SPAI_PIG,Sodium/potassium ATPase inhibitor SPAI-2,Sus scrofa,21,confirmed,MRSRSFLVLVAVFLICETLVA
+P22692,IBP4_HUMAN,Insulin-like growth factor-binding protein 4,Homo sapiens,21,confirmed,MLPLCLVAALLLAAGPGPSLG
+Q16663,CCL15_HUMAN,C-C motif chemokine 15,Homo sapiens,21,confirmed,MKVSVAALSCLMLVAVLGSQA
+P40225,TPO_HUMAN,Thrombopoietin,Homo sapiens,21,confirmed,MELTELLLVVMLLLTARLTLS
+P55145,ARMET_HUMAN,Protein ARMET,Homo sapiens,21,confirmed,MWATQGLAVALALSVLPGSRA
+Q86T13,CLC14_HUMAN,C-type lectin domain family 14 member A,Homo sapiens,21,confirmed,MRPAFALCLLWQALWPGPGGG
+P21744,IBP4_RAT,Insulin-like growth factor-binding protein 4,Rattus norvegicus,21,confirmed,MLPFGLVAALLLAAGPRPSLG
+P05000,IFNW1_HUMAN,Interferon omega-1,Homo sapiens,21,confirmed,MALLFPLLAALVMTSYSPVGS
+P13562,GON1_MOUSE,Progonadoliberin-1,Mus musculus,21,confirmed,MILKLMAGILLLTVCLEGCSS
+Q6XE38,SG1D4_HUMAN,Secretoglobin family 1D member 4,Homo sapiens,21,confirmed,MRLSVCLLMVSLALCCYQAHA
+P01589,IL2RA_HUMAN,Interleukin-2 receptor alpha chain,Homo sapiens,21,confirmed,MDSYLLMWGLLTFIMVPGCQA
+Q07654,TFF3_HUMAN,Trefoil factor 3,Homo sapiens,21,confirmed,MAARALCMLGLVLALLSSSSA
+P04759,ACHD_BOVIN,Acetylcholine receptor subunit delta,Bos taurus,21,confirmed,MEGSVLTLVLLAALVVCGSWG
+P01902,HA1D_MOUSE,"H-2 class I histocompatibility antigen, K-D alpha chain",Mus musculus,21,confirmed,MAPCTLLLLLAAALAPTQTRA
+P14562,LAMP1_RAT,Lysosome-associated membrane glycoprotein 1,Rattus norvegicus,21,confirmed,MAAPGARRPLLLLLLAGLAHS
+P08842,STS_HUMAN,Steryl-sulfatase,Homo sapiens,21,confirmed,MPLRKMKIPFLLLFFLWEAES
+O14786,NRP1_HUMAN,Neuropilin-1,Homo sapiens,21,confirmed,MERGLPLLCAVLALVLAPAGA
+P02668,CASK_BOVIN,Kappa-casein,Bos taurus,21,confirmed,MMKSFFLVVTILALTLPFLGA
+P24161,CD3Z_MOUSE,T-cell surface glycoprotein CD3 zeta chain,Mus musculus,21,confirmed,MKWKVSVLACILHVRFPGAEA
+Q2KJF1,A1BG_BOVIN,Alpha-1B-glycoprotein,Bos taurus,21,confirmed,MSAWAALLLLWGLSLSPVTEQ
+P53366,ADML_PIG,ADM,Sus scrofa,21,confirmed,MKLVPVALMYLGSLAFLGADT
+Q9GZM7,TINAL_HUMAN,Tubulointerstitial nephritis antigen-like,Homo sapiens,21,confirmed,MWRCPLGLLLLLPLAGHLALG
+P01577,IFNB3_BOVIN,Interferon beta-3,Bos taurus,21,confirmed,MTYRCLLPMVLLLCFSTTALS
+Q91Z98,CH3L4_MOUSE,Chitinase-3-like protein 4,Mus musculus,21,confirmed,MAKLILVTGLAILLNVQLGSS
+P54107,CRIS1_HUMAN,Cysteine-rich secretory protein 1,Homo sapiens,21,confirmed,MEIKHLLFLVAAACLLPMLSM
+P01576,IFNB2_BOVIN,Interferon beta-2,Bos taurus,21,confirmed,MTHRCLLQMVLLLCFSTTALS
+Q9BZW8,CD244_HUMAN,Natural killer cell receptor 2B4,Homo sapiens,21,confirmed,MLGQVVTLILLLLLKVYQGKG
+Q9UBP4,DKK3_HUMAN,Dickkopf-related protein 3,Homo sapiens,21,confirmed,MQRLGATLLCLLLAAAVPTAP
+P02748,CO9_HUMAN,Complement component C9,Homo sapiens,21,confirmed,MSACRSFAVAICILEISILTA
+P55083,MFAP4_HUMAN,Microfibril-associated glycoprotein 4,Homo sapiens,21,confirmed,MKALLALPLLLLLSTPPCAPQ
+Q9UK55,ZPI_HUMAN,Protein Z-dependent protease inhibitor,Homo sapiens,21,confirmed,MKVVPSLLLSVLLAQVWLVPG
+O00300,TR11B_HUMAN,Tumor necrosis factor receptor superfamily member 11B,Homo sapiens,21,confirmed,MNKLLCCALVFLDISIKWTTQ
+P18340,CXCL9_MOUSE,C-X-C motif chemokine 9,Mus musculus,21,confirmed,MKSAVLFLLGIIFLEQCGVRG
+P01350,GAST_HUMAN,Gastrin,Homo sapiens,21,confirmed,MQRLCVYVLIFALALAAFSEA
+Q9N2J0,IFNB_FELCA,Interferon beta,Felis silvestris catus,21,confirmed,MTGRCILQIALLVCFFTTAHS
+P20963,CD3Z_HUMAN,T-cell surface glycoprotein CD3 zeta chain,Homo sapiens,21,confirmed,MKWKALFTAAILQAQLPITEA
+P05371,CLUS_RAT,Clusterin,Rattus norvegicus,21,confirmed,MKILLLCVALLLTWDNGMVLG
+Q60557,OVGP1_MESAU,Oviduct-specific glycoprotein,Mesocricetus auratus,21,confirmed,MGRLLLWVGLVLLMKPNDGTA
+P19438,TNR1A_HUMAN,Tumor necrosis factor receptor superfamily member 1A,Homo sapiens,21,confirmed,MGLSTVPDLLLPLVLLELLVG
+P55773,CCL23_HUMAN,C-C motif chemokine 23,Homo sapiens,21,confirmed,MKVSVAALSCLMLVTALGSQA
+P04235,CD3D_MOUSE,T-cell surface glycoprotein CD3 delta chain,Mus musculus,21,confirmed,MEHSGILASLILIAVLPQGSP
+Q99795,GPA33_HUMAN,Cell surface A33 antigen,Homo sapiens,21,confirmed,MVGKMWPVLWTLCAVRVTVDA
+P01130,LDLR_HUMAN,Low-density lipoprotein receptor,Homo sapiens,21,confirmed,MGPWGWKLRWTVALLLAAAGT
+P11609,CD1D1_MOUSE,T-cell surface glycoprotein CD1d1,Mus musculus,21,confirmed,MRYLPWLLLWAFLQVWGQSEA
+Q96RQ9,OXLA_HUMAN,L-amino-acid oxidase,Homo sapiens,21,confirmed,MAPLALHLLVLVPILLSLVAS
+P01359,TFF2_PIG,Trefoil factor 2,Sus scrofa,21,confirmed,EPQRPAPGHPPPAGAVCLTGA
+P43626,KI2L1_HUMAN,Killer cell immunoglobulin-like receptor 2DL1,Homo sapiens,21,confirmed,MSLLVVSMACVGFFLLQGAWP
+Q03044,A1AT_DIDMA,Alpha-1-antiproteinase,Didelphis marsupialis virginiana,21,confirmed,MMPSTLSLCLMLAGLCSLVTS
+P01732,CD8A_HUMAN,T-cell surface glycoprotein CD8 alpha chain,Homo sapiens,21,confirmed,MALPVTALLLPLALLLHAARP
+P14423,PA2GA_RAT,"Phospholipase A2, membrane associated",Rattus norvegicus,21,confirmed,MKVLLLLAVVIMAFGSIQVQG
+O95968,SG1D1_HUMAN,Secretoglobin family 1D member 1,Homo sapiens,21,confirmed,MRLSVCLLLLTLALCCYRANA
+P21845,TRYB2_MOUSE,Tryptase beta-2,Mus musculus,21,confirmed,MLKRRLLLLWALSLLASLVYS
+P11684,UTER_HUMAN,Uteroglobin,Homo sapiens,21,confirmed,MKLAVTLTLVTLALCCSSASA
+P10758,LITH_RAT,Lithostathine,Rattus norvegicus,21,confirmed,MTRNKYFILLSCLMVLSPSQG
+P13671,CO6_HUMAN,Complement component C6,Homo sapiens,21,confirmed,MARRSVLYFILLNALINKGQA
+P04435,TVB2_HUMAN,T-cell receptor beta chain V region CTL-L17,Homo sapiens,21,confirmed,MGTSLLCWMALCLLGADHADT
+P02669,CASK_SHEEP,Kappa-casein,Ovis aries,21,confirmed,MMKSFFLVVTILALTLPFLGA
+P04234,CD3D_HUMAN,T-cell surface glycoprotein CD3 delta chain,Homo sapiens,21,confirmed,MEHSTFLSGLVLATLLSQVSP
+Q969N2,PIGT_HUMAN,GPI transamidase component PIG-T,Homo sapiens,21,confirmed,MAAAMPLALLVLLLLGPGGWC
+P80513,ARMET_BOVIN,Protein ARMET,Bos taurus,21,confirmed,MWATHGLAVALALSVLPASRA
+Q91XA9,CHIA_MOUSE,Acidic mammalian chitinase,Mus musculus,21,confirmed,MAKLLLVTGLALLLNAQLGSA
+P35496,PSP2_PIG,Major seminal plasma glycoprotein PSP-II,Sus scrofa,21,confirmed,MKLGTAIPWALLLSTATLVST
+Q863D3,Q863D3_PIG,n/a,Sus scrofa,21,confirmed,MRLSLTVLLVTLALCCYEAHG
+Q96PD5,PGRP2_HUMAN,N-acetylmuramoyl-L-alanine amidase,Homo sapiens,21,confirmed,MAQGVLWILLGLLLWSDPGTA
+P11610,CD1D2_MOUSE,T-cell surface glycoprotein CD1d2,Mus musculus,21,confirmed,MRYLPCLLLWAFLQVWGQSEV
+P01735,TVB2_MOUSE,T-cell receptor beta chain V region 86T1,Mus musculus,21,confirmed,MSCRLLLYVSLCLVETALMNT
+Q9UIB8,SLAF5_HUMAN,SLAM family member 5,Homo sapiens,21,confirmed,MAQHHLWILLLCLQTWPEAAG
+Q02747,GUC2A_HUMAN,Guanylin,Homo sapiens,21,confirmed,MNAFLLFALCLLGAWAALAGG
+P35613,BASI_HUMAN,Basigin,Homo sapiens,21,confirmed,MAAALFVLLGFALLGTHGASG
+P04217,A1BG_HUMAN,Alpha-1B-glycoprotein,Homo sapiens,21,confirmed,MSMLVVFLLLWGVTWGPVTEA
+P25291,GP2_CANFA,Pancreatic secretory granule membrane major glycoprotein GP2,Canis familiaris,21,confirmed,MVGSYVLWLALASCILTLASP
+P55000,SLUR1_HUMAN,Secreted Ly-6/uPAR-related protein 1,Homo sapiens,21,confirmed,MASRWAVQLLLVAAWSMGCGE
+P14430,HA18_MOUSE,"H-2 class I histocompatibility antigen, Q8 alpha chain",Mus musculus,21,confirmed,MALTMLLLLVAAALTLIETRA
+P02469,LAMB1_MOUSE,Laminin subunit beta-1,Mus musculus,21,confirmed,MGLLQVFAFGVLALWGTRVCA
+P31482,PA2GA_MOUSE,"Phospholipase A2, membrane associated",Mus musculus,21,confirmed,MKVLLLLAASIMAFGSIQVQG
+Q8SPQ0,CH3L1_CAPHI,Chitinase-3-like protein 1,Capra hircus,21,confirmed,MGLRASGTGFVVLVLLQSCAA
+Q6UXB2,VCC1_HUMAN,VEGF co-regulated chemokine 1,Homo sapiens,21,confirmed,MKVLISSLLLLLPLMLMSMVS
+P14625,ENPL_HUMAN,Endoplasmin,Homo sapiens,21,confirmed,MRALWVLGLCCVLLTFGSVRA
+O18998,DNAS1_RABIT,Deoxyribonuclease-1,Oryctolagus cuniculus,21,confirmed,MRSEMLTALLTLAVLLQVAGS
+Q13231,CHIT1_HUMAN,Chitotriosidase-1,Homo sapiens,21,confirmed,MVRSVAWAGFMVLLMIPWGSA
+P30511,HLAF_HUMAN,"HLA class I histocompatibility antigen, alpha chain F",Homo sapiens,21,confirmed,MAPRSLLLLLSGALALTDTWA
+Q13651,I10R1_HUMAN,Interleukin-10 receptor alpha chain,Homo sapiens,21,confirmed,MLPCLVVLLAALLSLRLGSDA
+P01578,IFNB1_BOVIN,Interferon beta-1,Bos taurus,21,confirmed,MTYRCLLQMVLLLCFSTTALS
+O35775,SYCN_RAT,Syncollin,Rattus norvegicus,21,confirmed,MSPLCLLLLALALVAVPGARG
+Q95M17,CHIA_BOVIN,Acidic mammalian chitinase,Bos taurus,21,confirmed,MAKLIFLTGLAFLLNAQLGSA
+P48747,CO9_RABIT,Complement component C9,Oryctolagus cuniculus,21,confirmed,MAASHSFAFVVCVLEIGALTA
+P26885,FKBP2_HUMAN,FK506-binding protein 2,Homo sapiens,21,confirmed,MRLSWFRVLTVLSICLSAVAT
+Q8N6Q3,CD177_HUMAN,CD177 antigen,Homo sapiens,21,confirmed,MSAVLLLALLGFILPLPGVQA
+P14431,HA19_MOUSE,"H-2 class I histocompatibility antigen, Q9 alpha chain",Mus musculus,21,confirmed,MALTMLLLLVAAALTLIETRA
+Q96DU3,SLAF6_HUMAN,SLAM family member 6,Homo sapiens,21,confirmed,MLWLFQSLLFVFCFGPGNVVS
+Q8SPP7,PGRP_BOVIN,Peptidoglycan recognition protein,Bos taurus,21,confirmed,MSRRYTPLAWVLLALLGLGAA
+O18994,GPX5_PIG,Epididymal secretory glutathione peroxidase,Sus scrofa,21,confirmed,MTVQLGAFYLFPLFMAGFVQT
+P82943,REG1_BOVIN,Regakine-1,Bos taurus,21,confirmed,MRVSLAALAFLLTLAVLHSEA
+Q9NPY3,C1QR1_HUMAN,Complement component C1q receptor,Homo sapiens,21,confirmed,MATSMGLLLLLLLLLTQPGAG
+P02783,SVS4_RAT,Seminal vesicle secretory protein 4,Rattus norvegicus,21,confirmed,MKSTSLFLCSLLLLLVTGAIG
+P02779,UTER_RABIT,Uteroglobin,Oryctolagus cuniculus,21,confirmed,MKLAITLALVTLALLCSPASA
+P22646,CD3E_MOUSE,T-cell surface glycoprotein CD3 epsilon chain,Mus musculus,21,confirmed,MRWNTFWGILCLSLLAVGTCQ
+P18438,CD3D_SHEEP,T-cell surface glycoprotein CD3 delta chain,Ovis aries,21,confirmed,MEHSRCLSCLILAALLSQVNP
+P22455,FGFR4_HUMAN,Fibroblast growth factor receptor 4,Homo sapiens,21,confirmed,MRLLLALLGVLLSVPGPPVLS
+P21463,TSHR_RAT,Thyrotropin receptor,Rattus norvegicus,21,confirmed,MRPGSLLQLTLLLALPRSLWG
+P01569,IFNA5_HUMAN,Interferon alpha-5,Homo sapiens,21,confirmed,MALPFVLLMALVVLNCKSICS
+P05995,SVP1_CAVPO,Seminal vesicle major clotting proteins,Cavia porcellus,21,confirmed,MKSTIFFILSLLLMLENQAAG
+P01283,VIP_RAT,VIP peptides,Rattus norvegicus,21,confirmed,MESRSKPQFLAILTLFSVLFS
+Q63191,AEGP_RAT,Apical endosomal glycoprotein,Rattus norvegicus,21,confirmed,MCLPSCLLSIWVLFMAAQSLG
+P04812,SVS5_RAT,Seminal vesicle secretory protein 5,Rattus norvegicus,21,confirmed,MSPTGFFLLTVLLVLVTEAAS
+P55885,GAST_HORSE,Gastrin,Equus caballus,21,confirmed,MRRLCVYVLIFALALAAFSEA
+P06281,RENI1_MOUSE,Renin-1,Mus musculus,21,confirmed,MDRRRMPLWALLLLWSPCTFS
+P05541,CD8B_RAT,T-cell surface glycoprotein CD8 beta chain,Rattus norvegicus,21,confirmed,MQPWLWLVFSVKLSALWGSSA
+Q07092,COGA1_HUMAN,Collagen alpha-1(XVI) chain,Homo sapiens,21,confirmed,MWVSWAPGLWLLGLWATFGHG
+P56202,CATW_HUMAN,Cathepsin W,Homo sapiens,21,confirmed,MALTAHPSCLLALLVAGLAQG
+P01354,GAST_FELCA,Gastrin,Felis silvestris catus,21,confirmed,MQRLCVCVLILALALTAFSEA
+Q99435,NELL2_HUMAN,Protein kinase C-binding protein NELL2,Homo sapiens,21,confirmed,MESRVLLRTFCLIFGLGAVWG
+Q8TD06,AGR3_HUMAN,Anterior gradient protein 3 homolog,Homo sapiens,21,confirmed,MMLHSALGLCLLLVTVSSNLA
+P07942,LAMB1_HUMAN,Laminin subunit beta-1,Homo sapiens,21,confirmed,MGLLQLLAFSFLALCRARVRA
+P43251,BTD_HUMAN,Biotinidase,Homo sapiens,21,confirmed,MSGARSKLALFLCGCYVVALG
+P01901,HA1B_MOUSE,"H-2 class I histocompatibility antigen, K-B alpha chain",Mus musculus,21,confirmed,MVPCTLLLLLAAALAPTQTRA
+P01592,IGJ_MOUSE,Immunoglobulin J chain,Mus musculus,21,confirmed,MKTHLLLWGVLAIFVKAVLVT
+P26051,CD44_RAT,CD44 antigen,Rattus norvegicus,21,confirmed,MDKVWWHTAWGLLCLLQLSLA
+O14625,CXL11_HUMAN,C-X-C motif chemokine 11,Homo sapiens,21,confirmed,MSVKGMAIALAVILCATVVQG
+Q13093,PAFA_HUMAN,Platelet-activating factor acetylhydrolase,Homo sapiens,21,confirmed,MVPPKLHVLFCLCGCLAVVYP
+P18572,BASI_MOUSE,Basigin,Mus musculus,21,confirmed,MAAALLLALAFTLLSGQGACA
+P10966,CD8B_HUMAN,T-cell surface glycoprotein CD8 beta chain,Homo sapiens,21,confirmed,MRPRLWLLLAAQLTVLHGNSV
+P01352,GAST_BOVIN,Gastrin,Bos taurus,21,confirmed,MQRLCAHVLILVLALAAFCEA
+P46165,DEFB7_BOVIN,Beta-defensin 7,Bos taurus,22,confirmed,MRLHHLLLALLFLVLSAGSGFT
+Q9NQ25,SLAF7_HUMAN,SLAM family member 7,Homo sapiens,22,confirmed,MAGSPTCLTLIYILWQLTGSAA
+P08920,CD2_MOUSE,T-cell surface antigen CD2,Mus musculus,22,confirmed,MKCKFLGSFFLLFSLSGKGADC
+Q9TT95,GALP_PIG,Galanin-like peptide,Sus scrofa,22,confirmed,MALTVPLIVLAVLLSLMESPAS
+Q8WML4,MUC1_BOVIN,Mucin-1,Bos taurus,22,confirmed,MTPDIQAPFLSLLLLFPVLTVA
+P00750,TPA_HUMAN,Tissue-type plasminogen activator,Homo sapiens,22,confirmed,MDAMKRGLCCVLLLCGAVFVSP
+P46162,DEFB4_BOVIN,Beta-defensin 4,Bos taurus,22,confirmed,MRLHHLLLAVLFLVLSAGSGFT
+P08185,CBG_HUMAN,Corticosteroid-binding globulin,Homo sapiens,22,confirmed,MPLLLYTCLLWLPTSGLWTVQA
+P15018,LIF_HUMAN,Leukemia inhibitory factor,Homo sapiens,22,confirmed,MKVLAAGVVPLLLVLHWKHGAG
+Q60GF7,PIGX_RAT,Phosphatidylinositol-glycan biosynthesis class X protein,Rattus norvegicus,22,confirmed,MAASALAWLLLWAAGLVGRLAA
+P22298,SLPI_PIG,Antileukoproteinase,Sus scrofa,22,confirmed,GRGLLPFVLLALGIXAPWAVEG
+P22324,A1AF_CAVPO,Alpha-1-antiproteinase F,Cavia porcellus,22,confirmed,SAIPRGLLLLAGLCCLVFGIMA
+P01639,KV5A7_MOUSE,Ig kappa chain V-V region MOPC 41,Mus musculus,22,confirmed,MDMRAPAQIFGFLLLLFQGTRC
+O95445,APOM_HUMAN,Apolipoprotein M,Homo sapiens,22,confirmed,MFHQIWAALLYFYGIILNSIYQ
+Q03405,UPAR_HUMAN,Urokinase plasminogen activator surface receptor,Homo sapiens,22,confirmed,MGHPPLLPLLLLLHTCVPASWG
+P07766,CD3E_HUMAN,T-cell surface glycoprotein CD3 epsilon chain,Homo sapiens,22,confirmed,MQSGTHWRVLGLCLLSVGVWGQ
+P25235,RPN2_RAT,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 2,Rattus norvegicus,22,confirmed,MAPPGSSAVFLLALTITASTQA
+Q9NRR1,CYTL1_HUMAN,Cytokine-like protein 1,Homo sapiens,22,confirmed,MRTPGPLPVLLLLLAGAPAARP
+P31514,FST_SHEEP,Follistatin,Ovis aries,22,confirmed,PGGVCLLLLLLCQFMEDRSAQA
+P19874,IL8_RABIT,Interleukin-8,Oryctolagus cuniculus,22,confirmed,MNSKLAVALLATFLLSLTLCEA
+P04844,RPN2_HUMAN,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 2,Homo sapiens,22,confirmed,MAPPGSSTVFLLALTIIASTWA
+P19034,APOC2_BOVIN,Apolipoprotein C-II,Bos taurus,22,confirmed,MGTRYFLVGFLILLVLGFEVQG
+P27274,CD59_RAT,CD59 glycoprotein,Rattus norvegicus,22,confirmed,MRARRGFILLLLLAVLCSTGVS
+P20781,GLRB_RAT,Glycine receptor subunit beta,Rattus norvegicus,22,confirmed,MKFSLAVSFFILMSLLFEDACS
+P48307,TFPI2_HUMAN,Tissue factor pathway inhibitor 2,Homo sapiens,22,confirmed,MDPARPLGLSILLLFLTEAALG
+Q9BYZ8,REG4_HUMAN,Regenerating islet-derived protein 4,Homo sapiens,22,confirmed,MASRSMRLLLLLSCLAKTGVLG
+P10252,CD48_RAT,CD48 antigen,Rattus norvegicus,22,confirmed,MYFKKRRWFLILESLLLSLVTG
+P09668,CATH_HUMAN,Cathepsin H,Homo sapiens,22,confirmed,MWATLPLLCAGAWLLGVPVCGA
+P01641,KV5A8_MOUSE,Ig kappa chain V-V region MOPC 173B,Mus musculus,22,confirmed,MDMRAPAQVFGFLLLWFPGARC
+P04156,PRIO_HUMAN,Major prion protein,Homo sapiens,22,confirmed,MANLGCWMLVLFVATWSDLGLC
+P20333,TNR1B_HUMAN,Tumor necrosis factor receptor superfamily member 1B,Homo sapiens,22,confirmed,MAPVAVWAALAVGLELWAAAHA
+P18658,APOC2_MACFA,Apolipoprotein C-II,Macaca fascicularis,22,confirmed,MGTRFLLALCLVLLVLGFEVQG
+Q06806,TIE1_MOUSE,Tyrosine-protein kinase receptor Tie-1,Mus musculus,22,confirmed,MVWWGSSLLLPTLFLASHVGAS
+P06865,HEXA_HUMAN,Beta-hexosaminidase subunit alpha,Homo sapiens,22,confirmed,MTSSRLWFSLLLAAAFAGRATA
+P13599,FCGRN_RAT,IgG receptor FcRn large subunit p51,Rattus norvegicus,22,confirmed,MGMSQPGVLLSLLLVLLPQTWG
+Q08830,FGL1_HUMAN,Fibrinogen-like protein 1,Homo sapiens,22,confirmed,MAKVFSFILVTTALTMGREISA
+P49862,KLK7_HUMAN,Kallikrein-7,Homo sapiens,22,confirmed,MARSLLLPLQILLLSLALETAG
+P05451,REG1A_HUMAN,Lithostathine-1-alpha,Homo sapiens,22,confirmed,MAQTSSYFMLISCLMFLSQSQG
+P55067,NCAN_RAT,Neurocan core protein,Rattus norvegicus,22,confirmed,MGAESVWASGLLVLWLLLLVSG
+P15261,INGR1_MOUSE,Interferon-gamma receptor alpha chain,Mus musculus,22,confirmed,MGPQAAAGRMILLVVLMLSAKV
+P04925,PRIO_MOUSE,Major prion protein,Mus musculus,22,confirmed,MANLGYWLLALFVTMWTDVGLC
+P12278,APOC2_CANFA,Apolipoprotein C-II,Canis familiaris,22,confirmed,MGTRYLLVLLLVLLVLGFEVQG
+Q6UW88,EPGN_HUMAN,Epigen,Homo sapiens,22,confirmed,MALGVPISVYLLFNAMTALTEE
+P31211,CBG_RAT,Corticosteroid-binding globulin,Rattus norvegicus,22,confirmed,MSLALYTCLLWLCTSGLWTAQA
+P81534,D103A_HUMAN,Beta-defensin 103,Homo sapiens,22,confirmed,MRIHYLLFALLFLFLVPVPGHG
+P04939,MUP3_MOUSE,Major urinary protein 3,Mus musculus,22,confirmed,MKLLLPLLLLLCLELTLVCIHA
+P30438,FEL1A_FELCA,Major allergen I polypeptide chain 1,Felis silvestris catus,22,confirmed,MKGACVLVLLWAALLLISGGNC
+P13536,ACHG_BOVIN,Acetylcholine receptor subunit gamma,Bos taurus,22,confirmed,MCGGQRPLFLLPLLAVCLGAKG
+P46169,DFB11_BOVIN,Beta-defensin 11,Bos taurus,22,confirmed,MRLHHLLLALLFLVLSAGSGIS
+P21956,MFGM_MOUSE,Lactadherin,Mus musculus,22,confirmed,MQVSRVLAALCGMLLCASGLFA
+P10643,CO7_HUMAN,Complement component C7,Homo sapiens,22,confirmed,MKVISLFILVGFIGEFQSFSSA
+P01601,KV109_HUMAN,Ig kappa chain V-I region HK101,Homo sapiens,22,confirmed,MDMRVLAQLLGLLLLCFPGARC
+Q96BF3,TMIG2_HUMAN,Transmembrane and immunoglobulin domain-containing protein 2,Homo sapiens,22,confirmed,MGSPGMVLGLLVQIWALQEASS
+O95157,NXPH3_HUMAN,Neurexophilin-3,Homo sapiens,22,confirmed,MQLTRCCFVFLVQGSLYLVICG
+P04273,PRIO_MESAU,Major prion protein,Mesocricetus auratus,22,confirmed,MANLSYWLLALFVAMWTDVGLC
+P40189,IL6RB_HUMAN,Interleukin-6 receptor subunit beta,Homo sapiens,22,confirmed,MLTLQTWLVQALFIFLTTESTG
+P81999,DJB11_CANFA,DnaJ homolog subfamily B member 11,Canis familiaris,22,confirmed,MAPQNLGTLCLLLLYLLGAAIA
+P31785,IL2RG_HUMAN,Cytokine receptor common gamma chain,Homo sapiens,22,confirmed,MLKPSLPFTSLLFLQLPLLGVG
+P41222,PTGDS_HUMAN,Prostaglandin-H2 D-isomerase,Homo sapiens,22,confirmed,MATHHTLWMGLALLGVLGDLQA
+P24821,TENA_HUMAN,Tenascin,Homo sapiens,22,confirmed,MGAMTQLLAGVFLAFLALATEG
+P31720,C1QA_RAT,Complement C1q subcomponent subunit A,Rattus norvegicus,22,confirmed,METSQGWLVACVLAVTLVWTVA
+Q07325,CXCL9_HUMAN,C-X-C motif chemokine 9,Homo sapiens,22,confirmed,MKKSGVLFLLGIILLVLIGVQG
+Q9NPG1,FZD3_HUMAN,Frizzled-3,Homo sapiens,22,confirmed,MAMTWIVFSLWPLTVFMGHIGG
+P14209,CD99_HUMAN,CD99 antigen,Homo sapiens,22,confirmed,MARGAALALLLFGLLGVLVAAP
+P81264,PRRP_BOVIN,Prolactin-releasing peptide,Bos taurus,22,confirmed,MKAVGAWLLCLLLLGLALQGAA
+P02745,C1QA_HUMAN,Complement C1q subcomponent subunit A,Homo sapiens,22,confirmed,MEGPRGWLVLCVLAISLASMVT
+P11942,CD3G_MOUSE,T-cell surface glycoprotein CD3 gamma chain,Mus musculus,22,confirmed,MEQRKGLAGLFLVISLLQGTVA
+P10909,CLUS_HUMAN,Clusterin,Homo sapiens,22,confirmed,MMKTLLLFVGLLLTWESGQVLG
+P05187,PPB1_HUMAN,"Alkaline phosphatase, placental type",Homo sapiens,22,confirmed,MLGPCMLLLLLLLGLRLQLSLG
+P05155,IC1_HUMAN,Plasma protease C1 inhibitor,Homo sapiens,22,confirmed,MASRLTLLTLLLLLLAGDRASS
+P29459,IL12A_HUMAN,Interleukin-12 subunit alpha,Homo sapiens,22,confirmed,MCPARSLLLVATLVLLDHLSLA
+P10761,ZP3_MOUSE,Zona pellucida sperm-binding protein 3,Mus musculus,22,confirmed,MASSYFLFLCLLLCGGPELCNS
+Q96S96,PEBP4_HUMAN,Phosphatidylethanolamine-binding protein 4,Homo sapiens,22,confirmed,MGWTMRLVTAALLLGLMMVVTG
+P01347,REL1_RAT,Prorelaxin 1,Rattus norvegicus,22,confirmed,MSSRLLLQLLGFWLFLSQPCRA
+P00639,DNAS1_BOVIN,Deoxyribonuclease-1,Bos taurus,22,confirmed,MRGTRLMGLLLALAGLLQLGLS
+Q9P0V8,SLAF8_HUMAN,SLAM family member 8,Homo sapiens,22,confirmed,MVMRPLWSLLLWEALLPITVTG
+P24855,DNAS1_HUMAN,Deoxyribonuclease-1,Homo sapiens,22,confirmed,MRGMKLLGALLALAALLQGAVS
+Q86SN1,Q86SN1_HUMAN,n/a,Homo sapiens,22,confirmed,MAAGTAVGAWVLVLSLWGAVVG
+P25119,TNR1B_MOUSE,Tumor necrosis factor receptor superfamily member 1B,Mus musculus,22,confirmed,MAPAALWVALVFELQLWATGHT
+P01165,7B2_PIG,Neuroendocrine protein 7B2,Sus scrofa,22,confirmed,MVSTMLSGLVLWLTFGWTPALA
+P01024,CO3_HUMAN,Complement C3,Homo sapiens,22,confirmed,MGPTSGPSLLLLLLTHLPLALG
+P01602,KV110_HUMAN,Ig kappa chain V-I region HK102,Homo sapiens,22,confirmed,MDMRVPAQLLGLLLLWLPGAKC
+Q8VCS0,PGRP2_MOUSE,N-acetylmuramoyl-L-alanine amidase,Mus musculus,22,confirmed,MKAWGALWIVLGLLLWPEPGAA
+P07153,RPN1_RAT,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 1,Rattus norvegicus,22,confirmed,MEAPIVLLLLLWLALAPTPGSA
+Q02763,TIE2_HUMAN,Angiopoietin-1 receptor,Homo sapiens,22,confirmed,MDSLASLVLCGVSLLLSGTVEG
+P04275,VWF_HUMAN,von Willebrand factor,Homo sapiens,22,confirmed,MIPARFAGVLLALALILPGTLC
+P42098,ZP3_PIG,Zona pellucida sperm-binding protein 3,Sus scrofa,22,confirmed,MAPSWRFFVCFLLWGGTELCSP
+Q30201,HFE_HUMAN,Hereditary hemochromatosis protein,Homo sapiens,22,confirmed,MGPRARPALLLLMLLQTAVLQG
+P12265,BGLR_MOUSE,Beta-glucuronidase,Mus musculus,22,confirmed,MSLKWSACWVALGQLLCSCALA
+P21704,DNAS1_RAT,Deoxyribonuclease-1,Rattus norvegicus,22,confirmed,MRYTGLMGILLTLVNLLQLAAT
+Q95460,HMR1_HUMAN,Major histocompatibility complex class I-related gene protein,Homo sapiens,22,confirmed,MGELMAFLLPLIIVLMVKHSDS
+Q8NC67,NETO2_HUMAN,Neuropilin and tolloid-like protein 2,Homo sapiens,22,confirmed,MALERLCSVLKVLLITVLVVEG
+P21941,MATN1_HUMAN,Cartilage matrix protein,Homo sapiens,22,confirmed,MRVLSGTSLMLCSLLLLLQALC
+Q86Y78,LYPD6_HUMAN,Ly6/PLAUR domain-containing protein 6,Homo sapiens,22,confirmed,MEPGPALAWLLLLSLLADCLKA
+P22006,SVS2_RAT,Seminal vesicle secretory protein 2,Rattus norvegicus,22,confirmed,MKSSVFILSLFLLLERQAAVVG
+P13432,SMR1_RAT,SMR1 protein,Rattus norvegicus,22,confirmed,MKSLYLIFGLWILLACFQSGEG
+P06323,TVA3_MOUSE,T-cell receptor alpha chain V region CTL-F3,Mus musculus,22,confirmed,MNMRPDTCSVLVLLLMLRRNNG
+Q16602,CALRL_HUMAN,Calcitonin gene-related peptide type 1 receptor,Homo sapiens,22,confirmed,MEKKCTLYFLVLLPFFMILVTA
+P46163,DEFB5_BOVIN,Beta-defensin 5,Bos taurus,22,confirmed,MRLHHLLLVLLFLVLSAGSGFT
+Q6UWM5,GPRL1_HUMAN,GLIPR1-like protein 1,Homo sapiens,22,confirmed,MALKNKFSCLWILGLCLVATTS
+P15509,CSF2R_HUMAN,Granulocyte-macrophage colony-stimulating factor receptor subunit alpha,Homo sapiens,22,confirmed,MLLLVTSLLLCELPHPAFLLIP
+Q8NBM8,PCYXL_HUMAN,Prenylcysteine oxidase-like,Homo sapiens,22,confirmed,MARAPPLLAALTALLAAAAAGG
+P46168,DFB10_BOVIN,Beta-defensin 10,Bos taurus,22,confirmed,MRLHHLLLLLLLVVLSSGSGFT
+P29460,IL12B_HUMAN,Interleukin-12 subunit beta,Homo sapiens,22,confirmed,MCHQQLVISWFSLVFLASPLVA
+P05107,ITB2_HUMAN,Integrin beta-2,Homo sapiens,22,confirmed,MLGLRPPLLALVGLLSLGCVLS
+P19957,ELAF_HUMAN,Elafin,Homo sapiens,22,confirmed,MRASSFLIVVVFLIAGTLVLEA
+Q29616,TTHY_MACGI,Transthyretin,Macropus giganteus,22,confirmed,MAFHSLLLLCLAGLAFVSETAA
+P24854,IBP4_PIG,Insulin-like growth factor-binding protein 4,Sus scrofa,22,confirmed,MLPLCLVAALLLSASGPRPSLG
+P02655,APOC2_HUMAN,Apolipoprotein C-II,Homo sapiens,22,confirmed,MGTRLLPALFLVLLVLGFEVQG
+P09693,CD3G_HUMAN,T-cell surface glycoprotein CD3 gamma chain,Homo sapiens,22,confirmed,MEQGKGLAVLILAIILLQGTLA
+P12387,CO3_CAVPO,Complement C3,Cavia porcellus,22,confirmed,MGPAAGPSLLLLLLASVSLALG
+P11936,DNAS1_PIG,Deoxyribonuclease-1,Sus scrofa,22,confirmed,MRAARLMGALLALAGLLQLALS
+P17777,LIF_RAT,Leukemia inhibitory factor,Rattus norvegicus,22,confirmed,MKVLAAGIVPLLLILHWKHGAG
+P11150,LIPC_HUMAN,Hepatic triacylglycerol lipase,Homo sapiens,22,confirmed,MDTSPLCFSILLVLCIFIQSSA
+Q9Y5H9,PCDA2_HUMAN,Protocadherin alpha-2,Homo sapiens,22,confirmed,MASSIRRGRGAWTRLLSLLLLA
+Q9Y5Q6,INSL5_HUMAN,Insulin-like peptide INSL5,Homo sapiens,22,confirmed,MKGSIFTLFLFSVLFAISEVRS
+P04432,KV124_HUMAN,Ig kappa chain V-I region Daudi,Homo sapiens,22,confirmed,MDMRVPAQLLGLLLLWLRRVRC
+P20068,NEUT_RAT,Neurotensin/neuromedin N,Rattus norvegicus,22,confirmed,MIGMNLQLVCLTLLAFSSWSLC
+P08236,BGLR_HUMAN,Beta-glucuronidase,Homo sapiens,22,confirmed,MARGSAVAWAALGPLLWGCALG
+P08921,CD2_RAT,T-cell surface antigen CD2,Rattus norvegicus,22,confirmed,MRCKFLGSFFLLFSLSSKGADC
+P01680,KV4A1_MOUSE,Ig kappa chain V-IV region S107B,Mus musculus,22,confirmed,MDLQVQIIXFLLISVTVIMSRG
+P02452,CO1A1_HUMAN,Collagen alpha-1(I) chain,Homo sapiens,22,confirmed,MFSFVDLRLLLLLAATALLTHG
+P02814,SMR3B_HUMAN,Submaxillary gland androgen-regulated protein 3B,Homo sapiens,22,confirmed,MKSLTWILGLWALAACFTPGES
+P37173,TGFR2_HUMAN,TGF-beta receptor type-2,Homo sapiens,22,confirmed,MGRGLLRGLWPLHIVLWTRIAS
+P18181,CD48_MOUSE,CD48 antigen,Mus musculus,22,confirmed,MCFIKQGWCLVLELLLLPLGTG
+P04431,KV123_HUMAN,Ig kappa chain V-I region Walker,Homo sapiens,22,confirmed,MDMRVPAQLLGLLLLWLRGARC
+P29288,PPA5_RAT,Tartrate-resistant acid phosphatase type 5,Rattus norvegicus,22,confirmed,MDTWMVLLGLQILLLPLLAHCT
+Q28173,RAGE_BOVIN,Advanced glycosylation end product-specific receptor,Bos taurus,22,confirmed,MAAGAVVGAWMLVLSLGGTVTG
+Q92563,TICN2_HUMAN,Testican-2,Homo sapiens,22,confirmed,MRAPGCGRLVLPLLLLAAAALA
+P28800,A2AP_BOVIN,Alpha-2-antiplasmin,Bos taurus,22,confirmed,MALLWGLLALILSCLSSLCSAQ
+P06760,BGLR_RAT,Beta-glucuronidase,Rattus norvegicus,22,confirmed,MSPRRSVCWFVLGQLLCSCAVA
+P11087,CO1A1_MOUSE,Collagen alpha-1(I) chain,Mus musculus,22,confirmed,MFSFVDLRLLLLLGATALLTHG
+P22607,FGFR3_HUMAN,Fibroblast growth factor receptor 3,Homo sapiens,22,confirmed,MGAPACALALCVAVAIVAGASS
+P13379,CD5_MOUSE,T-cell surface glycoprotein CD5,Mus musculus,23,confirmed,MDSHEVLLAATYLLGTLAAFCLG
+Q08431,MFGM_HUMAN,Lactadherin,Homo sapiens,23,confirmed,MPRPRLLAALCGALLCAPSLLVA
+P0C2W5,GBRB2_BOVIN,Gamma-aminobutyric acid receptor subunit beta-2,Bos taurus,23,confirmed,RVRKKDYFGIWSFPLIIAAVCAQ
+P56829,IFNT2_SHEEP,Interferon tau-2,Ovis aries,23,confirmed,MAFVLSLLMALVLVSYGPGGSLG
+P16619,CL3L1_HUMAN,C-C motif chemokine 3-like 1,Homo sapiens,23,confirmed,MQVSTAALAVLLCTMALCNQVLS
+P22891,PROZ_HUMAN,Vitamin K-dependent protein Z,Homo sapiens,23,confirmed,MAGCVPLLQGLVLVLALHRVEPS
+P51671,CCL11_HUMAN,Eotaxin,Homo sapiens,23,confirmed,MKVSAALLWLLLIAAAFSPQGLA
+P10147,CCL3_HUMAN,C-C motif chemokine 3,Homo sapiens,23,confirmed,MQVSTAALAVLLCTMALCNQFSA
+P01148,GON1_HUMAN,Progonadoliberin-1,Homo sapiens,23,confirmed,MKPIQKLLAGLILLTWCVEGCSS
+P15980,HA2C_PIG,"SLA class II histocompatibility antigen, DQ haplotype C alpha chain",Sus scrofa,23,confirmed,MVPGRVLMWGALALTTVMSACGG
+P04228,HA2D_MOUSE,"H-2 class II histocompatibility antigen, A-D alpha chain",Mus musculus,23,confirmed,MPCSRALILGVLALNTMLSLCGG
+P05006,IFNA4_HORSE,Interferon alpha-4,Equus caballus,23,confirmed,MALPFSLLMALVVLSCHSSCSLG
+P20414,TIMP1_BOVIN,Metalloproteinase inhibitor 1,Bos taurus,23,confirmed,MAPFAPMASGILLLLWLTAPSRA
+Q05186,RCN1_MOUSE,Reticulocalbin-1,Mus musculus,23,confirmed,MARGGRLGLALGLLLALVLALRA
+P20059,HEMO_RAT,Hemopexin,Rattus norvegicus,23,confirmed,MARTVVALNILVLLGLCWSLAVA
+P20061,TCO1_HUMAN,Transcobalamin-1,Homo sapiens,23,confirmed,MRQSHQLPLVGLLLFSFIPSQLC
+P05015,IFN16_HUMAN,Interferon alpha-16,Homo sapiens,23,confirmed,MALSFSLLMAVLVLSYKSICSLG
+Q16552,IL17_HUMAN,Interleukin-17A,Homo sapiens,23,confirmed,MTPGKTSLVSLLLLLSLEAIVKA
+P10673,NEUT_CANFA,Neurotensin/neuromedin N,Canis familiaris,23,confirmed,MMAGMKIQLVCMILLAFSSWSLC
+P13236,CCL4_HUMAN,C-C motif chemokine 4,Homo sapiens,23,confirmed,MKLCVTVLSLLMLVAAFCSPALS
+P80325,CCL11_CAVPO,Eotaxin,Cavia porcellus,23,confirmed,MKVSTAFLCLLLTVSAFSAQVLA
+P01567,IFNA7_HUMAN,Interferon alpha-7,Homo sapiens,23,confirmed,MARSFSLLMVVLVLSYKSICSLG
+P05007,IFNAA_BOVIN,Interferon alpha-A,Bos taurus,23,confirmed,MAPAWSFLLSLLLLSCNAICSLG
+Q8MI01,MUC15_BOVIN,Mucin-15,Bos taurus,23,confirmed,MLTSAKILLISILSSLLLFGSHG
+Q810U6,Q810U6_MOUSE,n/a,Mus musculus,23,confirmed,MRILQSFLACVQLLCLCRLDWAY
+P10855,CCL3_MOUSE,C-C motif chemokine 3,Mus musculus,23,confirmed,MKVSTTALAVLLCTMTLCNQVFS
+P19035,APOC3_BOVIN,Apolipoprotein C-III,Bos taurus,23,confirmed,MQPRLLLLAAFLALLVLPEATKA
+Q27967,SPP24_BOVIN,Secreted phosphoprotein 24,Bos taurus,23,confirmed,MEKMAMKMLVIFVLGMNHWTCTG
+P15981,HA2D_PIG,"SLA class II histocompatibility antigen, DQ haplotype D alpha chain",Sus scrofa,23,confirmed,MVPGRVLMWGALALTAVMSACGG
+P13501,CCL5_HUMAN,C-C motif chemokine 5,Homo sapiens,23,confirmed,MKVSAAALAVILIATALCAPASA
+Q9UKZ9,PCOC2_HUMAN,Procollagen C-endopeptidase enhancer 2,Homo sapiens,23,confirmed,MRGANAWAPLCLLLAAATQLSRQ
+Q02383,SEMG2_HUMAN,Semenogelin-2,Homo sapiens,23,confirmed,MKSIILFVLSLLLILEKQAAVMG
+Q61450,GP49A_MOUSE,Mast cell surface glycoprotein Gp49A,Mus musculus,23,confirmed,MIAMLTVLLYLALILEPRTAVQA
+Q8K0D2,HABP2_MOUSE,Hyaluronan-binding protein 2,Mus musculus,23,confirmed,MFVRMLVFRVLLLIALVGKSVIG
+Q6UWN8,ISK6_HUMAN,Serine protease inhibitor Kazal-type 6,Homo sapiens,23,confirmed,MKLSGMFLLLSLALFCFLTGVFS
+P35353,CRFR1_RAT,Corticotropin-releasing factor receptor 1,Rattus norvegicus,23,confirmed,MGRRPQLRLVKALLLLGLNPVST
+P01023,A2MG_HUMAN,Alpha-2-macroglobulin,Homo sapiens,23,confirmed,MGKNKLLHPSLVLLLLVLLPTDA
+Q06575,HP20_TAMSI,Hibernation-associated plasma protein HP-20,Tamias sibiricus,23,confirmed,MTDVWRLAIFVLMVNVLNDQVSC
+P05011,IFNA1_RAT,Interferon alpha-1,Rattus norvegicus,23,confirmed,MARLCAFLMSLVVVSYWSACCLG
+P01568,IFN21_HUMAN,Interferon alpha-21,Homo sapiens,23,confirmed,MALSFSLLMAVLVLSYKSICSLG
+P07348,IFNA1_BOVIN,Interferon alpha-1,Bos taurus,23,confirmed,MAPAWSLLLALLLLSCNAICSLG
+Q15465,SHH_HUMAN,Sonic hedgehog protein,Homo sapiens,23,confirmed,MLLLARCLLLVLVSSLLVCSGLA
+O00206,TLR4_HUMAN,Toll-like receptor 4,Homo sapiens,23,confirmed,MMSASRLAGTLIPAMAFLSCVRP
+P30919,ASPG_RAT,N(4)-(Beta-N-acetylglucosaminyl)-L-asparaginase,Rattus norvegicus,23,confirmed,MARKWNLPFLLLPLVLGIPLVRG
+Q9QYH7,GHRL_RAT,Appetite-regulating hormone,Rattus norvegicus,23,confirmed,MVSSATICSLLLLSMLWMDMAMA
+P55899,FCGRN_HUMAN,IgG receptor FcRn large subunit p51,Homo sapiens,23,confirmed,MGVPRPQPWALGLLLFLLPGSLG
+P20849,CO9A1_HUMAN,Collagen alpha-1(IX) chain,Homo sapiens,23,confirmed,MKTCWKIPVFFFVCSFLEPWASA
+P01570,IFN14_HUMAN,Interferon alpha-14,Homo sapiens,23,confirmed,MALPFALMMALVVLSCKSSCSLG
+P23219,PGH1_HUMAN,Prostaglandin G/H synthase 1,Homo sapiens,23,confirmed,MSRSLLLRFLLFLLLLPPLPVLL
+P01562,IFNA1_HUMAN,Interferon alpha-1/13,Homo sapiens,23,confirmed,MASPFALLMVLVVLSCKSSCSLG
+P07352,IFNW1_BOVIN,Interferon omega-1,Bos taurus,23,confirmed,MAFVLSLLMALVLVSYGPGGSLG
+Q96HE7,ERO1A_HUMAN,ERO1-like protein alpha,Homo sapiens,23,confirmed,MGRGWGFLFGLLGAVWLLSSGHG
+P02782,PSC1_RAT,Prostatic steroid-binding protein C1,Rattus norvegicus,23,confirmed,MSTIKLSLCLLIMLAVCCYEANA
+P01908,HA21_HUMAN,"HLA class II histocompatibility antigen, DQ(1) alpha chain",Homo sapiens,23,confirmed,MILNKALMLGALALTTVMSPCGG
+O76076,WISP2_HUMAN,WNT1-inducible-signaling pathway protein 2,Homo sapiens,23,confirmed,MRGTPKTHLLAFSLLCLLSKVRT
+O15467,CCL16_HUMAN,C-C motif chemokine 16,Homo sapiens,23,confirmed,MKVSEAALSLLVLILIITSASRS
+P14097,CCL4_MOUSE,C-C motif chemokine 4,Mus musculus,23,confirmed,MKLCVSALSLLLLVAAFCAPGFS
+P10152,ANG1_BOVIN,Angiogenin-1,Bos taurus,23,confirmed,MVMVLSPLLLVFILGLGLTPVAP
+P06799,IFNA7_MOUSE,Interferon alpha-7,Mus musculus,23,confirmed,MARLCAFLMVLAVMSYWPTCCLG
+P20489,FCERA_MOUSE,High affinity immunoglobulin epsilon receptor subunit alpha,Mus musculus,23,confirmed,MVTGRSAQLCLALLFMSLDVILT
+P80108,PHLD_HUMAN,Phosphatidylinositol-glycan-specific phospholipase D,Homo sapiens,23,confirmed,MSAFRLWPGLLIMLGSLCHRGSP
+P01571,IFN17_HUMAN,Interferon alpha-17,Homo sapiens,23,confirmed,MALSFSLLMAVLVLSYKSICSLG
+P36511,UD2B4_RAT,UDP-glucuronosyltransferase 2B4,Rattus norvegicus,23,confirmed,MSGKWISALLLLQISFCFKSGNC
+P20155,ISK2_HUMAN,Serine protease inhibitor Kazal-type 2,Homo sapiens,23,confirmed,MALSVLRLALLLLAVTFAASLIP
+O15455,TLR3_HUMAN,Toll-like receptor 3,Homo sapiens,23,confirmed,MRQTLPCIYFWGGLLPFGMLCAS
+P04226,HA22_HUMAN,"HLA class II histocompatibility antigen, DQ(2) alpha chain",Homo sapiens,23,confirmed,MILNKALMLGALALTTVMSPCGG
+P35052,GPC1_HUMAN,Glypican-1,Homo sapiens,23,confirmed,MELRARGWWLLCAAAALVACARG
+P05121,PAI1_HUMAN,Plasminogen activator inhibitor 1,Homo sapiens,23,confirmed,MQMSPALTCLVLGLALVFGEGSA
+P01186,NEU2_RAT,Vasopressin-neurophysin 2-copeptin,Rattus norvegicus,23,confirmed,MLAMMLNTTLSACFLSLLALTSA
+Q6X4U4,SOSD1_HUMAN,Sclerostin domain-containing protein 1,Homo sapiens,23,confirmed,MLPPAIHFYLLPLACILMKSCLA
+Q6UW78,CK083_HUMAN,Uncharacterized protein C11orf83,Homo sapiens,23,confirmed,MDSLRKMLISVAMLGAGAGVGYA
+O00585,CCL21_HUMAN,C-C motif chemokine 21,Homo sapiens,23,confirmed,MAQSLALSLLILVLAFGIPRTQG
+P15941,MUC1_HUMAN,Mucin-1,Homo sapiens,23,confirmed,MTPGTQSPFFLLLLLTVLTVVTG
+P01906,HA26_HUMAN,"HLA class II histocompatibility antigen, DQ(6) alpha chain",Homo sapiens,23,confirmed,MILNKALLLGALALTAVMSPCGG
+P35859,ALS_RAT,Insulin-like growth factor-binding protein complex acid labile chain,Rattus norvegicus,23,confirmed,MALRTGGPALVVLLAFWVALGPC
+P23229,ITA6_HUMAN,Integrin alpha-6,Homo sapiens,23,confirmed,MAAAGQLCLLYLSAGLLSRLGAA
+O11780,BGH3_PIG,Transforming growth factor-beta-induced protein ig-h3,Sus scrofa,23,confirmed,MALLGRLLPLALALALGPAATHA
+P13909,PAI1_BOVIN,Plasminogen activator inhibitor 1,Bos taurus,23,confirmed,MRMSPVFACLALGLALIFGEGSA
+P04843,RPN1_HUMAN,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 1,Homo sapiens,23,confirmed,MEAPAAGLFLLLLLGTWAPAPGS
+Q9BQB4,SOST_HUMAN,Sclerostin,Homo sapiens,23,confirmed,MQLPLALCLVCLLVHTAFRVVEG
+P01907,HA25_HUMAN,"HLA class II histocompatibility antigen, DQ(5) alpha chain",Homo sapiens,23,confirmed,MILNKALLLGALALTTVMSPCGG
+Q06805,TIE1_BOVIN,Tyrosine-protein kinase receptor Tie-1,Bos taurus,23,confirmed,MVWLEPPLLLPIFFLASHVGAAV
+P16278,BGAL_HUMAN,Beta-galactosidase,Homo sapiens,23,confirmed,MPGFLVRILPLLLVLLLLGPTRG
+P00996,ISK1_BOVIN,Pancreatic secretory trypsin inhibitor,Bos taurus,23,confirmed,MKVASIFLLTALVLMSLSGNSGA
+Q07011,TNR9_HUMAN,Tumor necrosis factor receptor superfamily member 9,Homo sapiens,23,confirmed,MGNSCYNIVATLLLVLNFERTRS
+P54802,ANAG_HUMAN,Alpha-N-acetylglucosaminidase,Homo sapiens,23,confirmed,MEAVAVAAAVGVLLLAGAGGAAG
+P80370,DLK1_HUMAN,Protein delta homolog 1,Homo sapiens,23,confirmed,MTATEALLRVLLLLLAFGHSTYG
+P27113,LYAM2_RABIT,E-selectin,Oryctolagus cuniculus,23,confirmed,MVASWLLSTLTFALVLLIKETST
+Q63434,PLGF_RAT,Placenta growth factor,Rattus norvegicus,23,confirmed,MLAMKLFTCFLQVLAGLAVHSQG
+P09690,ACHB_MOUSE,Acetylcholine receptor subunit beta,Mus musculus,23,confirmed,MALGALLLLLGVLGTPLAPGARG
+P80098,CCL7_HUMAN,C-C motif chemokine 7,Homo sapiens,23,confirmed,MKASAALLCLLLTAAAFSPQGLA
+P06800,CD45_MOUSE,Leukocyte common antigen,Mus musculus,23,confirmed,MGLWLKLLAFGFALLDTEVFVTG
+P50448,F12AI_BOVIN,Factor XIIa inhibitor,Bos taurus,23,confirmed,MASRLTPLTLLLLLLLAGDRVTS
+Q9ES58,MO2R1_RAT,Cell surface glycoprotein CD200 receptor 1,Rattus norvegicus,23,confirmed,MLCFWRTSHVAVLLIWGVFAAES
+P80109,PHLD_BOVIN,Phosphatidylinositol-glycan-specific phospholipase D,Bos taurus,23,confirmed,MSAFRFWSGLLMLLGFLCPRSSP
+Q96IQ7,VSIG2_HUMAN,V-set and immunoglobulin domain-containing protein 2,Homo sapiens,23,confirmed,MAELPGPFLCGALLGFLCLSGLA
+P00995,ISK1_HUMAN,Pancreatic secretory trypsin inhibitor,Homo sapiens,23,confirmed,MKVTGIFLLSALALLSLSGNTGA
+P01909,HA23_HUMAN,"HLA class II histocompatibility antigen, DQ(3) alpha chain",Homo sapiens,23,confirmed,MILNKALMLGALALTTVMSPCGG
+P02820,OSTC_BOVIN,Osteocalcin,Bos taurus,23,confirmed,MRTPMLLALLALATLCLAGRADA
+Q9UBU3,GHRL_HUMAN,Appetite-regulating hormone,Homo sapiens,23,confirmed,MPSPGTVCSLLLLGMLWLDLAMA
+P05005,IFNA3_HORSE,Interferon alpha-3,Equus caballus,23,confirmed,MALPVSLLMALVVLSCHSSCSLG
+Q9EQX0,GHRL_MOUSE,Appetite-regulating hormone,Mus musculus,23,confirmed,MLSSGTICSLLLLSMLWMDMAMA
+Q9Z0K8,VNN1_MOUSE,Pantetheinase,Mus musculus,23,confirmed,MGTSWWLACAAAFSALCVLKASS
+P09056,LIF_MOUSE,Leukemia inhibitory factor,Mus musculus,23,confirmed,MKVLAAGIVPLLLLVLHWKHGAG
+Q01460,DIAC_RAT,Di-N-acetylchitobiase,Rattus norvegicus,23,confirmed,MALSDLLELTLLLLLPLLERLSA
+P49182,HEP2_MOUSE,Heparin cofactor 2,Mus musculus,23,confirmed,MKHPLCTLLSLITFMCIGSKGLA
+P05001,IFNW1_HORSE,Interferon omega-1,Equus caballus,23,confirmed,MAFSVSSLMALVVISSSPVSSMS
+Q99467,CD180_HUMAN,CD180 antigen,Homo sapiens,23,confirmed,MAFDVSCFFWVVLFSAGCKVITS
+P49921,GON1_PIG,Progonadoliberin-1,Sus scrofa,23,confirmed,MEPIPKLLAGLLLLTLCVVGCSS
+P11835,ITB2_MOUSE,Integrin beta-2,Mus musculus,23,confirmed,MLGLRPSLLLALAGLFFLGSAVS
+P32881,IFNA8_HUMAN,Interferon alpha-8,Homo sapiens,23,confirmed,MALTFYLLVALVVLSYKSFSSLG
+P30120,TIMP1_RAT,Metalloproteinase inhibitor 1,Rattus norvegicus,23,confirmed,MAPFASLASGILLLLSLIASSKA
+P01566,IFN10_HUMAN,Interferon alpha-10,Homo sapiens,23,confirmed,MALSFSLLMAVLVLSYKSICSLG
+P24063,ITAL_MOUSE,Integrin alpha-L,Mus musculus,23,confirmed,MSFRIAGPRLLLLGLQLFAKAWS
+P05014,IFNA4_HUMAN,Interferon alpha-4,Homo sapiens,23,confirmed,MALSFSLLMAVLVLSYKSICSLG
+P22362,CCL1_HUMAN,C-C motif chemokine 1,Homo sapiens,23,confirmed,MQIITTALVCLLLAGMWPEDVDS
+P02461,CO3A1_HUMAN,Collagen alpha-1(III) chain,Homo sapiens,23,confirmed,MMSFVQKGSWLLLALLHPTIILA
+Q8NBL1,KTEL1_HUMAN,KTEL motif-containing protein 1,Homo sapiens,23,confirmed,MEWWASSPLRLWLLLFLLPSAQG
+P08575,CD45_HUMAN,Leukocyte common antigen,Homo sapiens,23,confirmed,MYLWLKLLAFGFAFLDTEVFVTG
+P35053,GPC1_RAT,Glypican-1,Rattus norvegicus,23,confirmed,MELRARGWWLLCAAAALVACTRG
+P20037,HA2B_RAT,"RT1 class II histocompatibility antigen, B alpha chain",Rattus norvegicus,23,confirmed,MPLSRALILGVLALTTMLSPCGG
+P21563,INS_RODSP,Insulin,Rodentia sp,23,confirmed,MALWILLPLLALLILWGPDPAQA
+P05002,IFNW2_HORSE,Interferon omega-2,Equus caballus,23,confirmed,MALLPSLLTALVVYELWPCGALG
+P05010,IFNAD_BOVIN,Interferon alpha-D,Bos taurus,23,confirmed,MAPAWSLLLALLLLSCNAICSLG
+P00797,RENI_HUMAN,Renin,Homo sapiens,23,confirmed,MDGWRRMPRWGLLLLLWGSCTFG
+P43121,MUC18_HUMAN,Cell surface glycoprotein MUC18,Homo sapiens,23,confirmed,MGLPRLVCAFLLAACCCCPRVAG
+P04157,CD45_RAT,Leukocyte common antigen,Rattus norvegicus,23,confirmed,MYLWLKLLAFSLALLGPEVFVTG
+P01011,AACT_HUMAN,Alpha-1-antichymotrypsin,Homo sapiens,23,confirmed,MERMLPLLALGLLAAGFCPAVLC
+Q92583,CCL17_HUMAN,C-C motif chemokine 17,Homo sapiens,23,confirmed,MAPLKMLALVTLLLGASLQHIHA
+P34998,CRFR1_HUMAN,Corticotropin-releasing factor receptor 1,Homo sapiens,23,confirmed,MGGHPQLRLVKALLLLGLNPVSA
+O75636,FCN3_HUMAN,Ficolin-3,Homo sapiens,23,confirmed,MDLLWILPSLWLLLLGGPACLKT
+Q64385,I11RA_MOUSE,Interleukin-11 receptor alpha-1 chain,Mus musculus,23,confirmed,MSSSCSGLTRVLVAVATALVSSS
+P05008,IFNAB_BOVIN,Interferon alpha-B,Bos taurus,23,confirmed,MAPAWSFLLALLLLSCNAICSLG
+P08541,UD2B2_RAT,UDP-glucuronosyltransferase 2B2,Rattus norvegicus,23,confirmed,MPRKWISALFLLQISYCFKSGHC
+Q29983,MICA_HUMAN,MHC class I polypeptide-related sequence A,Homo sapiens,23,confirmed,MGLGPVFLLLAGIFPFAPPGAAA
+P02790,HEMO_HUMAN,Hemopexin,Homo sapiens,23,confirmed,MARVLGAPVALGLWSLCWSLAIA
+P20786,PGFRA_RAT,Alpha-type platelet-derived growth factor receptor,Rattus norvegicus,23,confirmed,MGTSQAFLVLSCLLTGPSLIVCQ
+Q9Y258,CCL26_HUMAN,C-C motif chemokine 26,Homo sapiens,23,confirmed,MMGLSLASAVLLASLLSLHLGTA
+P09656,ISK3_RAT,Serine protease inhibitor Kazal-type 3,Rattus norvegicus,23,confirmed,MKVAIIFLLSALALLNLAGNTTA
+P07490,GON1_RAT,Progonadoliberin-1,Rattus norvegicus,23,confirmed,METIPKLMAAVVLLTVCLEGCSS
+Q09098,PATEB_MOUSE,PATE-like protein B,Mus musculus,23,confirmed,MNSVTKISTLLIVILSFLCFVEG
+P20614,TIMP1_RABIT,Metalloproteinase inhibitor 1,Oryctolagus cuniculus,23,confirmed,MAPLAALASSMLLLLWLVAPSRA
+P05009,IFNAC_BOVIN,Interferon alpha-C,Bos taurus,23,confirmed,MAPAWSFRLALLLLSCNAICSLG
+P01033,TIMP1_HUMAN,Metalloproteinase inhibitor 1,Homo sapiens,23,confirmed,MAPFEPLASGILLLLWLIAPSRA
+P05003,IFNA1_HORSE,Interferon alpha-1,Equus caballus,23,confirmed,MALPVSLLMALVVLSCHSICSLG
+P07492,GRP_HUMAN,Gastrin-releasing peptide,Homo sapiens,23,confirmed,MRGSELPLVLLALVLCLAPRGRA
+P05536,HA27_HUMAN,"HLA class II histocompatibility antigen, DQ(W3) alpha chain",Homo sapiens,23,confirmed,MILNKALMLGSLALTTVMSPCGG
+Q8N6C8,LIRA3_HUMAN,Leukocyte immunoglobulin-like receptor subfamily A member 3,Homo sapiens,23,confirmed,MTPILTVLICLGLSLDPRTHVQA
+P04279,SEMG1_HUMAN,Semenogelin-1,Homo sapiens,23,confirmed,MKPNIIFVLSLLLILEKQAAVMG
+P42705,TPO_CANFA,Thrombopoietin,Canis familiaris,23,confirmed,MELTELLLVVMLLLTARLDPCLP
+P11230,ACHB_HUMAN,Acetylcholine receptor subunit beta,Homo sapiens,23,confirmed,MTPGALLMLLGALGAPLAPGVRG
+P01563,IFNA2_HUMAN,Interferon alpha-2,Homo sapiens,23,confirmed,MALTFALLVALLVLSCKSSCSVG
+P01579,IFNG_HUMAN,Interferon gamma,Homo sapiens,23,confirmed,MKYTSYILAFQLCIVLGSLGCYC
+P20933,ASPG_HUMAN,N(4)-(beta-N-acetylglucosaminyl)-L-asparaginase,Homo sapiens,23,confirmed,MARKSNLPVLLVPFLLCQALVRC
+P16675,PPGB_MOUSE,Lysosomal protective protein,Mus musculus,23,confirmed,MPGTALSPLLLLLLLSWASRNEA
+P05004,IFNA2_HORSE,Interferon alpha-2,Equus caballus,23,confirmed,MALPFSLLMALVVLSCHSSCSLG
+P20334,TNR9_MOUSE,Tumor necrosis factor receptor superfamily member 9,Mus musculus,23,confirmed,MGNNCYNVVVIVLLLVGCEKVGA
+P50229,CCL3_RAT,C-C motif chemokine 3,Rattus norvegicus,23,confirmed,MKVSTAALAVLLCTMALWNEVFS
+P35625,TIMP3_HUMAN,Metalloproteinase inhibitor 3,Homo sapiens,23,confirmed,MTPWLGLIVLLGSWSLGDWGAEA
+O14798,TR10C_HUMAN,Tumor necrosis factor receptor superfamily member 10C,Homo sapiens,23,confirmed,MARIPKTLKFVVVIVAVLLPVLA
+P12371,FCERA_RAT,High affinity immunoglobulin epsilon receptor subunit alpha,Rattus norvegicus,23,confirmed,MDTGGSARLCLALVLISLGVMLT
+Q14520,HABP2_HUMAN,Hyaluronan-binding protein 2,Homo sapiens,23,confirmed,MFARMSDLHVLLLMALVGKTACG
+P16234,PGFRA_HUMAN,Alpha-type platelet-derived growth factor receptor,Homo sapiens,23,confirmed,MGTSHPAFLVLGCLLTGLSLILC
+P01001,ISK6_BOVIN,Serine protease inhibitor Kazal-type 6,Bos taurus,23,confirmed,MKTSGVFLLLSLALFCFFSGVFG
+P13500,CCL2_HUMAN,C-C motif chemokine 2,Homo sapiens,23,confirmed,MKVSAALLCLLLIAATFIPQGLA
+P40967,PME17_HUMAN,Melanocyte protein Pmel 17,Homo sapiens,24,confirmed,MDLVLKRCLLHLAVIGALLAVGAT
+P30447,1A23_HUMAN,"HLA class I histocompatibility antigen, A-23 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLVLLLSGALALTQTWA
+P30499,1C01_HUMAN,"HLA class I histocompatibility antigen, Cw-1 alpha chain",Homo sapiens,24,confirmed,MRVMEPRTLILLLSGALALTETWA
+Q31612,1B73_HUMAN,"HLA class I histocompatibility antigen, B-73 alpha chain",Homo sapiens,24,confirmed,MLVMAPRTVLLLLSAALALTETWA
+P03950,ANGI_HUMAN,Angiogenin,Homo sapiens,24,confirmed,MVMGLGVLLLVFVLGLGLTPPTLA
+P16882,GHR_MOUSE,Growth hormone receptor,Mus musculus,24,confirmed,MDLCQVFLTLALAVTSSTFSGSEA
+P80747,ITB5_BOVIN,Integrin beta-5,Bos taurus,24,confirmed,MPRAPALLFSCLLGLCALVPRLPG
+P98064,MASP1_MOUSE,Complement-activating component of Ra-reactive factor,Mus musculus,24,confirmed,MRFLSFWRLLLYHALCLALPEVSA
+P30459,1A74_HUMAN,"HLA class I histocompatibility antigen, A-74 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLLLLLLGALALTQTRA
+Q07000,1C15_HUMAN,"HLA class I histocompatibility antigen, Cw-15 alpha chain",Homo sapiens,24,confirmed,MRVMAPRTLLLLLSGALALTETWA
+P30481,1B44_HUMAN,"HLA class I histocompatibility antigen, B-44 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTLLLLLWGAVALTETWA
+P01027,CO3_MOUSE,Complement C3,Mus musculus,24,confirmed,MGPASGSQLLVLLLLLASSPLALG
+P01897,HA1L_MOUSE,"H-2 class I histocompatibility antigen, L-D alpha chain",Mus musculus,24,confirmed,MGAMAPRTLLLLLAAALAPTQTRA
+P01892,1A02_HUMAN,"HLA class I histocompatibility antigen, A-2 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLVLLLSGALALTQTWA
+P30483,1B45_HUMAN,"HLA class I histocompatibility antigen, B-45 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLSAALALTETWA
+P78423,X3CL1_HUMAN,Fractalkine,Homo sapiens,24,confirmed,MAPISLSWLLRLATFCHLTVLLAG
+Q64277,BST1_MOUSE,ADP-ribosyl cyclase 2,Mus musculus,24,confirmed,MAVQGGLLSLWLWLWLSLLTVLLG
+P10319,1B58_HUMAN,"HLA class I histocompatibility antigen, B-58 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLWGAVALTETWA
+P07474,GLHA_RABIT,Glycoprotein hormones alpha chain,Oryctolagus cuniculus,24,confirmed,MGYYRKYAAVILATLSVFLHILHS
+P07224,PROS_BOVIN,Vitamin K-dependent protein S,Bos taurus,24,confirmed,MRVLGGRTGTLLACLALVLPVLEA
+Q09160,1A80_HUMAN,"HLA class I histocompatibility antigen, A-80 alpha chain",Homo sapiens,24,confirmed,MAVMPPRTLLLLLSGALALTQTWA
+P16189,1A31_HUMAN,"HLA class I histocompatibility antigen, A-31 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLLLLLLGALALTQTWA
+Q29960,1C16_HUMAN,"HLA class I histocompatibility antigen, Cw-16 alpha chain",Homo sapiens,24,confirmed,MRVMAPRTLILLLSGALALTETWA
+P04222,1C03_HUMAN,"HLA class I histocompatibility antigen, Cw-3 alpha chain",Homo sapiens,24,confirmed,MRVMAPRTLILLLSGALALTETWA
+P30988,CALCR_HUMAN,Calcitonin receptor,Homo sapiens,24,confirmed,MRFTFTSRCLALFLLLNHPTPILP
+P01216,GLHA_MOUSE,Glycoprotein hormones alpha chain,Mus musculus,24,confirmed,MDYYRKYAAVILVMLSMFLHILHS
+P01346,IGF2_RAT,Insulin-like growth factor II,Rattus norvegicus,24,confirmed,MGIPVGKSMLVLLISLAFALCCIA
+P01893,HLAH_HUMAN,"Putative HLA class I histocompatibility antigen, alpha chain H",Homo sapiens,24,confirmed,MAVMAPRTLLLLLSGALALTQTWA
+P16471,PRLR_HUMAN,Prolactin receptor,Homo sapiens,24,confirmed,MKENVASATVFTLLLFLNTCLLNG
+P19761,TFPI1_RABIT,Tissue factor pathway inhibitor,Oryctolagus cuniculus,24,confirmed,MKKEHIFWTSICLLLGLVPAPVSS
+Q31271,Q31271_RAT,n/a,Rattus norvegicus,24,confirmed,MGAKAPQALLLLVAVALAPTQTRA
+Q6UW32,IGFL1_HUMAN,Insulin growth factor-like family member 1,Homo sapiens,24,confirmed,MAPRGCIVAVFAIFCISRLLCSHG
+Q8MJV4,NPB_BOVIN,Neuropeptide B,Bos taurus,24,confirmed,MAGPAMLVAAALALCLLLASPGLA
+P01329,INS_CAVPO,Insulin,Cavia porcellus,24,confirmed,MALWMHLLTVLALLALWGPNTGQA
+P06127,CD5_HUMAN,T-cell surface glycoprotein CD5,Homo sapiens,24,confirmed,MPMGSLQPLATLYLLGMLVASCLG
+Q16674,MIA_HUMAN,Melanoma-derived growth regulatory protein,Homo sapiens,24,confirmed,MARSLVCLGVIILLSAFSGPGVRG
+P12799,FIBG_BOVIN,Fibrinogen gamma-B chain,Bos taurus,24,confirmed,MSWSSHPPSVIFYILSLLSSACLA
+P30488,1B50_HUMAN,"HLA class I histocompatibility antigen, B-50 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLSAALALTETWA
+P80067,CATC_RAT,Dipeptidyl-peptidase 1,Rattus norvegicus,24,confirmed,MGPWTHSLRAALLLVLLGVCTVSS
+P02716,ACHD_MOUSE,Acetylcholine receptor subunit delta,Mus musculus,24,confirmed,MAGPVLTLGLLAALVVCALPGSWG
+P04155,TFF1_HUMAN,Trefoil factor 1,Homo sapiens,24,confirmed,MATMENKVICALVLVSMLALGTLA
+P19235,EPOR_HUMAN,Erythropoietin receptor,Homo sapiens,24,confirmed,MDHLGASLWPQVGSLCLLLAGAAW
+Q7Z5L0,VMO1_HUMAN,Vitelline membrane outer layer protein 1 homolog,Homo sapiens,24,confirmed,MERGAGAKLLPLLLLLRATGFTCA
+O95750,FGF19_HUMAN,Fibroblast growth factor 19,Homo sapiens,24,confirmed,MRSGCVVVHVWILAGLWLAVAGRP
+P30685,1B35_HUMAN,"HLA class I histocompatibility antigen, B-35 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLWGAVALTETWA
+P14095,GROA_RAT,Growth-regulated alpha protein,Rattus norvegicus,24,confirmed,MVSATRSLLCAALPVLATSRQATG
+P00533,EGFR_HUMAN,Epidermal growth factor receptor,Homo sapiens,24,confirmed,MRPSGTAGAALLALLAALCPASRA
+P01219,GLHA_PIG,Glycoprotein hormones alpha chain,Sus scrofa,24,confirmed,MDYYRKYAAVILAILSVFLQILHS
+O60565,GREM1_HUMAN,Gremlin-1,Homo sapiens,24,confirmed,MSRTAYTVGALLLLLGTLLPAAEG
+P30456,1A43_HUMAN,"HLA class I histocompatibility antigen, A-43 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLVLLLSGALALTQTWA
+P30491,1B53_HUMAN,"HLA class I histocompatibility antigen, B-53 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLWGAVALTETWA
+P10321,1C07_HUMAN,"HLA class I histocompatibility antigen, Cw-7 alpha chain",Homo sapiens,24,confirmed,MRVMAPRALLLLLSGGLALTETWA
+Q63041,A1M_RAT,Alpha-1-macroglobulin,Rattus norvegicus,24,confirmed,MRRNQLPIPVFLLLLLLLPRDATA
+P97535,PLA1A_RAT,Phospholipase A1 member A,Rattus norvegicus,24,confirmed,MCPGLWGTCFWLWGSLLWLSIGRS
+P30492,1B54_HUMAN,"HLA class I histocompatibility antigen, B-54 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTLLLLLWGALALTETWA
+P10764,IGF2_SHEEP,Insulin-like growth factor II,Ovis aries,24,confirmed,MGITAGKSMLALLAFLAFASCCYA
+Q29940,1B59_HUMAN,"HLA class I histocompatibility antigen, B-59 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTLLLLLWGALALTETWA
+Q9UHD0,IL19_HUMAN,Interleukin-19,Homo sapiens,24,confirmed,MKLQCVSLWLLGTILILCSVDNHG
+P01009,A1AT_HUMAN,Alpha-1-antitrypsin,Homo sapiens,24,confirmed,MPSSVSWGILLLAGLCCLVPVSLA
+P23907,PRIO_SHEEP,Major prion protein,Ovis aries,24,confirmed,MVKSHIGSWILVLFVAMWSDVGLC
+Q00193,ZP4_RABIT,Zona pellucida sperm-binding protein 4,Oryctolagus cuniculus,24,confirmed,MAPGSTMWLLGYIFLCFPVSFALI
+P01899,HA11_MOUSE,"H-2 class I histocompatibility antigen, D-B alpha chain",Mus musculus,24,confirmed,MGAMAPRTLLLLLAAALAPTQTRA
+P30484,1B46_HUMAN,"HLA class I histocompatibility antigen, B-46 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLSGALALTETWA
+P01311,INS_RABIT,Insulin,Oryctolagus cuniculus,24,confirmed,MASLAALLPLLALLVLCRLDPAQA
+P01891,1A68_HUMAN,"HLA class I histocompatibility antigen, A-68 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLVLLLSGALALTQTWA
+P23515,OMGP_HUMAN,Oligodendrocyte-myelin glycoprotein,Homo sapiens,24,confirmed,MEYQILKMSLCLFILLFLTPGILC
+P05979,PGH1_SHEEP,Prostaglandin G/H synthase 1,Ovis aries,24,confirmed,MSRQSISLRFPLLLLLLSPSPVFS
+P30508,1C12_HUMAN,"HLA class I histocompatibility antigen, Cw-12 alpha chain",Homo sapiens,24,confirmed,MRVMAPRTLILLLSGALALTETWA
+P30462,1B14_HUMAN,"HLA class I histocompatibility antigen, B-14 alpha chain",Homo sapiens,24,confirmed,MLVMAPRTVLLLLSAALALTETWA
+P01150,TRH_RAT,Prothyroliberin,Rattus norvegicus,24,confirmed,MPGPWLLLALALIFTLTGIPESCA
+P53634,CATC_HUMAN,Dipeptidyl-peptidase 1,Homo sapiens,24,confirmed,MGAGPSLLLAALLLLLSGDGAVRC
+Q8N441,FGRL1_HUMAN,Fibroblast growth factor receptor-like 1,Homo sapiens,24,confirmed,MTPSPLLLLLLPPLLLGAFPPAAA
+P26595,A1AT_MUSCR,Alpha-1-antiproteinase,Mus caroli,24,confirmed,MTPSISWGLLLLAGLFCLVPSFLA
+P30495,1B56_HUMAN,"HLA class I histocompatibility antigen, B-56 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTLLLLLWGALALTETWA
+Q27972,CHAD_BOVIN,Chondroadherin,Bos taurus,24,confirmed,MARPMLLLXLSLGLLASLLPALAA
+P01325,INS1_MOUSE,Insulin-1,Mus musculus,24,confirmed,MALLVHFLPLLALLALWEPKPTQA
+P12032,TIMP1_MOUSE,Metalloproteinase inhibitor 1,Mus musculus,24,confirmed,MMAPFASLASGILLLLSLIASSKA
+P18463,1B37_HUMAN,"HLA class I histocompatibility antigen, B-37 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTLLLLLWGAVALTETWA
+P01889,1B07_HUMAN,"HLA class I histocompatibility antigen, B-7 alpha chain",Homo sapiens,24,confirmed,MLVMAPRTVLLLLSAALALTETWA
+Q15399,TLR1_HUMAN,Toll-like receptor 1,Homo sapiens,24,confirmed,MTSIFHFAIIFMLILQIRIQLSEE
+P11962,GLHA_RAT,Glycoprotein hormones alpha chain,Rattus norvegicus,24,confirmed,MDCYRRYAAVILVMLSMVLHILHS
+Q04826,1B40_HUMAN,"HLA class I histocompatibility antigen, B-40 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTLLLLLWGAVALTETWA
+Q9NYY1,IL20_HUMAN,Interleukin-20,Homo sapiens,24,confirmed,MKASSLAFSLLSAAFYLLWTPSTG
+P20757,ANGT_SHEEP,Angiotensinogen,Ovis aries,24,confirmed,MAPAGLSLGATILCLLAWAGLAAG
+Q95365,1B38_HUMAN,"HLA class I histocompatibility antigen, B-38 alpha chain",Homo sapiens,24,confirmed,MLVMAPRTVLLLLSAALALTETWA
+P21570,ANGI_MOUSE,Angiogenin,Mus musculus,24,confirmed,MAISPGPLFLIFVLGLVVIPPTLA
+P04439,1A03_HUMAN,"HLA class I histocompatibility antigen, A-3 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLLLLLSGALALTQTWA
+P30486,1B48_HUMAN,"HLA class I histocompatibility antigen, B-48 alpha chain",Homo sapiens,24,confirmed,MLVMAPRTVLLLLSAALALTETWA
+P23150,HA2J_MOUSE,"H-2 class II histocompatibility antigen, I-E alpha chain",Mus musculus,24,confirmed,RSRALILGVLALTTMLSLCGGEDD
+P84039,ENPP5_RAT,Ectonucleotide pyrophosphatase/phosphodiesterase family member 5,Rattus norvegicus,24,confirmed,MIPEFLVVSCTLAALCHSVPLSLQ
+P09535,IGF2_MOUSE,Insulin-like growth factor II,Mus musculus,24,confirmed,MGIPVGKSMLVLLISLAFALCCIA
+P01323,INS2_RAT,Insulin-2,Rattus norvegicus,24,confirmed,MALWIRFLPLLALLILWEPRPAQA
+P01315,INS_PIG,Insulin,Sus scrofa,24,confirmed,MALWTRLLPLLALLALWAPAPAQA
+P30407,INS_CERAE,Insulin,Cercopithecus aethiops,24,confirmed,MALWMRLLPLLALLALWGPDPVPA
+P04180,LCAT_HUMAN,Phosphatidylcholine-sterol acyltransferase,Homo sapiens,24,confirmed,MGPPGSPWQWVTLLLGLLLPPAAP
+P07225,PROS_HUMAN,Vitamin K-dependent protein S,Homo sapiens,24,confirmed,MRVLGGRCGALLACLLLVLPVSEA
+P30461,1B13_HUMAN,"HLA class I histocompatibility antigen, B-13 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTLLLLLWGAVALTETWA
+P30480,1B42_HUMAN,"HLA class I histocompatibility antigen, B-42 alpha chain",Homo sapiens,24,confirmed,MLVMAPRTVLLLLSAALALTETWA
+P38029,A1AT2_HORSE,Alpha-1-antiproteinase 2,Equus caballus,24,confirmed,MPSSVPWCLLLLAGLCCLVPSSLA
+P01317,INS_BOVIN,Insulin,Bos taurus,24,confirmed,MALWTRLRPLLALLALWPPPPARA
+P07456,IGF2_BOVIN,Insulin-like growth factor II,Bos taurus,24,confirmed,MGITAGKSVLVLLAFLAFASCCYA
+Q29718,1B82_HUMAN,"HLA class I histocompatibility antigen, B-82 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTLLLLLWGALALTETWA
+P01322,INS1_RAT,Insulin-1,Rattus norvegicus,24,confirmed,MALWMRFLPLLALLVLWEPKPAQA
+Q96HF1,SFRP2_HUMAN,Secreted frizzled-related protein 2,Homo sapiens,24,confirmed,MLQGPGSLLLLFLASHCCLGSARG
+O54767,ZP2_RAT,Zona pellucida sperm-binding protein 2,Rattus norvegicus,24,confirmed,MARWQRVYWLRSLFFALVTSVNSL
+P30101,PDIA3_HUMAN,Protein disulfide-isomerase A3,Homo sapiens,24,confirmed,MRLRRLALFPGVALLLAAARLAAA
+P30512,1A29_HUMAN,"HLA class I histocompatibility antigen, A-29 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLLLLLLGALALTQTWA
+P30501,1C02_HUMAN,"HLA class I histocompatibility antigen, Cw-2 alpha chain",Homo sapiens,24,confirmed,MRVMEPRTLILLLSGALALTETWA
+P19320,VCAM1_HUMAN,Vascular cell adhesion protein 1,Homo sapiens,24,confirmed,MPGKMVVILGASNILWIMFAASQA
+P03989,1B27_HUMAN,"HLA class I histocompatibility antigen, B-27 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTLLLLLWGAVALTETWA
+P30460,1B08_HUMAN,"HLA class I histocompatibility antigen, B-8 alpha chain",Homo sapiens,24,confirmed,MLVMAPRTVLLLLSAALALTETWA
+P01321,INS_CANFA,Insulin,Canis familiaris,24,confirmed,MALWMRLLPLLALLALWAPAPTRA
+P07911,UROM_HUMAN,Uromodulin,Homo sapiens,24,confirmed,MGQPSLTWMLMVVVASWFITTAAT
+P18464,1B51_HUMAN,"HLA class I histocompatibility antigen, B-51 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLWGAVALTETWA
+P16190,1A33_HUMAN,"HLA class I histocompatibility antigen, A-33 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLLLLLLGALALTQTWA
+P30504,1C04_HUMAN,"HLA class I histocompatibility antigen, Cw-4 alpha chain",Homo sapiens,24,confirmed,MRVMAPRTLILLLSGALALTETWA
+P01313,INS_CRILO,Insulin,Cricetulus longicaudatus,24,confirmed,MTLWMRLLPLLTLLVLWEPNPAQA
+P30453,1A34_HUMAN,"HLA class I histocompatibility antigen, A-34 alpha chain",Homo sapiens,24,confirmed,MAIMAPRTLVLLLSGALALTQTWA
+Q9TNN7,1C05_HUMAN,"HLA class I histocompatibility antigen, Cw-5 alpha chain",Homo sapiens,24,confirmed,MRVMAPRTLILLLSGALALTETWA
+P13746,1A11_HUMAN,"HLA class I histocompatibility antigen, A-11 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLLLLLSGALALTQTWA
+P14753,EPOR_MOUSE,Erythropoietin receptor,Mus musculus,24,confirmed,MDKLRVPLWPRVGPLCLLLAGAAW
+P01318,INS_SHEEP,Insulin,Ovis aries,24,confirmed,MALWTRLVPLLALLALWAPAPAHA
+P07147,TYRP1_MOUSE,"5,6-dihydroxyindole-2-carboxylic acid oxidase",Mus musculus,24,confirmed,MKSYNVLPLAYISLFLMLFYQVWA
+P30490,1B52_HUMAN,"HLA class I histocompatibility antigen, B-52 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLWGAVALTETWA
+P30479,1B41_HUMAN,"HLA class I histocompatibility antigen, B-41 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLSAALALTETWA
+P14046,A1I3_RAT,Alpha-1-inhibitor 3,Rattus norvegicus,24,confirmed,MKKDREAQLCLFSALLAFLPFASL
+O00626,CCL22_HUMAN,C-C motif chemokine 22,Homo sapiens,24,confirmed,MARLQTALLVVLVLLAVALQATEA
+P35495,PSP1_PIG,Major seminal plasma glycoprotein PSP-I,Sus scrofa,24,confirmed,MKLGSAIPWALLFSTATLISTGWG
+P19137,LAMA1_MOUSE,Laminin subunit alpha-1,Mus musculus,24,confirmed,MRGSGTGAALLVLLASVLWVTVRS
+Q31166,Q31166_MOUSE,n/a,Mus musculus,24,confirmed,MGSSSNCALLHMVVVSLAVTQTGS
+P24259,ANF_PIG,Atrial natriuretic factor,Sus scrofa,24,confirmed,MSSFTITVSFLLVLVFQFPGQTRA
+P01326,INS2_MOUSE,Insulin-2,Mus musculus,24,confirmed,MALWMRFLPLLALLFLWESHPTQA
+Q62656,PTPRZ_RAT,Receptor-type tyrosine-protein phosphatase zeta,Rattus norvegicus,24,confirmed,MRILQSFLACVQLLCVCRLDWAYG
+Q8N126,CADM3_HUMAN,Cell adhesion molecule 3,Homo sapiens,24,confirmed,MGAPAASLLLLLLLFACCWAPGGA
+P10279,PRIO_BOVIN,Major prion protein,Bos taurus,24,confirmed,MVKSHIGSWILVLFVAMWSDVGLC
+P18465,1B57_HUMAN,"HLA class I histocompatibility antigen, B-57 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLWGAVALTETWA
+O08523,TECTA_MOUSE,Alpha-tectorin,Mus musculus,24,confirmed,MNYSSLLRIWVSFIFALVRHQAQP
+P27773,PDIA3_MOUSE,Protein disulfide-isomerase A3,Mus musculus,24,confirmed,MRFSCLALLPGVALLLASARLAAA
+P16301,LCAT_MOUSE,Phosphatidylcholine-sterol acyltransferase,Mus musculus,24,confirmed,MGLPGSPWQRVLLLLGLLLPPATP
+P30510,1C14_HUMAN,"HLA class I histocompatibility antigen, Cw-14 alpha chain",Homo sapiens,24,confirmed,MRVMAPRTLILLLSGALALTETWA
+P22057,PTGDS_RAT,Prostaglandin-H2 D-isomerase,Rattus norvegicus,24,confirmed,MAALPMLWTGLVLLGLLGFPQTPA
+P01026,CO3_RAT,Complement C3,Rattus norvegicus,24,confirmed,MGPTSGSQLLVLLLLLASSLLALG
+P11598,PDIA3_RAT,Protein disulfide-isomerase A3,Rattus norvegicus,24,confirmed,MRFSCLALLPGVALLLASALLASA
+Q9TTE1,ENDP1_BOVIN,Endopin-1,Bos taurus,24,confirmed,MRAERTSFLLALGLLVAGIRSVHC
+P60042,SMS_RAT,Somatostatin,Rattus norvegicus,24,confirmed,MLSCRLQCALAALCIVLALGGVTG
+Q6UXH1,CREL2_HUMAN,Cysteine-rich with EGF-like domain protein 2,Homo sapiens,24,confirmed,MRLPRRAALGLLPLLLLLPPAPEA
+P30466,1B18_HUMAN,"HLA class I histocompatibility antigen, B-18 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTLLLLLWGAVALTETWA
+P05534,1A24_HUMAN,"HLA class I histocompatibility antigen, A-24 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLVLLLSGALALTQTWA
+Q9GZV9,FGF23_HUMAN,Fibroblast growth factor 23,Homo sapiens,24,confirmed,MLGARLRLWVCALCSVCSMSVLRA
+P24387,CRHBP_HUMAN,Corticotropin-releasing factor-binding protein,Homo sapiens,24,confirmed,MSPNFKLQCHFILIFLTALRGESR
+P06306,INS_FELCA,Insulin,Felis silvestris catus,24,confirmed,MAPWTRLLPLLALLSLWIPAPTRA
+Q6UXB1,IGFL3_HUMAN,Insulin growth factor-like family member 3,Homo sapiens,24,confirmed,MRPRCCILALVCWITVFLLQCSKG
+A3RJ36,LAP_BUBBU,Lingual antimicrobial peptide,Bubalus bubalis,24,confirmed,MRLHHLLLALLFLVLSAGSGFTQG
+P30485,1B47_HUMAN,"HLA class I histocompatibility antigen, B-47 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTLLLLLWGAVALTETWA
+Q95604,1C17_HUMAN,"HLA class I histocompatibility antigen, Cw-17 alpha chain",Homo sapiens,24,confirmed,MRVMAPQALLLLLSGALALIETWA
+P17643,TYRP1_HUMAN,"5,6-dihydroxyindole-2-carboxylic acid oxidase",Homo sapiens,24,confirmed,MSAPKLLSLGCIFFPLLLFQQARA
+P35916,VGFR3_HUMAN,Vascular endothelial growth factor receptor 3,Homo sapiens,24,confirmed,MQRGAALCLRLWLCLGLLDGLVSG
+Q29865,1C18_HUMAN,"HLA class I histocompatibility antigen, Cw-18 alpha chain",Homo sapiens,24,confirmed,MRVMAPRALLLLLSGGLALTETWA
+P01344,IGF2_HUMAN,Insulin-like growth factor II,Homo sapiens,24,confirmed,MGIPMGKSMLVLLTFLAFASCCIA
+P08505,IL6_MOUSE,Interleukin-6,Mus musculus,24,confirmed,MKFLSARDFHPVAFLGLMLVTTTA
+P23035,A1AF_RABIT,Alpha-1-antiproteinase F,Oryctolagus cuniculus,24,confirmed,MPPSVSRALLLLAGLGCLLPGFLA
+P22005,PENK_MOUSE,Proenkephalin A,Mus musculus,24,confirmed,MARFLRLCTWLLALGSCLLATVQA
+P22323,SPA3K_CAVPO,Serine proteinase inhibitor A3K,Cavia porcellus,24,confirmed,MPSAISRGLLLLAGLCYLVFGIMA
+P01217,GLHA_BOVIN,Glycoprotein hormones alpha chain,Bos taurus,24,confirmed,MDYYRKYAAVILAILSLFLQILHS
+P30455,1A36_HUMAN,"HLA class I histocompatibility antigen, A-36 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLLLLLSGALALTQTWA
+P05112,IL4_HUMAN,Interleukin-4,Homo sapiens,24,confirmed,MGLTSQLLPPLFFLLACAGNFVHG
+P01308,INS_HUMAN,Insulin,Homo sapiens,24,confirmed,MALWMRLLPLLALLALWGPDPAAA
+Q29963,1C06_HUMAN,"HLA class I histocompatibility antigen, Cw-6 alpha chain",Homo sapiens,24,confirmed,MRVMAPRTLILLLSGALALTETWA
+P30487,1B49_HUMAN,"HLA class I histocompatibility antigen, B-49 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLSAALALTETWA
+P04090,REL2_HUMAN,Prorelaxin H2,Homo sapiens,24,confirmed,MPRLFFFHLLGVCLLLNQFSRAVA
+Q31610,1B81_HUMAN,"HLA class I histocompatibility antigen, B-81 alpha chain",Homo sapiens,24,confirmed,MLVMAPRTVLLLLWGAVALTETWA
+Q62867,GGH_RAT,Gamma-glutamyl hydrolase,Rattus norvegicus,24,confirmed,MASLGRLLCAWVLLLCGLASPGLS
+O88917,LPHN1_RAT,Latrophilin-1,Rattus norvegicus,24,confirmed,MARLAAALWSLCVTTVLVTSATQG
+P18424,LCAT_RAT,Phosphatidylcholine-sterol acyltransferase,Rattus norvegicus,24,confirmed,MGLPGSPWQWVLLLLGLLLPPATS
+P11438,LAMP1_MOUSE,Lysosome-associated membrane glycoprotein 1,Mus musculus,24,confirmed,MAAPGARRPLLLLLLAGLAHGASA
+P01900,HA12_MOUSE,"H-2 class I histocompatibility antigen, D-D alpha chain",Mus musculus,24,confirmed,MGAMAPRTLLLLLAAALGPTQTRA
+P18462,1A25_HUMAN,"HLA class I histocompatibility antigen, A-25 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLVLLLSGALALTQTWA
+P01348,RELX_PIG,Prorelaxin,Sus scrofa,24,confirmed,MPRLFSYLLGVWLLLSQLPREIPG
+P17475,A1AT_RAT,Alpha-1-antiproteinase,Rattus norvegicus,24,confirmed,MAPSISRGLLLLAALCCLAPSFLA
+Q29836,1B67_HUMAN,"HLA class I histocompatibility antigen, B-67 alpha chain",Homo sapiens,24,confirmed,MLVMAPRTVLLLLSAALALTETWA
+O77541,CD59_RABIT,CD59 glycoprotein,Oryctolagus cuniculus,24,confirmed,MTSRGVHLLLRLLFLLAVFYSSDS
+P16188,1A30_HUMAN,"HLA class I histocompatibility antigen, A-30 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLLLLLSGALALTHTWA
+P01220,GLHA_HORSE,Glycoprotein hormones alpha chain,Equus caballus,24,confirmed,MDYYRKHAAVILATLSVFLHILHS
+P30450,1A26_HUMAN,"HLA class I histocompatibility antigen, A-26 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLVLLLSGALALTQTWA
+P12725,A1AT_SHEEP,Alpha-1-antiproteinase,Ovis aries,24,confirmed,MALSITRGLLLLAALCCLAPTSLA
+P01015,ANGT_RAT,Angiotensinogen,Rattus norvegicus,24,confirmed,MTPTGAGLKATIFCILTWVSLTAG
+P01168,SMS_PIG,Somatostatin,Sus scrofa,24,confirmed,MLSCRLQCALAALSIVLALGGVTG
+P30457,1A66_HUMAN,"HLA class I histocompatibility antigen, A-66 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLVLLLSGALALTQTWA
+P30505,1C08_HUMAN,"HLA class I histocompatibility antigen, Cw-8 alpha chain",Homo sapiens,24,confirmed,MRVMAPRTLILLLSGALALTETWA
+P01215,GLHA_HUMAN,Glycoprotein hormones alpha chain,Homo sapiens,24,confirmed,MDYYRKYAAIFLVTLSVFLHVLHS
+P08949,NMB_HUMAN,Neuromedin-B,Homo sapiens,24,confirmed,MARRAGGARMFGSLLLFALLAAGV
+P36512,UDB13_RABIT,UDP-glucuronosyltransferase 2B13,Oryctolagus cuniculus,24,confirmed,MPVKCISVLLLLLQLSCCFSSGSC
+P10314,1A32_HUMAN,"HLA class I histocompatibility antigen, A-32 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLLLLLLGALALTQTWA
+P30498,1B78_HUMAN,"HLA class I histocompatibility antigen, B-78 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLWGAVALTETWA
+P01218,GLHA_SHEEP,Glycoprotein hormones alpha chain,Ovis aries,24,confirmed,MDYYRKYAAAILAILSLFLQILHS
+P30406,INS_MACFA,Insulin,Macaca fascicularis,24,confirmed,MALWMRLLPLLALLALWGPDPAPA
+P30493,1B55_HUMAN,"HLA class I histocompatibility antigen, B-55 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTLLLLLWGALALTETWA
+Q9Y4X3,CCL27_HUMAN,C-C motif chemokine 27,Homo sapiens,24,confirmed,MKGPPTFCSLLLLSLLLSPDPTAA
+P30464,1B15_HUMAN,"HLA class I histocompatibility antigen, B-15 alpha chain",Homo sapiens,24,confirmed,MRVTAPRTVLLLLSGALALTETWA
+P04758,ACHB_BOVIN,Acetylcholine receptor subunit beta,Bos taurus,24,confirmed,MTPGALLLLLLGVLGAHLAPGARG
+P06729,CD2_HUMAN,T-cell surface antigen CD2,Homo sapiens,24,confirmed,MSFPCKFVASFLLIFNVSSKGAVS
+P11859,ANGT_MOUSE,Angiotensinogen,Mus musculus,24,confirmed,MTPTGAGLKATIFCILTWVSLTAG
+Q99062,CSF3R_HUMAN,Granulocyte colony-stimulating factor receptor,Homo sapiens,24,confirmed,MARLGNCSLTWAALIILLLPGSLE
+P31358,CD52_HUMAN,CAMPATH-1 antigen,Homo sapiens,24,confirmed,MKRFLFLLLTISLLVMVQIQTGLS
+P61278,SMS_HUMAN,Somatostatin,Homo sapiens,24,confirmed,MLSCRLQCALAALSIVLALGCVTG
+P17715,INS_OCTDE,Insulin,Octodon degus,24,confirmed,MAPWMHLLTVLALLALWGPNSVQA
+P30443,1A01_HUMAN,"HLA class I histocompatibility antigen, A-1 alpha chain",Homo sapiens,24,confirmed,MAVMAPRTLLLLLSGALALTQTWA
+P30475,1B39_HUMAN,"HLA class I histocompatibility antigen, B-39 alpha chain",Homo sapiens,24,confirmed,MLVMAPRTVLLLLSAALALTETWA
+P22325,A1AS_CAVPO,Alpha-1-antiproteinase S,Cavia porcellus,24,confirmed,MPSAIPRGLLLLAGLCCLVFGIMA
+P00683,RNAS1_MOUSE,Ribonuclease pancreatic,Mus musculus,25,confirmed,MGLEKSLILFPLFFLLLGWVQPSLG
+P02784,SFP1_BOVIN,Seminal plasma protein PDC-109,Bos taurus,25,confirmed,MALQLGLFLIWAGVSVFLQLDPVNG
+Q9JMI7,TX101_MOUSE,Testis-expressed protein 101,Mus musculus,25,confirmed,MGACRIQYVLLIFLLIASRWTLVQN
+P07634,ANFB_PIG,Natriuretic peptides B,Sus scrofa,25,confirmed,MGPRMALPRVLLLLFLHLLLLGCRS
+P12872,MOTI_HUMAN,Promotilin,Homo sapiens,25,confirmed,MVSRKAVAALLVVHVAAMLASQTEA
+P16003,CD4_MACMU,T-cell surface glycoprotein CD4,Macaca mulatta,25,confirmed,MNRGIPFRHLLLVLQLALLPAVTQG
+P16382,IL4RA_MOUSE,Interleukin-4 receptor alpha chain,Mus musculus,25,confirmed,MGRLCTKFLTSVGCLILLLVTGSGS
+Q6UWN5,LYPD5_HUMAN,Ly6/PLAUR domain-containing protein 5,Homo sapiens,25,confirmed,MAMGVPRVILLCLFGAALCLTGSQA
+P22969,RELX_HORSE,Prorelaxin,Equus caballus,25,confirmed,MRRLFLSHVLGAWLLLSQLPRELSG
+P14106,C1QB_MOUSE,Complement C1q subcomponent subunit B,Mus musculus,25,confirmed,MKTQWGEVWTHLLLLLLGFLHVSWA
+Q8VD95,Q8VD95_BERBO,n/a,Berylmys bowersi,25,confirmed,MGLEKSFILFSLLVLVLGWVQPSLG
+P08833,IBP1_HUMAN,Insulin-like growth factor-binding protein 1,Homo sapiens,25,confirmed,MSEVPVARVWLVLLLLTVQVGVTAG
+P10168,IL7_MOUSE,Interleukin-7,Mus musculus,25,confirmed,MFHVSFRYIFGIPPLILVLLPVTSS
+P02746,C1QB_HUMAN,Complement C1q subcomponent subunit B,Homo sapiens,25,confirmed,MKIPWGSIPVLMLLLLLGLIDISQA
+P20701,ITAL_HUMAN,Integrin alpha-L,Homo sapiens,25,confirmed,MKDSCITVMAMALLSGFFFFAPASS
+Q9H3T3,SEM6B_HUMAN,Semaphorin-6B,Homo sapiens,25,confirmed,MQTPRASPPRPALLLLLLLLGGAHG
+P01270,PTHY_HUMAN,Parathyroid hormone,Homo sapiens,25,confirmed,MIPAKDMAKVMIVMLAICFLTKSDG
+P24158,PRTN3_HUMAN,Myeloblastin,Homo sapiens,25,confirmed,MAHRPPSPALASVLLALLLSGAARA
+P13987,CD59_HUMAN,CD59 glycoprotein,Homo sapiens,25,confirmed,MGIQGGSVLFGLLLVLAVFCHSGHS
+P15530,CD79B_MOUSE,B-cell antigen receptor complex-associated protein beta-chain,Mus musculus,25,confirmed,MATLVLSSMPCHWLLFLLLLFSGEP
+P13725,ONCM_HUMAN,Oncostatin-M,Homo sapiens,25,confirmed,MGVLLTQRTLLSLVLALLFPSMASM
+P17647,IGF1_CAVPO,Insulin-like growth factor I,Cavia porcellus,25,confirmed,MHAVSSSHLFYLAFCLLVLTSSATA
+P21581,SCF_RAT,Kit ligand,Rattus norvegicus,25,confirmed,MKKTQTWIITCIYLQLLLFNPLVKT
+P35572,IBP6_RAT,Insulin-like growth factor-binding protein 6,Rattus norvegicus,25,confirmed,MTWDGLPTQPLLMLLMLLFAAGSES
+Q29381,OST48_PIG,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase 48 kDa subunit,Sus scrofa,25,confirmed,MELGAAARAWSLLWLLLPLLGLVGA
+P01269,PTHY_PIG,Parathyroid hormone,Sus scrofa,25,confirmed,MMSAKDTVKVMVVMLAICFLARSDG
+P21814,UTMP_SHEEP,Uterine milk protein,Ovis aries,25,confirmed,MSHRRMQLALSLVFILCGLFNSIFC
+P81019,SFP4_BOVIN,Seminal plasma protein BSP-30 kDa,Bos taurus,25,confirmed,MAPLVGLFLIWAGASVFQQLHPVNG
+P26894,IL8_PIG,Interleukin-8,Sus scrofa,25,confirmed,MTSKLAVAFLAVFLLSAALCEAAVL
+P80964,PB1_PIG,Seminal plasma protein pB1,Sus scrofa,25,confirmed,MAPRLGIFLLWAGVSVFLPLDPVNG
+Q9TRM8,RELX_CANFA,Prorelaxin,Canis familiaris,25,confirmed,MLRWFLSHLLGVWLLLSQLPREIPA
+P24591,IBP1_BOVIN,Insulin-like growth factor-binding protein 1,Bos taurus,25,confirmed,MPEVLAVRAWPLLLSLAVQLGATVG
+P20826,SCF_MOUSE,Kit ligand,Mus musculus,25,confirmed,MKKTQTWIITCIYLQLLLFNPLVKT
+P18428,LBP_HUMAN,Lipopolysaccharide-binding protein,Homo sapiens,25,confirmed,MGALARALPSILLALLLTSTPEALG
+Q6UXK5,LRRN1_HUMAN,Leucine-rich repeat neuronal protein 1,Homo sapiens,25,confirmed,MARMSFVIAACQLVLGLLMTSLTES
+P01160,ANF_HUMAN,Atrial natriuretic factor,Homo sapiens,25,confirmed,MSSFSTTTVSFLLLLAFQLLGQTRA
+P01730,CD4_HUMAN,T-cell surface glycoprotein CD4,Homo sapiens,25,confirmed,MNRGVPFRHLLLVLQLALLPAATQG
+P08572,CO4A2_HUMAN,Collagen alpha-2(IV) chain,Homo sapiens,25,confirmed,MGRDQRAVAGPALRRWLLLGTVTVG
+Q9Y653,GPR56_HUMAN,G-protein coupled receptor 56,Homo sapiens,25,confirmed,MTPQSLLQTTLFLLSLLFLVQGAHG
+Q9MYV1,CALCA_CANFA,Calcitonin gene-related peptide 1,Canis familiaris,25,confirmed,MGLWKSSPFLAFSILVLCQAGGLQA
+P41547,CALC_CANFA,Calcitonin,Canis familiaris,25,confirmed,MGLWKSSPFLAFSILVLCQAGGLQA
+P20742,PZP_HUMAN,Pregnancy zone protein,Homo sapiens,25,confirmed,MRKDRLLHLCLVLLLILLSASDSNS
+P13232,IL7_HUMAN,Interleukin-7,Homo sapiens,25,confirmed,MFHVSFRYIFGLPPLILVLLPVASS
+Q969Z4,TR19L_HUMAN,Tumor necrosis factor receptor superfamily member 19L,Homo sapiens,25,confirmed,MKPSLLCRPLSCFLMLLPWPLATLT
+P03973,SLPI_HUMAN,Antileukoproteinase,Homo sapiens,25,confirmed,MKSSGLFPFLVLLALGTLAPWAVEG
+Q8NBI3,CA187_HUMAN,Uncharacterized protein C1orf187,Homo sapiens,25,confirmed,MAGPAIHTAPMLFLVLLLPLELSLA
+P09564,CD7_HUMAN,T-cell antigen CD7,Homo sapiens,25,confirmed,MAGPPRLLLLPLLLALARGLPGALA
+P18510,IL1RA_HUMAN,Interleukin-1 receptor antagonist protein,Homo sapiens,25,confirmed,MEICRGLRSHLITLLLFLFHSETIC
+Q8WXF3,REL3_HUMAN,Relaxin-3,Homo sapiens,25,confirmed,MARYMLLLLLAVWVLTGELWPGAEA
+Q63180,ADAM7_RAT,Disintegrin and metalloproteinase domain-containing protein 7,Rattus norvegicus,25,confirmed,MFPTGIFLMSVLISQMQGRGIVGVE
+P01256,CALCA_RAT,Calcitonin gene-related peptide 1,Rattus norvegicus,25,confirmed,MGFLKFSPFLVVSILLLYQACGLQA
+P27916,APOC2_CAVPO,Apolipoprotein C-II,Cavia porcellus,25,confirmed,MDARSLLLLWLLLPLLLLLGCEVQG
+Q14641,INSL4_HUMAN,Early placenta insulin-like peptide,Homo sapiens,25,confirmed,MASLFRSYLPAIWLLLSQLLRESLA
+P04089,PTHY_RAT,Parathyroid hormone,Rattus norvegicus,25,confirmed,MMSASTMAKVMILMLAVCLLTQADG
+P01904,HA21_MOUSE,"H-2 class II histocompatibility antigen, E-D alpha chain",Mus musculus,25,confirmed,MATIGALVLRFFFIAVLMSSQKSWA
+Q9BZM5,N2DL2_HUMAN,NKG2D ligand 2,Homo sapiens,25,confirmed,MAAAAATKILLCLPLLLLLSGWSRA
+Q8VD94,Q8VD94_BERBO,n/a,Berylmys bowersi,25,confirmed,MGLEKSFILFSLLVLVLGWVQPSLG
+Q01634,IDUA_CANFA,Alpha-L-iduronidase,Canis familiaris,25,confirmed,MRPPGPRAPGLALLAALLAAPRALA
+P17047,LAMP2_MOUSE,Lysosome-associated membrane glycoprotein 2,Mus musculus,25,confirmed,MCLSPVKGAKLILIFLFLGAVQSNA
+P52798,EFNA4_HUMAN,Ephrin-A4,Homo sapiens,25,confirmed,MRLLPLLRTVLWAAFLGSPLRGGSS
+P20058,HEMO_RABIT,Hemopexin,Oryctolagus cuniculus,25,confirmed,MVKASGIPIALGVWGLCWSLATVNS
+P01268,PTHY_BOVIN,Parathyroid hormone,Bos taurus,25,confirmed,MMSAKDMVKVMIVMLAICFLARSDG
+P04224,HA22_MOUSE,"H-2 class II histocompatibility antigen, E-K alpha chain",Mus musculus,25,confirmed,MATIGALVLRFFFIAVLMSSQKSWA
+O62680,CD59_PIG,CD59 glycoprotein,Sus scrofa,25,confirmed,MGSKGGFILLWLLSILAVLCHLGHS
+P01307,MOTI_PIG,Promotilin,Sus scrofa,25,confirmed,MVSRKAVVVLLVVHAAAMLASHTEA
+O89107,DNSL3_RAT,Deoxyribonuclease gamma,Rattus norvegicus,25,confirmed,MSLYPASPYLASLLLFILALHGALS
+P00751,CFAB_HUMAN,Complement factor B,Homo sapiens,25,confirmed,MGSNLSPQLCLMPFILGLLSGGVTT
+P00684,RNS1B_RAT,Ribonuclease pancreatic beta-type,Rattus norvegicus,25,confirmed,MGLEKSLFLFSLLVLVLGWVQPSLG
+Q05204,LAMP1_BOVIN,Lysosome-associated membrane glycoprotein 1,Bos taurus,25,confirmed,MAAPGGARRRPLLLLLFAGLVHGAS
+P27114,MOTI_RABIT,Promotilin,Oryctolagus cuniculus,25,confirmed,MVSRKAVAALLLVHVTAMLASQTEA
+P12319,FCERA_HUMAN,High affinity immunoglobulin epsilon receptor subunit alpha,Homo sapiens,25,confirmed,MAPAMESPTLLCVALLFFAPDGVLA
+P02680,FIBG_RAT,Fibrinogen gamma chain,Rattus norvegicus,25,confirmed,MNWSLQLRSFILCWALLLLSPTGLA
+P14925,AMD_RAT,Peptidyl-glycine alpha-amidating monooxygenase,Rattus norvegicus,25,confirmed,MAGRARSGLLLLLLGLLALQSSCLA
+P21743,IBP1_RAT,Insulin-like growth factor-binding protein 1,Rattus norvegicus,25,confirmed,MPEFLTVVSWPFLILLSFQVRVVAG
+P11654,PO210_RAT,Nuclear pore membrane glycoprotein 210,Rattus norvegicus,25,confirmed,MARASLIQPGLWALLLLQAVGPAVA
+P21583,SCF_HUMAN,Kit ligand,Homo sapiens,25,confirmed,MKKTQTWILTCIYLQLLLFNPLVKT
+Q9R100,CAD17_MOUSE,Cadherin-17,Mus musculus,25,confirmed,MVSAQLHFLCLLTLYLTCGYGEEGK
+Q99944,EGFL8_HUMAN,EGF-like domain-containing protein 8,Homo sapiens,25,confirmed,MGSRAELCTLLGGFSFLLLLIPGEG
+P17813,EGLN_HUMAN,Endoglin,Homo sapiens,25,confirmed,MDRGTLPLAVALLLASCSLSPTSLA
+P01257,CALC_RAT,Calcitonin,Rattus norvegicus,25,confirmed,MGFLKFSPFLVVSILLLYQACGLQA
+P08122,CO4A2_MOUSE,Collagen alpha-2(IV) chain,Mus musculus,25,confirmed,MDRVRFKASGPPLRGWLLLATVTVG
+P17046,LAMP2_RAT,Lysosome-associated membrane glycoprotein 2,Rattus norvegicus,25,confirmed,MRLPLSGYGSKLVLLFLFLGAVRSD
+P01903,2DRA_HUMAN,"HLA class II histocompatibility antigen, DR alpha chain",Homo sapiens,25,confirmed,MAISGVPVLGFFIIAVLMSAQESWA
+Q6WN34,CRDL2_HUMAN,Chordin-like protein 2,Homo sapiens,25,confirmed,MVPEVRVLSSLLGLALLWFPLDSHA
+P04557,SFP3_BOVIN,Seminal plasma protein A3,Bos taurus,25,confirmed,MALRLGLFLIWAGVSMFLQLDPVNG
+Q9Y5U5,TNR18_HUMAN,Tumor necrosis factor receptor superfamily member 18,Homo sapiens,25,confirmed,MAQHGAMGAFRALCGLALLCALSLG
+Q924B5,TX101_RAT,Testis-expressed protein 101,Rattus norvegicus,25,confirmed,MGACRIQYILLVFLLIASHWTLVQN
+P00669,RNS_BOVIN,Seminal ribonuclease,Bos taurus,26,confirmed,MALKSLVVLPLLVLVLLLVRVQPSLG
+P01248,SOMA_PIG,Somatotropin,Sus scrofa,26,confirmed,MAAGPRTSALLAFALLCLPWTREVGA
+Q16270,IBP7_HUMAN,Insulin-like growth factor-binding protein 7,Homo sapiens,26,confirmed,MERPSLRALLLGAAGLLLLLLPLSSS
+P16612,VEGFA_RAT,Vascular endothelial growth factor A,Rattus norvegicus,26,confirmed,MNFLLSWVHWTLALLLYLHHAKWSQA
+P05533,LY6A_MOUSE,Lymphocyte antigen 6A-2/6E-1,Mus musculus,26,confirmed,MDTSHTTKSCLLILLVALLCAERAQG
+P20645,MPRD_HUMAN,Cation-dependent mannose-6-phosphate receptor,Homo sapiens,26,confirmed,MFPFYSCWRTGLLLLLLAVAVRESWQ
+P13205,ANFB_RAT,Natriuretic peptides B,Rattus norvegicus,26,confirmed,MDLQKVLPQMILLLLFLNLSPLGGHS
+Q9NR61,DLL4_HUMAN,Delta-like protein 4,Homo sapiens,26,confirmed,MAAASRSASGWALLLLVALWQQRAAG
+A2AJB7,LCN5_MOUSE,Epididymal-specific lipocalin-5,Mus musculus,26,confirmed,MCSVARHMESIMLFTLLGLCVGLAAG
+P34929,APOC1_PAPHA,Apolipoprotein C-I,Papio hamadryas,26,confirmed,MRLFLSLPVLVVVLSMVLEGPAPVQG
+P12544,GRAA_HUMAN,Granzyme A,Homo sapiens,26,confirmed,MRNSYRFLASSLSVVVSLLLIPEDVC
+P15691,VEGFA_BOVIN,Vascular endothelial growth factor A,Bos taurus,26,confirmed,MNFLLSWVHWSLALLLYLHHAKWSQA
+Q31104,Q31104_MOUSE,n/a,Mus musculus,26,confirmed,MVWLPRVPCVAAVILLLTVLSPPVAL
+P16860,ANFB_HUMAN,Natriuretic peptides B,Homo sapiens,26,confirmed,MDPQTAPSRALLLLLFLHLAFLGGRS
+P21589,5NTD_HUMAN,5'-nucleotidase,Homo sapiens,26,confirmed,MCPRAARAPATLLLALGAVLWPAAGA
+Q9BZR6,RTN4R_HUMAN,Reticulon-4 receptor,Homo sapiens,26,confirmed,MKRASAGGSRLLAWVLWLQAWQVAAP
+P25031,REG3B_RAT,Regenerating islet-derived protein 3 beta,Rattus norvegicus,26,confirmed,MLHRLAFPVMSWMLLSCLMLLSQVQG
+O00748,EST2_HUMAN,Carboxylesterase 2,Homo sapiens,26,confirmed,MRLHRLRARLSAVACGLLLLLVRGQG
+P16297,IL2RB_MOUSE,Interleukin-2 receptor subunit beta,Mus musculus,26,confirmed,MATIALPWSLSLYVFLLLLATPWASA
+O00175,CCL24_HUMAN,C-C motif chemokine 24,Homo sapiens,26,confirmed,MAGLMTIVTSLLFLGVCAHHIIPTGS
+Q05927,5NTD_BOVIN,5'-nucleotidase,Bos taurus,26,confirmed,MNPGAARTPALRILALGALLWPAARP
+P24807,CD24_MOUSE,Signal transducer CD24,Mus musculus,26,confirmed,MGRAMVARLGLGLLLLALLLPTQIYC
+P05408,7B2_HUMAN,Neuroendocrine protein 7B2,Homo sapiens,26,confirmed,MVSRMVSTMLSGLLFWLASGWTPAFA
+P37889,FBLN2_MOUSE,Fibulin-2,Mus musculus,26,confirmed,MLLQESAGVWLALALVTALTPSPSMA
+P04985,ELN_BOVIN,Elastin,Bos taurus,26,confirmed,MRSLTAAARRPEVLLLLLCILQPSQP
+P09568,LY6C2_MOUSE,Lymphocyte antigen 6C2,Mus musculus,26,confirmed,MDSTHATKSCLLILLVALLCAGRAQG
+P37109,ISK4_PIG,Serine protease inhibitor Kazal-type 4,Sus scrofa,26,confirmed,MAVRLWVVALALAALFIVDREVPVSA
+Q9HB40,RISC_HUMAN,Retinoid-inducible serine carboxypeptidase,Homo sapiens,26,confirmed,MELALRRSPVPRWLLLLPLLLGLNAG
+P20160,CAP7_HUMAN,Azurocidin,Homo sapiens,26,confirmed,MTRLTVLALLAGLLASSRAGSSPLLD
+P06332,CD4_MOUSE,T-cell surface glycoprotein CD4,Mus musculus,26,confirmed,MCRAISLRRLLLLLLQLSQLLAVTQG
+P28088,EDNRB_BOVIN,Endothelin B receptor,Bos taurus,26,confirmed,MQPLPSLCGRALVALILACGVAGIQA
+Q8BSU2,CXL16_MOUSE,C-X-C motif chemokine 16,Mus musculus,26,confirmed,MRRGFGPLSLAFFLFLLALLTLPGDG
+P97884,CCL20_RAT,C-C motif chemokine 20,Rattus norvegicus,26,confirmed,MACKHLPFLALAGVLLAYLCSQSEAA
+P01034,CYTC_HUMAN,Cystatin-C,Homo sapiens,26,confirmed,MAGPLRAPLLLLAILAVALAVSPAAG
+P17454,LBP_RABIT,Lipopolysaccharide-binding protein,Oryctolagus cuniculus,26,confirmed,MGTWARALLGSTLLSLLLAAAPGALG
+P01241,SOMA_HUMAN,Somatotropin,Homo sapiens,26,confirmed,MATGSRTSLLLAFGLLCLPWLQEGSA
+P01243,CSH_HUMAN,Chorionic somatomammotropin hormone,Homo sapiens,26,confirmed,MAPGSRTSLLLAFALLCLPWLQEAGA
+P18211,HB2D_RAT,"RT1 class II histocompatibility antigen, D-1 beta chain",Rattus norvegicus,26,confirmed,MVWLARDSCVAAVILLLTVLSPPVAL
+P11032,GRAA_MOUSE,Granzyme A,Mus musculus,26,confirmed,MRNASGPRGPSLATLLFLLLIPEGGC
+P06868,PLMN_BOVIN,Plasminogen,Bos taurus,26,confirmed,MLPASPKMEHKAVVFLLLLFLKSGLG
+Q8N131,PORIM_HUMAN,Porimin,Homo sapiens,26,confirmed,MGLGARGAWAALLLGTLQVLALLGAA
+P01246,SOMA_BOVIN,Somatotropin,Bos taurus,26,confirmed,MMAAGPRTSLLLAFALLCLPWTQVVG
+P13806,CA2D1_RABIT,Voltage-dependent calcium channel subunit alpha-2/delta-1,Oryctolagus cuniculus,26,confirmed,MAAGRPLAWTLTLWQAWLILIGPSSE
+P16035,TIMP2_HUMAN,Metalloproteinase inhibitor 2,Homo sapiens,26,confirmed,MGAAARTLRLALGLLLLATLLRPADA
+P15692,VEGFA_HUMAN,Vascular endothelial growth factor A,Homo sapiens,26,confirmed,MNFLLSWVHWSLALLLYLHHAKWSQA
+O43827,ANGL7_HUMAN,Angiopoietin-related protein 7,Homo sapiens,26,confirmed,MLKKPLSAVTWLCIFIVAFVSHPAWL
+P78556,CCL20_HUMAN,C-C motif chemokine 20,Homo sapiens,26,confirmed,MCCTKSLLLAALMSVLLLHLCGESEA
+Q15782,CH3L2_HUMAN,Chitinase-3-like protein 2,Homo sapiens,26,confirmed,MGATTMDQKSLWAGVVVLLLLQGGSA
+Q8HY17,REL3_PIG,Relaxin-3,Sus scrofa,26,confirmed,MAKRPLLLLLLAVWVLAGELWLRTEA
+Q9Z0M9,I18BP_MOUSE,Interleukin-18-binding protein,Mus musculus,26,confirmed,MRHCWTAGPSSWWVLLLYVHVILARA
+Q6UW15,REG3G_HUMAN,Regenerating islet-derived protein 3 gamma,Homo sapiens,26,confirmed,MLPPMALPSVSWMLLSCLILLCQVQG
+P61823,RNAS1_BOVIN,Ribonuclease pancreatic,Bos taurus,26,confirmed,MALKSLVLLSLLVLVLLLVRVQPSLG
+Q86YD3,TMM25_HUMAN,Transmembrane protein 25,Homo sapiens,26,confirmed,MALPPGPAALRHTLLLLPALLSSGWG
+P20040,HB24_MOUSE,"H-2 class II histocompatibility antigen, E-Q beta chain",Mus musculus,26,confirmed,MVWLPRVPCVAAVILLLTVLSPPVAL
+P22437,PGH1_MOUSE,Prostaglandin G/H synthase 1,Mus musculus,26,confirmed,MSRRSLSLWFPLLLLLLLPPTPSVLL
+P07321,EPO_MOUSE,Erythropoietin,Mus musculus,26,confirmed,MGVPERPTLLLLLSLLLIPLGLPVLC
+P04230,HB21_MOUSE,"H-2 class II histocompatibility antigen, E-B beta chain",Mus musculus,26,confirmed,MVWLPRVPCVAAVILLLTVLSPPMAL
+P54803,GALC_HUMAN,Galactocerebrosidase,Homo sapiens,26,confirmed,MTAAAGSAGRAAVPLLLCALLAPGGA
+P16235,LSHR_RAT,Lutropin-choriogonadotropic hormone receptor,Rattus norvegicus,26,confirmed,MGRRVPALRQLLVLAVLLLKPSQLQS
+P10154,TNFB_RABIT,Lymphotoxin-alpha,Oryctolagus cuniculus,26,confirmed,MTPPGRLYLPLLLGLLLAPPPPGAQG
+P18467,2DOB_PANTR,"CHLA class II histocompatibility antigen, DO beta chain",Pan troglodytes,26,confirmed,MGSGWVPWVVALLVNLTRLDSSMTQG
+P17453,BPI_BOVIN,Bactericidal permeability-increasing protein,Bos taurus,26,confirmed,MARGPDTARRWATLVVLAALSTAVTT
+P13083,PAHO_CAVPO,Pancreatic prohormone,Cavia porcellus,26,confirmed,MTATRCCLWLLLLGTCMALLLPEAWG
+P16368,TIMP2_BOVIN,Metalloproteinase inhibitor 2,Bos taurus,26,confirmed,MGAAARSLPLAFCLLLLGTLLPRADA
+Q31103,Q31103_MOUSE,n/a,Mus musculus,26,confirmed,MVWLPRVPCVAAVILLLTVLSPPVAL
+P01586,IL3_MOUSE,Interleukin-3,Mus musculus,26,confirmed,MVLASSTTSIHTMLLLLLMLFHLGLQ
+P14784,IL2RB_HUMAN,Interleukin-2 receptor subunit beta,Homo sapiens,26,confirmed,MAAPALSWRLPLLILLLPLATSWASA
+P01245,SOMA_HORSE,Somatotropin,Equus caballus,26,confirmed,MAAGPRTSVLLAFGLLCLPWPQDVGA
+P34059,GALNS_HUMAN,N-acetylgalactosamine-6-sulfatase,Homo sapiens,26,confirmed,MAAVVAATRWWQLLLVLSAAGMGASG
+O95633,FSTL3_HUMAN,Follistatin-related protein 3,Homo sapiens,26,confirmed,MRPGAPGPLWPLPWGALAWAVGFVSS
+P01242,SOM2_HUMAN,Growth hormone variant,Homo sapiens,26,confirmed,MAAGSRTSLLLAFGLLCLSWLQEGSA
+P33093,SOMA_MACMU,Somatotropin,Macaca mulatta,26,confirmed,MAAGSRTSLLLAFALLCLPWLQEGSA
+P12961,7B2_MOUSE,Neuroendocrine protein 7B2,Mus musculus,26,confirmed,MASRLVSAMLSGLLFWLMFEWNPAFA
+P13224,GP1BB_HUMAN,Platelet glycoprotein Ib beta chain,Homo sapiens,26,confirmed,MGSGPRGALSLLLLLLAPPSRPAAGC
+P26461,IACS_PIG,Sperm-associated acrosin inhibitor,Sus scrofa,26,confirmed,MAFFSSRVRALFILVLVLPLCSETGF
+P30121,TIMP2_RAT,Metalloproteinase inhibitor 2,Rattus norvegicus,26,confirmed,MGAAARSLRLALGLLLLATLLRPADA
+P19939,APOC1_RAT,Apolipoprotein C-I,Rattus norvegicus,26,confirmed,MRLFIALPVLIVVVAMALEGPAPAQA
+P18892,BT1A1_BOVIN,Butyrophilin subfamily 1 member A1,Bos taurus,26,confirmed,MAVFPNSCLAGCLLIFILLQLPKLDS
+P17948,VGFR1_HUMAN,Vascular endothelial growth factor receptor 1,Homo sapiens,26,confirmed,MVSYWDTGVLLCALLSCLLLTGSSSG
+P01189,COLI_HUMAN,Corticotropin-lipotropin,Homo sapiens,26,confirmed,MPRSCCSRSGALLLALLLQASMEVRG
+P02654,APOC1_HUMAN,Apolipoprotein C-I,Homo sapiens,26,confirmed,MRLFLSLPVLVVVLSIVLEGPAPAQG
+O70280,WFDC1_RAT,WAP four-disulfide core domain protein 1,Rattus norvegicus,26,confirmed,MGSCDRKALWALSFLLLLLGSSSVQG
+Q9UNE0,EDAR_HUMAN,Tumor necrosis factor receptor superfamily member EDAR,Homo sapiens,26,confirmed,MAHVGDCTQTPWLPVLVVSLMCSARA
+P25785,TIMP2_MOUSE,Metalloproteinase inhibitor 2,Mus musculus,26,confirmed,MGAAARSLRLALGLLLLASLVRPADA
+P05997,CO5A2_HUMAN,Collagen alpha-2(V) chain,Homo sapiens,26,confirmed,MMANWAEARPLLILIVLLGQFVSIKA
+P13765,2DOB_HUMAN,"HLA class II histocompatibility antigen, DO beta chain",Homo sapiens,26,confirmed,MGSGWVPWVVALLVNLTRLDSSMTQG
+P15127,INSR_RAT,Insulin receptor,Rattus norvegicus,26,confirmed,MGSGRGCETTAVPLLMAVAVAGGTAG
+P14617,INSRR_CAVPO,Insulin receptor-related protein,Cavia porcellus,26,confirmed,MARPKLWPWGILLLVSLLSAGFNLDT
+P39873,RNBR_BOVIN,Brain ribonuclease,Bos taurus,26,confirmed,MALKSLVLLSLLVLVLLLVQVQPSLG
+P02679,FIBG_HUMAN,Fibrinogen gamma chain,Homo sapiens,26,confirmed,MSWSLHPRNLILYFYALLFLSSTCVA
+P48551,INAR2_HUMAN,Interferon-alpha/beta receptor beta chain,Homo sapiens,26,confirmed,MLLSQNAFIFRSLNLVLMVYISLVFG
+Q9UN67,PCDBA_HUMAN,Protocadherin beta-10,Homo sapiens,26,confirmed,MAVRELCFPRQRQVLFLFLFWGVSLA
+P25068,TAP_BOVIN,Tracheal antimicrobial peptide,Bos taurus,26,confirmed,MRLHHLLLALLFLVLSAWSGFTQGVG
+O95881,TXD12_HUMAN,Thioredoxin domain-containing protein 12,Homo sapiens,26,confirmed,METRPRLGATCLLGFSFLLLVISSDG
+Q9NTU7,CBLN4_HUMAN,Cerebellin-4,Homo sapiens,27,confirmed,MGSGRRALSAVPAVLLVLTLPGLPVWA
+P45478,PPT1_BOVIN,Palmitoyl-protein thioesterase 1,Bos taurus,27,confirmed,MASSSCLWLLALAFLLGSCASLALGHL
+P06345,HB2S_MOUSE,"H-2 class II histocompatibility antigen, A-S beta chain",Mus musculus,27,confirmed,MALQIPSLLLSAAVVVLMVLSSPGTEG
+P06396,GELS_HUMAN,Gelsolin,Homo sapiens,27,confirmed,MAPHRPAPALLCALSLALCALSLPVRA
+P06213,INSR_HUMAN,Insulin receptor,Homo sapiens,27,confirmed,MGTGGRRGAAAAPLLVAVAALLLGAAG
+P08697,A2AP_HUMAN,Alpha-2-antiplasmin,Homo sapiens,27,confirmed,MALLWGLLVLSWSCLQGPCSVFSPVSA
+Q63345,MOG_RAT,Myelin-oligodendrocyte glycoprotein,Rattus norvegicus,27,confirmed,MAGVWSLSLPSCLLSLLLLLQLSRSYA
+P10889,CXCL2_MOUSE,C-X-C motif chemokine 2,Mus musculus,27,confirmed,MAPPTCRLLSAALVLLLLLATNHQATG
+Q5FWE3,PRRT3_HUMAN,Proline-rich transmembrane protein 3,Homo sapiens,27,confirmed,MASSPWGCVCGLLLLLLPLLGTGPALG
+P14483,HB2A_MOUSE,"H-2 class II histocompatibility antigen, A beta chain",Mus musculus,27,confirmed,MALQIPSLLLSAAVVVLMVLSSPGTEG
+Q92643,GPI8_HUMAN,GPI-anchor transamidase,Homo sapiens,27,confirmed,MAVTDSLSRAATVLATVLLLSFGSVAA
+P01731,CD8A_MOUSE,T-cell surface glycoprotein CD8 alpha chain,Mus musculus,27,confirmed,MASPLTRFLSLNLLLLGESIILGSGEA
+Q64610,ENPP2_RAT,Ectonucleotide pyrophosphatase/phosphodiesterase family member 2,Rattus norvegicus,27,confirmed,MARQGCLGSFQVISLFTFAISVNICLG
+P16144,ITB4_HUMAN,Integrin beta-4,Homo sapiens,27,confirmed,MAGPRPSPWARLLLAALISVSLSGTLA
+P98172,EFNB1_HUMAN,Ephrin-B1,Homo sapiens,27,confirmed,MARPGQRWLGKWLVAMVVWALCRLATP
+P06344,HB2U_MOUSE,"H-2 class II histocompatibility antigen, A-U beta chain",Mus musculus,27,confirmed,MALQIPSLLLLAAVVVLMVLSSPGTEG
+P02462,CO4A1_HUMAN,Collagen alpha-1(IV) chain,Homo sapiens,27,confirmed,MGPRLSVWLLLLPAALLLHEEHSRAAA
+P15473,IBP3_RAT,Insulin-like growth factor-binding protein 3,Rattus norvegicus,27,confirmed,MHPARPALWAAALTALTLLRGPPVARA
+P08904,RNAS6_BOVIN,Ribonuclease K6,Bos taurus,27,confirmed,MGPHLLGRSSLLLLLLGMWWSVRPLCA
+O43291,SPIT2_HUMAN,Kunitz-type protease inhibitor 2,Homo sapiens,27,confirmed,MAQLCGLRRSRAFLALLGSLLLSGVLA
+P01588,EPO_HUMAN,Erythropoietin,Homo sapiens,27,confirmed,MGVHECPAWLWLLLSLLSLPLGLPVLG
+P10124,SRGN_HUMAN,Serglycin,Homo sapiens,27,confirmed,MMQKLLKCSRLVLALALILVLESSVQG
+P19313,CYTS_RAT,Cystatin-S,Rattus norvegicus,27,confirmed,MAYLLHAQLFLLTTFILVLNMRLCPVL
+O60449,LY75_HUMAN,Lymphocyte antigen 75,Homo sapiens,27,confirmed,MRTGWATPRRPAGLLMLLFWFFDLAEP
+P02463,CO4A1_MOUSE,Collagen alpha-1(IV) chain,Mus musculus,27,confirmed,MGPRLSVWLLLLFAALLLHEERSRAAA
+P04437,TVA2_HUMAN,T-cell receptor alpha chain V region CTL-L17,Homo sapiens,27,confirmed,MAMLLGASVLILWLQPDWVNSQQKNDD
+P35858,ALS_HUMAN,Insulin-like growth factor-binding protein complex acid labile chain,Homo sapiens,27,confirmed,MALRKGGLALALLLLSWVALGPRSLEG
+P55057,APOC4_RABIT,Apolipoprotein C-IV,Oryctolagus cuniculus,27,confirmed,MLLPRRGLRTLPSLCLYILVLVWVVAC
+O35701,MATN3_MOUSE,Matrilin-3,Mus musculus,27,confirmed,MLLSAPLRHLPGLLLLLWPLLLLPSLA
+Q07310,NRX3A_RAT,Neurexin-3-alpha,Rattus norvegicus,27,confirmed,MSFTLHSVFFTLKVSSFLGSLVGLCLG
+P04114,APOB_HUMAN,Apolipoprotein B-100,Homo sapiens,27,confirmed,MDPPRPALLALLALPALLLLLLAGARA
+P20959,IBP3_BOVIN,Insulin-like growth factor-binding protein 3,Bos taurus,27,confirmed,MLRARPALWAAALTALTLLRGPPAARA
+Q9Y624,JAM1_HUMAN,Junctional adhesion molecule A,Homo sapiens,27,confirmed,MGTKAQVERKLLCLFILAILLCSLALG
+O14791,APOL1_HUMAN,Apolipoprotein L1,Homo sapiens,27,confirmed,MEGAALLRVSVLCIWMSALFLGVGVRA
+Q16568,CART_HUMAN,Cocaine- and amphetamine-regulated transcript protein,Homo sapiens,27,confirmed,MESSRVRLLPLLGAALLLMLPLLGTRA
+P06342,HB2Q_MOUSE,"H-2 class II histocompatibility antigen, A-Q beta chain",Mus musculus,27,confirmed,MALQIPSLLLSAAVVVLMVLSSPRTEG
+P06858,LIPL_HUMAN,Lipoprotein lipase,Homo sapiens,27,confirmed,MESKALLVLTLAVWLQSLTASRGGVAA
+P06238,A2MG_RAT,Alpha-2-macroglobulin,Rattus norvegicus,27,confirmed,MGKHRLRSLALLPLLLRLLLLLLPTDA
+P15087,CBPE_RAT,Carboxypeptidase E,Rattus norvegicus,27,confirmed,MAGRGGRVLLALCAALVAGGWLLAAEA
+Q7L513,FCRLA_HUMAN,Fc receptor-like A,Homo sapiens,27,confirmed,MKLGCVLMAWALYLSLGVLWVAQMLLA
+P11834,OPCM_BOVIN,Opioid-binding protein/cell adhesion molecule,Bos taurus,27,confirmed,MGVCGSLFQPWKCLVVVSLRLLFLVPT
+P16284,PECA1_HUMAN,Platelet endothelial cell adhesion molecule,Homo sapiens,27,confirmed,MQPRWAQGATMWLGVLLTLLLCSSLEG
+Q9HC23,PROK2_HUMAN,Prokineticin-2,Homo sapiens,27,confirmed,MRSLCCAPLLLLLLLPPLLLTPRAGDA
+P15208,INSR_MOUSE,Insulin receptor,Mus musculus,27,confirmed,MGFGRGCETTAVPLLVAVAALLVGTAG
+P67930,SOMA_SHEEP,Somatotropin,Ovis aries,27,confirmed,MMAAGPRTSLLLAFTLLCLPWTQVVGA
+P05540,CD4_RAT,T-cell surface glycoprotein CD4,Rattus norvegicus,27,confirmed,MCRGFSFRHLLPLLLLQLSKLLVVTQG
+P17936,IBP3_HUMAN,Insulin-like growth factor-binding protein 3,Homo sapiens,27,confirmed,MQRARPTLWAAALTLLVLLRGPPVARA
+Q15768,EFNB3_HUMAN,Ephrin-B3,Homo sapiens,27,confirmed,MGPPHSGPGGVRVGALLLLGVLGLVSG
+Q8CEK3,SPIKL_MOUSE,Serine protease inhibitor kazal-like protein,Mus musculus,27,confirmed,MSSTWIKFLFILTLVLLPYSVFSVNIF
+O89093,CCL20_MOUSE,C-C motif chemokine 20,Mus musculus,27,confirmed,MACGGKRLLFLALAWVLLAHLCSQAEA
+P01921,HB2D_MOUSE,"H-2 class II histocompatibility antigen, A-D beta chain",Mus musculus,27,confirmed,MALQIPSLLLSAAVVVLMVLSSPRTEG
+Q9BXI9,C1QT6_HUMAN,Complement C1q tumor necrosis factor-related protein 6,Homo sapiens,27,confirmed,MGTAALGPVWAALLLFLLMCEIPMVEL
+P12724,ECP_HUMAN,Eosinophil cationic protein,Homo sapiens,27,confirmed,MVPKLFTSQICLLLLLGLMGVEGSLHA
+P16611,IBP3_PIG,Insulin-like growth factor-binding protein 3,Sus scrofa,27,confirmed,MQRARPALWAAALIALALLRGPPAARA
+P79263,ITIH4_PIG,Inter-alpha-trypsin inhibitor heavy chain H4,Sus scrofa,27,confirmed,MKTLSPTGYGLLLVLPLLLAVLQSTTA
+P28665,MUG1_MOUSE,Murinoglobulin-1,Mus musculus,27,confirmed,MWKSRRAQLCLFSVLLAFLHSASLLNG
+Q61247,A2AP_MOUSE,Alpha-2-antiplasmin,Mus musculus,27,confirmed,MALLRGLLVLSLSCLQGPCFTFSPVSA
+P05362,ICAM1_HUMAN,Intercellular adhesion molecule 1,Homo sapiens,27,confirmed,MAPSSPRPALPALLVLLGALFPGPGNA
+Q6UXB8,PI16_HUMAN,Peptidase inhibitor 16,Homo sapiens,27,confirmed,MHGSCSFLMLLLPLLLLLVATTGPVGA
+P10153,RNAS2_HUMAN,Non-secretory ribonuclease,Homo sapiens,27,confirmed,MVPKLFTSQICLLLLLGLLAVEGSLHV
+P27918,PROP_HUMAN,Properdin,Homo sapiens,27,confirmed,MITEGAQAPRLLLPPLLLLLTLPATGS
+Q60767,LY75_MOUSE,Lymphocyte antigen 75,Mus musculus,27,confirmed,MRTGRVTPGLAAGLLLLLLRSFGLVEP
+P06343,HB2K_MOUSE,"H-2 class II histocompatibility antigen, A-K beta chain",Mus musculus,27,confirmed,MALQIPSLLLLAAVVVLTVLSSPGTEG
+Q9P0W0,IFNK_HUMAN,Interferon kappa,Homo sapiens,27,confirmed,MSTKPDMIQKCLWLEILMGIFIAGTLS
+P08138,TNR16_HUMAN,Tumor necrosis factor receptor superfamily member 16,Homo sapiens,28,confirmed,MGAGATGRAMDGPRLLLLLLLGVSLGGA
+Q9H4G1,CST9L_HUMAN,Cystatin-9-like,Homo sapiens,28,confirmed,MLGLPWKGGLSWALLLLLLGSQILLIYA
+Q14624,ITIH4_HUMAN,Inter-alpha-trypsin inhibitor heavy chain H4,Homo sapiens,28,confirmed,MKPPRPVRTCSKVLVLLSLLAIHQTTTA
+P12259,FA5_HUMAN,Coagulation factor V,Homo sapiens,28,confirmed,MFPGCPRLWVLVVLGTSWVGWGSQGTEA
+P18614,ITA1_RAT,Integrin alpha-1,Rattus norvegicus,28,confirmed,MVPRRPASLEVTVACIWLLTVILGFCVS
+P07727,GLRA1_RAT,Glycine receptor subunit alpha-1,Rattus norvegicus,28,confirmed,MYSFNTLRFYLWETIVFFSLAASKEADA
+P07998,RNAS1_HUMAN,Ribonuclease pancreatic,Homo sapiens,28,confirmed,MALEKSLVRLLLLVLILLVLGWVQPSLG
+Q28631,WFDC2_RABIT,WAP four-disulfide core domain protein 2,Oryctolagus cuniculus,28,confirmed,MPASRLVPLGAVLLLGLLLLLELPPVTG
+P11911,CD79A_MOUSE,B-cell antigen receptor complex-associated protein alpha-chain,Mus musculus,28,confirmed,MPGGLEALRALPLLLFLSYACLGPGCQA
+P18627,LAG3_HUMAN,Lymphocyte activation gene 3 protein,Homo sapiens,28,confirmed,MWEAQFLGLLFLQPLWVAPVKPLQPGAE
+P23327,SRCH_HUMAN,Sarcoplasmic reticulum histidine-rich calcium-binding protein,Homo sapiens,28,confirmed,MGHHRPWLHASVLWAGVASLLLPPAMTQ
+Q62813,LSAMP_RAT,Limbic system-associated membrane protein,Rattus norvegicus,28,confirmed,MVGRVQPDRKQLPLVLLRLLCLLPTGLP
+P18293,ANPRA_MOUSE,Atrial natriuretic peptide receptor A,Mus musculus,28,confirmed,MPGSRRVRPRLRALLLLPPLLLLRSGHA
+P17164,FUCO_RAT,Tissue alpha-L-fucosidase,Rattus norvegicus,28,confirmed,MWDLKSEWWAVGFGLLLLLAASAQAGGL
+P01303,NPY_HUMAN,Neuropeptide Y,Homo sapiens,28,confirmed,MLGNKRLGLSGLTLALSLLVCLGALAEA
+Q8N6G6,ATL1_HUMAN,ADAMTS-like protein 1,Homo sapiens,28,confirmed,MECCRRATPGTLLLFLAFLLLSSRTARS
+P11279,LAMP1_HUMAN,Lysosome-associated membrane glycoprotein 1,Homo sapiens,28,confirmed,MAAPGSARRPLLLLLLLLLLGLMHCASA
+Q5ZPR3,CD276_HUMAN,CD276 antigen,Homo sapiens,28,confirmed,MLRRRGSPGMGVHVGAALGALWFCLTGA
+P19256,LFA3_HUMAN,Lymphocyte function-associated antigen 3,Homo sapiens,28,confirmed,MVAGSDAGRALGVLSVVCLLHCFGFISC
+P34096,RNAS4_HUMAN,Ribonuclease 4,Homo sapiens,28,confirmed,MALQRTHSLLLLLLLTLLGLGLVQPSYG
+P50828,HEMO_PIG,Hemopexin,Sus scrofa,28,confirmed,MARALGTVEAPWLLGLCCSLAIAHPLSL
+P10646,TFPI1_HUMAN,Tissue factor pathway inhibitor,Homo sapiens,28,confirmed,MIYTMKKVHALWASVCLLLNLAPAPLNA
+P31722,C1QC_RAT,Complement C1q subcomponent subunit C,Rattus norvegicus,28,confirmed,MVVGTSCQPQHGLYLLLLLLALPLRSQA
+Q9NSA1,FGF21_HUMAN,Fibroblast growth factor 21,Homo sapiens,28,confirmed,MDSDETGFEHSGLWVSVLAGLLLGACQA
+P10493,NID1_MOUSE,Nidogen-1,Mus musculus,28,confirmed,MLDASGCSWAMWTWALLQLLLLVGPGGC
+P10631,PYY_RAT,Peptide YY,Rattus norvegicus,28,confirmed,MVAVRRPWPVMVAMLLVLLACLGALVDA
+P14765,NPY_SHEEP,Neuropeptide Y,Ovis aries,28,confirmed,MLGSKRLGLSGLTLALSLLVCLGALAEA
+P40259,CD79B_HUMAN,B-cell antigen receptor complex-associated protein beta-chain,Homo sapiens,28,confirmed,MARLALSPVPSHWMVALLLLLSAEPVPA
+P20036,HA2Q_HUMAN,"HLA class II histocompatibility antigen, DP alpha chain",Homo sapiens,28,confirmed,MRPEDRMFHIRAVILRALSLAFLLSLRG
+P34207,PR3D4_RAT,Prolactin-3D4,Rattus norvegicus,28,confirmed,MQLTLTLSGSSMQLLLLVSNLLLWENMA
+P01236,PRL_HUMAN,Prolactin,Homo sapiens,28,confirmed,MNIKGSPWKGSLLLLLVSNLLLCQSVAP
+Q9JI59,JAM2_MOUSE,Junctional adhesion molecule B,Mus musculus,28,confirmed,MARSPQGLLMLLLLHYLIVALDYHKANG
+P12820,ACE_BOVIN,Angiotensin-converting enzyme,Bos taurus,28,confirmed,MGAASGRRSPPLLLPLLLLLLPPPPVIL
+P06276,CHLE_HUMAN,Cholinesterase,Homo sapiens,28,confirmed,MHSKVTIICIRFLFWFLLLCMLIGKSHT
+P57087,JAM2_HUMAN,Junctional adhesion molecule B,Homo sapiens,28,confirmed,MARRSRHRLLLLLLRYLVVALGYHKAYG
+P11456,MPRD_BOVIN,Cation-dependent mannose-6-phosphate receptor,Bos taurus,28,confirmed,MMSPLHSSWRTGLLLLLLFSVAVRESWQ
+P14543,NID1_HUMAN,Nidogen-1,Homo sapiens,28,confirmed,MLASSSRIRAAWTRALLLPLLLAGPVGC
+P15468,RNAS4_PIG,Ribonuclease 4,Sus scrofa,28,confirmed,MALQRTHVLLLLLLLTLLGLGLVQPSYG
+P18910,ANPRA_RAT,Atrial natriuretic peptide receptor A,Rattus norvegicus,28,confirmed,MPGSRRVRPRLRALLLLPPLLLLRGGHA
+Q9Y2I2,NTNG1_HUMAN,Netrin-G1,Homo sapiens,28,confirmed,MYLSRFLSIHALWVTVSSVMQPYPLVWG
+Q03472,APOR_PIG,Apolipoprotein R,Sus scrofa,28,confirmed,MPPNLQRIFPALCLLGVLFLLHCTPVLC
+P10082,PYY_HUMAN,Peptide YY,Homo sapiens,28,confirmed,MVFVRRPWPALTTVLLALLVCLGALVDA
+Q8I034,EST7_FELCA,Carboxylesterase 7,Felis silvestris catus,28,confirmed,MSGMWVHPGRTLIWALWVLAAVIKGPAA
+Q9Y639,NPTN_HUMAN,Neuroplastin,Homo sapiens,28,confirmed,MSGSSLPSALALSLLLVSGSLLPGPGAA
+P18337,LYAM1_MOUSE,L-selectin,Mus musculus,28,confirmed,MVFPWRCEGTYWGSRNILKLWVWTLLCC
+O95998,I18BP_HUMAN,Interleukin-18-binding protein,Homo sapiens,28,confirmed,MRHNWTPDLSPLWVLLLCAHVVTLLVRA
+P13473,LAMP2_HUMAN,Lysosome-associated membrane glycoprotein 2,Homo sapiens,28,confirmed,MVCFRLFPVPGSGLVLVCLVLGAVRSYA
+P02747,C1QC_HUMAN,Complement C1q subcomponent subunit C,Homo sapiens,28,confirmed,MDVGPSSLPHLGLKLLLLLLLLPLRGQA
+Q9GLX9,SPON1_BOVIN,Spondin-1,Bos taurus,28,confirmed,MRLSPVLLRLSRGPALLALALPLAVALA
+P20352,TF_MOUSE,Tissue factor,Mus musculus,28,confirmed,MAILVRPRLLAALAPTFLGCLLLQVIAG
+Q61885,MOG_MOUSE,Myelin-oligodendrocyte glycoprotein,Mus musculus,28,confirmed,MACLWSFSWPSCFLSLLLLLLQLSCSYA
+O02853,PTGDS_BOVIN,Prostaglandin-H2 D-isomerase,Bos taurus,28,confirmed,MATPNRLWMALLLLGVLGVLQTPAPAQA
+P10619,PPGB_HUMAN,Lysosomal protective protein,Homo sapiens,28,confirmed,MIRAAPPPLFLLLLLLLLLVSWASRGEA
+P21588,5NTD_RAT,5'-nucleotidase,Rattus norvegicus,28,confirmed,MRPAAATAPKWLLLALSALLPLWPTAKS
+O94985,CSTN1_HUMAN,Calsyntenin-1,Homo sapiens,28,confirmed,MLRRPAPALAPAARLLLAGLLCGGGVWA
+Q13433,S39A6_HUMAN,Zinc transporter ZIP6,Homo sapiens,28,confirmed,MARKLSVILILTFALSVTNPLHELKAAA
+Q06576,HP25_TAMSI,Hibernation-associated plasma protein HP-25,Tamias sibiricus,28,confirmed,MPAQRGGALSMGAAGFWILVLSITSALA
+P11151,LIPL_BOVIN,Lipoprotein lipase,Bos taurus,28,confirmed,MESKALLLLALSVCLQSLTVSRGGLVAA
+P14151,LYAM1_HUMAN,L-selectin,Homo sapiens,28,confirmed,MIFPWKCQSTQRDLWNIFKLWGWTMLCC
+P07221,CASQ1_RABIT,Calsequestrin-1,Oryctolagus cuniculus,28,confirmed,MNAADRMGARVALLLLLVLGSPQSGVHG
+P12273,PIP_HUMAN,Prolactin-inducible protein,Homo sapiens,28,confirmed,MRLLQLLFRASPATLLLVLCLQLGANKA
+P55803,MOG_BOVIN,Myelin-oligodendrocyte glycoprotein,Bos taurus,28,confirmed,MASLLSSSLPSCLPSLLFLLLQLTSSSA
+Q6UWY5,OLFL1_HUMAN,Olfactomedin-like protein 1,Homo sapiens,28,confirmed,MMVALRGASALLVLFLAAFLPPPQCTQD
+Q02445,TFPI1_RAT,Tissue factor pathway inhibitor,Rattus norvegicus,28,confirmed,MTNKLKKDHAFWAAVCLLLSIVPELLNA
+Q01107,DSC1_BOVIN,Desmocollin-1,Bos taurus,29,confirmed,MAVASAAPGSIFWKQLLFSLLVLILFCDA
+P58499,FAM3B_HUMAN,Protein FAM3B,Homo sapiens,29,confirmed,MRPLAGGLLKVVFVVFASLCAWYSGYLLA
+P01298,PAHO_HUMAN,Pancreatic prohormone,Homo sapiens,29,confirmed,MAAARLCLSLLLLSTCVALLLQPLLGAQG
+P07174,TNR16_RAT,Tumor necrosis factor receptor superfamily member 16,Rattus norvegicus,29,confirmed,MRRAGAACSAMDRLRLLLLLILGVSSGGA
+P01634,KV5A2_MOUSE,Ig kappa chain V-V region MOPC 21,Mus musculus,29,confirmed,MHQTSMGIKMESHTLVFISILLCLYGADG
+O95407,TNR6B_HUMAN,Tumor necrosis factor receptor superfamily member 6B,Homo sapiens,29,confirmed,MRALEGPGLSLLCLVLALPALLPVPAVRG
+O00602,FCN1_HUMAN,Ficolin-1,Homo sapiens,29,confirmed,MELSGATMARGLAVLLVLFLHIKNLPAQA
+O00478,BT3A3_HUMAN,Butyrophilin subfamily 3 member A3,Homo sapiens,29,confirmed,MKMASSLAFLLLNFHVSLFLVQLLTPCSA
+P81623,ERP29_BOVIN,Endoplasmic reticulum protein ERp29,Bos taurus,29,confirmed,MAAAIPRAASLSPLFPLLFLLSAPQDSSG
+P01237,PRL_RAT,Prolactin,Rattus norvegicus,29,confirmed,MNSQVSARKAGTLLLLMMSNLLFCQNVQT
+P18470,HB2D_CANFA,"DLA class II histocompatibility antigen, DR-1 beta chain",Canis familiaris,29,confirmed,MVCLCFLGGSWMTALMLILMVLNPPFAWA
+Q02105,C1QC_MOUSE,Complement C1q subcomponent subunit C,Mus musculus,29,confirmed,MVVGPSCQPQCGLCLLLLFLLALPLRSQA
+P09533,TGFB1_CERAE,Transforming growth factor beta-1,Cercopithecus aethiops,29,confirmed,MPPSGLRLLPLLLPLLWLLVLTPSRPAAG
+P13763,HB2Q_HUMAN,"HLA class II histocompatibility antigen, DP(W2) beta chain",Homo sapiens,29,confirmed,MMVLQVSAAPRTVALTALLMVLLTSVVQG
+P01299,PAHO_CANFA,Pancreatic prohormone,Canis familiaris,29,confirmed,MPAACRCLFLLLLSACVALLLQPPLGTRG
+P13762,HB2K_HUMAN,"HLA class II histocompatibility antigen, DR-W53 beta chain",Homo sapiens,29,confirmed,MVCLKLPGGSCMAALTVTLTVLSSPLALA
+P01137,TGFB1_HUMAN,Transforming growth factor beta-1,Homo sapiens,29,confirmed,MPPSGLRLLLLLLPLLWLLVLTPGRPAAG
+Q9UHF4,I20RA_HUMAN,Interleukin-20 receptor alpha chain,Homo sapiens,29,confirmed,MRAPGRPALRPLPLPPLLLLLLAAPWGRA
+Q30167,2B1A_HUMAN,"HLA class II histocompatibility antigen, DRB1-10 beta chain",Homo sapiens,29,confirmed,MVCLRLPGGSCMAVLTVTLMVLSSPLALA
+P01633,KV5A1_MOUSE,Ig kappa chain V-V region MPC11,Mus musculus,29,confirmed,MHHTSMGIKMESQIQVFVFVFLWLSGVDG
+P06879,PRL_MOUSE,Prolactin,Mus musculus,29,confirmed,MNSQGSAQKAGTLLLLLISNLLFCQNVQP
+P12821,ACE_HUMAN,Angiotensin-converting enzyme,Homo sapiens,29,confirmed,MGAASGRRGPGLLLPLPLLLLLPPQPALA
+Q9NS68,TNR19_HUMAN,Tumor necrosis factor receptor superfamily member 19,Homo sapiens,29,confirmed,MALKVLLEQEKTFFTLLVLLGYLSCKVTC
+P79483,2B31_HUMAN,"HLA class II histocompatibility antigen, DRB3-1 beta chain",Homo sapiens,29,confirmed,MVCLKLPGGSSLAALTVTLMVLSSRLAFA
+Q9H5V8,CDCP1_HUMAN,CUB domain-containing protein 1,Homo sapiens,29,confirmed,MAGLNCGVSIALLGVLLLGAARLPRGAEA
+Q30134,2B18_HUMAN,"HLA class II histocompatibility antigen, DRB1-8 beta chain",Homo sapiens,29,confirmed,MVCLRLPGGSCMAVLTVTLMVLSSPLALA
+Q9TT70,Q9TT70_PIG,n/a,Sus scrofa,29,confirmed,MCHTLKWGTPLPKLFQLLVLVGLFDFCSG
+Q9TT71,Q9TT71_PIG,n/a,Sus scrofa,29,confirmed,MCHTLKWGTPLPKLFQLLVLVGLFDFCSG
+P13761,2B17_HUMAN,"HLA class II histocompatibility antigen, DRB1-7 beta chain",Homo sapiens,29,confirmed,MVCLKLPGGSCMAALTVTLMVLSSPLALA
+P10601,PAHO_MOUSE,Pancreatic prohormone,Mus musculus,29,confirmed,MAVAYCCLSLFLVSTWVALLLQPLQGTWG
+P10669,FST_PIG,Follistatin,Sus scrofa,29,confirmed,MVRPKHQPGGLCLLLLLLCQFMEDRSAQA
+P04229,2B11_HUMAN,"HLA class II histocompatibility antigen, DRB1-1 beta chain",Homo sapiens,29,confirmed,MVCLKLPGGSCMTALTVTLMVLSSPLALA
+Q00657,CSPG4_RAT,Chondroitin sulfate proteoglycan 4,Rattus norvegicus,29,confirmed,MLLSPGHPLSAPALALILTLALLVRSTAP
+P07808,NPY_RAT,Neuropeptide Y,Rattus norvegicus,29,confirmed,MMLGNKRMGLCGLTLALSLLVCLGILAEG
+P06303,PAHO_RAT,Pancreatic prohormone,Rattus norvegicus,29,confirmed,MAVAYYCLSLFLLSTWVALLLQPLQGAWG
+Q9TQE0,2B19_HUMAN,"HLA class II histocompatibility antigen, DRB1-9 beta chain",Homo sapiens,29,confirmed,MVCLKLPGGSCMAALTVTLMVLSSPLALA
+P01914,HB2C_HUMAN,"HLA class II histocompatibility antigen, DR-1 beta chain",Homo sapiens,29,confirmed,MVCLRLPGGSCMAVLTVTLMVLSSPLALA
+P13760,2B14_HUMAN,"HLA class II histocompatibility antigen, DRB1-4 beta chain",Homo sapiens,29,confirmed,MVCLKFPGGSCMAALTVTLMVLSSPLALA
+P54900,SCN2B_RAT,Sodium channel subunit beta-2,Rattus norvegicus,29,confirmed,MHRDAWLPRPAFSLTGLSLFFSLVPSGRS
+Q96AP7,ESAM_HUMAN,Endothelial cell-selective adhesion molecule,Homo sapiens,29,confirmed,MISLPGPLVTNLLRFLFLGLSALAPPSRA
+Q64550,UD11_RAT,UDP-glucuronosyltransferase 1-1,Rattus norvegicus,29,confirmed,MSVVCRSSCSLLLLPCLLLCVLGPSASHA
+P05231,IL6_HUMAN,Interleukin-6,Homo sapiens,29,confirmed,MNSFSTSAFGPVAFSLGLLLVLPAAFPAP
+P01302,PAHO_BOVIN,Pancreatic prohormone,Bos taurus,29,confirmed,MAAAHRCLFLLLLSTCVALLLQPPLGALG
+P08101,FCGR2_MOUSE,Low affinity immunoglobulin gamma Fc region receptor II,Mus musculus,29,confirmed,MESNWTVHVFSRTLCHMLLWTAVLNLAAG
+P19883,FST_HUMAN,Follistatin,Homo sapiens,29,confirmed,MVRARHQPGGLCLLLLLLCQFMEDRSAQA
+P23142,FBLN1_HUMAN,Fibulin-1,Homo sapiens,29,confirmed,MERAAPSRRVPLPLLLLGGLALLAAGVDA
+P20039,2B1B_HUMAN,"HLA class II histocompatibility antigen, DRB1-11 beta chain",Homo sapiens,29,confirmed,MVCLRLPGGSCMAVLTVTLMVLSSPLALA
+Q30154,2B51_HUMAN,"HLA class II histocompatibility antigen, DRB5 beta chain",Homo sapiens,29,confirmed,MVCLKLPGGSYMAKLTVTLMVLSSPLALA
+P15464,HB21_SPAEH,"SMH class II histocompatibility antigen, beta-1 chain",Spalax leucodon ehrenbergi,29,confirmed,MMVLPVPVAPWTAALTVLLMVLNKSVVQG
+Q03311,CHLE_MOUSE,Cholinesterase,Mus musculus,29,confirmed,MQTQHTKVTQTHFLLWILLLCMPFGKSHT
+Q08879,FBLN1_MOUSE,Fibulin-1,Mus musculus,29,confirmed,MERPVPSRLVPLPLLLLSSLSLLAARANA
+Q9BS26,TXND4_HUMAN,Thioredoxin domain-containing protein 4,Homo sapiens,29,confirmed,MHPAVFLSLPDLRCSLLLLVTWVFTPVTT
+P04440,HB2P_HUMAN,"HLA class II histocompatibility antigen, DP(W4) beta chain",Homo sapiens,29,confirmed,MMVLQVSAAPRTVALTALLMVLLTSVVQG
+Q6UWJ8,C16L2_HUMAN,CD164 sialomucin-like 2 protein,Homo sapiens,29,confirmed,MEAPGPRALRTALCGGCCCLLLCAQLAVA
+P01913,2B32_HUMAN,"HLA class II histocompatibility antigen, DRB3-2 beta chain",Homo sapiens,29,confirmed,MVCLKLPGGSSLAALTVTLMVLSSRLAFA
+P04278,SHBG_HUMAN,Sex hormone-binding globulin,Homo sapiens,29,confirmed,MESRGPLATSRLLLLLLLLLLRHTRQGWA
+Q7TQN3,WFKN2_MOUSE,"WAP, kazal, immunoglobulin, kunitz and NTR domain-containing protein 2",Mus musculus,29,confirmed,MCAPGYHRFWFHWGLLLLLLLEAPLRGLA
+P01912,HB2B_HUMAN,"HLA class II histocompatibility antigen, DR-1 beta chain",Homo sapiens,29,confirmed,MVCLRLPGGSCMAVLTVTLMVLSSPLALA
+P06907,MYP0_RAT,Myelin P0 protein,Rattus norvegicus,29,confirmed,MAPGAPSSSPSPILAALLFSSLVLSPTLA
+P06765,PLF4_RAT,Platelet factor 4,Rattus norvegicus,29,confirmed,MSAAAVFRGLRPSPELLLLGLLLLPAVVA
+P25189,MYP0_HUMAN,Myelin P0 protein,Homo sapiens,29,confirmed,MAPGAPSSSPSPILAVLLFSSLVLSPAQA
+Q9ER63,TNR23_MOUSE,Tumor necrosis factor receptor superfamily member 23,Mus musculus,29,confirmed,MVTFSHVSSLSHWFLLLLLLNLFLPVIFA
+Q6UXL0,I20RB_HUMAN,Interleukin-20 receptor beta chain,Homo sapiens,29,confirmed,MQTFTMVLEEIWTSLFMWFFYALIPCLLT
+P01911,2B1E_HUMAN,"HLA class II histocompatibility antigen, DRB1-15 beta chain",Homo sapiens,29,confirmed,MVCLKLPGGSCMTALTVTLMVLSSPLALS
+P00745,PROC_BOVIN,Vitamin K-dependent protein C,Bos taurus,29,confirmed,XTSLLLFVTIWGISSTPAPPDSVFSSSQR
+P17301,ITA2_HUMAN,Integrin alpha-2,Homo sapiens,29,confirmed,MGPERTGAAPLPLLLVLALSQGILNCCLA
+P01238,PRL_PIG,Prolactin,Sus scrofa,30,confirmed,MDNRGSSQKGSLLLLLLLVSNLFLCKSVAS
+P01239,PRL_BOVIN,Prolactin,Bos taurus,30,confirmed,MDSKGSSQKGSRLLLLLVVSNLLLCQGVVS
+P08069,IGF1R_HUMAN,Insulin-like growth factor 1 receptor,Homo sapiens,30,confirmed,MKSGSGGGSPTSLWGLLFLSAALSLWPTSG
+P02675,FIBB_HUMAN,Fibrinogen beta chain,Homo sapiens,30,confirmed,MKRMVSWSFHKLKTMKHLLLLLLCVFLVKS
+P49257,LMAN1_HUMAN,Protein ERGIC-53,Homo sapiens,30,confirmed,MAGSRQRGLRARVRPLFCALLLSLGRFVRG
+Q63372,NRX1A_RAT,Neurexin-1-alpha,Rattus norvegicus,30,confirmed,MGTALVQHGGCCLLCLSLLLLGCWAELGSG
+P24638,PPAL_MOUSE,Lysosomal acid phosphatase,Mus musculus,30,confirmed,MAGRQTGWSQAALLQFLLGMCLTVMPPIQA
+P23795,ACES_BOVIN,Acetylcholinesterase,Bos taurus,30,confirmed,MRPPWCPLHTPSLTPPLLLLLFLIGGGAEA
+P20611,PPAL_RAT,Lysosomal acid phosphatase,Rattus norvegicus,30,confirmed,MAGRQSGWSQAALLQFLLGMCLMVMPPIQA
+Q6UW56,APR3_HUMAN,Apoptosis-related protein 3,Homo sapiens,30,confirmed,MAPHGPGSLTTLVPWAAALLLALGVERALA
+P13385,TDGF1_HUMAN,Teratocarcinoma-derived growth factor 1,Homo sapiens,30,confirmed,MDCRKMARFSYSVIWIMAISKVFELGLVAG
+P01240,PRL_SHEEP,Prolactin,Ovis aries,30,confirmed,MDSKGSAQKGSRLLLLLVVSNLLLCQGVVS
+Q02246,CNTN2_HUMAN,Contactin-2,Homo sapiens,30,confirmed,MGTATRRKPHLLLVAAVALVSSSAWSSALG
+P10720,PF4V_HUMAN,Platelet factor 4 variant,Homo sapiens,30,confirmed,MSSAARSRLTRATRQEMLFLALLLLPVVVA
+P12420,PRL_HORSE,Prolactin,Equus caballus,30,confirmed,MDKKRSSLKGSLLLLLLLVSDLLLCKSVAS
+P80746,ITAV_BOVIN,Integrin alpha-V,Bos taurus,30,confirmed,MAFPPRRRLRLGPRGLPLLLSGLLLPLCRA
+P14059,PR3B1_MESAU,Prolactin-3B1,Mesocricetus auratus,30,confirmed,MQLPLTPLSFSGTLLLMAMSNFLLWEHVTS
+P10362,SCG2_RAT,Secretogranin-2,Rattus norvegicus,30,confirmed,MTESKAYRFGAVLLLIHLIFLVPGTEAASF
+P09920,CSF3_MOUSE,Granulocyte colony-stimulating factor,Mus musculus,30,confirmed,MAQLSAQRRMKLMALQLLLWQSALWSGREA
+Q96I82,KAZD1_HUMAN,Kazal-type serine protease inhibitor domain-containing protein 1,Homo sapiens,30,confirmed,MLPPPRPAAALALPVLLLLLVVLTPPPTGA
+P33579,PR8A5_RAT,Prolactin-8A5,Rattus norvegicus,30,confirmed,MELALSQPSFFGTLLMLVVSNLLLWEKAAS
+Q96CG8,CTHR1_HUMAN,Collagen triple helix repeat-containing protein 1,Homo sapiens,30,confirmed,MRPQGPAASPQRLRGLLLLLLLQLPAPSSA
+P11117,PPAL_HUMAN,Lysosomal acid phosphatase,Homo sapiens,30,confirmed,MAGKRSGWSRAALLQLLLGVNLVVMPPTRA
+Q8NBP7,PCSK9_HUMAN,Proprotein convertase subtilisin/kexin type 9,Homo sapiens,30,confirmed,MGTVSSRRSWWPLPLLLLLLLLLGPAGARA
+P06756,ITAV_HUMAN,Integrin alpha-V,Homo sapiens,30,confirmed,MAFPPRRRLRLGPRGLPLLLSGLLLPLCRA
+Q14112,NID2_HUMAN,Nidogen-2,Homo sapiens,30,confirmed,MEGDRVAGRPVLSSLPVLLLLQLLMLRAAA
+Q9BWV1,BOC_HUMAN,Brother of CDO,Homo sapiens,30,confirmed,MLRGTMTAWRGMRPEVTLACLLLATAGCFA
+Q31279,Q31279_RAT,n/a,Rattus norvegicus,30,confirmed,MLWVPKAGALWLSALLLLLNASFSWTWTPE
+P22063,CNTN2_RAT,Contactin-2,Rattus norvegicus,30,confirmed,MGTHARKKASLLLLVLATVALVSSPGWSFA
+Q96BY9,TMM66_HUMAN,Transmembrane protein 66,Homo sapiens,30,confirmed,MAAACGPGAAGYCLLLGLHLFLLTAGPALG
+Q9ERQ6,CSPG5_RAT,Chondroitin sulfate proteoglycan 5,Rattus norvegicus,30,confirmed,MGRAGGGGPGWGPPPVLLLLGVTLVLTAGA
+Q06577,HP27_TAMSI,Hibernation-associated plasma protein HP-27,Tamias sibiricus,30,confirmed,MYEAGKRASFMGGAGIWILALSVLMHVVCS
+P04225,HA24_HUMAN,"HLA class II histocompatibility antigen, DQ(4) alpha chain",Homo sapiens,4,confirmed,SPCG
+P01621,KV303_HUMAN,Ig kappa chain V-III region NG9,Homo sapiens,4,confirmed,VPSG
+P06309,KV205_HUMAN,Ig kappa chain V-II region GM607,Homo sapiens,4,confirmed,GSSG
+P03955,PEPC_MACFU,Gastricsin,Macaca fuscata fuscata,5,confirmed,QLLEA
+P24717,RNAS1_CRIGR,Ribonuclease pancreatic,Cricetulus griseus,6,confirmed,VQPSLG
+O77811,TRFL_HORSE,Lactotransferrin,Equus caballus,6,confirmed,LGLCLA
+P01691,KV10_RABIT,Ig kappa chain V region 12F2,Oryctolagus cuniculus,6,confirmed,LPGARC
+P13838,LEUK_RAT,Leukosialin,Rattus norvegicus,7,confirmed,WAQVVSQ
+P04213,TVB5_MOUSE,T-cell receptor beta chain V region C5,Mus musculus,7,confirmed,ILLCAKH
+P01304,NPY_PIG,Neuropeptide Y,Sus scrofa,9,confirmed,VCLCALAEA
+P02704,COLA_HORSE,Colipase A,Equus caballus,11,confirmed,LLLVALAVAYA
+P01736,TVB3_MOUSE,T-cell receptor beta chain V region PHDS203,Mus musculus,11,confirmed,VVLCFLGTGLV
+P19070,CR2_MOUSE,Complement receptor type 2,Mus musculus,11,confirmed,MLTWFLFYFSE
+P29183,LIPP_HORSE,Pancreatic triacylglycerol lipase,Equus caballus,12,confirmed,WTLSLLLGAVVG
+P02705,COLB_HORSE,Colipase B,Equus caballus,13,confirmed,LALLLVALAVAYA
+P18915,CAH6_BOVIN,Carbonic anhydrase 6,Bos taurus,14,confirmed,MITLLFLLVVGAQA
+Q9P246,STIM2_HUMAN,Stromal interaction molecule 2,Homo sapiens,14,confirmed,MLVLGLLVAGAADG
+O08795,GLU2B_MOUSE,Glucosidase 2 subunit beta,Mus musculus,14,confirmed,MLLLLLLLLPLCWA
+P06680,PRPH_MESAU,Acidic proline-rich protein HP43A,Mesocricetus auratus,14,confirmed,MLVVLLTAALLAEH
+P16531,SVP2_CAVPO,Seminal vesicle protein SVP-2,Cavia porcellus,14,confirmed,HLALLLILENQASG
+P14314,GLU2B_HUMAN,Glucosidase 2 subunit beta,Homo sapiens,14,confirmed,MLLPLLLLLPMCWA
+Q9GKK3,CASB_HORSE,Beta-casein,Equus caballus,15,confirmed,MKILILACLVALALA
+P41271,NBL1_HUMAN,Neuroblastoma suppressor of tumorigenicity 1,Homo sapiens,15,confirmed,MLRVLVGAVLPAMLL
+Q9N2D4,PEPA_CALJA,Pepsin A,Callithrix jacchus,15,confirmed,MKWLLLLSLVALSEC
+P11839,CASB_SHEEP,Beta-casein,Ovis aries,15,confirmed,MKVLILACLVALALA
+P00688,AMYP_MOUSE,Pancreatic alpha-amylase,Mus musculus,15,confirmed,MKFVLLLSLIGFCWA
+P00592,PA21B_PIG,"Phospholipase A2, major isoenzyme",Sus scrofa,15,confirmed,MKFLVLAVLLTVGAA
+O97943,CASA1_CAMDR,Alpha-S1-casein,Camelus dromedarius,15,confirmed,MKLLILTCLVAVALA
+P08937,OBP_RAT,Odorant-binding protein,Rattus norvegicus,15,confirmed,MVKFLLIVLALGVSC
+P12788,TRY4_RAT,Trypsin-4,Rattus norvegicus,15,confirmed,MKISIFFAFLGAAVA
+P00791,PEPA_PIG,Pepsin A,Sus scrofa,15,confirmed,MKWLLLLSLVVLSEC
+P32822,TRYB_RAT,Trypsin V-B,Rattus norvegicus,15,confirmed,MKICIFFTLLGTVAA
+P04653,CASA1_SHEEP,Alpha-S1-casein,Ovis aries,15,confirmed,MKLLILTCLVAVALA
+P39037,CASB_PIG,Beta-casein,Sus scrofa,15,confirmed,MKLLILACFVALALA
+P28712,PEPA1_RABIT,Pepsin II-1,Oryctolagus cuniculus,15,confirmed,MKWLLLLGLLALSEC
+P18626,CASA1_CAPHI,Alpha-S1-casein,Capra hircus,15,confirmed,MKLLILTCLVAVALA
+P00689,AMYP_RAT,Pancreatic alpha-amylase,Rattus norvegicus,15,confirmed,MKFVLLLSLIGFCWA
+P07478,TRY2_HUMAN,Trypsin-2,Homo sapiens,15,confirmed,MNLLLILTFVAAAVA
+P09871,C1S_HUMAN,Complement C1s subcomponent,Homo sapiens,15,confirmed,MWCIVLFSLLAWVYA
+P06596,PA21B_CANFA,Phospholipase A2,Canis familiaris,15,confirmed,MKFLVLAALLTVAAA
+P04054,PA21B_HUMAN,Phospholipase A2,Homo sapiens,15,confirmed,MKLLVLAVLLTVAAA
+P00790,PEPA_HUMAN,Pepsin A,Homo sapiens,15,confirmed,MKWLLLLGLVALSEC
+P02662,CASA1_BOVIN,Alpha-S1-casein,Bos taurus,15,confirmed,MKLLILTCLVAVALA
+P10810,CD14_MOUSE,Monocyte differentiation antigen CD14,Mus musculus,15,confirmed,MERVLGLLLLLLVHA
+P02663,CASA2_BOVIN,Alpha-S2-casein,Bos taurus,15,confirmed,MKFFIFTCLLAVALA
+Q9BXJ0,C1QT5_HUMAN,Complement C1q tumor necrosis factor-related protein 5,Homo sapiens,15,confirmed,MRPLLVLLLLGLAAG
+P32821,TRYA_RAT,Trypsin V-A,Rattus norvegicus,15,confirmed,MKICIFFTLLGTVAA
+Q95182,ALL1_HORSE,Major allergen Equ c 1,Equus caballus,15,confirmed,MKLLLLCLGLILVCA
+Q02862,CS2LA_MOUSE,Alpha-S2-casein-like A,Mus musculus,15,confirmed,MKFFIFACLVVVALA
+P11247,PERM_MOUSE,Myeloperoxidase,Mus musculus,15,confirmed,MKLLLALAGLLAPLA
+P04746,AMYP_HUMAN,Pancreatic alpha-amylase,Homo sapiens,15,confirmed,MKFFLLLFTIGFCWA
+P12314,FCGR1_HUMAN,High affinity immunoglobulin gamma Fc receptor I,Homo sapiens,15,confirmed,MWFLTTLLLWVPVDG
+P06872,TRY2_CANFA,Anionic trypsin,Canis familiaris,15,confirmed,MNPLLILAFLGAAVA
+P00593,PA21B_BOVIN,Phospholipase A2,Bos taurus,15,confirmed,MRLLVLAALLTVGAG
+P27822,PEPA3_RABIT,Pepsin-3,Oryctolagus cuniculus,15,confirmed,MKWLLLLGLLALSEC
+P15088,CBPA3_HUMAN,Mast cell carboxypeptidase A,Homo sapiens,15,confirmed,MRLILPVGLIATTLA
+P15086,CBPB1_HUMAN,Carboxypeptidase B,Homo sapiens,15,confirmed,MLALLVLVTVALASA
+P29701,FETUA_SHEEP,Alpha-2-HS-glycoprotein,Ovis aries,15,confirmed,MKSFLLLFCLAQLCS
+P11489,PEPA_MACMU,Pepsin A,Macaca mulatta,15,confirmed,MKWLLLLGLVALSEC
+P03954,PEPA1_MACFU,Pepsin A-1,Macaca fuscata fuscata,15,confirmed,MKWLLLLGLVALSEC
+P07477,TRY1_HUMAN,Trypsin-1,Homo sapiens,15,confirmed,MNPLLILTFVAAALA
+P01010,A1AT_PAPAN,Alpha-1-antitrypsin,Papio anubis,15,confirmed,LLLAGLCCLLPGSLA
+P00690,AMYP_PIG,Pancreatic alpha-amylase,Sus scrofa,15,confirmed,MKLFLLLSAFGFCWA
+O97944,CASA2_CAMDR,Alpha-S2-casein,Camelus dromedarius,15,confirmed,MKFFIFTCLLAVVLA
+P06871,TRY1_CANFA,Cationic trypsin,Canis familiaris,15,confirmed,MKTFIFLALLGATVA
+P27821,PEPA2_RABIT,Pepsin II-2/3,Oryctolagus cuniculus,15,confirmed,MKWLLLLGLLALSEC
+P07146,TRY2_MOUSE,Anionic trypsin-2,Mus musculus,15,confirmed,MSALLILALVGAAVA
+P00687,AMY1_MOUSE,Alpha-amylase 1,Mus musculus,15,confirmed,MKFFLLLSLIGFCWA
+P27823,PEPAF_RABIT,Pepsin F,Oryctolagus cuniculus,15,confirmed,MKWLGLLGLVALSEC
+P28713,PEPA4_RABIT,Pepsin II-4,Oryctolagus cuniculus,15,confirmed,MKWLLLLGLLALSEC
+P29700,FETUA_PIG,Alpha-2-HS-glycoprotein,Sus scrofa,15,confirmed,LILFFCLAQLWGCRA
+P09955,CBPB1_PIG,Carboxypeptidase B,Sus scrofa,15,confirmed,MLAFLILVTVTLASA
+P04055,PA21B_RAT,Phospholipase A2,Rattus norvegicus,15,confirmed,MKLLLLAALLTAGVT
+P00763,TRY2_RAT,Anionic trypsin-2,Rattus norvegicus,15,confirmed,MRALLFLALVGAAVA
+P02666,CASB_BOVIN,Beta-casein,Bos taurus,15,confirmed,MKVLILACLVALALA
+P19961,AMY2B_HUMAN,Alpha-amylase 2B,Homo sapiens,15,confirmed,MKFFLLLFTIGFCWA
+P15089,CBPA3_MOUSE,Mast cell carboxypeptidase A,Mus musculus,15,confirmed,MRFFLLMAVIYTTLA
+P08426,TRY3_RAT,Cationic trypsin-3,Rattus norvegicus,15,confirmed,MKALIFLAFLGAAVA
+P05814,CASB_HUMAN,Beta-casein,Homo sapiens,15,confirmed,MKVLILACLVALALA
+P47710,CASA1_HUMAN,Alpha-S1-casein,Homo sapiens,15,confirmed,MRLLILTCLVAVALA
+O19103,UDB16_RABIT,UDP-glucuronosyltransferase 2B16,Oryctolagus cuniculus,16,confirmed,LLLLLQLSCCFSSGSC
+P10163,PRB4_HUMAN,Basic salivary proline-rich protein 4,Homo sapiens,16,confirmed,MLLILLSVALLALSSA
+Q6UX39,AMTN_HUMAN,Amelotin,Homo sapiens,16,confirmed,MRSTILLFCLLGSTRS
+P00772,ELA1_PIG,Elastase-1,Sus scrofa,16,confirmed,MLRLLVVASLVLYGHS
+P05208,ELA2A_MOUSE,Elastase-2A,Mus musculus,16,confirmed,MIRTLLLSALVAGALS
+P01783,HVM16_MOUSE,Ig heavy chain V region MOPC 21,Mus musculus,16,confirmed,RLNLVFLVLILKGVQC
+Q8TC27,ADA32_HUMAN,ADAM 32,Homo sapiens,16,confirmed,MFRLWLLLAGLCGLLA
+P02817,AMELX_BOVIN,"Amelogenin, X isoform",Bos taurus,16,confirmed,MGTWILFACLLGAAFS
+P16444,DPEP1_HUMAN,Dipeptidase 1,Homo sapiens,16,confirmed,MWSGWWLWPLVAVCTA
+P25918,CD19_MOUSE,B-lymphocyte antigen CD19,Mus musculus,16,confirmed,MPSPLPVSFLLFLTLV
+P27657,LIPP_RAT,Pancreatic triacylglycerol lipase,Rattus norvegicus,16,confirmed,MLMLWTFAVLLGAVAG
+P08721,OSTP_RAT,Osteopontin,Rattus norvegicus,16,confirmed,MRLAVVCFCLFGLASC
+P21614,VTDB_MOUSE,Vitamin D-binding protein,Mus musculus,16,confirmed,MKRVLVLLLALAFGHA
+P45561,AMEL_PIG,Amelogenin,Sus scrofa,16,confirmed,MGTWILFACLLGAAFS
+P11590,MUP4_MOUSE,Major urinary protein 4,Mus musculus,16,confirmed,MKLLLCLGLTLVCIHA
+P31096,OSTP_BOVIN,Osteopontin,Bos taurus,16,confirmed,MRIAVICFCLLGIASA
+O60844,ZG16_HUMAN,Zymogen granule membrane protein 16,Homo sapiens,16,confirmed,MLTVALLALLCASASG
+P13727,PRG2_HUMAN,Bone marrow proteoglycan,Homo sapiens,16,confirmed,MKLPLLLALLFGAVSA
+Q9N2D2,CHYM_CALJA,Chymosin,Callithrix jacchus,16,confirmed,MRGFVVLLAVFALSQA
+O35930,GP1BA_MOUSE,Platelet glycoprotein Ib alpha chain,Mus musculus,16,confirmed,MALLILLFLLPSPLHS
+P22412,DPEP1_PIG,Dipeptidase 1,Sus scrofa,16,confirmed,MWTSWWLWPLVAVCAA
+Q99217,AMELX_HUMAN,"Amelogenin, X isoform",Homo sapiens,16,confirmed,MGTWILFACLLGAAFA
+P06126,CD1A_HUMAN,T-cell surface glycoprotein CD1a,Homo sapiens,16,confirmed,MLFLLLPLLAVLPGDG
+P14207,FOLR2_HUMAN,Folate receptor beta,Homo sapiens,16,confirmed,MVWKWMPLLLLLVCVA
+P05555,ITAM_MOUSE,Integrin alpha-M,Mus musculus,16,confirmed,MTLKALLVTALALCHG
+Q9QYU9,Q9QYU9_RAT,n/a,Rattus norvegicus,16,confirmed,MVKFLLIVLALGVSCA
+P04404,CMGA_PIG,Chromogranin-A,Sus scrofa,16,confirmed,SAAALALLLCAGQVIA
+P31430,DPEP1_RAT,Dipeptidase 1,Rattus norvegicus,16,confirmed,MLIIWWFWSLLAICAS
+P04276,VTDB_RAT,Vitamin D-binding protein,Rattus norvegicus,16,confirmed,MKRVLVLLLALAFGHA
+P00731,CBPA1_RAT,Carboxypeptidase A1,Rattus norvegicus,16,confirmed,MKRLLILSLLLEAVCG
+P02754,LACB_BOVIN,Beta-lactoglobulin,Bos taurus,16,confirmed,MKCLLLALALTCGAQA
+P16112,PGCA_HUMAN,Aggrecan core protein,Homo sapiens,16,confirmed,MTTLLWVFVTLRVITA
+P10960,SAP_RAT,Sulfated glycoprotein 1,Rattus norvegicus,16,confirmed,MYALALLASLLVTALT
+P09465,APHR_CRICR,Aphrodisin,Cricetus cricetus,16,confirmed,MVKILLLALVFSLAHA
+Q99004,AMELY_BOVIN,"Amelogenin, Y isoform",Bos taurus,16,confirmed,MGTWILFACLLGAAYS
+P21815,SIAL_HUMAN,Bone sialoprotein 2,Homo sapiens,16,confirmed,MKTALILLSILGMACA
+P00773,ELA1_RAT,Elastase-1,Rattus norvegicus,16,confirmed,MLRFLVFASLVLYGHS
+P23505,GP42_RAT,Cell surface glycoprotein gp42,Rattus norvegicus,16,confirmed,MLLWMVLLLCVSMTEA
+P81498,PEPC_SUNMU,Gastricsin,Suncus murinus,16,confirmed,MKWMVVALVCLQLLEA
+P79208,PGH2_SHEEP,Prostaglandin G/H synthase 2,Ovis aries,16,confirmed,MLARALLLCAAVVCGA
+P18276,CHYM_SHEEP,Chymosin,Ovis aries,16,confirmed,MRCLVVLLAVFALSQG
+P31429,DPEP1_RABIT,Dipeptidase 1,Oryctolagus cuniculus,16,confirmed,MWTSWWLWPLVAVCTA
+Q99616,CCL13_HUMAN,C-C motif chemokine 13,Homo sapiens,16,confirmed,MKVSAVLLCLLLMTAA
+P00730,CBPA1_BOVIN,Carboxypeptidase A1,Bos taurus,16,confirmed,MQGLLILSVLLGAALG
+Q29437,AOCX_BOVIN,"Primary amine oxidase, liver isozyme",Bos taurus,16,confirmed,MFIFIFLSLWTLLVMG
+P00794,CHYM_BOVIN,Chymosin,Bos taurus,16,confirmed,MRCLVVLLAVFALSQG
+P07359,GP1BA_HUMAN,Platelet glycoprotein Ib alpha chain,Homo sapiens,16,confirmed,MPLLLLLLLLPSPLHP
+P22933,GBRD_MOUSE,Gamma-aminobutyric acid receptor subunit delta,Mus musculus,16,confirmed,MDVLGWLLLPLLLLCT
+P11215,ITAM_HUMAN,Integrin alpha-M,Homo sapiens,16,confirmed,MALRVLLLTALTLCHG
+P81497,PEPA_SUNMU,Pepsin A,Suncus murinus,16,confirmed,MKKLLLLLGLVALSEC
+P02810,PRPC_HUMAN,Salivary acidic proline-rich phosphoprotein 1/2,Homo sapiens,16,confirmed,MLLILLSVALLAFSSA
+P07602,SAP_HUMAN,Proactivator polypeptide,Homo sapiens,16,confirmed,MYALFLLASLLGAALA
+P04280,PRP1_HUMAN,Basic salivary proline-rich protein 1,Homo sapiens,16,confirmed,MLLILLSVALLALSSA
+Q6UX27,VSTM1_HUMAN,V-set and transmembrane domain-containing protein 1,Homo sapiens,16,confirmed,MTAEFLSLLCLGLCLG
+Q7M3E1,CTRC_BOVIN,Chymotrypsin-C,Bos taurus,16,confirmed,MLGITVFTTFLAYASS
+P00774,ELA2A_RAT,Elastase-2A,Rattus norvegicus,16,confirmed,MIRTLLLSALVAGALS
+Q28862,SIAL_BOVIN,Bone sialoprotein 2,Bos taurus,16,confirmed,MKTVLILLSILGMACA
+P04073,PEPC_RAT,Gastricsin,Rattus norvegicus,16,confirmed,MKWMVVALLCLPLLEA
+P08217,ELA2A_HUMAN,Elastase-2A,Homo sapiens,16,confirmed,MIRTLLLSTLVAGALS
+Q9Y5C1,ANGL3_HUMAN,Angiopoietin-related protein 3,Homo sapiens,16,confirmed,MFTIKLLLFIVPLVIS
+P15085,CBPA1_HUMAN,Carboxypeptidase A1,Homo sapiens,16,confirmed,MRGLLVLSVLLGAVFG
+P81608,SAL_PIG,Salivary lipocalin,Sus scrofa,16,confirmed,MKLLLLLCLGLTLASS
+P18506,GBRD_RAT,Gamma-aminobutyric acid receptor subunit delta,Rattus norvegicus,16,confirmed,MDVLGWLLLPLLLLCT
+P02774,VTDB_HUMAN,Vitamin D-binding protein,Homo sapiens,16,confirmed,MKRVLVLLLAVAFGHA
+P09954,CBPA1_PIG,Carboxypeptidase A1,Sus scrofa,16,confirmed,MWGLLIFSVLLGGVLA
+P54318,LIPR2_RAT,Pancreatic lipase-related protein 2,Rattus norvegicus,16,confirmed,MLLCWIVSLLLATVGG
+P16233,LIPP_HUMAN,Pancreatic triacylglycerol lipase,Homo sapiens,16,confirmed,MLPLWTLSLLLGAVAG
+P08218,ELA2B_HUMAN,Elastase-2B,Homo sapiens,16,confirmed,MIRTLLLSTLVAGALS
+P20142,PEPC_HUMAN,Gastricsin,Homo sapiens,16,confirmed,MKWMVVVLVCLQLLEA
+Q95JC9,PRP_PIG,Basic proline-rich protein,Sus scrofa,16,confirmed,MLPILLSVALLALSSA
+Q28133,ALL2_BOVIN,Allergen Bos d 2,Bos taurus,16,confirmed,MKAVFLTLLFGLVCTA
+P14770,GPIX_HUMAN,Platelet glycoprotein IX,Homo sapiens,16,confirmed,MPAWGALFLLWATAEA
+P08001,ACRO_PIG,Acrosin,Sus scrofa,16,confirmed,MLPTAVLLVLAVSVAA
+P08419,ELA2A_PIG,Elastase-2A,Sus scrofa,16,confirmed,MIRALLLSTLVAGALS
+Q9N2D3,PEPC_CALJA,Gastricsin,Callithrix jacchus,16,confirmed,MKWMVVAFICLQLLEA
+P52823,STC1_HUMAN,Stanniocalcin-1,Homo sapiens,17,confirmed,MLQNSAVLLVLVISASA
+Q6UX41,BTNL8_HUMAN,Butyrophilin-like protein 8,Homo sapiens,17,confirmed,MALMLSLVLSLLKLGSG
+P09487,PPBT_BOVIN,"Alkaline phosphatase, tissue-nonspecific isozyme",Bos taurus,17,confirmed,MISPFLLLAIGTCFASS
+P29457,SERPH_RAT,Serpin H1,Rattus norvegicus,17,confirmed,MRSLLLGTLCLLAVALA
+P14211,CALR_MOUSE,Calreticulin,Mus musculus,17,confirmed,MLLSVPLLLGLLGLAAA
+P19999,MBL1_RAT,Mannose-binding protein A,Rattus norvegicus,17,confirmed,MLLLPLLVLLCVVSVSS
+Q14703,MBTP1_HUMAN,Membrane-bound transcription factor site-1 protease,Homo sapiens,17,confirmed,MKLVNIWLLLLVVLLCG
+P08289,PPBT_RAT,"Alkaline phosphatase, tissue-nonspecific isozyme",Rattus norvegicus,17,confirmed,MILPFLVLAIGTCLTNS
+P36233,SPRC_RABIT,SPARC,Oryctolagus cuniculus,17,confirmed,MKAWIFFLVCLAGRALA
+P11052,CSF2_BOVIN,Granulocyte-macrophage colony-stimulating factor,Bos taurus,17,confirmed,MWLQNLLLLGTVVCSFS
+P27797,CALR_HUMAN,Calreticulin,Homo sapiens,17,confirmed,MLLSVPLLLGLLGLAVA
+P02703,COL_PIG,Colipase,Sus scrofa,17,confirmed,MEKVLALLLVTLTVAYA
+P28798,GRN_MOUSE,Granulins,Mus musculus,17,confirmed,MWVLMSWLAFAAGLVAG
+Q62598,DSPP_RAT,Dentin sialophosphoprotein,Rattus norvegicus,17,confirmed,MKTKIIIYICIWATAWA
+P08723,SPBP_RAT,Prostatic spermine-binding protein,Rattus norvegicus,17,confirmed,MLLLVTLALLAGPTCRA
+P14778,IL1R1_HUMAN,Interleukin-1 receptor type I,Homo sapiens,17,confirmed,MKVLLRLICFIALLISS
+P13213,SPRC_BOVIN,SPARC,Bos taurus,17,confirmed,MRAWIFFLLCLAGRALA
+P23438,SSRB_CANFA,Translocon-associated protein subunit beta,Canis familiaris,17,confirmed,MRLLASVLLALFAVSHA
+P15399,PBAS_RAT,Probasin,Rattus norvegicus,17,confirmed,MRVILLLLTLDVLGVSS
+P18842,LSHB_CANFA,Lutropin subunit beta,Canis familiaris,17,confirmed,LQGLLLWLLLSVGGVWA
+P07237,PDIA1_HUMAN,Protein disulfide-isomerase,Homo sapiens,17,confirmed,MLRRALLCLAVAALVRA
+P20851,C4BPB_HUMAN,C4b-binding protein beta chain,Homo sapiens,17,confirmed,MFFWCACCLMVAWRVSA
+P19324,SERPH_MOUSE,Serpin H1,Mus musculus,17,confirmed,MRSLLLGTLCLLAVALA
+P98066,TSG6_HUMAN,Tumor necrosis factor-inducible gene 6 protein,Homo sapiens,17,confirmed,MIILIYLFLLLWEDTQG
+P07288,KLK3_HUMAN,Prostate-specific antigen,Homo sapiens,17,confirmed,MWVPVVFLTLSVTWIGA
+Q05769,PGH2_MOUSE,Prostaglandin G/H synthase 2,Mus musculus,17,confirmed,MLFRAVLLCAALGLSQA
+O70165,FCN1_MOUSE,Ficolin-1,Mus musculus,17,confirmed,MQWPTLWAFSGLLCLCP
+O95866,G6B_HUMAN,Protein G6b,Homo sapiens,17,confirmed,MAVFLQLLPLLLSRAQG
+P12661,RET3_BOVIN,Retinol-binding protein 3,Bos taurus,17,confirmed,MVRKWALLLPMLLCGLT
+P04087,INHA_PIG,Inhibin alpha chain,Sus scrofa,17,confirmed,MWPQLLLLLLAPRSGHG
+P14630,APOM_RAT,Apolipoprotein M,Rattus norvegicus,17,confirmed,MFHQVWAALLYLYGLLF
+P18761,CAH6_MOUSE,Carbonic anhydrase 6,Mus musculus,17,confirmed,MRALVSVVSLFFLGIQA
+P16975,SPRC_RAT,SPARC,Rattus norvegicus,17,confirmed,MRAWIFFLLCLAGRALA
+Q60994,ADIPO_MOUSE,Adiponectin,Mus musculus,17,confirmed,MLLLQALLFLLILPSHA
+Q9GL10,ACRO_SHEEP,Acrosin,Ovis aries,17,confirmed,MLPTAVLLVLAVSVVAR
+O95813,CER1_HUMAN,Cerberus,Homo sapiens,17,confirmed,MHLLLFQLLVLLPLGKT
+P15253,CALR_RABIT,Calreticulin,Oryctolagus cuniculus,17,confirmed,MLLPVPLLLGLLGLAAA
+P05067,A4_HUMAN,Amyloid beta A4 protein,Homo sapiens,17,confirmed,MLPGLALLLLAAWTARA
+P07154,CATL1_RAT,Cathepsin L1,Rattus norvegicus,17,confirmed,MTPLLLLAVLCLGTALA
+Q08481,PECA1_MOUSE,Platelet endothelial cell adhesion molecule,Mus musculus,17,confirmed,MLLALGLTLVLYASLQA
+P05186,PPBT_HUMAN,"Alkaline phosphatase, tissue-nonspecific isozyme",Homo sapiens,17,confirmed,MISPFLVLAIGTCLTNS
+P20112,SPRC_PIG,SPARC,Sus scrofa,17,confirmed,MRAWIFFLLCLAGKALA
+P04118,COL_HUMAN,Colipase,Homo sapiens,17,confirmed,MEKILILLLVALSVAYA
+P21183,IL5RA_MOUSE,Interleukin-5 receptor subunit alpha,Mus musculus,17,confirmed,MVPVLLILVGALATLQA
+P11597,CETP_HUMAN,Cholesteryl ester transfer protein,Homo sapiens,17,confirmed,MLAATVLTLALLGNAHA
+P06797,CATL1_MOUSE,Cathepsin L1,Mus musculus,17,confirmed,MNLLLLLAVLCLGTALA
+P13674,P4HA1_HUMAN,Prolyl 4-hydroxylase subunit alpha-1,Homo sapiens,17,confirmed,MIWYILIIGILLPQSLA
+P09486,SPRC_HUMAN,SPARC,Homo sapiens,17,confirmed,MRAWIFFLLCLAGRALA
+P54762,EPHB1_HUMAN,Ephrin type-B receptor 1,Homo sapiens,17,confirmed,MALDYLLLLLLASAVAA
+P09237,MMP7_HUMAN,Matrilysin,Homo sapiens,17,confirmed,MRLTVLCAVCLLPGSLA
+P35355,PGH2_RAT,Prostaglandin G/H synthase 2,Rattus norvegicus,17,confirmed,MLFRAVLLCAALALSHA
+P06908,SFTPA_CANFA,Pulmonary surfactant-associated protein A,Canis familiaris,17,confirmed,MWLRCLALALTLLMVSG
+Q3Y5Z3,ADIPO_BOVIN,Adiponectin,Bos taurus,17,confirmed,MLLQGALLLLLALPSHG
+P00736,C1R_HUMAN,Complement C1r subcomponent,Homo sapiens,17,confirmed,MWLLYLLVPALFCRAGG
+P42889,COL_MYOCO,Colipase,Myocastor coypus,17,confirmed,MEKVLALVLLTLAVAYA
+P05305,EDN1_HUMAN,Endothelin-1,Homo sapiens,17,confirmed,MDYLLMIFSLLFVACQG
+P30440,FEL1B_FELCA,Major allergen I polypeptide chain 2,Felis silvestris catus,17,confirmed,MRGALLVLALLVTQALG
+P00757,K1KB4_MOUSE,Kallikrein 1-related peptidase-like b4,Mus musculus,17,confirmed,MWFLILFLALSLGGIDA
+P27424,MFAP2_BOVIN,Microfibrillar-associated protein 2,Bos taurus,17,confirmed,MRAASLFLLFLPAGLLA
+P06857,LIPR1_CANFA,Pancreatic lipase-related protein 1,Canis familiaris,17,confirmed,MVSIWTIALFLLGAAKA
+P15242,TEST2_RAT,Testin-2,Rattus norvegicus,17,confirmed,MIAVLFLAILCLEVDST
+P28491,CALR_PIG,Calreticulin,Sus scrofa,17,confirmed,MLLPVPLLLGLVGLVAA
+P10745,RET3_HUMAN,Retinol-binding protein 3,Homo sapiens,17,confirmed,MMREWVLLMSVLLCGLA
+P14384,CBPM_HUMAN,Carboxypeptidase M,Homo sapiens,17,confirmed,MDFPCLWLGLLLPLVAA
+P17084,COL_RAT,Colipase,Rattus norvegicus,17,confirmed,MKVLVVLLVTLVAVAYA
+Q99538,LGMN_HUMAN,Legumain,Homo sapiens,17,confirmed,MVWKVAVFLSVALGIGA
+Q9Z0L3,OC90_MOUSE,Otoconin-90,Mus musculus,17,confirmed,MIMLLMVGMLMAPCVGA
+Q9QXX3,PA2GX_MOUSE,Group 10 secretory phospholipase A2,Mus musculus,17,confirmed,MLLLLLLLLLGPGPGFS
+P04141,CSF2_HUMAN,Granulocyte-macrophage colony-stimulating factor,Homo sapiens,17,confirmed,MWLQSLLLLGTVACSIS
+P01587,CSF2_MOUSE,Granulocyte-macrophage colony-stimulating factor,Mus musculus,17,confirmed,MWLQNLLFLGIVVYSLS
+P15260,INGR1_HUMAN,Interferon-gamma receptor alpha chain,Homo sapiens,17,confirmed,MALLFLLPLVMQGVSRA
+P19090,COL_CANFA,Colipase,Canis familiaris,17,confirmed,MEKILVLLLVALAVVYA
+Q29486,PPBT_FELCA,"Alkaline phosphatase, tissue-nonspecific isozyme",Felis silvestris catus,17,confirmed,MISPFLVLAIGTCLTNS
+P07214,SPRC_MOUSE,SPARC,Mus musculus,17,confirmed,MRAWIFFLLCLAGRALA
+P15948,K1B22_MOUSE,Kallikrein 1-related peptidase b22,Mus musculus,17,confirmed,MRFLILFLTLSLGGIDA
+P52193,CALR_BOVIN,Calreticulin,Bos taurus,17,confirmed,MLLPVPLLLGLLGLAAA
+P17050,NAGAB_HUMAN,Alpha-N-acetylgalactosaminidase,Homo sapiens,17,confirmed,MLLKTVLLLGHVAQVLM
+Q9NRC9,OTOR_HUMAN,Otoraplin,Homo sapiens,17,confirmed,MARILLLFLPGLVAVCA
+P09242,PPBT_MOUSE,"Alkaline phosphatase, tissue-nonspecific isozyme",Mus musculus,17,confirmed,MISPFLVLAIGTCLTNS
+Q9NRM6,I17RB_HUMAN,Interleukin-17 receptor B,Homo sapiens,17,confirmed,MSLVLLSLAALCRSAVP
+P55058,PLTP_HUMAN,Phospholipid transfer protein,Homo sapiens,17,confirmed,MALFGALFLALLAGAHA
+P07994,INHA_BOVIN,Inhibin alpha chain,Bos taurus,17,confirmed,MWLQLLLLLLAPQGGHG
+P18418,CALR_RAT,Calreticulin,Rattus norvegicus,17,confirmed,MLLSVPLLLGLLGLAAA
+P00760,TRY1_BOVIN,Cationic trypsin,Bos taurus,17,confirmed,MKTFIFLALLGAAVAFP
+P25311,ZA2G_HUMAN,Zinc-alpha-2-glycoprotein,Homo sapiens,17,confirmed,MVPVLLSLLLLLGPAVP
+P27869,G25L_CANFA,Glycoprotein 25L,Canis familiaris,17,confirmed,MPMLAFALSFYFSLSTA
+O75556,SG2A1_HUMAN,Mammaglobin-B,Homo sapiens,18,confirmed,MKLLMVLMLAALLLHCYA
+P02770,ALBU_RAT,Serum albumin,Rattus norvegicus,18,confirmed,MKWVTFLLLLFISGSAFS
+P12068,LYSC2_PIG,Lysozyme C-2,Sus scrofa,18,confirmed,MKTLLVLALLLLSVSVQA
+P49763,PLGF_HUMAN,Placenta growth factor,Homo sapiens,18,confirmed,MPVMRLFPCFLQLLAGLA
+P28908,TNR8_HUMAN,Tumor necrosis factor receptor superfamily member 8,Homo sapiens,18,confirmed,MRVLLAALGLLFLGALRA
+P35541,SAA_BOVIN,Serum amyloid A protein,Bos taurus,18,confirmed,MKLFTGLILCSLVLGVHS
+Q8VCT4,CES3_MOUSE,Carboxylesterase 3,Mus musculus,18,confirmed,MGLYPLIWLSLAACTAWG
+P17538,CTRB1_HUMAN,Chymotrypsinogen B,Homo sapiens,18,confirmed,MAFLWLLSCWALLGTTFG
+P01806,HVM36_MOUSE,Ig heavy chain V region 441,Mus musculus,18,confirmed,MDFGLIFFIVALLKGVQC
+P12763,FETUA_BOVIN,Alpha-2-HS-glycoprotein,Bos taurus,18,confirmed,MKSFVLLFCLAQLWGCHS
+P01048,KNT1_RAT,T-kininogen 1,Rattus norvegicus,18,confirmed,MKLITILLLCSRLLPSLA
+Q02809,PLOD1_HUMAN,"Procollagen-lysine,2-oxoglutarate 5-dioxygenase 1",Homo sapiens,18,confirmed,MRPLLLLALLGWLLLAEA
+P05156,CFAI_HUMAN,Complement factor I,Homo sapiens,18,confirmed,MKLLHVFLLFLCFHLRFC
+Q06807,TIE2_BOVIN,Angiopoietin-1 receptor,Bos taurus,18,confirmed,MDSLAGLVLCGVSLLLSA
+P05059,CMGA_BOVIN,Chromogranin-A,Bos taurus,18,confirmed,MRSAAVLALLLCAGQVIA
+P10144,GRAB_HUMAN,Granzyme B,Homo sapiens,18,confirmed,MQPILLLLAFLLLPRADA
+P22301,IL10_HUMAN,Interleukin-10,Homo sapiens,18,confirmed,MHSSALLCCLVLLTGVRA
+P19007,HPT_RABIT,Haptoglobin,Oryctolagus cuniculus,18,confirmed,MRALGAVITLLLWGQLFA
+P09655,ISK1_RAT,Pancreatic secretory trypsin inhibitor,Rattus norvegicus,18,confirmed,MKVAIIFLLSALALLSLA
+P00697,LYSC1_RAT,Lysozyme C-1,Rattus norvegicus,18,confirmed,MKALLVLGFLLLSASVQA
+P02739,SAA2_MUSVI,Serum amyloid A-2 protein,Mustela vison,18,confirmed,MKLFTGLIFCSLVLGVSS
+P07996,TSP1_HUMAN,Thrombospondin-1,Homo sapiens,18,confirmed,MGLAWGLGVLFLMHVCGT
+Q6UXG3,CLM9_HUMAN,CMRF35-like molecule 9,Homo sapiens,18,confirmed,MRLLVLLWGCLLLPGYEA
+P24090,FETUA_RAT,Alpha-2-HS-glycoprotein,Rattus norvegicus,18,confirmed,MKSLVLLLCFAQLWSCQS
+P03951,FA11_HUMAN,Coagulation factor XI,Homo sapiens,18,confirmed,MIFLYQVVHFILFTSVSG
+P08568,GRPA_RAT,Submandibular gland secretory Glx-rich protein CA,Rattus norvegicus,18,confirmed,MLVVLLTAALLALSSAQG
+P08934,KNG1_RAT,Kininogen-1,Rattus norvegicus,18,confirmed,MKLITILLLCSRLLPSLA
+P61629,LYSC_PAPAN,Lysozyme C,Papio anubis,18,confirmed,MKAVIILGLVLLSVTVQG
+P01042,KNG1_HUMAN,Kininogen-1,Homo sapiens,18,confirmed,MKLITILFLCSRLLLSLT
+P51782,LYSC_TRIVU,Lysozyme C,Trichosurus vulpecula,18,confirmed,MKVLLLLGFIFCSMAAHG
+P10959,EST2_RAT,Liver carboxylesterase 1,Rattus norvegicus,18,confirmed,MWLCALVWASLAVCPIWG
+P21180,CO2_MOUSE,Complement C2,Mus musculus,18,confirmed,MAPLLALFYLLQLGPGLA
+P09466,PAEP_HUMAN,Glycodelin,Homo sapiens,18,confirmed,MLCLLLTLGVALVCGVPA
+P15522,GLCM1_CAMDR,Glycosylation-dependent cell adhesion molecule 1,Camelus dromedarius,18,confirmed,MKFFAVLLLASLAATSLA
+P81447,GLCM1_CAPHI,Glycosylation-dependent cell adhesion molecule 1,Capra hircus,18,confirmed,MKFLCILLLASLAATSLA
+P18575,SAA1_MUSVI,Serum amyloid A-1 protein,Mustela vison,18,confirmed,MKLFTGLIFCSLVLGVSS
+P01045,KNG2_BOVIN,Kininogen-2,Bos taurus,18,confirmed,MKLITILFLCSRLLPSLT
+P51884,LUM_HUMAN,Lumican,Homo sapiens,18,confirmed,MSLSAFTLFLALIGGTSG
+P31025,LCN1_HUMAN,Lipocalin-1,Homo sapiens,18,confirmed,MKPLLLAVSLGLIAALQA
+Q28388,UCAL_HORSE,Uterocalin,Equus caballus,18,confirmed,MNLLLLAMGLILPRRPHA
+P13943,MMP1_RABIT,Interstitial collagenase,Oryctolagus cuniculus,18,confirmed,MPGLPLLLLLLWGVGSHG
+P31532,SAA4_MOUSE,Serum amyloid A-4 protein,Mus musculus,18,confirmed,MRLATVIVLCSLFLGVSG
+P06324,TVC3_MOUSE,T-cell receptor gamma chain V region DFL12,Mus musculus,18,confirmed,MLLLRWFTSCCLWVFGLG
+Q9JLA3,UGGG1_RAT,UDP-glucose:glycoprotein glucosyltransferase 1,Rattus norvegicus,18,confirmed,MGLLIALALLCLFSLAEA
+P18650,APOE_PIG,Apolipoprotein E,Sus scrofa,18,confirmed,MRVLWVALVVTLLAGCRT
+P68293,APOA1_PAPHA,Apolipoprotein A-I,Papio hamadryas,18,confirmed,MKATVLTLAVLFLTGSQA
+P06684,CO5_MOUSE,Complement C5,Mus musculus,18,confirmed,MGLWGILCLLIFLDKTWG
+P23141,EST1_HUMAN,Liver carboxylesterase 1,Homo sapiens,18,confirmed,MWLRAFILATLSASAAWG
+P02652,APOA2_HUMAN,Apolipoprotein A-II,Homo sapiens,18,confirmed,MKLLAATVLLLTICSLEG
+Q05443,LUM_BOVIN,Lumican,Bos taurus,18,confirmed,MNLGVFPLLLALIGGASS
+P15289,ARSA_HUMAN,Arylsulfatase A,Homo sapiens,18,confirmed,MGAPRSLLLALAAGLAVA
+P10645,CMGA_HUMAN,Chromogranin-A,Homo sapiens,18,confirmed,MRSAAVLALLLCAGQVTA
+P18532,HVM61_MOUSE,Ig heavy chain V region 1B43,Mus musculus,18,confirmed,MRVLILLCLFTAFPGILS
+P02735,SAA_HUMAN,Serum amyloid A protein,Homo sapiens,18,confirmed,MKLLTGLVFCSLVLGVSS
+Q08380,LG3BP_HUMAN,Galectin-3-binding protein,Homo sapiens,18,confirmed,MTPPRLFWVWLLVAGTQG
+P97515,FETUA_MERUN,Alpha-2-HS-glycoprotein,Meriones unguiculatus,18,confirmed,MKTLVLLLCFTLLWGCQS
+P02763,A1AG1_HUMAN,Alpha-1-acid glycoprotein 1,Homo sapiens,18,confirmed,MALSWVLTVLSLLPLLEA
+P01832,PIGR_RABIT,Polymeric immunoglobulin receptor,Oryctolagus cuniculus,18,confirmed,MALFLLTCLLAVFSAATA
+Q9XSC9,TCO2_BOVIN,Transcobalamin-2,Bos taurus,18,confirmed,MGHLGALLFLLGGLGALA
+P20827,EFNA1_HUMAN,Ephrin-A1,Homo sapiens,18,confirmed,MEFLWAPLLGLCCSLAAA
+P11021,GRP78_HUMAN,78 kDa glucose-regulated protein,Homo sapiens,18,confirmed,MKLSLVAAMLLLLSAARA
+Q9BCL9,Q9BCL9_RAT,n/a,Rattus norvegicus,18,confirmed,VIRFFFMAVLMSPQKSWA
+P15247,IL9_MOUSE,Interleukin-9,Mus musculus,18,confirmed,MLVTYILASVLLFSSVLG
+P04639,APOA1_RAT,Apolipoprotein A-I,Rattus norvegicus,18,confirmed,MKAAVLAVALVFLTGCQA
+O62644,LECT2_BOVIN,Leukocyte cell-derived chemotaxin-2,Bos taurus,18,confirmed,MFSTGTLLLAALISPALA
+P21128,PP11_HUMAN,Placental protein 11,Homo sapiens,18,confirmed,MRACISLVLAVLCGLAWA
+P02753,RET4_HUMAN,Retinol-binding protein 4,Homo sapiens,18,confirmed,MKWVWALLLLAALGSGRA
+P18656,APOA2_MACFA,Apolipoprotein A-II,Macaca fascicularis,18,confirmed,MKLLAATVLLLTICSLEG
+P19427,DERM_BOVIN,Dermatopontin,Bos taurus,18,confirmed,MDLTLLWVLLPLVTVAWG
+P17697,CLUS_BOVIN,Clusterin,Bos taurus,18,confirmed,MKTLLLLMGLLLSWESGW
+Q9UBT3,DKK4_HUMAN,Dickkopf-related protein 4,Homo sapiens,18,confirmed,MVAAVLLGLSWLCSPLGA
+P11589,MUP2_MOUSE,Major urinary protein 2,Mus musculus,18,confirmed,MKMLLLLCLGLTLVCVHA
+P13366,GRAG_MOUSE,Granzyme G,Mus musculus,18,confirmed,MPPILILLTLLLPLRAGA
+P04196,HRG_HUMAN,Histidine-rich glycoprotein,Homo sapiens,18,confirmed,MKALIAALLLITLQYSCA
+P11033,GRAD_MOUSE,Granzyme D,Mus musculus,18,confirmed,MPPILILLTLLLPLRAGA
+Q15762,CD226_HUMAN,CD226 antigen,Homo sapiens,18,confirmed,MDYPTLLLALLHVYRALC
+P28053,MMP1_BOVIN,Interstitial collagenase,Bos taurus,18,confirmed,MPRLPLLLLLLWGTGSHG
+P01226,FSHB_HORSE,Follitropin subunit beta,Equus caballus,18,confirmed,MKSVQFCFLFCCWKAVCC
+P00770,MCPT2_RAT,Mast cell protease 2,Rattus norvegicus,18,confirmed,MQALLFLMALLLPSGAGA
+Q9BX59,TPSNR_HUMAN,Tapasin-related protein,Homo sapiens,18,confirmed,MGTQEGWCLLLCLALSGA
+P20726,SAA1_MESAU,Serum amyloid A-1 protein,Mesocricetus auratus,18,confirmed,MKPFVAIIFCFLILGVDS
+P21350,A1AG1_MUSCR,Alpha-1-acid glycoprotein 1,Mus caroli,18,confirmed,MALHMILVMLSLLPLLEA
+P21812,MCPT4_MOUSE,Mast cell protease 4,Mus musculus,18,confirmed,MQALLFLMALLLPSGAGA
+P02768,ALBU_HUMAN,Serum albumin,Homo sapiens,18,confirmed,MKWVTFISLLFLFSSAYS
+P20462,LLPA_MACEU,Late lactation protein A,Macropus eugenii,18,confirmed,MRVLFLTISLSLFSIIHA
+P19708,SAA_CANFA,Serum amyloid A protein,Canis familiaris,18,confirmed,MKLFPGLLFCSLVLGVSG
+P07361,A1AG2_MOUSE,Alpha-1-acid glycoprotein 2,Mus musculus,18,confirmed,MALHMILVMVSLLPLLEA
+P08883,GRAF_MOUSE,Granzyme F,Mus musculus,18,confirmed,MPPILILLTLLLPLRAGA
+P61630,LYSC_CERTO,Lysozyme C,Cercocebus torquatus atys,18,confirmed,MKAVIILGLVLLSVTVQG
+P14480,FIBB_RAT,Fibrinogen beta chain,Rattus norvegicus,18,confirmed,MRHLWLLLLSVSLVQTQA
+Q13478,IL18R_HUMAN,Interleukin-18 receptor 1,Homo sapiens,18,confirmed,MNCRELPLTLWVLISVST
+P02780,SG2A2_RAT,Secretoglobin family 2A member 2,Rattus norvegicus,18,confirmed,MKLVFLFLLVTIPICCYA
+P22748,CAH4_HUMAN,Carbonic anhydrase 4,Homo sapiens,18,confirmed,MRMLLALLALSAARPSAS
+P01225,FSHB_HUMAN,Follitropin subunit beta,Homo sapiens,18,confirmed,MKTLQFFFLFCCWKAICC
+P12069,LYSC3_PIG,Lysozyme C-3,Sus scrofa,18,confirmed,MKTLLVLALLLLSVSVQA
+P16212,HLAE_PONPY,"HLA class I histocompatibility antigen, alpha chain E",Pongo pygmaeus,18,confirmed,GTLLLLLSEALALTETWA
+P08905,LYZ2_MOUSE,Lysozyme C-2,Mus musculus,18,confirmed,MKTLLTLGLLLLSVTAQA
+P15501,SPBP_MOUSE,Prostatic spermine-binding protein,Mus musculus,18,confirmed,MLLLLTLAFLASPTCRAQ
+P03978,TVC2_MOUSE,T-cell receptor gamma chain V region V108B,Mus musculus,18,confirmed,MLLLRWPTFCCLWVFGLG
+P08882,GRAC_MOUSE,Granzyme C,Mus musculus,18,confirmed,MPPVLILLTLLLPLRAGA
+Q15848,ADIPO_HUMAN,Adiponectin,Homo sapiens,18,confirmed,MLLLGAVLLLLALPGHDQ
+P35542,SAA4_HUMAN,Serum amyloid A-4 protein,Homo sapiens,18,confirmed,MRLFTGIVFCSLVMGVTS
+P04638,APOA2_RAT,Apolipoprotein A-II,Rattus norvegicus,18,confirmed,MKLLAMVALLVTICSLEG
+P21352,A1AG8_MUSCR,Alpha-1-acid glycoprotein 8,Mus caroli,18,confirmed,MALHTVLIMLSLLPMLEA
+P15497,APOA1_BOVIN,Apolipoprotein A-I,Bos taurus,18,confirmed,MKAVVLTLAVLFLTGSQA
+P07339,CATD_HUMAN,Cathepsin D,Homo sapiens,18,confirmed,MQPSSLLPLALCLLAAPA
+P07823,GRP78_MESAU,78 kDa glucose-regulated protein,Mesocricetus auratus,18,confirmed,MKFPMVAAALLLLCAVRA
+P07380,LACB2_HORSE,Beta-lactoglobulin-2,Equus caballus,18,confirmed,MKCLLLALGLSLMCGNQA
+P01822,HVM46_MOUSE,Ig heavy chain V region MOPC 315,Mus musculus,18,confirmed,MKVLSLLYLLTAIPGIMS
+P18291,NKP1_RAT,Natural killer cell protease 1,Rattus norvegicus,18,confirmed,MKLLLLLLSFSLAPKTEA
+P01740,TVC1_MOUSE,T-cell receptor gamma chain V region V108A,Mus musculus,18,confirmed,MLLLRWFTSCCLWVFGLG
+P01833,PIGR_HUMAN,Polymeric immunoglobulin receptor,Homo sapiens,18,confirmed,MLLFVLTCLLAVFPAIST
+P43307,SSRA_HUMAN,Translocon-associated protein subunit alpha,Homo sapiens,18,confirmed,MRLLPRLLLLLLLVFPAT
+P23206,COAA1_BOVIN,Collagen alpha-1(X) chain,Bos taurus,18,confirmed,MLPQTALLLLMSLNLVHG
+P02649,APOE_HUMAN,Apolipoprotein E,Homo sapiens,18,confirmed,MKVLWAALLVTFLAGCQA
+P18531,HVM60_MOUSE,Ig heavy chain V region M315,Mus musculus,18,confirmed,MKVLSLLYLLTAIPGILS
+Q01638,ILRL1_HUMAN,Interleukin-1 receptor-like 1,Homo sapiens,18,confirmed,MGFWILAILTILMYSTAA
+P08932,KNT2_RAT,T-kininogen 2,Rattus norvegicus,18,confirmed,MKLITILLLCSRLLPSLA
+P16303,CES3_RAT,Carboxylesterase 3,Rattus norvegicus,18,confirmed,MRLYPLVWLFLAACTAWG
+P02647,APOA1_HUMAN,Apolipoprotein A-I,Homo sapiens,18,confirmed,MKAAVLTLAVLFLTGSQA
+Q28085,CFAH_BOVIN,Complement factor H,Bos taurus,18,confirmed,MRFPAKIVWLVLWTVCVA
+P80195,GLCM1_BOVIN,Glycosylation-dependent cell adhesion molecule 1,Bos taurus,18,confirmed,MKFLCVLLLASLAATSLA
+P61626,LYSC_HUMAN,Lysozyme C,Homo sapiens,18,confirmed,MKALIVLGLVLLSVTVQG
+P38570,ITAE_HUMAN,Integrin alpha-E,Homo sapiens,18,confirmed,MWLFHTLLCIASLALLAA
+P02758,LACB1_HORSE,Beta-lactoglobulin-1,Equus caballus,18,confirmed,MKCLLLALGLALMCGIQA
+Q8NBJ9,SIDT2_HUMAN,SID1 transmembrane family member 2,Homo sapiens,18,confirmed,MFALGLPFLVLLVASVES
+P00738,HPT_HUMAN,Haptoglobin,Homo sapiens,18,confirmed,MSALGAVIALLLWGQLFA
+P08661,MBL2_RAT,Mannose-binding protein C,Rattus norvegicus,18,confirmed,MSLFTSFLLLCVLTAVYA
+P02755,LACB_BUBBU,Beta-lactoglobulin,Bubalus bubalis,18,confirmed,MKCLLLALGLALACAAQA
+P27485,RET4_PIG,Retinol-binding protein 4,Sus scrofa,18,confirmed,MEWVWALVLLAALGSAQA
+Q95114,MFGM_BOVIN,Lactadherin,Bos taurus,18,confirmed,MPCPRLLAALFCSSGLFA
+P02650,APOE_RAT,Apolipoprotein E,Rattus norvegicus,18,confirmed,MKALWALLLVPLLTGCLA
+P12337,EST1_RABIT,Liver carboxylesterase 1,Oryctolagus cuniculus,18,confirmed,MWLCALALASLAACTAWG
+P67977,LYSC_SEMEN,Lysozyme C,Semnopithecus entellus,18,confirmed,MKALTILGLVLLSVTVQG
+P08884,GRAE_MOUSE,Granzyme E,Mus musculus,18,confirmed,MPPVLILLTLLLPLGAGA
+P08462,GRPB_RAT,Submandibular gland secretory Glx-rich protein CB,Rattus norvegicus,18,confirmed,MLVVLLTAALLALSSAQG
+P15119,MCPT2_MOUSE,Mast cell protease 2,Mus musculus,18,confirmed,MQALLFLMALLLPSGAGA
+P11591,MUP5_MOUSE,Major urinary protein 5,Mus musculus,18,confirmed,MKLLLLLCLELTLVCVHA
+Q00954,SCN1B_RAT,Sodium channel subunit beta-1,Rattus norvegicus,18,confirmed,MGTLLALVVGAVLVSSAW
+P02756,LACB_CAPHI,Beta-lactoglobulin,Capra hircus,18,confirmed,MKCLLLALGLALACGIQA
+P10747,CD28_HUMAN,T-cell-specific surface glycoprotein CD28,Homo sapiens,18,confirmed,MLRLLLALNLFPSIQVTG
+P38574,UPK3A_BOVIN,Uroplakin-3A,Bos taurus,18,confirmed,MPPLWVVLALGCLRLGSG
+P02771,FETA_HUMAN,Alpha-fetoprotein,Homo sapiens,18,confirmed,MKWVESIFLIFLLNFTES
+P23529,APOE_CAVPO,Apolipoprotein E,Cavia porcellus,18,confirmed,MKVLWAALVVTLLAGCRA
+P02765,FETUA_HUMAN,Alpha-2-HS-glycoprotein,Homo sapiens,18,confirmed,MKSLVLLLCLAQLWGCHS
+P11034,MCPT1_MOUSE,Mast cell protease 1,Mus musculus,18,confirmed,MQALLFLMALLLPSGAGA
+P04187,GRAB_MOUSE,"Granzyme B(G,H)",Mus musculus,18,confirmed,MKILLLLLTLSLASRTKA
+P04916,RET4_RAT,Retinol-binding protein 4,Rattus norvegicus,18,confirmed,MEWVWALVLLAALGGGSA
+P07338,CTRB1_RAT,Chymotrypsinogen B,Rattus norvegicus,18,confirmed,MAFLWLVSCFALVGATFG
+Q6IY74,LSHB_RABIT,Lutropin subunit beta,Oryctolagus cuniculus,18,confirmed,MGTLQGLLLWLLLGTGGA
+Q63010,EST5_RAT,Liver carboxylesterase B-1,Rattus norvegicus,18,confirmed,MCLRSLFLVSLATCVVCG
+P09813,APOA2_MOUSE,Apolipoprotein A-II,Mus musculus,18,confirmed,MKLLAMVALLVTICSLEG
+P18533,HVM62_MOUSE,Ig heavy chain V region 733,Mus musculus,18,confirmed,MKMFTLLYLLTVVPGILS
+P35441,TSP1_MOUSE,Thrombospondin-1,Mus musculus,18,confirmed,MELLRGLGVLFLLHMCGS
+P08311,CATG_HUMAN,Cathepsin G,Homo sapiens,18,confirmed,MQPLLLLLAFLLPTGAEA
+P11588,MUP1_MOUSE,Major urinary protein 1,Mus musculus,18,confirmed,MKMLLLLCLGLTLVCVHA
+P10517,APOE_MACFA,Apolipoprotein E,Macaca fascicularis,18,confirmed,MKVLWAALLVTFLAGCQA
+P20718,GRAH_HUMAN,Granzyme H,Homo sapiens,18,confirmed,MQPFLLLLAFLLTPGAGT
+P15248,IL9_HUMAN,Interleukin-9,Homo sapiens,18,confirmed,MLLAMVLTSALLLCSVAG
+Q863D2,Q863D2_PIG,n/a,Sus scrofa,18,confirmed,MKLAMVLMLVALPVYCSA
+P00759,KLK2_RAT,Tonin,Rattus norvegicus,18,confirmed,MWLQILSLVLSVGRIDAA
+P67976,LACB_SHEEP,Beta-lactoglobulin-1/B,Ovis aries,18,confirmed,MKCLLLALGLALACGVQA
+P04119,LACB_PIG,Beta-lactoglobulin-1A/1C,Sus scrofa,18,confirmed,MRCLLLTLGLALLCGVQA
+Q04962,FA12_CAVPO,Coagulation factor XII,Cavia porcellus,18,confirmed,GRLLLGSLLVSLESALSA
+P36980,FHR2_HUMAN,Complement factor H-related protein 2,Homo sapiens,18,confirmed,MWLLVSVILISRISSVGG
+P19652,A1AG2_HUMAN,Alpha-1-acid glycoprotein 2,Homo sapiens,18,confirmed,MALSWVLTVLSLLPLLEA
+Q62632,FSTL1_RAT,Follistatin-related protein 1,Rattus norvegicus,18,confirmed,MWKRWLALALVTIALVHG
+P10354,CMGA_RAT,Chromogranin-A,Rattus norvegicus,18,confirmed,MRSSAALALLLCAGQVFA
+P04421,LYSC_BOVIN,Lysozyme C,Bos taurus,18,confirmed,MKALVILGFLFLSVAVQG
+P19756,GHR_PIG,Growth hormone receptor,Sus scrofa,18,confirmed,MDLWQLLLTLAVAGSSDA
+Q8WWA0,ITLN1_HUMAN,Intelectin-1,Homo sapiens,18,confirmed,MNQLSFLLFLIATTRGWS
+P51885,LUM_MOUSE,Lumican,Mus musculus,18,confirmed,MNVCAFSLALALVGSVSG
+P15083,PIGR_RAT,Polymeric immunoglobulin receptor,Rattus norvegicus,18,confirmed,MRLSLFALLVTVFSGVST
+P19453,SAA3_MESAU,Serum amyloid A-3 protein,Mesocricetus auratus,18,confirmed,MKPFLAIIFCFLILGVDS
+P20062,TCO2_HUMAN,Transcobalamin-2,Homo sapiens,18,confirmed,MRHLGAFLFLLGVLGALT
+P06325,TVC4_MOUSE,T-cell receptor gamma chain V region 5/10-13,Mus musculus,18,confirmed,MLLLRWPTFCCLWVFGLG
+P68292,APOA1_MACFA,Apolipoprotein A-I,Macaca fascicularis,18,confirmed,MKATVLTLAVLFLTGSQA
+P08603,CFAH_HUMAN,Complement factor H,Homo sapiens,18,confirmed,MRLLAKIICLMLWAICVA
+P08226,APOE_MOUSE,Apolipoprotein E,Mus musculus,18,confirmed,MKALWAVLLVTLLTGCLA
+P04634,LIPG_RAT,Gastric triacylglycerol lipase,Rattus norvegicus,18,confirmed,MWLLLITSVISTFGGAHG
+P20727,SAA2_MESAU,Serum amyloid A-2 protein,Mesocricetus auratus,18,confirmed,MKPFLSIIFCFLVLGVDS
+P02741,CRP_HUMAN,C-reactive protein,Homo sapiens,18,confirmed,MEKLLCFLVLTSLSHAFG
+P08294,SODE_HUMAN,Extracellular superoxide dismutase [Cu-Zn],Homo sapiens,18,confirmed,MLALLCSCLLLAAGASDA
+Q64424,LIPR2_MYOCO,Pancreatic lipase-related protein 2,Myocastor coypus,18,confirmed,MMLFVWTTGLLLLATARG
+P30122,CEL_BOVIN,Bile salt-activated lipase,Bos taurus,18,confirmed,LGASRLGPSPGCLAVASA
+P02762,MUP6_MOUSE,Major urinary protein 6,Mus musculus,18,confirmed,MKMLLLLCLGLTLVCVHA
+P19941,GHR_RABIT,Growth hormone receptor,Oryctolagus cuniculus,18,confirmed,MDLWQLLLTVALAGSSDA
+P06912,RET4_RABIT,Retinol-binding protein 4,Oryctolagus cuniculus,18,confirmed,MEWVWALVLLAALGSGRG
+P04813,CTR2_CANFA,Chymotrypsinogen 2,Canis familiaris,18,confirmed,MAFLWLLSCFALLGTAFG
+P18287,APOE_RABIT,Apolipoprotein E,Oryctolagus cuniculus,18,confirmed,MKVWWAVLAAAILAGCRA
+Q28042,OVGP1_BOVIN,Oviduct-specific glycoprotein,Bos taurus,18,confirmed,LLLCVGLLLVLKHHDGAA
+P02769,ALBU_BOVIN,Serum albumin,Bos taurus,18,confirmed,MKWVTFISLLLLFSSAYS
+P09809,APOA1_RABIT,Apolipoprotein A-I,Oryctolagus cuniculus,18,confirmed,MKAVVLTLAVLFLTGSQA
+P05111,INHA_HUMAN,Inhibin alpha chain,Homo sapiens,18,confirmed,MVLHLLLFLLLTPQGGHS
+P26339,CMGA_MOUSE,Chromogranin-A,Mus musculus,18,confirmed,MRSTAVLALLLCAGQVFA
+P07204,TRBM_HUMAN,Thrombomodulin,Homo sapiens,18,confirmed,MLGVLVLGALALAGLGFP
+P02764,A1AG_RAT,Alpha-1-acid glycoprotein,Rattus norvegicus,18,confirmed,MALHMVLVVLSLLPLLEA

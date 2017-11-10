@@ -1,0 +1,7217 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Peptides HGAT - Search</title>
+	<meta name="keywords" content="peptides, HGAT, protein, precursor, motif, UniProt, database, statistics, predict">
+	<meta name="description" content="Peptides Hormone, Growth factor, Antimicrobal and Toxin database">
+	<link href="css/screen.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+	
+<script type="text/javascript">
+//<![CDATA[
+
+	window.onload = function(){
+		var xTabelId = "resulttable";
+		if (document.getElementById(xTabelId) != null) ConvertRowsToLinks(xTabelId);
+	}
+
+	function ConvertRowsToLinks(xTableId) {
+		var rows = document.getElementById(xTableId).getElementsByTagName("tr");
+
+		for(i=0;i<rows.length;i++){
+			var link = rows[i].getElementsByTagName("a")
+			if(link.length == 1){
+				rows[i].onclick = new Function("document.location.href='" + link[0].href + "'");
+			}
+		}
+	}
+
+//]]>
+</script>
+
+</head>
+
+<body id="Search">
+	<div id="container">
+		<div id="wrapper">
+			<div id="header">
+				<div id="sitename">
+					<p>
+					<strong>Peptide</strong>DB
+					</p>
+					<p class="subtitle">
+					Bioactive peptide database
+					</p>
+				</div>
+				<ul id="nav">
+					<li><a href="?p=home">Home</a></li>
+
+					<li><a href="?p=search">Search</a></li>
+
+					<li><a href="?p=statistics">Statistics</a></li>
+
+					<!-- <li><a href="?p=predict">Predict</a></li> -->
+					<li><a href="?p=submission">Submission</a></li>
+
+					<li><a href="?p=help">Help</a></li>
+
+					<li><a href="?p=contact">Contact</a></li>
+				</ul>
+				<div id="pagetitle">
+					Search
+				</div>
+			</div><!-- close div#header -->
+
+			<div id="content">
+				
+									<form name="searchform" action="index.php" method="get">
+
+	<input name="p" value="search" type="hidden">
+
+	<fieldset>
+		<table class="searchform">
+			<tbody><tr>
+				<td>
+					<label for="accession_number"><a href="?p=help#peptide_accession_number">Peptide accession number:</a></label>
+				</td>
+				<td class="expand">
+					<input id="accession_number" name="accession_number" value="" tabindex="1" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="name"><a href="?p=help#peptide_name">Peptide name:</a></label>
+				</td>
+				<td class="expand">
+					<input id="name" name="name" value="" tabindex="2" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="organism_group"><a href="?p=help#organism">Organism:</a></label>
+				</td>
+				<td class="expand">
+					<select id="organism_group" name="organism_group" tabindex="3" onchange="searchform.submit()">
+						<option value="">-</option>
+						<option value="Annelida">Annelida</option>
+						<option value="Arthropoda">Arthropoda</option>
+						<option value="Chordata">Chordata</option>
+						<option value="Cnidaria">Cnidaria</option>
+						<option value="Hemichordata">Hemichordata</option>
+						<option value="Echinodermata">Echinodermata</option>
+						<option value="Echiura">Echiura</option>
+						<option value="Mollusca">Mollusca</option>
+						<option value="Nematoda">Nematoda</option>
+						<option value="Nemertea">Nemertea</option>
+						<option value="Platyhelminthes">Platyhelminthes</option>
+						<option value="Porifera">Porifera</option>
+					</select>
+					<select id="organism_species" name="organism_species" tabindex="4">
+						<option value="">-</option>
+											</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="length"><a href="?p=help#peptide_length">Length:</a></label>
+				</td>
+				<td class="expand">
+					<strong>from:</strong>
+					<input class="short" id="length_from" name="length_from" value="12" tabindex="5" type="text">
+					<strong>to:</strong>
+					<input class="short" id="length_to" name="length_to" value="16" tabindex="6" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="mass"><a href="?p=help#peptide_mass">Monoisotopic mass:</a></label>
+				</td>
+				<td class="expand">
+					<strong>from:</strong>
+					<input class="short" id="mass_from" name="mass_from" value="" tabindex="7" type="text">
+					<strong>to:</strong>
+					<input class="short" id="mass_to" name="mass_to" value="" tabindex="8" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="familyspecs"><a href="?p=help#peptide_family">Peptide family:</a></label>
+				</td>
+				<td class="expand">
+					<select id="family_group" name="family_group" tabindex="9" onchange="searchform.submit()">
+						<option value="">-</option>
+
+					 <!--	<option value="Growth factor and Cytokine">Growth factor and Cytokine</option>
+						<option value="Hormone">Neuropeptides and Peptide Hormones</option>
+						<option value="Antimicrobial">Antimicrobial</option>
+						<option value="Toxin">Toxin</option>
+						<option value="Antifreeze">Antifreeze</option>
+						<option value="Other families">Other families</option>
+						<option value="Unique peptides">Unique peptides</option> -->
+						<option value="Cytokines and growth factor">Cytokines and growth factor</option>
+						<option value="Peptide Hormones">Peptide Hormones</option>
+						<option value="Antimicrobial peptides">Antimicrobial peptides</option>
+						<option value="Toxins and venom peptides">Toxins and venom peptides</option>
+						<option value="Antifreeze">Antifreeze</option>
+						<option value="Other families">Other families</option>
+						<option value="Unique peptides">Unique peptides</option>
+					</select>
+					<select id="family" name="family" tabindex="10">
+						<option value="">-</option>
+											</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="uniprot"><a href="?p=help#uniprot_accession_number">Uniprot accession number:</a></label>
+				</td>
+				<td class="expand">
+					<input id="uniprot" name="uniprot" value="" tabindex="11" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="aminoacid"><a href="?p=help#aminoacid">Amino acid sequence:</a></label>
+				</td>
+				<td class="expand">
+					<input id="aminoacid" name="aminoacid" value="" tabindex="11" type="text">
+				</td>
+			</tr>
+			<tr>
+                <td>
+                &nbsp;
+                </td>
+                <td class="expand">
+                <input name="submitbutton" value="Submit" tabindex="12" type="submit">&nbsp;<input name="resetbutton" value="Reset" tabindex="13" type="submit">
+				</td>
+			</tr>
+		</tbody></table>
+	</fieldset>
+
+</form>
+
+	<p>
+	</p><table id="resulttable">
+
+				<caption align="top">
+			There are <strong>1004</strong>  entries matching your query, below the first 1000 matches are shown. - <a href="?p=pepfasta&amp;accession_number=&amp;name=&amp;organism_group=&amp;organism_species=&amp;length_from=12&amp;length_to=16&amp;mass_from=&amp;mass_to=&amp;family_group=&amp;family=&amp;uniprot=&amp;aminoacid=&amp;submitbutton=Submit&amp;breakout=1&amp;context=search">Peptides in FASTA</a>
+		</caption>
+		
+		<tbody><tr>
+			<th>peptide accession number</th>
+
+			<th>peptide name</th>
+
+			<th>organism</th>
+		</tr>
+
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00028">PEP00028</a></td>
+
+			<td>amurin-3</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP00162">PEP00162</a></td>
+
+			<td>sNPF peptide 3</td>
+
+			<td>Aedes</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00164">PEP00164</a></td>
+
+			<td>sNPF peptide 2</td>
+
+			<td>Aedes</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP00183">PEP00183</a></td>
+
+			<td>amolopin-2a antimicrobial peptide</td>
+
+			<td>Amolops</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00185">PEP00185</a></td>
+
+			<td>amolopin-2a antimicrobial peptide</td>
+
+			<td>Amolops</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP00187">PEP00187</a></td>
+
+			<td>amolopin-2b antimicrobial peptide</td>
+
+			<td>Amolops</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00189">PEP00189</a></td>
+
+			<td>amolopin-2b antimicrobial peptide</td>
+
+			<td>Amolops</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP00191">PEP00191</a></td>
+
+			<td>amolopin-2c antimicrobial peptide</td>
+
+			<td>Amolops</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00192">PEP00192</a></td>
+
+			<td>Mastoparan-like peptide 12c</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP00193">PEP00193</a></td>
+
+			<td>Vespid chemotactic peptide 5h</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00390">PEP00390</a></td>
+
+			<td>unknown hormone</td>
+
+			<td>Xenopus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP00391">PEP00391</a></td>
+
+			<td>antimicrobial peptide</td>
+
+			<td>Xenopus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00492">PEP00492</a></td>
+
+			<td>halocidin subunit B</td>
+
+			<td>Halocynthia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP00595">PEP00595</a></td>
+
+			<td>sulfakinin II</td>
+
+			<td>Gryllus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00715">PEP00715</a></td>
+
+			<td>C-terminal peptide</td>
+
+			<td>Pan</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP00835">PEP00835</a></td>
+
+			<td>AA-15</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00837">PEP00837</a></td>
+
+			<td>RR-13-</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP00839">PEP00839</a></td>
+
+			<td>RR-13-</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00840">PEP00840</a></td>
+
+			<td>RR-13</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP00841">PEP00841</a></td>
+
+			<td>AA-15</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00844">PEP00844</a></td>
+
+			<td>RR-13-</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP00845">PEP00845</a></td>
+
+			<td>RR-13</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00846">PEP00846</a></td>
+
+			<td>AA-15</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP00849">PEP00849</a></td>
+
+			<td>RR-13-</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP00850">PEP00850</a></td>
+
+			<td>RR-13</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP01225">PEP01225</a></td>
+
+			<td>amolopin-3a antimicrobial peptide</td>
+
+			<td>Amolops</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP01383">PEP01383</a></td>
+
+			<td>temporin-1 PLa</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP01661">PEP01661</a></td>
+
+			<td>Beta-fibrinogen</td>
+
+			<td>Mionectes</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP01662">PEP01662</a></td>
+
+			<td>Beta-fibrinogen</td>
+
+			<td>Mionectes</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP01665">PEP01665</a></td>
+
+			<td>Beta-fibrinogen</td>
+
+			<td>Sublegatus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP01925">PEP01925</a></td>
+
+			<td>Leucokinin-1</td>
+
+			<td>Aedes</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP01962">PEP01962</a></td>
+
+			<td>Uroguanylin</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP01987">PEP01987</a></td>
+
+			<td>Uroguanylin</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02025">PEP02025</a></td>
+
+			<td>CHH precursor-related peptide 5</td>
+
+			<td>Penaeus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02046">PEP02046</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02122">PEP02122</a></td>
+
+			<td>Dynorphin A</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02125">PEP02125</a></td>
+
+			<td>Rimorphin</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02207">PEP02207</a></td>
+
+			<td>SDRPTRAMDSPLIRF-amide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02219">PEP02219</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02220">PEP02220</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02221">PEP02221</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02223">PEP02223</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02226">PEP02226</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02227">PEP02227</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02228">PEP02228</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02229">PEP02229</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02230">PEP02230</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02314">PEP02314</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Ovis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02320">PEP02320</a></td>
+
+			<td>Prolactin</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02327">PEP02327</a></td>
+
+			<td>Potential</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02419">PEP02419</a></td>
+
+			<td>Adrenomedullin-11-26</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02503">PEP02503</a></td>
+
+			<td>Immune-induced peptide 2</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02562">PEP02562</a></td>
+
+			<td>gamma-melanotropin</td>
+
+			<td>Protopterus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02564">PEP02564</a></td>
+
+			<td>alpha-melanotropin</td>
+
+			<td>Protopterus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02595">PEP02595</a></td>
+
+			<td>Cholecystokinin-12</td>
+
+			<td>Carassius</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02633">PEP02633</a></td>
+
+			<td>Allatostatin blg10</td>
+
+			<td>Blattella</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02638">PEP02638</a></td>
+
+			<td>Allatostatin blc7</td>
+
+			<td>Blaberus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02640">PEP02640</a></td>
+
+			<td>Allatostatin blc10</td>
+
+			<td>Blaberus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02717">PEP02717</a></td>
+
+			<td>Angiotensinogen</td>
+
+			<td>Equus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02766">PEP02766</a></td>
+
+			<td>Urotensin-2</td>
+
+			<td>Gillichthys</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02776">PEP02776</a></td>
+
+			<td>Hypothalamic tetradecapeptide</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02779">PEP02779</a></td>
+
+			<td>Neurotensin</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02782">PEP02782</a></td>
+
+			<td>Scotophobin</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02790">PEP02790</a></td>
+
+			<td>C-terminal peptide</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02793">PEP02793</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02795">PEP02795</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Lophius</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02796">PEP02796</a></td>
+
+			<td>somatostatin-14</td>
+
+			<td>Lophius</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02798">PEP02798</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Ictalurus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02833">PEP02833</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02843">PEP02843</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02854">PEP02854</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Ovis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02863">PEP02863</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02873">PEP02873</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02883">PEP02883</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02890">PEP02890</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Struthio</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02893">PEP02893</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Squalus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02900">PEP02900</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Macaca</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02912">PEP02912</a></td>
+
+			<td>Melanotropin beta</td>
+
+			<td>Squalus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02933">PEP02933</a></td>
+
+			<td>Dynorphin A</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02936">PEP02936</a></td>
+
+			<td>Rimorphin</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP02942">PEP02942</a></td>
+
+			<td>Dynorphin A</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP02945">PEP02945</a></td>
+
+			<td>Rimorphin</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03046">PEP03046</a></td>
+
+			<td>C-terminal-flanking peptide</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03149">PEP03149</a></td>
+
+			<td>Gastrin-14</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03161">PEP03161</a></td>
+
+			<td>Cholecystokinin-12</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03169">PEP03169</a></td>
+
+			<td>Cholecystokinin-12</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03190">PEP03190</a></td>
+
+			<td>Egg-laying hormone</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03199">PEP03199</a></td>
+
+			<td>Acidic peptide</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03205">PEP03205</a></td>
+
+			<td>Epsilon-bag cell peptide</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03208">PEP03208</a></td>
+
+			<td>Peptide II</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03336">PEP03336</a></td>
+
+			<td>Mastoparan-L</td>
+
+			<td>Vespula</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03337">PEP03337</a></td>
+
+			<td>Mastoparan-X</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03338">PEP03338</a></td>
+
+			<td>Mastoparan-C</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03339">PEP03339</a></td>
+
+			<td>Mastoparan-J</td>
+
+			<td>Polistes</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03340">PEP03340</a></td>
+
+			<td>Crabrolin</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03341">PEP03341</a></td>
+
+			<td>Alpha-conotoxin GI</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03342">PEP03342</a></td>
+
+			<td>Alpha-conotoxin GIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03343">PEP03343</a></td>
+
+			<td>Alpha-conotoxin GII</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03344">PEP03344</a></td>
+
+			<td>Alpha-conotoxin MI</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03386">PEP03386</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03391">PEP03391</a></td>
+
+			<td>Fibrinopeptide B</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03394">PEP03394</a></td>
+
+			<td>Fibrinogen beta chain</td>
+
+			<td>Canis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03433">PEP03433</a></td>
+
+			<td>Peptide D1A</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03470">PEP03470</a></td>
+
+			<td>Tryptophyllin-13</td>
+
+			<td>Phyllomedusa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03484">PEP03484</a></td>
+
+			<td>Mastoparan-M</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03493">PEP03493</a></td>
+
+			<td>WE-14</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03495">PEP03495</a></td>
+
+			<td>Urotensin-2A</td>
+
+			<td>Catostomus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03496">PEP03496</a></td>
+
+			<td>Urotensin-2B</td>
+
+			<td>Catostomus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03497">PEP03497</a></td>
+
+			<td>Urotensin II-alpha</td>
+
+			<td>Cyprinus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03499">PEP03499</a></td>
+
+			<td>Urotensin II-beta</td>
+
+			<td>Cyprinus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03543">PEP03543</a></td>
+
+			<td>WE-14</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03571">PEP03571</a></td>
+
+			<td>Endothelin-like peptide</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03575">PEP03575</a></td>
+
+			<td>C-terminal peptide</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03591">PEP03591</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Oryctolagus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03593">PEP03593</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Xenopus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03603">PEP03603</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Xenopus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03617">PEP03617</a></td>
+
+			<td>Dynorphin A</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03620">PEP03620</a></td>
+
+			<td>Rimorphin</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03630">PEP03630</a></td>
+
+			<td>Cholecystokinin-12</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03644">PEP03644</a></td>
+
+			<td>Calfluxin</td>
+
+			<td>Lymnaea</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03649">PEP03649</a></td>
+
+			<td>Urotensin II-gamma</td>
+
+			<td>Cyprinus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03653">PEP03653</a></td>
+
+			<td>C-terminal-flanking peptide</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03675">PEP03675</a></td>
+
+			<td>Gastrin</td>
+
+			<td>Cavia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03777">PEP03777</a></td>
+
+			<td>Kassinin</td>
+
+			<td>Kassina</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03779">PEP03779</a></td>
+
+			<td>Hylambates kassinin</td>
+
+			<td>Kassina</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03780">PEP03780</a></td>
+
+			<td>Hylambatin</td>
+
+			<td>Kassina</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03802">PEP03802</a></td>
+
+			<td>Alytesin</td>
+
+			<td>Alytes</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03819">PEP03819</a></td>
+
+			<td>Drosulfakinin-2</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03826">PEP03826</a></td>
+
+			<td>Cholecystokinin-12</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03881">PEP03881</a></td>
+
+			<td>somatostatin-14</td>
+
+			<td>Myoxocephalus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03907">PEP03907</a></td>
+
+			<td>Eumenine mastoparan-AF</td>
+
+			<td>Anterhynchium</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03931">PEP03931</a></td>
+
+			<td>Mu-conotoxin KIIIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03938">PEP03938</a></td>
+
+			<td>Alpha-conotoxin RgIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03945">PEP03945</a></td>
+
+			<td>Vespid chemotactic peptide 5e</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03946">PEP03946</a></td>
+
+			<td>Vespid chemotactic peptide 5f</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03947">PEP03947</a></td>
+
+			<td>Vespid chemotactic peptide 5g</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03948">PEP03948</a></td>
+
+			<td>Mastoparan-like peptide 12a</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03949">PEP03949</a></td>
+
+			<td>Mastoparan-like peptide 12b</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03955">PEP03955</a></td>
+
+			<td>Conotoxin mr3d</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03959">PEP03959</a></td>
+
+			<td>Conotoxin mr3g</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03961">PEP03961</a></td>
+
+			<td>Conotoxin Tx3.5</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03962">PEP03962</a></td>
+
+			<td>Conotoxin tx3b</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03963">PEP03963</a></td>
+
+			<td>Mastoparan-1</td>
+
+			<td>Polybia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03964">PEP03964</a></td>
+
+			<td>Mastoparan</td>
+
+			<td>Protonectarina</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03965">PEP03965</a></td>
+
+			<td>Mastoparan-A</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03966">PEP03966</a></td>
+
+			<td>Mastoparan-T</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03967">PEP03967</a></td>
+
+			<td>Mastoparan-V1</td>
+
+			<td>Vespula</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03968">PEP03968</a></td>
+
+			<td>Mastoparan-V2</td>
+
+			<td>Vespula</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03969">PEP03969</a></td>
+
+			<td>Polybia-CP</td>
+
+			<td>Polybia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03970">PEP03970</a></td>
+
+			<td>Protonectin</td>
+
+			<td>Protonectarina</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03980">PEP03980</a></td>
+
+			<td>Alpha-conotoxin AnIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03983">PEP03983</a></td>
+
+			<td>Alpha-conotoxin Ca1.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03984">PEP03984</a></td>
+
+			<td>Alpha-conotoxin Ca1.2</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03985">PEP03985</a></td>
+
+			<td>Alpha-conotoxin MIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP03986">PEP03986</a></td>
+
+			<td>Alpha-conotoxin MIB</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP03988">PEP03988</a></td>
+
+			<td>Alpha-conotoxin S1.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04004">PEP04004</a></td>
+
+			<td>Alpha-conotoxin Bn1.1/Bn1.2</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04005">PEP04005</a></td>
+
+			<td>Alpha-conotoxin Bn1.3</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04019">PEP04019</a></td>
+
+			<td>Gastrin-15</td>
+
+			<td>Macropus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04020">PEP04020</a></td>
+
+			<td>Gastrin-16</td>
+
+			<td>Macropus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04043">PEP04043</a></td>
+
+			<td>Conomap-Vt</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04068">PEP04068</a></td>
+
+			<td>T-1-conotoxin ViVA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04069">PEP04069</a></td>
+
+			<td>T-1-conotoxin ViVB</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04096">PEP04096</a></td>
+
+			<td>Alpha-conotoxin PIB</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04098">PEP04098</a></td>
+
+			<td>Conotoxin mr3c</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04099">PEP04099</a></td>
+
+			<td>Conotoxin mr3f</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04121">PEP04121</a></td>
+
+			<td>Mastoparan-like peptide 12d</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04137">PEP04137</a></td>
+
+			<td>Insect toxin PlIT</td>
+
+			<td>Parabuthus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04140">PEP04140</a></td>
+
+			<td>Insect toxin BmK AngP1</td>
+
+			<td>Mesobuthus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04151">PEP04151</a></td>
+
+			<td>Temporin-1DYa</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04163">PEP04163</a></td>
+
+			<td>T-1-conotoxin Pu5.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04166">PEP04166</a></td>
+
+			<td>T-1-conotoxin Pu5.4</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04168">PEP04168</a></td>
+
+			<td>T-1-conotoxin Pu5.6</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04169">PEP04169</a></td>
+
+			<td>T-1-conotoxin Vi1361</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04170">PEP04170</a></td>
+
+			<td>T-1-conotoxin Ca5.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04171">PEP04171</a></td>
+
+			<td>T-1-conotoxin Ca5.2</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04173">PEP04173</a></td>
+
+			<td>T-1-conotoxin Vi5.1a</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04174">PEP04174</a></td>
+
+			<td>T-1-conotoxin Vi5.1b</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04181">PEP04181</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04186">PEP04186</a></td>
+
+			<td>Gastrin</td>
+
+			<td>Chinchilla</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04212">PEP04212</a></td>
+
+			<td>WE-14</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04255">PEP04255</a></td>
+
+			<td>WE-14</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04258">PEP04258</a></td>
+
+			<td>Neurotensin</td>
+
+			<td>Canis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04319">PEP04319</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Mustela</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04331">PEP04331</a></td>
+
+			<td>Resact</td>
+
+			<td>Arbacia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04350">PEP04350</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04357">PEP04357</a></td>
+
+			<td>Ice-structuring glycoprotein 8R</td>
+
+			<td>Eleginus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04372">PEP04372</a></td>
+
+			<td>Neuropeptide I</td>
+
+			<td>Cardisoma</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04415">PEP04415</a></td>
+
+			<td>Allatostatin-7</td>
+
+			<td>Diploptera</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04425">PEP04425</a></td>
+
+			<td>Allatostatin-10</td>
+
+			<td>Diploptera</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04431">PEP04431</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Anas</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04444">PEP04444</a></td>
+
+			<td>C-terminal peptide</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04507">PEP04507</a></td>
+
+			<td>Levitide</td>
+
+			<td>Xenopus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04511">PEP04511</a></td>
+
+			<td>Neurotensin</td>
+
+			<td>Gallus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04526">PEP04526</a></td>
+
+			<td>Neuropeptide-glutamic acid-isoleucine</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04538">PEP04538</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Cavia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04541">PEP04541</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Gallus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04542">PEP04542</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Equus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04543">PEP04543</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Felis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04544">PEP04544</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Equus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04545">PEP04545</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Hylobates</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04546">PEP04546</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Mandrillus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04547">PEP04547</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Meles</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04549">PEP04549</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Mustela</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04550">PEP04550</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Odocoileus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04551">PEP04551</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04552">PEP04552</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Oryctolagus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04554">PEP04554</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Syncerus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04559">PEP04559</a></td>
+
+			<td>Fibrinopeptide B</td>
+
+			<td>Hylobates</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04560">PEP04560</a></td>
+
+			<td>Fibrinopeptide B</td>
+
+			<td>Mandrillus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04564">PEP04564</a></td>
+
+			<td>Fibrinopeptide B</td>
+
+			<td>Oryctolagus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04566">PEP04566</a></td>
+
+			<td>Fibrinopeptide B</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04572">PEP04572</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Ceratotherium</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04573">PEP04573</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Tapirus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04634">PEP04634</a></td>
+
+			<td>Alpha-conotoxin SI</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04649">PEP04649</a></td>
+
+			<td>Histatin-3 1/12</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04650">PEP04650</a></td>
+
+			<td>Histatin-3 1/13</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04655">PEP04655</a></td>
+
+			<td>Histatin-3 14/25</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04661">PEP04661</a></td>
+
+			<td>Histatin-3 13/24</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04662">PEP04662</a></td>
+
+			<td>Histatin-3 13/25</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04669">PEP04669</a></td>
+
+			<td>Histatin-3 12/24</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04670">PEP04670</a></td>
+
+			<td>Histatin-3 12/25</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04733">PEP04733</a></td>
+
+			<td>Vespid chemotactic peptide T</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04734">PEP04734</a></td>
+
+			<td>Vespid chemotactic peptide M</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04735">PEP04735</a></td>
+
+			<td>Vespid chemotactic peptide A</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04736">PEP04736</a></td>
+
+			<td>Vespid chemotactic peptide X</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04737">PEP04737</a></td>
+
+			<td>Vespid chemotactic peptide L</td>
+
+			<td>Vespula</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04738">PEP04738</a></td>
+
+			<td>Histamine-releasing peptide 2</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04739">PEP04739</a></td>
+
+			<td>Chemotactic peptide</td>
+
+			<td>Icaria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04740">PEP04740</a></td>
+
+			<td>Mastoparan</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04756">PEP04756</a></td>
+
+			<td>Neuropeptide-glutamic acid-valine</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04762">PEP04762</a></td>
+
+			<td>Peptide II</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04820">PEP04820</a></td>
+
+			<td>Heparin-binding growth factor 1</td>
+
+			<td>Canis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04849">PEP04849</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Myxine</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04860">PEP04860</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Cavia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04885">PEP04885</a></td>
+
+			<td>Neuropeptide-glutamic acid-valine</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04929">PEP04929</a></td>
+
+			<td>Platelet-derived growth factor B chain</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04935">PEP04935</a></td>
+
+			<td>Neurotensin</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04944">PEP04944</a></td>
+
+			<td>C-terminal-flanking peptide</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04951">PEP04951</a></td>
+
+			<td>Neuropeptide-glutamic acid-isoleucine</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04959">PEP04959</a></td>
+
+			<td>Locustapyrokinin-1</td>
+
+			<td>Locusta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP04977">PEP04977</a></td>
+
+			<td>Buccalin-D</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP04980">PEP04980</a></td>
+
+			<td>Buccalin gene-predicted acidic peptide B</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05012">PEP05012</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Loxodonta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05023">PEP05023</a></td>
+
+			<td>Bombesin</td>
+
+			<td>Bombina</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05028">PEP05028</a></td>
+
+			<td>Mastoparan-B</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05037">PEP05037</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Petromyzon</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05038">PEP05038</a></td>
+
+			<td>somatostatin-14</td>
+
+			<td>Platichthys</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05042">PEP05042</a></td>
+
+			<td>Allatotropin</td>
+
+			<td>Manduca</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05051">PEP05051</a></td>
+
+			<td>Urotensin-2</td>
+
+			<td>Platichthys</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05066">PEP05066</a></td>
+
+			<td>Cathelicidin-1</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05075">PEP05075</a></td>
+
+			<td>Locustamyotropin-1</td>
+
+			<td>Locusta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05106">PEP05106</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05128">PEP05128</a></td>
+
+			<td>Cholecystokinin-12</td>
+
+			<td>Macaca</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05138">PEP05138</a></td>
+
+			<td>Peptide BAM-1745</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05139">PEP05139</a></td>
+
+			<td>cerebellin</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05141">PEP05141</a></td>
+
+			<td>Cerebellin</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05201">PEP05201</a></td>
+
+			<td>AFGP8</td>
+
+			<td>Notothenia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05202">PEP05202</a></td>
+
+			<td>AFGP8</td>
+
+			<td>Notothenia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05205">PEP05205</a></td>
+
+			<td>AFGP8</td>
+
+			<td>Notothenia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05207">PEP05207</a></td>
+
+			<td>AFGP8-like</td>
+
+			<td>Notothenia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05208">PEP05208</a></td>
+
+			<td>AFGP8</td>
+
+			<td>Notothenia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05209">PEP05209</a></td>
+
+			<td>AFGP8</td>
+
+			<td>Notothenia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05274">PEP05274</a></td>
+
+			<td>WE-14</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05325">PEP05325</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05338">PEP05338</a></td>
+
+			<td>C-terminal peptide</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05380">PEP05380</a></td>
+
+			<td>Alpha-conotoxin SIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05384">PEP05384</a></td>
+
+			<td>Guanylin</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05507">PEP05507</a></td>
+
+			<td>Neurotensin</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05529">PEP05529</a></td>
+
+			<td>Neurotensin</td>
+
+			<td>Trichosurus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05542">PEP05542</a></td>
+
+			<td>Protegrin-2</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05547">PEP05547</a></td>
+
+			<td>Hemolytic protein A1</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05548">PEP05548</a></td>
+
+			<td>Hemolytic protein B9</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05551">PEP05551</a></td>
+
+			<td>Neurotensin</td>
+
+			<td>Cavia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05562">PEP05562</a></td>
+
+			<td>Cathelicidin-4</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05569">PEP05569</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Gallus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05584">PEP05584</a></td>
+
+			<td>Guanylin</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05595">PEP05595</a></td>
+
+			<td>Gastrin</td>
+
+			<td>Didelphis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05598">PEP05598</a></td>
+
+			<td>Urotensin-2</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05618">PEP05618</a></td>
+
+			<td>Neuropeptide-glutamic acid-valine</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05664">PEP05664</a></td>
+
+			<td>Urotensin-2</td>
+
+			<td>Scyliorhinus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05726">PEP05726</a></td>
+
+			<td>Orcokinin</td>
+
+			<td>Orconectes</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05743">PEP05743</a></td>
+
+			<td>Lom-AG-myotropin-1</td>
+
+			<td>Locusta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05744">PEP05744</a></td>
+
+			<td>Lom-AG-myotropin-2</td>
+
+			<td>Locusta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05762">PEP05762</a></td>
+
+			<td>Granuliberin-R</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05780">PEP05780</a></td>
+
+			<td>Ranamargarin</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05797">PEP05797</a></td>
+
+			<td>Locustamyotropin-4</td>
+
+			<td>Locusta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05800">PEP05800</a></td>
+
+			<td>Neosulfakinin-2</td>
+
+			<td>Sarcophaga</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05809">PEP05809</a></td>
+
+			<td>Cholecystokinin-12</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05823">PEP05823</a></td>
+
+			<td>Neurotensin</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05825">PEP05825</a></td>
+
+			<td>C-terminal-flanking peptide</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05831">PEP05831</a></td>
+
+			<td>C-terminal-flanking peptide</td>
+
+			<td>Oryctolagus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05838">PEP05838</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Anolis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05846">PEP05846</a></td>
+
+			<td>Callatostatin-1</td>
+
+			<td>Calliphora</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05847">PEP05847</a></td>
+
+			<td>Callatostatin-2</td>
+
+			<td>Calliphora</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05853">PEP05853</a></td>
+
+			<td>Neuropeptide AF10</td>
+
+			<td>Ascaris</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05878">PEP05878</a></td>
+
+			<td>CalliMIRFamide-1</td>
+
+			<td>Calliphora</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05911">PEP05911</a></td>
+
+			<td>Allatostatin</td>
+
+			<td>Manduca</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05932">PEP05932</a></td>
+
+			<td>Mastoparan</td>
+
+			<td>Parapolybia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05933">PEP05933</a></td>
+
+			<td>Waspkinin</td>
+
+			<td>Parapolybia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05934">PEP05934</a></td>
+
+			<td>Chemotactic peptide</td>
+
+			<td>Parapolybia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05949">PEP05949</a></td>
+
+			<td>Bombesin-like peptide L</td>
+
+			<td>Pseudophryne</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP05952">PEP05952</a></td>
+
+			<td>Neurophysin VT</td>
+
+			<td>Bufo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP05975">PEP05975</a></td>
+
+			<td>FMRFamide-like neuropeptide AF11</td>
+
+			<td>Ascaris</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06018">PEP06018</a></td>
+
+			<td>Leiurutoxin-3</td>
+
+			<td>Leiurus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06069">PEP06069</a></td>
+
+			<td>Myoactive tetradecapeptide</td>
+
+			<td>Eisenia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06070">PEP06070</a></td>
+
+			<td>Myoactive tetradecapeptide</td>
+
+			<td>Pheretima</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06077">PEP06077</a></td>
+
+			<td>Sulfakinin</td>
+
+			<td>Locusta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06184">PEP06184</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Canis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06253">PEP06253</a></td>
+
+			<td>Alpha-conotoxin ImI</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06254">PEP06254</a></td>
+
+			<td>Alpha-conotoxin PnIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06255">PEP06255</a></td>
+
+			<td>Alpha-conotoxin PnIB</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06345">PEP06345</a></td>
+
+			<td>Cathelicidin-1</td>
+
+			<td>Ovis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06433">PEP06433</a></td>
+
+			<td>Guanylin</td>
+
+			<td>Didelphis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06453">PEP06453</a></td>
+
+			<td>Caeridin-2</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06454">PEP06454</a></td>
+
+			<td>Caeridin-3</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06468">PEP06468</a></td>
+
+			<td>Cortistatin-14</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06482">PEP06482</a></td>
+
+			<td>Alpha-conotoxin MII</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06484">PEP06484</a></td>
+
+			<td>Alpha-conotoxin EpI</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06485">PEP06485</a></td>
+
+			<td>Alpha-conotoxin AuIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06486">PEP06486</a></td>
+
+			<td>Alpha-conotoxin AuIB</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06487">PEP06487</a></td>
+
+			<td>Alpha-conotoxin AuIC</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06516">PEP06516</a></td>
+
+			<td>Temporin-A</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06517">PEP06517</a></td>
+
+			<td>Temporin-C</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06518">PEP06518</a></td>
+
+			<td>Temporin-D</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06519">PEP06519</a></td>
+
+			<td>Temporin-E</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06520">PEP06520</a></td>
+
+			<td>Temporin-F</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06525">PEP06525</a></td>
+
+			<td>Neuropeptide-glutamic acid-isoleucine</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06529">PEP06529</a></td>
+
+			<td>Neuropeptide-glutamic acid-valine</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06532">PEP06532</a></td>
+
+			<td>Alpha-conotoxin CnIB</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06533">PEP06533</a></td>
+
+			<td>Alpha-conotoxin CnIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06538">PEP06538</a></td>
+
+			<td>Temporin-L</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06540">PEP06540</a></td>
+
+			<td>Vespulakinin-2</td>
+
+			<td>Vespula</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06554">PEP06554</a></td>
+
+			<td>Kinin-like peptide-S</td>
+
+			<td>Scaptocosa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06571">PEP06571</a></td>
+
+			<td>Conotoxin BeTXIa</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06572">PEP06572</a></td>
+
+			<td>Conotoxin BeTXIb</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06595">PEP06595</a></td>
+
+			<td>Conorfamide-Sr1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06598">PEP06598</a></td>
+
+			<td>T-2-conotoxin MrIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06599">PEP06599</a></td>
+
+			<td>T-2-conotoxin CMrX</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06600">PEP06600</a></td>
+
+			<td>T-2-conotoxin MrIB</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06602">PEP06602</a></td>
+
+			<td>Conotoxin QcIIIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06603">PEP06603</a></td>
+
+			<td>Conotoxin QcIIIB</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06607">PEP06607</a></td>
+
+			<td>Conotoxin tx3c</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06632">PEP06632</a></td>
+
+			<td>Short neurotoxin N2</td>
+
+			<td>Pseudonaja</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06689">PEP06689</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06692">PEP06692</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06725">PEP06725</a></td>
+
+			<td>Toxin TdII-2</td>
+
+			<td>Tityus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06729">PEP06729</a></td>
+
+			<td>Toxin 9</td>
+
+			<td>Centruroides</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06805">PEP06805</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06807">PEP06807</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Macaca</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06809">PEP06809</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Equus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06810">PEP06810</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Camelus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06811">PEP06811</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Alligator</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06812">PEP06812</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Trachemys</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06879">PEP06879</a></td>
+
+			<td>Caeridin-1.1/1.2/1.3</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06880">PEP06880</a></td>
+
+			<td>Caeridin-1.1/1.2/1.3</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06881">PEP06881</a></td>
+
+			<td>Caeridin-1.1/1.2/1.3</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06882">PEP06882</a></td>
+
+			<td>Caeridin-1.1/1.2/1.3</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06887">PEP06887</a></td>
+
+			<td>Caerin-1.1.7</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06888">PEP06888</a></td>
+
+			<td>Caerin-1.1.6</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06889">PEP06889</a></td>
+
+			<td>Caerin-1.1.5</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06892">PEP06892</a></td>
+
+			<td>Caerin-1.1.3</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06897">PEP06897</a></td>
+
+			<td>Caeridin-1.4</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06898">PEP06898</a></td>
+
+			<td>Caeridin-1.4</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06919">PEP06919</a></td>
+
+			<td>cerebellin</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06920">PEP06920</a></td>
+
+			<td>Cerebellin-1</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06921">PEP06921</a></td>
+
+			<td>cerebellin</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06923">PEP06923</a></td>
+
+			<td>Cerebellin</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP06996">PEP06996</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Balaenoptera</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP06999">PEP06999</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Balaenoptera</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07014">PEP07014</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Macaca</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07015">PEP07015</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Macaca</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07016">PEP07016</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Macaca</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07017">PEP07017</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Cercopithecus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07018">PEP07018</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Erythrocebus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07019">PEP07019</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Papio</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07020">PEP07020</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Papio</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07021">PEP07021</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Theropithecus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07033">PEP07033</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Vulpes</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07034">PEP07034</a></td>
+
+			<td>Fibrinogen alpha chain</td>
+
+			<td>Canis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07035">PEP07035</a></td>
+
+			<td>Fibrinopeptide A</td>
+
+			<td>Canis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07083">PEP07083</a></td>
+
+			<td>Bradykinin-potentiating peptide S3</td>
+
+			<td>Bothrops</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07111">PEP07111</a></td>
+
+			<td>Aurein-2.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07112">PEP07112</a></td>
+
+			<td>Aurein-2.1.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07113">PEP07113</a></td>
+
+			<td>Aurein-2.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07114">PEP07114</a></td>
+
+			<td>Aurein-2.1.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07115">PEP07115</a></td>
+
+			<td>Aurein-2.5</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07116">PEP07116</a></td>
+
+			<td>Aurein-2.5</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07117">PEP07117</a></td>
+
+			<td>Aurein-3.1.2</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07118">PEP07118</a></td>
+
+			<td>Aurein-3.1.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07120">PEP07120</a></td>
+
+			<td>Aurein-3.1.2</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07121">PEP07121</a></td>
+
+			<td>Aurein-3.1.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07135">PEP07135</a></td>
+
+			<td>Mastoparan-1</td>
+
+			<td>Protopolybia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07136">PEP07136</a></td>
+
+			<td>Mastoparan-2</td>
+
+			<td>Protopolybia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07137">PEP07137</a></td>
+
+			<td>Mastoparan-3</td>
+
+			<td>Protopolybia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07177">PEP07177</a></td>
+
+			<td>Somatostatin-1</td>
+
+			<td>Myoxocephalus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07178">PEP07178</a></td>
+
+			<td>Somatostatin-1</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07179">PEP07179</a></td>
+
+			<td>Somatostatin-1</td>
+
+			<td>Anguilla</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07191">PEP07191</a></td>
+
+			<td>Neuropeptide-glutamic acid-valine</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07194">PEP07194</a></td>
+
+			<td>Neuropeptide-glutamic acid-valine</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07197">PEP07197</a></td>
+
+			<td>Neuropeptide-glutamic acid-valine</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07210">PEP07210</a></td>
+
+			<td>Alpha-pompilidotoxin</td>
+
+			<td>Anoplius</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07211">PEP07211</a></td>
+
+			<td>Beta-pompilidotoxin</td>
+
+			<td>Batozonellus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07212">PEP07212</a></td>
+
+			<td>Agelaia-mastoparan</td>
+
+			<td>Agelaia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07213">PEP07213</a></td>
+
+			<td>Protonectin</td>
+
+			<td>Agelaia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07223">PEP07223</a></td>
+
+			<td>Alpha-conotoxin BuIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07227">PEP07227</a></td>
+
+			<td>Alpha-conotoxin Vc1A</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07247">PEP07247</a></td>
+
+			<td>T-1-conotoxin Vc5.3</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07255">PEP07255</a></td>
+
+			<td>Grammistin Gs B</td>
+
+			<td>Grammistes</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07256">PEP07256</a></td>
+
+			<td>Grammistin Gs D</td>
+
+			<td>Grammistes</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07257">PEP07257</a></td>
+
+			<td>Grammistin Gs E</td>
+
+			<td>Grammistes</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07258">PEP07258</a></td>
+
+			<td>Grammistin Pp 1</td>
+
+			<td>Pogonoperca</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07259">PEP07259</a></td>
+
+			<td>Grammistin Pp 2a</td>
+
+			<td>Pogonoperca</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07260">PEP07260</a></td>
+
+			<td>Grammistin Pp 2b</td>
+
+			<td>Pogonoperca</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07277">PEP07277</a></td>
+
+			<td>Uroguanylin</td>
+
+			<td>Cavia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07294">PEP07294</a></td>
+
+			<td>Guanylin</td>
+
+			<td>Cavia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07295">PEP07295</a></td>
+
+			<td>Uroguanylin</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07349">PEP07349</a></td>
+
+			<td>Temporin-B</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07350">PEP07350</a></td>
+
+			<td>Temporin-G</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07355">PEP07355</a></td>
+
+			<td>Guanylin</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07384">PEP07384</a></td>
+
+			<td>Lymna-DF-amide 1</td>
+
+			<td>Lymnaea</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07385">PEP07385</a></td>
+
+			<td>Lymna-DF-amide 2</td>
+
+			<td>Lymnaea</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07386">PEP07386</a></td>
+
+			<td>Lymna-DF-amide 3</td>
+
+			<td>Lymnaea</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07387">PEP07387</a></td>
+
+			<td>Lymna-DF-amide 4</td>
+
+			<td>Lymnaea</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07388">PEP07388</a></td>
+
+			<td>Lymna-DF-amide 5</td>
+
+			<td>Lymnaea</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07421">PEP07421</a></td>
+
+			<td>Metalnikowin-1</td>
+
+			<td>Palomena</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07422">PEP07422</a></td>
+
+			<td>Metalnikowin-2A</td>
+
+			<td>Palomena</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07423">PEP07423</a></td>
+
+			<td>Metalnikowin-2B</td>
+
+			<td>Palomena</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07424">PEP07424</a></td>
+
+			<td>Metalnikowin-3</td>
+
+			<td>Palomena</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07431">PEP07431</a></td>
+
+			<td>Pedin</td>
+
+			<td>Hydra</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07447">PEP07447</a></td>
+
+			<td>Testis ecdysiotropin peptide A</td>
+
+			<td>Lymantria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07449">PEP07449</a></td>
+
+			<td>Testis ecdysiotropin peptide C</td>
+
+			<td>Lymantria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07450">PEP07450</a></td>
+
+			<td>Testis ecdysiotropin peptide E</td>
+
+			<td>Lymantria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07465">PEP07465</a></td>
+
+			<td>Urotensin-2</td>
+
+			<td>Polyodon</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07471">PEP07471</a></td>
+
+			<td>somatostatin-14</td>
+
+			<td>Oreochromis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07505">PEP07505</a></td>
+
+			<td>Salmocidin-1</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07512">PEP07512</a></td>
+
+			<td>Formaecin-2</td>
+
+			<td>Myrmecia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07513">PEP07513</a></td>
+
+			<td>Formaecin-1</td>
+
+			<td>Myrmecia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07532">PEP07532</a></td>
+
+			<td>Periviscerokinin-2</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07578">PEP07578</a></td>
+
+			<td>Tachykinin-related peptide 10</td>
+
+			<td>Leucophaea</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07579">PEP07579</a></td>
+
+			<td>Brain peptide 37F3</td>
+
+			<td>Leucophaea</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07580">PEP07580</a></td>
+
+			<td>T-1-conotoxin TxIX</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07591">PEP07591</a></td>
+
+			<td>Neurotensin</td>
+
+			<td>Bufo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07613">PEP07613</a></td>
+
+			<td>Leucokinin</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07614">PEP07614</a></td>
+
+			<td>Citropin-1.1.2</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07615">PEP07615</a></td>
+
+			<td>Citropin-1.1.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07616">PEP07616</a></td>
+
+			<td>Citropin-1.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07620">PEP07620</a></td>
+
+			<td>Citropin-1.2.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07622">PEP07622</a></td>
+
+			<td>Citropin-1.2</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07625">PEP07625</a></td>
+
+			<td>Citropin-1.3</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07661">PEP07661</a></td>
+
+			<td>Frenatin-1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07662">PEP07662</a></td>
+
+			<td>Frenatin-2</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07674">PEP07674</a></td>
+
+			<td>Uperin-5.1</td>
+
+			<td>Uperoleia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07684">PEP07684</a></td>
+
+			<td>Uperin-7.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07685">PEP07685</a></td>
+
+			<td>Caeridin-7.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07686">PEP07686</a></td>
+
+			<td>Fletcherin</td>
+
+			<td>Limnodynastes</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07699">PEP07699</a></td>
+
+			<td>Caeridin-4</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07700">PEP07700</a></td>
+
+			<td>Caeridin-5</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07701">PEP07701</a></td>
+
+			<td>Caeridin-6</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07704">PEP07704</a></td>
+
+			<td>Dynastin-3</td>
+
+			<td>Limnodynastes</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07708">PEP07708</a></td>
+
+			<td>Dynastin-7</td>
+
+			<td>Limnodynastes</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07717">PEP07717</a></td>
+
+			<td>Electrin-2.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07718">PEP07718</a></td>
+
+			<td>Electrin-2.2</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07743">PEP07743</a></td>
+
+			<td>Salmocidin-2A</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07744">PEP07744</a></td>
+
+			<td>Salmocidin-2B</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07745">PEP07745</a></td>
+
+			<td>Salmocidin-3</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07775">PEP07775</a></td>
+
+			<td>Aurein-1.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07776">PEP07776</a></td>
+
+			<td>Aurein-1.2</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07777">PEP07777</a></td>
+
+			<td>Aurein-2.2.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07778">PEP07778</a></td>
+
+			<td>Aurein-2.2</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07779">PEP07779</a></td>
+
+			<td>Aurein-2.3</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07780">PEP07780</a></td>
+
+			<td>Aurein-2.4.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07781">PEP07781</a></td>
+
+			<td>Aurein-2.4</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07782">PEP07782</a></td>
+
+			<td>Aurein-2.6</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07783">PEP07783</a></td>
+
+			<td>Aurein-3.3.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07806">PEP07806</a></td>
+
+			<td>Tachykinin-1</td>
+
+			<td>Schistocerca</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07813">PEP07813</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07815">PEP07815</a></td>
+
+			<td>Tigerinin-2</td>
+
+			<td>Hoplobatrachus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07816">PEP07816</a></td>
+
+			<td>Tigerinin-3</td>
+
+			<td>Hoplobatrachus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07828">PEP07828</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07831">PEP07831</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07833">PEP07833</a></td>
+
+			<td>Peptide hormone 2</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07837">PEP07837</a></td>
+
+			<td>Immune-induced peptide 4</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07838">PEP07838</a></td>
+
+			<td>Immune-induced peptide 1</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07852">PEP07852</a></td>
+
+			<td>Ranatuerin-5</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07853">PEP07853</a></td>
+
+			<td>Ranatuerin-6</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07854">PEP07854</a></td>
+
+			<td>Ranatuerin-7</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07855">PEP07855</a></td>
+
+			<td>Ranatuerin-8</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07856">PEP07856</a></td>
+
+			<td>Ranatuerin-9</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07862">PEP07862</a></td>
+
+			<td>Temporin-1La</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07863">PEP07863</a></td>
+
+			<td>Temporin-1Lb</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07864">PEP07864</a></td>
+
+			<td>Temporin-1Lc</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07878">PEP07878</a></td>
+
+			<td>Temporin-1P</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07889">PEP07889</a></td>
+
+			<td>Temporin-1Ca</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07890">PEP07890</a></td>
+
+			<td>Temporin-1Cb</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07891">PEP07891</a></td>
+
+			<td>Temporin-1Cc</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07892">PEP07892</a></td>
+
+			<td>Temporin-1Cd</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07893">PEP07893</a></td>
+
+			<td>Temporin-1Ce</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07905">PEP07905</a></td>
+
+			<td>Antidiuretic factor A</td>
+
+			<td>Tenebrio</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07937">PEP07937</a></td>
+
+			<td>Antidiuretic factor B</td>
+
+			<td>Tenebrio</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07975">PEP07975</a></td>
+
+			<td>Oncorhyncin-1</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07980">PEP07980</a></td>
+
+			<td>Japonicin-1</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07982">PEP07982</a></td>
+
+			<td>Temporin-1Ja</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP07993">PEP07993</a></td>
+
+			<td>FMRFamide-like neuropeptide FLP7</td>
+
+			<td>Penaeus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP07996">PEP07996</a></td>
+
+			<td>Neb-FIRFamide-1</td>
+
+			<td>Sarcophaga</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08008">PEP08008</a></td>
+
+			<td>Alloferon-2</td>
+
+			<td>Calliphora</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08009">PEP08009</a></td>
+
+			<td>Alloferon-1</td>
+
+			<td>Calliphora</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08043">PEP08043</a></td>
+
+			<td>SepOvotropin</td>
+
+			<td>Sepia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08071">PEP08071</a></td>
+
+			<td>Cd-146 peptide</td>
+
+			<td>Cyphononyx</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08078">PEP08078</a></td>
+
+			<td>Halocidin subunit B</td>
+
+			<td>Halocynthia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08171">PEP08171</a></td>
+
+			<td>Temporin-1BYa</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08184">PEP08184</a></td>
+
+			<td>Bombesin-like peptide 2</td>
+
+			<td>Bombina</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08185">PEP08185</a></td>
+
+			<td>Bombesin-like peptide 1</td>
+
+			<td>Bombina</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08186">PEP08186</a></td>
+
+			<td>Bombesin</td>
+
+			<td>Bombina</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08187">PEP08187</a></td>
+
+			<td>Bombesin</td>
+
+			<td>Bombina</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08188">PEP08188</a></td>
+
+			<td>Tryptophyllin-13</td>
+
+			<td>Bombina</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08208">PEP08208</a></td>
+
+			<td>Dahlein-1.2</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08218">PEP08218</a></td>
+
+			<td>Dahlein-1.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08227">PEP08227</a></td>
+
+			<td>Hylaseptin-P1</td>
+
+			<td>Hyla</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08230">PEP08230</a></td>
+
+			<td>Periviscerokinin-1</td>
+
+			<td>Sarcophaga</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08232">PEP08232</a></td>
+
+			<td>Periviscerokinin-1</td>
+
+			<td>Musca</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08234">PEP08234</a></td>
+
+			<td>Pyrokinin</td>
+
+			<td>Sarcophaga</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08235">PEP08235</a></td>
+
+			<td>Pyrokinin</td>
+
+			<td>Musca</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08236">PEP08236</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08237">PEP08237</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08238">PEP08238</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08239">PEP08239</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Neostylopyga</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08240">PEP08240</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Celatoblatta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08241">PEP08241</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Deropeltis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08242">PEP08242</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Deropeltis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08243">PEP08243</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Deropeltis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08244">PEP08244</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Pseudoderopeltis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08245">PEP08245</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Pseudoderopeltis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08246">PEP08246</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08247">PEP08247</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Celatoblatta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08248">PEP08248</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Eurycotis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08249">PEP08249</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Pseudoderopeltis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08251">PEP08251</a></td>
+
+			<td>Periviscerokinin-2 type 1</td>
+
+			<td>Celatoblatta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08252">PEP08252</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Eurycotis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08254">PEP08254</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Pseudoderopeltis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08256">PEP08256</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Pseudoderopeltis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08258">PEP08258</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Deropeltis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08260">PEP08260</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Deropeltis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08262">PEP08262</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Deropeltis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08271">PEP08271</a></td>
+
+			<td>Polybine-1</td>
+
+			<td>Polybia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08272">PEP08272</a></td>
+
+			<td>Polybine-2</td>
+
+			<td>Polybia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08273">PEP08273</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08274">PEP08274</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Blatta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08275">PEP08275</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Shelfordella</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08276">PEP08276</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Neostylopyga</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08277">PEP08277</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Eurycotis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08278">PEP08278</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Deropeltis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08279">PEP08279</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Deropeltis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08280">PEP08280</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Deropeltis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08281">PEP08281</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Pseudoderopeltis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08282">PEP08282</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Pseudoderopeltis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08283">PEP08283</a></td>
+
+			<td>Pyrokinin-4</td>
+
+			<td>Pseudoderopeltis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08284">PEP08284</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Blatta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08285">PEP08285</a></td>
+
+			<td>Pyrokinin-6</td>
+
+			<td>Shelfordella</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08294">PEP08294</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08295">PEP08295</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08296">PEP08296</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08297">PEP08297</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Blatta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08298">PEP08298</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Shelfordella</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08299">PEP08299</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Neostylopyga</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08300">PEP08300</a></td>
+
+			<td>Periviscerokinin-2.1</td>
+
+			<td>Pseudoderopeltis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08306">PEP08306</a></td>
+
+			<td>Neurotoxin T2 B chain</td>
+
+			<td>Bungarus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08307">PEP08307</a></td>
+
+			<td>Neurotoxin T1-1 B chain</td>
+
+			<td>Bungarus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08308">PEP08308</a></td>
+
+			<td>Neurotoxin T1-2 B chain</td>
+
+			<td>Bungarus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08319">PEP08319</a></td>
+
+			<td>Antimicrobial peptide 1</td>
+
+			<td>Phyllomedusa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08348">PEP08348</a></td>
+
+			<td>Periviscerokinin-1</td>
+
+			<td>Derocalymma</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08349">PEP08349</a></td>
+
+			<td>Periviscerokinin-2</td>
+
+			<td>Derocalymma</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08390">PEP08390</a></td>
+
+			<td>Toxin Mo1659</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08395">PEP08395</a></td>
+
+			<td>1370.6 Da venom vasodilator peptide</td>
+
+			<td>Bothrops</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08396">PEP08396</a></td>
+
+			<td>1370.6 Da venom vasodilator peptide</td>
+
+			<td>Bothrops</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08409">PEP08409</a></td>
+
+			<td>Cysteine-rich venom protein 23</td>
+
+			<td>Naja</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08413">PEP08413</a></td>
+
+			<td>Cysteine-rich venom protein 23</td>
+
+			<td>Naja</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08420">PEP08420</a></td>
+
+			<td>Bradykinin-like peptide AV-12</td>
+
+			<td>Ascaphus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08425">PEP08425</a></td>
+
+			<td>Skin secreted peptide 3</td>
+
+			<td>Ascaphus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08427">PEP08427</a></td>
+
+			<td>Skin secreted peptide 5</td>
+
+			<td>Ascaphus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08439">PEP08439</a></td>
+
+			<td>T-1-conotoxin sr5a</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08441">PEP08441</a></td>
+
+			<td>Temporin-GH</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08445">PEP08445</a></td>
+
+			<td>Venom protein MP-1</td>
+
+			<td>Polybia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08446">PEP08446</a></td>
+
+			<td>Venom protein CP</td>
+
+			<td>Polybia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08461">PEP08461</a></td>
+
+			<td>Venom protein 13b</td>
+
+			<td>Polybia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08462">PEP08462</a></td>
+
+			<td>Venom protein 13a</td>
+
+			<td>Polybia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08476">PEP08476</a></td>
+
+			<td>Tryptophyllin-9</td>
+
+			<td>Phyllomedusa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08477">PEP08477</a></td>
+
+			<td>Tryptophyllin-10</td>
+
+			<td>Phyllomedusa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08483">PEP08483</a></td>
+
+			<td>Hyposin-3</td>
+
+			<td>Phyllomedusa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08484">PEP08484</a></td>
+
+			<td>Hyposin-4</td>
+
+			<td>Phyllomedusa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08485">PEP08485</a></td>
+
+			<td>Hyposin-5</td>
+
+			<td>Phyllomedusa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08489">PEP08489</a></td>
+
+			<td>Alpha-conotoxin Reg1b/Reg1c</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08490">PEP08490</a></td>
+
+			<td>Alpha-conotoxin Reg1d</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08491">PEP08491</a></td>
+
+			<td>Alpha-conotoxin Reg1e</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08492">PEP08492</a></td>
+
+			<td>Alpha-conotoxin Reg1f</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08493">PEP08493</a></td>
+
+			<td>Alpha-conotoxin Reg2a</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08495">PEP08495</a></td>
+
+			<td>Conotoxin Reg12e</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08497">PEP08497</a></td>
+
+			<td>Conotoxin Reg12g</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08499">PEP08499</a></td>
+
+			<td>Conotoxin Reg12i</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08543">PEP08543</a></td>
+
+			<td>Bradykinin-potentiating peptide 12c</td>
+
+			<td>Bothrops</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08544">PEP08544</a></td>
+
+			<td>Bradykinin-potentiating peptide 14a</td>
+
+			<td>Bothrops</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08552">PEP08552</a></td>
+
+			<td>Bradykinin-potentiating peptide 12a</td>
+
+			<td>Bothrops</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08553">PEP08553</a></td>
+
+			<td>Bradykinin-potentiating peptide 13b</td>
+
+			<td>Bothrops</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08574">PEP08574</a></td>
+
+			<td>Neurotoxin Oc F40-4</td>
+
+			<td>Oligoctenus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08581">PEP08581</a></td>
+
+			<td>Cardiotoxin-1f</td>
+
+			<td>Naja</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08588">PEP08588</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Acipenser</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08592">PEP08592</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08593">PEP08593</a></td>
+
+			<td>somatostatin-14</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08673">PEP08673</a></td>
+
+			<td>Guanylin</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08685">PEP08685</a></td>
+
+			<td>Neuropeptide-like peptide 36</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08691">PEP08691</a></td>
+
+			<td>Melanotropin alpha 1</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08700">PEP08700</a></td>
+
+			<td>Melanotropin alpha 2</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08756">PEP08756</a></td>
+
+			<td>antibacterial peptide</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP08970">PEP08970</a></td>
+
+			<td>Corticotropin releasing hormone I</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP08972">PEP08972</a></td>
+
+			<td>phenylalanine-rich peptide-1</td>
+
+			<td>Phyllomedusa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09027">PEP09027</a></td>
+
+			<td>Interleukin-2</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09039">PEP09039</a></td>
+
+			<td>Insulin-like growth factor I</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09049">PEP09049</a></td>
+
+			<td>chensirin-3</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09098">PEP09098</a></td>
+
+			<td>Mlpt peptide 3</td>
+
+			<td>Tribolium</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09099">PEP09099</a></td>
+
+			<td>Mlpt peptide 2</td>
+
+			<td>Tribolium</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09149">PEP09149</a></td>
+
+			<td>Angiotensin</td>
+
+			<td>Theromyzon</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09153">PEP09153</a></td>
+
+			<td>Cerebral peptide 1</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09154">PEP09154</a></td>
+
+			<td>C-terminal peptide</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09158">PEP09158</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09218">PEP09218</a></td>
+
+			<td>Kisspeptin-14</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09221">PEP09221</a></td>
+
+			<td>Kisspeptin-13</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09265">PEP09265</a></td>
+
+			<td>Uroguanylin</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09363">PEP09363</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09364">PEP09364</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09365">PEP09365</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09366">PEP09366</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09367">PEP09367</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09375">PEP09375</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09376">PEP09376</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09395">PEP09395</a></td>
+
+			<td>T-1-conotoxin Lt5.10</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09396">PEP09396</a></td>
+
+			<td>T-1-conotoxin Lt5.11</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09397">PEP09397</a></td>
+
+			<td>T-1-conotoxin Lt5.8</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09398">PEP09398</a></td>
+
+			<td>T-1-conotoxin Lt5.7</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09400">PEP09400</a></td>
+
+			<td>T-1-conotoxin Lt5.6</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09401">PEP09401</a></td>
+
+			<td>T-1-conotoxin Lt5.2</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09403">PEP09403</a></td>
+
+			<td>T-1-conotoxin Lt5.4</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09404">PEP09404</a></td>
+
+			<td>T-1-conotoxin Lt5.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09597">PEP09597</a></td>
+
+			<td>Temporin-1V</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09663">PEP09663</a></td>
+
+			<td>Alpha-conotoxin PeIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09719">PEP09719</a></td>
+
+			<td>Cholecystokinin</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09734">PEP09734</a></td>
+
+			<td>Interleukin 1 beta</td>
+
+			<td>Ovis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09860">PEP09860</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09864">PEP09864</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09867">PEP09867</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09916">PEP09916</a></td>
+
+			<td>ASGGMRNALVRF-amide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09918">PEP09918</a></td>
+
+			<td>SPLDEEDFAPESPLQ-amide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09929">PEP09929</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09932">PEP09932</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09935">PEP09935</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09939">PEP09939</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09941">PEP09941</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09942">PEP09942</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09943">PEP09943</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09944">PEP09944</a></td>
+
+			<td>ASEDALFGTMRF-amide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09946">PEP09946</a></td>
+
+			<td>FMRF-like neuropeptide flp-3-6</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP09947">PEP09947</a></td>
+
+			<td>NPENDTPFGTMRF-amide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP09949">PEP09949</a></td>
+
+			<td>SADDSAPFGTMRF-amide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP10002">PEP10002</a></td>
+
+			<td>Myoactive GGNG-related peptide</td>
+
+			<td>Hirudo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP10035">PEP10035</a></td>
+
+			<td>Potential</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP10037">PEP10037</a></td>
+
+			<td>Potential</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP10041">PEP10041</a></td>
+
+			<td>Potential</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP10071">PEP10071</a></td>
+
+			<td>VD1/RPD2 alpha peptide</td>
+
+			<td>Lymnaea</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP10072">PEP10072</a></td>
+
+			<td>VD1/RPD2 alpha peptide</td>
+
+			<td>Lymnaea</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP10116">PEP10116</a></td>
+
+			<td>Bradykinin-potentiating peptide 4</td>
+
+			<td>Lachesis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP10117">PEP10117</a></td>
+
+			<td>Bradykinin-potentiating peptide 2</td>
+
+			<td>Lachesis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP10150">PEP10150</a></td>
+
+			<td>Uroguanylin</td>
+
+			<td>Didelphis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP10351">PEP10351</a></td>
+
+			<td>Contulakin-Lt1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP10352">PEP10352</a></td>
+
+			<td>Contulakin-Lt2</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP10359">PEP10359</a></td>
+
+			<td>Conotoxin Lt3.5</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP10360">PEP10360</a></td>
+
+			<td>Conotoxin Lt3.4</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP10361">PEP10361</a></td>
+
+			<td>Conotoxin Lt3.3</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP10362">PEP10362</a></td>
+
+			<td>Conotoxin Lt3.2</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP10363">PEP10363</a></td>
+
+			<td>Conotoxin Lt3.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP10373">PEP10373</a></td>
+
+			<td>Alpha-conotoxin Lt14.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP10404">PEP10404</a></td>
+
+			<td>urotensin II</td>
+
+			<td>Fugu</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP10743">PEP10743</a></td>
+
+			<td>pelophylaxin-4 protein</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP11374">PEP11374</a></td>
+
+			<td>T-1-conotoxin TeAr154</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP11393">PEP11393</a></td>
+
+			<td>T-1-conotoxin LiC121</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP11395">PEP11395</a></td>
+
+			<td>T-1-conotoxin LeDr192</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP11397">PEP11397</a></td>
+
+			<td>T-1-conotoxin Lt5.3</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP11398">PEP11398</a></td>
+
+			<td>T-1-conotoxin LiC33</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP11399">PEP11399</a></td>
+
+			<td>T-1-conotoxin LiC32</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP11401">PEP11401</a></td>
+
+			<td>T-1-conotoxin TeA31</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP11488">PEP11488</a></td>
+
+			<td>putative sulfakinin neuropeptide</td>
+
+			<td>Anopheles</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP11946">PEP11946</a></td>
+
+			<td>Interleukin 4</td>
+
+			<td>Phocoenoides</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP11982">PEP11982</a></td>
+
+			<td>Interleukin 2</td>
+
+			<td>Coturnix</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP12309">PEP12309</a></td>
+
+			<td>frenatin 1.1</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP12515">PEP12515</a></td>
+
+			<td>pedin</td>
+
+			<td>Hydra</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP12524">PEP12524</a></td>
+
+			<td>Conotoxin Mr3.8</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP12525">PEP12525</a></td>
+
+			<td>Conotoxin mr3e</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP12526">PEP12526</a></td>
+
+			<td>Conotoxin Lp3.2</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP12652">PEP12652</a></td>
+
+			<td>Maximin-S1</td>
+
+			<td>Bombina</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP12657">PEP12657</a></td>
+
+			<td>Maximin-S1</td>
+
+			<td>Bombina</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP12662">PEP12662</a></td>
+
+			<td>Maximin-S1</td>
+
+			<td>Bombina</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP12692">PEP12692</a></td>
+
+			<td>Conotoxin Lp3.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP12884">PEP12884</a></td>
+
+			<td>aurein 2.5</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP12886">PEP12886</a></td>
+
+			<td>aurein 2.3</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP12888">PEP12888</a></td>
+
+			<td>aurein 2.2</td>
+
+			<td>Litoria</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP12955">PEP12955</a></td>
+
+			<td>ile-ser-Bradykinin-leu</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP12958">PEP12958</a></td>
+
+			<td>Pedal peptide</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP13286">PEP13286</a></td>
+
+			<td>Neuropeptide-glutamic acid-isoleucine</td>
+
+			<td>Canis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP13382">PEP13382</a></td>
+
+			<td>somatostatin-</td>
+
+			<td>Epinephelus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP13384">PEP13384</a></td>
+
+			<td>somatostatin-14</td>
+
+			<td>Epinephelus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP13452">PEP13452</a></td>
+
+			<td>Dynorphin A</td>
+
+			<td>Cavia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP13455">PEP13455</a></td>
+
+			<td>Rimorphin</td>
+
+			<td>Cavia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP13460">PEP13460</a></td>
+
+			<td>C-terminal-flanking peptide</td>
+
+			<td>Mesocricetus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP13506">PEP13506</a></td>
+
+			<td>Placental lactogen I</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP13522">PEP13522</a></td>
+
+			<td>Cortistatin-14</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP13693">PEP13693</a></td>
+
+			<td>T-1-conotoxin mr5.4b</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP13764">PEP13764</a></td>
+
+			<td>FMRFamide-like peptide 24</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP13767">PEP13767</a></td>
+
+			<td>FMRFamide-like peptide 23</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP13768">PEP13768</a></td>
+
+			<td>FMRFamide-like peptide 20</td>
+
+			<td>Periplaneta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP13844">PEP13844</a></td>
+
+			<td>Endokinin-2</td>
+
+			<td>Oryctolagus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP13955">PEP13955</a></td>
+
+			<td>Interleukin 8</td>
+
+			<td>Ovis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP13956">PEP13956</a></td>
+
+			<td>Interleukin 8</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP13982">PEP13982</a></td>
+
+			<td>Beta fibrinogen</td>
+
+			<td>Trimeresurus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14045">PEP14045</a></td>
+
+			<td>Peptide BmKn2</td>
+
+			<td>Mesobuthus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14079">PEP14079</a></td>
+
+			<td>Andropin</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14120">PEP14120</a></td>
+
+			<td>Bradykinin-potentiating peptide 13a</td>
+
+			<td>Bothrops</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14166">PEP14166</a></td>
+
+			<td>T-1-conotoxin Lp5.2</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14167">PEP14167</a></td>
+
+			<td>T-1-conotoxin Lp5.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14168">PEP14168</a></td>
+
+			<td>T-1-conotoxin mr5.4a</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14169">PEP14169</a></td>
+
+			<td>T-1-conotoxin mr5.3</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14170">PEP14170</a></td>
+
+			<td>T-1-conotoxin mr5.2</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14171">PEP14171</a></td>
+
+			<td>T-1-conotoxin mr5.1b</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14172">PEP14172</a></td>
+
+			<td>T-1-conotoxin mr5.1a</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14183">PEP14183</a></td>
+
+			<td>Alpha-conotoxin Mr1.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14257">PEP14257</a></td>
+
+			<td>Myostatin</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14342">PEP14342</a></td>
+
+			<td>Ghrelin</td>
+
+			<td>Rangifer</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14492">PEP14492</a></td>
+
+			<td>Interleukin-2</td>
+
+			<td>Zalophus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14530">PEP14530</a></td>
+
+			<td>Interleukin-2</td>
+
+			<td>Anas</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14641">PEP14641</a></td>
+
+			<td>Insulin-like factor 3</td>
+
+			<td>Canis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14682">PEP14682</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Uria</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14684">PEP14684</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Turdus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14686">PEP14686</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Tadorna</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14688">PEP14688</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Sula</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14690">PEP14690</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Struthio</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14692">PEP14692</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Strix</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14694">PEP14694</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Rissa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14696">PEP14696</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Rhea</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14698">PEP14698</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Pica</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14700">PEP14700</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Phaethon</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14702">PEP14702</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Passer</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14704">PEP14704</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Pagodroma</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14706">PEP14706</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Nycticorax</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14708">PEP14708</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Melopsittacus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14710">PEP14710</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Meleagris</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14712">PEP14712</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Gallus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14714">PEP14714</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Gallinula</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14716">PEP14716</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Fulmarus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14718">PEP14718</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Falco</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14720">PEP14720</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Dromaius</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14722">PEP14722</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Diomedea</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14724">PEP14724</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Columba</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14726">PEP14726</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Ciconia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14728">PEP14728</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Cairina</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14730">PEP14730</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Aptenodytes</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14732">PEP14732</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Anas</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14734">PEP14734</a></td>
+
+			<td>insulin A chain</td>
+
+			<td>Anas</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14824">PEP14824</a></td>
+
+			<td>Xen-dorphin 1A</td>
+
+			<td>Xenopus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14827">PEP14827</a></td>
+
+			<td>Xen-dorphin 1B</td>
+
+			<td>Xenopus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14922">PEP14922</a></td>
+
+			<td>allatotropin</td>
+
+			<td>Helicoverpa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14927">PEP14927</a></td>
+
+			<td>AST A-9</td>
+
+			<td>Spodoptera</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14952">PEP14952</a></td>
+
+			<td>urotensin II</td>
+
+			<td>Platichthys</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14954">PEP14954</a></td>
+
+			<td>urotensin II</td>
+
+			<td>Platichthys</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP14959">PEP14959</a></td>
+
+			<td>Allatotropin</td>
+
+			<td>Spodoptera</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP14984">PEP14984</a></td>
+
+			<td>SHA-peptide</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15017">PEP15017</a></td>
+
+			<td>Interleukin-1 alpha</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15130">PEP15130</a></td>
+
+			<td>delta-melanotropin</td>
+
+			<td>Squalus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15132">PEP15132</a></td>
+
+			<td>gamma-melanotropin</td>
+
+			<td>Squalus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15133">PEP15133</a></td>
+
+			<td>alpha-melanotropin</td>
+
+			<td>Squalus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15210">PEP15210</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15211">PEP15211</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15212">PEP15212</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15213">PEP15213</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15214">PEP15214</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15249">PEP15249</a></td>
+
+			<td>Lebetin 1 isoform beta</td>
+
+			<td>Vipera</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15251">PEP15251</a></td>
+
+			<td>Des</td>
+
+			<td>Torpedo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15253">PEP15253</a></td>
+
+			<td>Tryptophyllin-related peptide</td>
+
+			<td>Phyllomedusa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15255">PEP15255</a></td>
+
+			<td>Bradykinin-like peptide 3</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15265">PEP15265</a></td>
+
+			<td>Somatostatin</td>
+
+			<td>Hydrolagus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15282">PEP15282</a></td>
+
+			<td>Lutropin beta chain</td>
+
+			<td>Cricetidae</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15283">PEP15283</a></td>
+
+			<td>Glycoprotein hormones alpha chain</td>
+
+			<td>Cricetidae</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15285">PEP15285</a></td>
+
+			<td>Epidermal growth factor</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15293">PEP15293</a></td>
+
+			<td>Enkephalin precursor</td>
+
+			<td>Ovis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15302">PEP15302</a></td>
+
+			<td>Angiotensin I precursor</td>
+
+			<td>Canis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15319">PEP15319</a></td>
+
+			<td>Neuropeptide pep</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15320">PEP15320</a></td>
+
+			<td>Vespakinin-X</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15321">PEP15321</a></td>
+
+			<td>Vespakinin-M</td>
+
+			<td>Vespa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15330">PEP15330</a></td>
+
+			<td>Callisulfakinin-2</td>
+
+			<td>Calliphora</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15395">PEP15395</a></td>
+
+			<td>Pyrokinin 3</td>
+
+			<td>Anopheles</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15398">PEP15398</a></td>
+
+			<td>Pyrokinin 2</td>
+
+			<td>Anopheles</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15533">PEP15533</a></td>
+
+			<td>Bradykinin</td>
+
+			<td>Bombina</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15731">PEP15731</a></td>
+
+			<td>Urotensin II-beta</td>
+
+			<td>Danio</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15810">PEP15810</a></td>
+
+			<td>delta-melanotropin</td>
+
+			<td>Chimaera</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15811">PEP15811</a></td>
+
+			<td>beta-melanotropin</td>
+
+			<td>Chimaera</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15813">PEP15813</a></td>
+
+			<td>alpha-melanotropin</td>
+
+			<td>Chimaera</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15815">PEP15815</a></td>
+
+			<td>gamma-melanotropin</td>
+
+			<td>Chimaera</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15847">PEP15847</a></td>
+
+			<td>Agoute</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15974">PEP15974</a></td>
+
+			<td>GYRKPPFNGSIF-amide</td>
+
+			<td>Procambarus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP15975">PEP15975</a></td>
+
+			<td>Allatostatin</td>
+
+			<td>Spodoptera</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP15981">PEP15981</a></td>
+
+			<td>Tachykinin-related peptide</td>
+
+			<td>Apis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16066">PEP16066</a></td>
+
+			<td>Alpha-conotoxin GIC</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16077">PEP16077</a></td>
+
+			<td>neurotensin</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16083">PEP16083</a></td>
+
+			<td>Endokinin-C</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16094">PEP16094</a></td>
+
+			<td>Ghrelin-12</td>
+
+			<td>Carassius</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16347">PEP16347</a></td>
+
+			<td>Alpha-conotoxin ImII</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16349">PEP16349</a></td>
+
+			<td>Tachykinin-2</td>
+
+			<td>Octopus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16350">PEP16350</a></td>
+
+			<td>Tachykinin-1</td>
+
+			<td>Octopus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16358">PEP16358</a></td>
+
+			<td>neuropeptide IFamide</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16375">PEP16375</a></td>
+
+			<td>Feeding circuit activating peptide b</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16376">PEP16376</a></td>
+
+			<td>Feeding circuit activating peptide c</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16377">PEP16377</a></td>
+
+			<td>Feeding circuit activating peptide h</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16378">PEP16378</a></td>
+
+			<td>Feeding circuit activating peptide d</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16379">PEP16379</a></td>
+
+			<td>Feeding circuit activating peptide f</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16380">PEP16380</a></td>
+
+			<td>Feeding circuit activating peptide g</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16381">PEP16381</a></td>
+
+			<td>Feeding circuit activating peptide e</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16382">PEP16382</a></td>
+
+			<td>Feeding circuit activating peptide a</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16454">PEP16454</a></td>
+
+			<td>Growth hormone-releasing peptide</td>
+
+			<td>Rana</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16461">PEP16461</a></td>
+
+			<td>LPXRFa peptide-3</td>
+
+			<td>Carassius</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16483">PEP16483</a></td>
+
+			<td>Beta fibrinogen</td>
+
+			<td>Streptopelia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16506">PEP16506</a></td>
+
+			<td>Fibrinopeptide B</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16631">PEP16631</a></td>
+
+			<td>Cytotoxic linear peptide IsCT</td>
+
+			<td>Opisthacanthus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16652">PEP16652</a></td>
+
+			<td>Cytotoxic linear peptide IsCT2</td>
+
+			<td>Opisthacanthus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16773">PEP16773</a></td>
+
+			<td>Uroguanylin</td>
+
+			<td>Notomys</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16774">PEP16774</a></td>
+
+			<td>Guanylin</td>
+
+			<td>Notomys</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16834">PEP16834</a></td>
+
+			<td>Drosotachykinin</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP16840">PEP16840</a></td>
+
+			<td>CP2-derived peptide 7</td>
+
+			<td>Aplysia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP16884">PEP16884</a></td>
+
+			<td>salmon-type gonadotropin-releasing hormone</td>
+
+			<td>Scleropages</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP17032">PEP17032</a></td>
+
+			<td>allatostatin 10</td>
+
+			<td>Gryllus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP17061">PEP17061</a></td>
+
+			<td>Myoactive GGNG-related peptide</td>
+
+			<td>Perinereis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP17081">PEP17081</a></td>
+
+			<td>Phe-13 bombesin</td>
+
+			<td>Bombina</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP17082">PEP17082</a></td>
+
+			<td>SAP bombesin</td>
+
+			<td>Bombina</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP17261">PEP17261</a></td>
+
+			<td>Melanotropin alpha</td>
+
+			<td>Lepisosteus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP17290">PEP17290</a></td>
+
+			<td>somatostatin-14</td>
+
+			<td>Oncorhynchus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP17442">PEP17442</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP17443">PEP17443</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP17445">PEP17445</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP17459">PEP17459</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP17462">PEP17462</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP17470">PEP17470</a></td>
+
+			<td>Schistostatin-7</td>
+
+			<td>Schistocerca</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP17472">PEP17472</a></td>
+
+			<td>Schistostatin-3</td>
+
+			<td>Schistocerca</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP17478">PEP17478</a></td>
+
+			<td>Schistostatin-9</td>
+
+			<td>Schistocerca</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP17485">PEP17485</a></td>
+
+			<td>Dynorphin A</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP17488">PEP17488</a></td>
+
+			<td>Rimorphin</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP17514">PEP17514</a></td>
+
+			<td>Urotensin-2</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP17527">PEP17527</a></td>
+
+			<td>melanotropin alpha</td>
+
+			<td>Monodelphis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP17688">PEP17688</a></td>
+
+			<td>ceratotoxin 4</td>
+
+			<td>Ceratitis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP17998">PEP17998</a></td>
+
+			<td>Conotoxin TsMLKM-011</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18000">PEP18000</a></td>
+
+			<td>Conotoxin tx3a</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18005">PEP18005</a></td>
+
+			<td>T-1-conotoxin Pn-014</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18014">PEP18014</a></td>
+
+			<td>DEFVAPGVLRFamide</td>
+
+			<td>Globodera</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18064">PEP18064</a></td>
+
+			<td>Conotoxin scaffold VI/VII</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18166">PEP18166</a></td>
+
+			<td>T-1-conotoxin Pn-B01122</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18168">PEP18168</a></td>
+
+			<td>T-1-conotoxin Pn-B01121</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18169">PEP18169</a></td>
+
+			<td>T-1-conotoxin Pn-0111</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18175">PEP18175</a></td>
+
+			<td>T-1-conotoxin Pn-B0151</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18182">PEP18182</a></td>
+
+			<td>T-1-conotoxin Tx-D0111</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18189">PEP18189</a></td>
+
+			<td>Conotoxin TsMLKM-02</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18206">PEP18206</a></td>
+
+			<td>Conotoxin TxMMSK-01</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18223">PEP18223</a></td>
+
+			<td>Putative amidated peptide NWTPQAMLYLKGAQ</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18226">PEP18226</a></td>
+
+			<td>Interleukin 10</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18257">PEP18257</a></td>
+
+			<td>Neurotensin</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18350">PEP18350</a></td>
+
+			<td>Gonadotropin inhibitory hormone</td>
+
+			<td>Coturnix</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18351">PEP18351</a></td>
+
+			<td>Gonadotropin inhibitory hormone-related peptide 2</td>
+
+			<td>Coturnix</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18352">PEP18352</a></td>
+
+			<td>Gonadotropin inhibitory hormone-related peptide 1</td>
+
+			<td>Coturnix</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18480">PEP18480</a></td>
+
+			<td>Neuropeptide RFRP-2</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18513">PEP18513</a></td>
+
+			<td>Peptide BmKn1</td>
+
+			<td>Mesobuthus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18583">PEP18583</a></td>
+
+			<td>Neuropeptide RFRP-2</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18740">PEP18740</a></td>
+
+			<td>Interleukin 4 variant IL-4int2A</td>
+
+			<td>Oryctolagus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18745">PEP18745</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Canis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18866">PEP18866</a></td>
+
+			<td>HEADY peptide signal molecule</td>
+
+			<td>Hydra</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18871">PEP18871</a></td>
+
+			<td>ceratotoxin 1</td>
+
+			<td>Ceratitis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18888">PEP18888</a></td>
+
+			<td>CAP-1</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18889">PEP18889</a></td>
+
+			<td>CAP-3</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18901">PEP18901</a></td>
+
+			<td>Orcokinin-like peptide</td>
+
+			<td>Procambarus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18902">PEP18902</a></td>
+
+			<td>Orcokinin</td>
+
+			<td>Procambarus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18903">PEP18903</a></td>
+
+			<td>Orcokinin-like peptide</td>
+
+			<td>Procambarus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18904">PEP18904</a></td>
+
+			<td>Orcokinin-like peptide</td>
+
+			<td>Procambarus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18907">PEP18907</a></td>
+
+			<td>Orcokinin-like peptide</td>
+
+			<td>Procambarus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18908">PEP18908</a></td>
+
+			<td>Orcokinin</td>
+
+			<td>Procambarus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18909">PEP18909</a></td>
+
+			<td>Orcokinin-like peptide</td>
+
+			<td>Procambarus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18910">PEP18910</a></td>
+
+			<td>Orcokinin-like peptide</td>
+
+			<td>Procambarus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18933">PEP18933</a></td>
+
+			<td>Fibroblast growth factor homologous factor 2 isoform 1Z+1Y</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18963">PEP18963</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Lampetra</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18973">PEP18973</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Amia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP18975">PEP18975</a></td>
+
+			<td>Gonadotropin I beta subunit</td>
+
+			<td>Micropogonias</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP18977">PEP18977</a></td>
+
+			<td>Gonadotropin alpha subunit</td>
+
+			<td>Micropogonias</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19060">PEP19060</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Mola</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19061">PEP19061</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Ostracion</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19062">PEP19062</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Balistes</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19063">PEP19063</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Psettodes</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19064">PEP19064</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Channa</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19065">PEP19065</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Colisa</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19066">PEP19066</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Stromateus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19067">PEP19067</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Thunnus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19068">PEP19068</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Acanthurus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19069">PEP19069</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Siganus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19070">PEP19070</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Cryptocentrus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19071">PEP19071</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Salarias</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19072">PEP19072</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Dissostichus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19073">PEP19073</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Mullus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19074">PEP19074</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Epinephelus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19075">PEP19075</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Dicentrarchus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19076">PEP19076</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Dendrochirus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19077">PEP19077</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Mastacembelus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19078">PEP19078</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Hippocampus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19079">PEP19079</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Zeus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19080">PEP19080</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Sargocentron</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19081">PEP19081</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Poecilia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19082">PEP19082</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Fundulus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19083">PEP19083</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Hemiramphus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19084">PEP19084</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Oryzias</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19085">PEP19085</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Mugil</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19086">PEP19086</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Lophius</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19087">PEP19087</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Gadus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19088">PEP19088</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Lampris</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19089">PEP19089</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Harpadon</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19090">PEP19090</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Galaxias</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19091">PEP19091</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Plecoglossus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19092">PEP19092</a></td>
+
+			<td>Growth hormone</td>
+
+			<td>Esox</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19103">PEP19103</a></td>
+
+			<td>Bradykinin-potentiating peptide 13a2</td>
+
+			<td>Bothrops</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19106">PEP19106</a></td>
+
+			<td>Bradykinin-potentiating peptide 12b</td>
+
+			<td>Bothrops</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19143">PEP19143</a></td>
+
+			<td>Interferon-activated antimicrobial protein</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19146">PEP19146</a></td>
+
+			<td>Chemoattractant P-1</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19150">PEP19150</a></td>
+
+			<td>PRO-atrial natriuretic factor</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19152">PEP19152</a></td>
+
+			<td>Plasma T-kinin isoform II</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19153">PEP19153</a></td>
+
+			<td>Plasma T-kinin isoform I</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19154">PEP19154</a></td>
+
+			<td>CLEAVED prolactin-1</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19163">PEP19163</a></td>
+
+			<td>GP-CS3=CORTICOSTATIC peptide</td>
+
+			<td>Cavia</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19185">PEP19185</a></td>
+
+			<td>Big LEN</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19191">PEP19191</a></td>
+
+			<td>Big LEN</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19207">PEP19207</a></td>
+
+			<td>Obestatin-13</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19216">PEP19216</a></td>
+
+			<td>Urotensin-2</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19217">PEP19217</a></td>
+
+			<td>Urotensin-2</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19227">PEP19227</a></td>
+
+			<td>Apelin-13</td>
+
+			<td>Rattus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19231">PEP19231</a></td>
+
+			<td>Apelin-13</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19235">PEP19235</a></td>
+
+			<td>cerebellin</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19237">PEP19237</a></td>
+
+			<td>Cerebellin</td>
+
+			<td>Mus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19247">PEP19247</a></td>
+
+			<td>Fraction 60=HLA BC locus class I-bound peptide</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19252">PEP19252</a></td>
+
+			<td>Growth-related protein 3</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19267">PEP19267</a></td>
+
+			<td>Basic fibroblast growth factor</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19276">PEP19276</a></td>
+
+			<td>Transforming growth factor E</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19285">PEP19285</a></td>
+
+			<td>Cholecystokinin-12</td>
+
+			<td>Canis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19297">PEP19297</a></td>
+
+			<td>Agouti protein</td>
+
+			<td>Vulpes</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19340">PEP19340</a></td>
+
+			<td>Interleukin 1 alpha</td>
+
+			<td>Ovis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19344">PEP19344</a></td>
+
+			<td>Apelin-13</td>
+
+			<td>Bos</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19381">PEP19381</a></td>
+
+			<td>LOM-SG-SASP=SALIVATION stimulating peptide</td>
+
+			<td>Locusta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19390">PEP19390</a></td>
+
+			<td>LOCUSTAMYOINHIBIN</td>
+
+			<td>Locusta</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19393">PEP19393</a></td>
+
+			<td>Peptide T=BRADYKININ potentiator</td>
+
+			<td>Tityus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19399">PEP19399</a></td>
+
+			<td>Light yellow cell peptide</td>
+
+			<td>Lymnaea</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19403">PEP19403</a></td>
+
+			<td>PROPHENOLOXIDASE inhibitor N terminus</td>
+
+			<td>Locusta</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19426">PEP19426</a></td>
+
+			<td>allatotropin neuropeptide</td>
+
+			<td>Pseudaletia</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19429">PEP19429</a></td>
+
+			<td>ecdysis-triggering hormone 2</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19435">PEP19435</a></td>
+
+			<td>Alpha-conotoxin ImIIA</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19456">PEP19456</a></td>
+
+			<td>T-1-conotoxin Im5.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19457">PEP19457</a></td>
+
+			<td>T-1-conotoxin p5a</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19459">PEP19459</a></td>
+
+			<td>T-1-conotoxin Gm5.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19460">PEP19460</a></td>
+
+			<td>T-1-conotoxin Tx5.1</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19476">PEP19476</a></td>
+
+			<td>Urechistachykinin TK IV</td>
+
+			<td>Urechis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19550">PEP19550</a></td>
+
+			<td>18 kDa basic fibroblast growth factor homolog</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19552">PEP19552</a></td>
+
+			<td>PF 4-derived endothelial cell growth inhibitor PEAK I</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19553">PEP19553</a></td>
+
+			<td>EOCP-1=EOSINOPHIL-chemotactic cytokine</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19555">PEP19555</a></td>
+
+			<td>Midkine</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19565">PEP19565</a></td>
+
+			<td>Basic fibroblast growth factor 23 kDa form</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19566">PEP19566</a></td>
+
+			<td>Basic fibroblast growth factor 19 kDa form</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19568">PEP19568</a></td>
+
+			<td>Gamma-interferon</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19569">PEP19569</a></td>
+
+			<td>Gamma-interferon</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19570">PEP19570</a></td>
+
+			<td>Gamma-interferon</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19577">PEP19577</a></td>
+
+			<td>Transforming growth factor alpha</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19594">PEP19594</a></td>
+
+			<td>Big LEN</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19603">PEP19603</a></td>
+
+			<td>Apelin-13</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19607">PEP19607</a></td>
+
+			<td>VEGF related factor</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19609">PEP19609</a></td>
+
+			<td>Prolactin</td>
+
+			<td>Homo</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19616">PEP19616</a></td>
+
+			<td>Immune-induced peptide 3</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19636">PEP19636</a></td>
+
+			<td>Drosotachykinin</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19682">PEP19682</a></td>
+
+			<td>SHA-peptide</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19687">PEP19687</a></td>
+
+			<td>Drostatin-B3</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19698">PEP19698</a></td>
+
+			<td>NPLP1-4</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19700">PEP19700</a></td>
+
+			<td>IPNamide peptide</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19702">PEP19702</a></td>
+
+			<td>NAP peptide</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19703">PEP19703</a></td>
+
+			<td>MTYamide peptide</td>
+
+			<td>Drosophila</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19748">PEP19748</a></td>
+
+			<td>somatostatin-14</td>
+
+			<td>Protopterus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19749">PEP19749</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Protopterus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19792">PEP19792</a></td>
+
+			<td>Cocaine-and amphetamine-regulated transcript</td>
+
+			<td>Sus</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19800">PEP19800</a></td>
+
+			<td>WE-14</td>
+
+			<td>Equus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19852">PEP19852</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19858">PEP19858</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19862">PEP19862</a></td>
+
+			<td>Neuropeptide-like peptide</td>
+
+			<td>Caenorhabditis</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19873">PEP19873</a></td>
+
+			<td>Contulakin-G</td>
+
+			<td>Conus</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19930">PEP19930</a></td>
+
+			<td>somatostatin-14</td>
+
+			<td>Carassius</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19932">PEP19932</a></td>
+
+			<td>somatostatin-14</td>
+
+			<td>Carassius</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19935">PEP19935</a></td>
+
+			<td>Somatostatin-14</td>
+
+			<td>Carassius</td>
+		</tr>
+				<tr class="row1">
+			<td><a href="?p=peptide&amp;peptide=PEP19948">PEP19948</a></td>
+
+			<td>delta-melanotropin</td>
+
+			<td>Dasyatis</td>
+		</tr>
+				<tr class="row0">
+			<td><a href="?p=peptide&amp;peptide=PEP19949">PEP19949</a></td>
+
+			<td>gamma-melanotropin</td>
+
+			<td>Dasyatis</td>
+		</tr>
+			</tbody></table>
+<p></p>
+							</div><!-- close div#content -->
+
+			<div id="footer">Last update: April 30th 2008</div><!-- close div#footer -->
+		</div><!-- close div#wrapper -->
+	</div><!-- close div#container -->
+
+
+</body></html>

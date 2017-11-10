@@ -1,0 +1,171 @@
+1510280084523	geckodriver	INFO	Listening on 127.0.0.1:36991
+1510280085605	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.LCTsmEBBYmXB
+1510280085605	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1510280085622	geckodriver::marionette	INFO	Connecting to Marionette on localhost:52602
+1510280087989	geckodriver	INFO	Listening on 127.0.0.1:45545
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1510280089028	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.yHLTP4ogbzPa
+1510280089028	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1510280089030	geckodriver::marionette	INFO	Connecting to Marionette on localhost:60317
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1510280090270	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1510280090270	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1510280095649	Marionette	INFO	Listening on port 60317
+1510280095649	Marionette	INFO	Listening on port 52602
+1510280095857	Marionette	WARN	TLS certificate errors will be ignored for this session
+1510280095887	Marionette	WARN	TLS certificate errors will be ignored for this session
+1510280164200	Marionette	INFO	Ceased listening
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:3940): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1510280269520	geckodriver	INFO	Listening on 127.0.0.1:38167
+1510280269563	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.I12WlXhE4r7M
+1510280269564	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1510280269565	geckodriver::marionette	INFO	Connecting to Marionette on localhost:51496
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1510280271190	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1510280273810	Marionette	INFO	Listening on port 51496
+1510280273918	Marionette	WARN	TLS certificate errors will be ignored for this session
+1510280320441	geckodriver	INFO	Listening on 127.0.0.1:40562
+1510280321459	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.8GnZrY9rrqTO
+1510280321460	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1510280321461	geckodriver::marionette	INFO	Connecting to Marionette on localhost:48102
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1510280322786	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1510280325763	Marionette	INFO	Listening on port 48102
+1510280325805	Marionette	WARN	TLS certificate errors will be ignored for this session
+1510280329316	Marionette	INFO	Ceased listening
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4240): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1510280395588	geckodriver	INFO	Listening on 127.0.0.1:43871
+1510280396628	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.9pq7AZQQarFl
+1510280396629	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1510280396630	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40041
+
+(firefox:4551): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4551): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4551): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4551): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1510280397241	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+1510280399933	Marionette	INFO	Listening on port 40041
+1510280399977	Marionette	WARN	TLS certificate errors will be ignored for this session
+1510280400461	Marionette	INFO	Ceased listening
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4376): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+1510280407434	Marionette	INFO	Ceased listening
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:4002): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+JavaScript warning: https://static.pubmed.gov/portal/portal3rc.fcgi/4158155/js/3879255/4121861/3818874/3821238/4117325/4087685/4072593/4076480/3921943/4105668/4065628.js, line 539: unreachable code after return statement
+JavaScript warning: https://static.pubmed.gov/portal/portal3rc.fcgi/4158155/js/3879255/4121861/3818874/3821238/4117325/4087685/4072593/4076480/3921943/4105668/4065628.js, line 539: unreachable code after return statement
+
+(firefox:4551): GLib-GObject-CRITICAL **: g_value_set_object: assertion 'G_VALUE_HOLDS_OBJECT (value)' failed
+JavaScript warning: https://www.tutorialspoint.com/theme/js/script-min-v4.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.tutorialspoint.com/theme/js/script-min-v4.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
