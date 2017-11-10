@@ -359,8 +359,8 @@ for repeat in range(0,1): #perform 5 repeats
                 init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
             best_logit_test = sorted([best_roc_val[ep] for ep in best_roc_val], key = lambda x :x[1])[-3:]
             if len(best_logit_test) >=3 and best_logit_test[0][1] <= roc_val:
-                #model_name = 'model3_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
-                #saver.save(sess,model_name),
+                model_name = 'model3_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
+                saver.save(sess,model_name),
                 print 'SAVED\n'
         for j in best_logit_test:
             test_emsemble += [j[3],]
