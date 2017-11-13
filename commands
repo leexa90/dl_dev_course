@@ -28,4 +28,18 @@ glove-python
 I got it to work.
 I guess the problem was that I did not execute the 'pip install .' command in the cloned repository, instead executed the command before cloning it. Anyways got it to work by copying the contents of '/usr/local/lib/python2.7/dist-packages' (This directory containing the required modules like Cython and glove) and pasting it in the cloned repository. Say yes to all the prompts to merge the directories or replacing the files and it would work
 
-SSD,yolo, Mask R-CNN - objective detection in box
+SSD,yolo, Mask R-CNN(available in keras) - objective detection in box
+
+chatbot = dialogflow -> make it good, then use it as train data.
+DBpedia is database of wiki, google knowledge API can be used by chatbots
+
+tips : limit domain
+use google cloud for speecj
+use whats off the shelf
+get more examples of your conversations
+use your own models for anythnig unique
+sam text to voice model
+
+captions dataset flickr30k
+
+clip weights passign for gans
