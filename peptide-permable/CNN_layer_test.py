@@ -265,7 +265,7 @@ for test in range(0,5):
             best_roc_val = {}     # stores val ROC for trainnig epochs per CV+repeat run
             for file in  sorted(dictt_model[(test,CV)],
                             key = lambda x : np.float(x[:-5].split('_')[1:][-2]))[-3:]:
-                saver.restore(sess,file)
+                #saver.restore(sess,file)
                 print file
                 logit_train = []
                 cost_train = []
