@@ -156,13 +156,17 @@ with tf.name_scope('layer2') as scope:
     layer2a = tf.layers.conv2d(layer2_norm,96,(1,1),padding='same',activation=None)
     layer2 = tf.layers.conv2d(layer2a,128,(1,3),padding='same',activation=tf.nn.relu)
     layer2_DO = tf.layers.dropout(layer2,rate=dropout,name='Drop2',training=True)
-    layer2_pool = tf.layers.max_pooling2d(layer2_DO, (1,2),strides = (1,2),name='pool1')
-
+    layer2_pool_max = tf.layers.max_pooling2d(layer2_DO[:,:,:,::2], (1,2),strides = (1,2),name='pool1_max')
+    layer2_pool_avg = tf.layers.average_pooling2d(layer2_DO[:,:,:,1::2], (1,2),strides = (1,2),name='pool1_avg')
+    layer2_pool = tf.concat([layer2_pool_max,layer2_pool_avg],-1,name='pool1_concat')
+    
 with tf.name_scope('layer3') as scope:
     layer3_norm = batch_normalization(layer2_pool,'BN_layer1')
     layer3 = tf.layers.conv2d(layer3_norm,256,(1,3),padding='same',activation=tf.nn.relu)
     layer3_DO = tf.layers.dropout(layer3,rate=dropout,name='Drop3',training=True)
-    layer3_pool = tf.layers.max_pooling2d(layer3_DO, (1,2),strides = (1,2),name='pool2')
+    layer3_pool_max = tf.layers.max_pooling2d(layer3_DO[:,:,:,0::2], (1,2),strides = (1,2),name='pool2_max')
+    layer3_pool_avg = tf.layers.average_pooling2d(layer3_DO[:,:,:,1::2], (1,2),strides = (1,2),name='pool2_avg')
+    layer3_pool = tf.concat([layer3_pool_max,layer3_pool_avg],-1,name='pool2_concat')
     
 with tf.name_scope('layer4') as scope:
     layer4_norm = batch_normalization(layer3_pool,'BN_layer2')
@@ -382,8 +386,8 @@ for repeat in range(0,1): #perform 5 repeats
                 init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
             best_logit_test = sorted([best_roc_val[ep] for ep in best_roc_val], key = lambda x :x[1])[-3:]
             if len(best_logit_test) >=3 and best_logit_test[0][1] <= roc_val:
-                model_name = 'model5_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
-                saver.save(sess,model_name),
+                model_name = 'model7_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
+                #saver.save(sess,model_name),
                 print 'SAVED\n'
         for j in best_logit_test:
             test_emsemble += [j[3],]

@@ -218,12 +218,12 @@ for test in range(0,5):
 
                 test_emsemble += [result_d.predict(xgtest),]
                 model_name = 'XGB1_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
-                result_d.save_model(model_name)
+                #result_d.save_model(model_name)
                 del result_d
             print sklearn.metrics.roc_auc_score(y_test,np.mean(np.array(test_emsemble),0))
 
     zz=data.set_value(range(test,len(data),5),'testPred',np.mean(np.array(test_emsemble),0))
     zz=data.set_value(range(test,len(data),5),'testY',y_test)
-    data.iloc[range(test,len(data),5)].to_csv('XGB_%s.csv' %test,index=0)
+    #data.iloc[range(test,len(data),5)].to_csv('XGB_%s.csv' %test,index=0)
 print sklearn.metrics.roc_auc_score(data.testY,data.testPred)
 data.to_csv('XGB_all.csv',index=0)
