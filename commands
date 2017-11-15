@@ -43,3 +43,6 @@ sam text to voice model
 captions dataset flickr30k
 
 clip weights passign for gans
+
+depthwise sepratble convoltion (squeezenet)
+nasnet is the best nets
