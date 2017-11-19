@@ -8,7 +8,7 @@ np.set_printoptions(formatter={'float_kind':float_formatter})
 dictt = {'A': 0, 'C': 1, 'E': 2, 'D': 3, 'G': 4,
          'F': 5, 'I': 6, 'H': 7, 'K': 8, 'M': 9,
          'L': 10, 'N': 11, 'Q': 12, 'P': 13, 'S': 14,
-         'R': 15, 'T': 16, 'W': 17, 'V': 18, 'Y': 19  }
+         'R': 15, 'T': 16, 'W': 17, 'V': 18, 'Y': 19, 'X' :20  }
 import xgboost 
 #Interface Scale
 #ΔGwif (kcal/mol) 	Octanol Scale
@@ -38,7 +38,7 @@ dictt_hydropathy  = {
 'D' : [ 	1.23 ,	3.64, 	2.41 ,-1],
 'Z' : [ 1.3,  2.2,  0.9, -0.5], #E or Q (mass spec data cannot differentiate)
 'B' : [ 0.825,  2.245,  1.42 , -0.5  ], #D or N (mass spec data cannot differentiate)
-'X' : [0,0,0,0]} 
+'X' : [0.0,0.0,0.0,0.0]} 
 data = pd.read_csv('bioactive_PDB_cpp.csv').dropna()
 def fn1(str):
     num=0.0
@@ -53,7 +53,7 @@ def fn2(str): # find if sequence has weird bonds
         if i.upper() == '-':
             return 2
     for i in list(set(str)):
-        if i.upper() not in dictt:
+        if i.upper() not in dictt or i.upper()=='X':
             return 1    
     return 0
 #notable non-cannonical residues , U - selnocysteine
@@ -89,12 +89,15 @@ for i in dictt:
             if j.upper() == i:
                 result += 1
         return result
-    data['num_'+str(i)] = data['seq'].apply(fn)
-    data['per_'+str(i)] = data['num_'+str(i)]/data['len']
-    features += ['per_'+str(i),'num_'+str(i)]
+    if  i != 'X':
+        data['num_'+str(i)] = data['seq'].apply(fn)
+        data['per_'+str(i)] = data['num_'+str(i)]/data['len']
+        features += ['per_'+str(i),'num_'+str(i)]
 
 for idx in range(len(data)):
     i = data.iloc[idx]['seq'].upper()
+    ii = i
+    i = i + 'X'*(30-len(i))
     temp = np.zeros((len(i),5))
     for j in  range(len(i)):
         res = dictt[i[j]]
@@ -105,7 +108,7 @@ for idx in range(len(data)):
     alternative = [len(i),np.sum(temp[-1,:]),np.sum(temp[-2,:]),np.sum(temp[-3,:])]
     alternative += list(data.iloc[idx][features]) #add ratio for aa
     per = data.iloc[idx]['source'] == 2 
-    X += [[temp[0],temp[1:],alternative,i,per*1],]
+    X += [[temp[0],temp[1:],alternative,ii,per*1],]
     #print '> %s\n%s' %(i,i)
     counter += 1
 data['X'] = X
@@ -135,10 +138,11 @@ with tf.name_scope('inputs') as scope:
     labels = tf.placeholder(tf.float32 , [batch_size,1],name='labels')
     dropout = tf.placeholder(tf.float32,name='dropout')
     Inp2 = tf.placeholder(tf.float32, [batch_size,44] ,name = 'globa_seq_info')
+    sequence_length = tf.placeholder(tf.int32,shape=(batch_size),name='sequence_lenght')
 
 with tf.name_scope('embedding') as scope:
-    aa_embeddings = tf.get_variable('aa_embeddings',[20, 5])
-    embedded_word_ids = tf.gather(aa_embeddings,range(0,20))
+    aa_embeddings = tf.get_variable('aa_embeddings',[21, 5])
+    embedded_word_ids = tf.gather(aa_embeddings,range(0,21))
     embed0 = tf.nn.embedding_lookup(aa_embeddings,Inp0,name='lookup')
     embed1 = tf.transpose(embed0,(0,2,1))
     unstack0 = tf.unstack(Inp1,axis=-2,name='unstack0')
@@ -151,8 +155,9 @@ with tf.name_scope('RNN') as scope:
     rnn_cell  = rnn.BasicLSTMCell(370,activation= tf.nn.relu)
     output_,state_= tf.nn.bidirectional_dynamic_rnn(rnn_cell,rnn_cell,
                                                     tf.transpose(layer0,(0,2,1)),
-                                                    dtype=tf.float32)
-    last_output = tf.concat([output_[0][:,-1,:],output_[1][:,-1,:]],-1,name='last_output')
+                                                    dtype=tf.float32,
+                                                    sequence_length=sequence_length)
+    last_output = tf.concat([state_[0][1],state_[1][1]],-1,name='last_output')
 with tf.name_scope('dense') as scope:
     gbmp_extra = tf.concat([Inp2,last_output],axis = 1, name ='gbmp_extra')
     dense1 = tf.layers.dense(gbmp_extra,256,activation = tf.nn.relu , name = 'dense1' )
@@ -215,13 +220,15 @@ def get_data_from_X(X,y,i): #get tensor inputs from X and y
     Inp1_ = np.array([X[i][1]])
     Inp2_ = np.array([X[i][2]])
     labels_ = np.array([[y[i],]])
-    return Inp0_,Inp1_,Inp2_,labels_
+    length_ = np.array([len(X[i][3])])
+    return Inp0_,Inp1_,Inp2_,labels_,length_
 def get_batch_from_X(Xy): #get batch tensor inputs from X and y
     Inp0_ = np.array([x[0][0] for x in Xy])
     Inp1_ = np.array([x[0][1] for x in Xy])
     Inp2_ = np.array([x[0][2] for x in Xy])
     labels_ = np.array([[x[1] for x in Xy],])
-    return Inp0_,Inp1_,Inp2_,labels_.T
+    length_ = np.array([len(x[0][3]) for x in Xy])
+    return Inp0_,Inp1_,Inp2_,labels_.T,length_
 folds= 5
 # ensure no leakage of train to test, was getting 95 AUC
 X_test = []
@@ -230,7 +237,7 @@ print 'train_val_test size:' , len(X)
 for i in range(test,len(X),folds):
     if i%5 == test:
         x = X[i]
-        X_test += [(x[0],x[1],x[2]),]
+        X_test += [(x[0],x[1],x[2],x[3]),]
         y_test += [x[-1],]
         X[i] = 'test'
 X = [x for x in X if x != 'test']
@@ -250,15 +257,15 @@ for repeat in range(0,1): #perform 5 repeats
         for i in range(len(X)):
             x = X[i]
             if i%4 == CV:
-                X_val += [(x[0],x[1],x[2]),]
+                X_val += [(x[0],x[1],x[2],x[3]),]
                 y_val += [x[-1],]
             else:
                 if x[-1] == 1:
                     mul = 18 #ratio of pos to neg is 1:18.4
                 else: mul = 1
-                X_train += [(x[0],x[1],x[2]),]
+                X_train += [(x[0],x[1],x[2],x[3]),]
                 y_train += [x[-1],]
-                X_train_weighted += [(x[0],x[1],x[2]),]*mul
+                X_train_weighted += [(x[0],x[1],x[2],x[3]),]*mul
                 y_train_weighted += [x[-1],]*mul
         print 'size of different sets:',len(X_train_weighted),len(X_val),len(X_test)
 
@@ -275,9 +282,9 @@ for repeat in range(0,1): #perform 5 repeats
             for i in shuffle[::10]: #training with bagging
                 lr = 0.0025*np.abs(np.cos(0.5*3.142*counter/len(shuffle[::10])))
                 counter += 1
-                Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train_weighted,y_train_weighted,i)        
+                Inp0_,Inp1_,Inp2_,labels_,length_ = get_data_from_X(X_train_weighted,y_train_weighted,i)        
                 _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,Inp2: Inp2_,
-                                                                   Inp1: Inp1_,
+                                                                   Inp1: Inp1_,sequence_length:length_,
                                                                    labels: labels_,
                                                                    dropout : 0.1,learning_rate : lr}) #sgd
             logit_train = []
@@ -292,9 +299,9 @@ for repeat in range(0,1): #perform 5 repeats
                 else:
                     if i == len(sorted_data)-2:
                         i = len(sorted_data) #there is a case whereby last in loop is of diff length, will break this code
-                    Inp0_,Inp1_,Inp2_,labels_ = get_batch_from_X(sorted_data[initial:i+1])
+                    Inp0_,Inp1_,Inp2_,labels_,length_ = get_batch_from_X(sorted_data[initial:i+1])
                     c, out = sess.run ([acc, out_softmax],
-                                       feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,
+                                       feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,sequence_length : length_,
                                         labels: labels_,dropout : 0,learning_rate : lr})
                     initial = i+1
                     cost_train += [c,]*len(Inp0_)
@@ -313,9 +320,9 @@ for repeat in range(0,1): #perform 5 repeats
                 else:
                     if i == len(sorted_data)-2:
                         i = len(sorted_data) #there is a case whereby last in loop is of diff length, will break this code
-                    Inp0_,Inp1_,Inp2_,labels_ = get_batch_from_X(sorted_data[initial:i+1])
+                    Inp0_,Inp1_,Inp2_,labels_,length_ = get_batch_from_X(sorted_data[initial:i+1])
                     c, out = sess.run ([acc, out_softmax],
-                                       feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,
+                                       feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,sequence_length : length_,
                                         labels: labels_,dropout : 0,learning_rate : lr})
                     initial = i+1
                     cost_val += [c,]*len(Inp0_)
@@ -327,11 +334,11 @@ for repeat in range(0,1): #perform 5 repeats
             cost_test = []
             if False: #single is slow
                 for i in range(len(X_test)): #test errror
-                    Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_test,y_test,i)
+                    Inp0_,Inp1_,Inp2_,labels_,length_ = get_data_from_X(X_test,y_test,i)
                     c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                                  Inp1: Inp1_,Inp2: Inp2_,
-                                                          labels: labels_,
-                                                          dropout : 0,learning_rate : lr})
+                                      Inp1: Inp1_,Inp2: Inp2_,
+                                      labels: labels_,sequence_length:length_,
+                                      dropout : 0,learning_rate : lr})
             sorted_data = zip(X_test,y_test)#sorted(zip(X_test,y_test),key = lambda x : x[0][-1][0])
             initial=0
             y_temp = []
@@ -343,7 +350,7 @@ for repeat in range(0,1): #perform 5 repeats
                         i = len(sorted_data) #there is a case whereby last in loop is of diff length, will break this code 
                     Inp0_,Inp1_,Inp2_,labels_ = get_batch_from_X(sorted_data[initial:i+1])
                     c, out = sess.run ([acc, out_softmax],
-                                       feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,
+                                       feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,sequence_length : length_,
                                         labels: labels_,dropout : 0,learning_rate : lr})
                     initial = i+1
                     cost_test += [c,]*len(Inp0_)
