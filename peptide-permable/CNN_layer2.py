@@ -9,7 +9,7 @@ dictt = {'A': 0, 'C': 1, 'E': 2, 'D': 3, 'G': 4,
          'F': 5, 'I': 6, 'H': 7, 'K': 8, 'M': 9,
          'L': 10, 'N': 11, 'Q': 12, 'P': 13, 'S': 14,
          'R': 15, 'T': 16, 'W': 17, 'V': 18, 'Y': 19  }
-import xgboost 
+#import xgboost 
 #Interface Scale
 #ΔGwif (kcal/mol) 	Octanol Scale
 #ΔGwoct (kcal/mol) 	Octanol − Interface
@@ -136,30 +136,30 @@ with tf.name_scope('layer1') as scope:
     layer1_norm = batch_normalization(layer0,'BN_layer0',feature_norm = True)
     layer1a = tf.layers.conv2d(layer1_norm,32,(1,1),padding='same',activation=None)
     layer1 = tf.layers.conv2d(layer1a,64,(9,1),padding='valid',activation=tf.nn.relu)
-    layer1_DO = tf.layers.dropout(layer1,rate=dropout,name='Drop1')
+    layer1_DO = tf.layers.dropout(layer1,rate=dropout,name='Drop1',training=True)
 
 with tf.name_scope('layer2') as scope:
     layer2_norm = batch_normalization(layer1_DO,'BN_layer1',feature_norm = True)
     layer2a = tf.layers.conv2d(layer2_norm,96,(1,1),padding='same',activation=None)
     layer2 = tf.layers.conv2d(layer2a,128,(1,3),padding='same',activation=tf.nn.relu)
-    layer2_DO = tf.layers.dropout(layer2,rate=dropout,name='Drop2')
+    layer2_DO = tf.layers.dropout(layer2,rate=dropout,name='Drop2',training=True)
 
 with tf.name_scope('layer3') as scope:
     layer3_norm = batch_normalization(layer2_DO,'BN_layer1')
     layer3 = tf.layers.conv2d(layer3_norm,256,(1,3),padding='same',activation=tf.nn.relu)
-    layer3_DO = tf.layers.dropout(layer3,rate=dropout,name='Drop3')
+    layer3_DO = tf.layers.dropout(layer3,rate=dropout,name='Drop3',training=True)
 
 with tf.name_scope('layer4') as scope:
     layer4_norm = batch_normalization(layer3_DO,'BN_layer2')
     layer4 = tf.layers.conv2d(layer4_norm,512,(1,3),padding='same',activation=tf.nn.relu)
-    layer4_DO = tf.layers.dropout(layer4,rate=dropout,name='Drop4')
+    layer4_DO = tf.layers.dropout(layer4,rate=dropout,name='Drop4',training=True)
 
 with tf.name_scope('dense') as scope:
     globalmaxpooling = tf.reduce_mean(layer4_DO,(1,2),name='globalmaxpooling')
     gbmp_extra = tf.concat([Inp2,globalmaxpooling],axis = 1, name ='gbmp_extra')
-    layer5_DO = tf.layers.dropout(gbmp_extra,rate=dropout,name='Drop5')
+    layer5_DO = tf.layers.dropout(gbmp_extra,rate=dropout,name='Drop5',training=True)
     dense1 = tf.layers.dense(layer5_DO,16,activation = None , name = 'dense1' )
-    layer6_DO = tf.layers.dropout(dense1,rate=dropout,name='Drop6')
+    layer6_DO = tf.layers.dropout(dense1,rate=dropout,name='Drop6',training=True)
     dense2 = tf.layers.dense(layer6_DO,1 , name = 'dense2' )
 with tf.name_scope('loss') as scope:
     loss = tf.nn.sigmoid_cross_entropy_with_logits(labels=labels,
@@ -269,13 +269,13 @@ for repeat in range(0,1): #perform 5 repeats
             random.shuffle(shuffle)
             counter = 0
             for i in shuffle[::10]: #training with bagging
-                lr = 0.0015*(1-1.0*counter/len(shuffle[::10]))
+                lr = 0.0035*(1-1.0*counter/len(shuffle[::10]))
                 counter += 1
                 Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(X_train_weighted,y_train_weighted,i)        
                 _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,Inp2: Inp2_,
                                                                    Inp1: Inp1_,
                                                                    labels: labels_,
-                                                                   dropout : 0.4,learning_rate : lr}) #sgd
+                                                                   dropout : 0.1,learning_rate : lr}) #sgd
             logit_train = []
             cost_train = []
             lr = 0
@@ -291,7 +291,7 @@ for repeat in range(0,1): #perform 5 repeats
                     Inp0_,Inp1_,Inp2_,labels_ = get_batch_from_X(sorted_data[initial:i+1])
                     c, out = sess.run ([acc, out_softmax],
                                        feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,
-                                        labels: labels_,dropout : 1,learning_rate : lr})
+                                        labels: labels_,dropout : 0,learning_rate : lr})
                     initial = i+1
                     cost_train += [c,]*len(Inp0_)
                     logit_train += list(out[:,0])
@@ -312,7 +312,7 @@ for repeat in range(0,1): #perform 5 repeats
                     Inp0_,Inp1_,Inp2_,labels_ = get_batch_from_X(sorted_data[initial:i+1])
                     c, out = sess.run ([acc, out_softmax],
                                        feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,
-                                        labels: labels_,dropout : 1,learning_rate : lr})
+                                        labels: labels_,dropout : 0,learning_rate : lr})
                     initial = i+1
                     cost_val += [c,]*len(Inp0_)
                     logit_val += list(out[:,0])
@@ -327,7 +327,7 @@ for repeat in range(0,1): #perform 5 repeats
                     c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
                                                   Inp1: Inp1_,Inp2: Inp2_,
                                                           labels: labels_,
-                                                          dropout : 1,learning_rate : lr})
+                                                          dropout : 0,learning_rate : lr})
             sorted_data = sorted(zip(X_test,y_test),key = lambda x : x[0][-1][0])
             initial=0
             y_temp = []
@@ -340,7 +340,7 @@ for repeat in range(0,1): #perform 5 repeats
                     Inp0_,Inp1_,Inp2_,labels_ = get_batch_from_X(sorted_data[initial:i+1])
                     c, out = sess.run ([acc, out_softmax],
                                        feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,
-                                        labels: labels_,dropout : 1,learning_rate : lr})
+                                        labels: labels_,dropout : 0,learning_rate : lr})
                     initial = i+1
                     cost_test += [c,]*len(Inp0_)
                     logit_test += list(out[:,0])
@@ -360,7 +360,7 @@ for repeat in range(0,1): #perform 5 repeats
             best_logit_test = sorted([best_roc_val[ep] for ep in best_roc_val], key = lambda x :x[1])[-3:]
             if len(best_logit_test) >=3 and best_logit_test[0][1] <= roc_val:
                 model_name = 'model3_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
-                saver.save(sess,model_name),
+                #saver.save(sess,model_name),
                 print 'SAVED\n'
         for j in best_logit_test:
             test_emsemble += [j[3],]
