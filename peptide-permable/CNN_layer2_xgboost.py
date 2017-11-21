@@ -80,24 +80,6 @@ print result
 ######### Start of initilziing data ###
 X = []
 counter = 0
-
-for idx in range(len(data)):
-    i = data.iloc[idx]['seq']
-    temp = np.zeros((len(i),5))
-    for j in  range(len(i)):
-        res = dictt[i[j]]
-        temp[j][0] = res
-        #temp[j][-1] = len(i)*0.01
-        temp[j][-4:] = dictt_hydropathy[i[j]]
-    temp = temp.T
-    alternative = [len(i),np.sum(temp[:,-1]),np.sum(temp[:,-2]),np.sum(temp[:,-3])]
-    per = data.iloc[idx]['source'] == 2 
-    X += [[temp[0],temp[1:],alternative,i,per*1],]
-    #print '> %s\n%s' %(i,i)
-    counter += 1
-data['X'] = X
-
-
 ## creates num of residue...
 features = []
 for i in dictt:
@@ -110,18 +92,36 @@ for i in dictt:
     data['num_'+str(i)] = data['seq'].apply(fn)
     data['per_'+str(i)] = data['num_'+str(i)]/data['len']
     features += ['per_'+str(i),'num_'+str(i)]
-features += ['length','netcharge','Gwif','Goct']
+
+for idx in range(len(data)):
+    i = data.iloc[idx]['seq'].upper()
+    temp = np.zeros((len(i),5))
+    for j in  range(len(i)):
+        res = dictt[i[j]]
+        temp[j][0] = res
+        #temp[j][-1] = len(i)*0.01
+        temp[j][-4:] = dictt_hydropathy[i[j]]
+    temp = temp.T
+    alternative = [len(i),np.sum(temp[-1,:]),np.sum(temp[-2,:]),np.sum(temp[-3,:])]
+    alternative += list(data.iloc[idx][features]) #add ratio for aa
+    per = data.iloc[idx]['source'] == 2 
+    X += [[temp[0],temp[1:],alternative,i,per*1],]
+    #print '> %s\n%s' %(i,i)
+    counter += 1
+data['X'] = X
+
 for i in ['length','netcharge','Gwif','Goct']:
     data[i] = 0
 data['y'] = 0
 for i in range(0,len(data)):
     temp = data.iloc[i]['X'][-3]
-    zz = data.set_value(i,['length','netcharge','Gwif','Goct'],temp)
+    zz = data.set_value(i,['length','netcharge','Gwif','Goct'],temp[0:4])
     zz = data.set_value(i,'y',data.iloc[i]['X'][-1])
-    
 
-
-
+features=['per_A', 'num_A', 'per_C', 'num_C', 'per_E', 'num_E', 'per_D', 'num_D', 'per_G', 'num_G',
+ 'per_F', 'num_F', 'per_I', 'num_I', 'per_H', 'num_H', 'per_K', 'num_K', 'per_M', 'num_M',
+ 'per_L', 'num_L', 'per_N', 'num_N', 'per_Q', 'num_Q', 'per_P', 'num_P', 'per_S', 'num_S', 'per_R', 'num_R', 'per_T', 'num_T',
+ 'per_W', 'num_W', 'per_V', 'num_V', 'per_Y', 'num_Y', 'length', 'netcharge', 'Gwif', 'Goct']
 
 X = data[features+['y']].copy().values
 import sklearn.metrics,random
@@ -143,10 +143,6 @@ def get_data_from_X(X,y,i): #get tensor inputs from X and y
     labels_ = np.array([[y[i],]])
     return Inp0_,Inp1_,Inp2_,labels_
 folds= 5
-features=['per_A', 'num_A', 'per_C', 'num_C', 'per_E', 'num_E', 'per_D', 'num_D', 'per_G', 'num_G',
- 'per_F', 'num_F', 'per_I', 'num_I', 'per_H', 'num_H', 'per_K', 'num_K', 'per_M', 'num_M',
- 'per_L', 'num_L', 'per_N', 'num_N', 'per_Q', 'num_Q', 'per_P', 'num_P', 'per_S', 'num_S', 'per_R', 'num_R', 'per_T', 'num_T',
- 'per_W', 'num_W', 'per_V', 'num_V', 'per_Y', 'num_Y',  'netcharge', 'Gwif', 'Goct']
 for test in range(0,5):
     X = data[features+['y']].copy().values
     folds= 5
@@ -165,7 +161,7 @@ for test in range(0,5):
     test_emsemble= []
 
     for repeat in range(0,1): #perform 5 repeats
-        for CV in range(folds): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)# 
+        for CV in range(folds-1): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)# 
             RESULT[CV] = []
             X_train = []
             y_train = []
@@ -181,6 +177,7 @@ for test in range(0,5):
                     y_train += [x[-1],]
             predictors = features
             xgcv    = xgb.DMatrix(X_val, label=y_val,missing=np.NAN,feature_names=predictors)
+            print predictors
             xgtest    = xgb.DMatrix(X_test, label=y_test,missing=np.NAN,feature_names=predictors)
             xgtrain = xgb.DMatrix(X_train, label=y_train,missing=np.NAN,feature_names=predictors)
             watchlist  = [ (xgtrain,'train'),(xgtest,'test'),(xgcv,'eval')]
@@ -218,12 +215,12 @@ for test in range(0,5):
 
                 test_emsemble += [result_d.predict(xgtest),]
                 model_name = 'XGB1_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
-                #result_d.save_model(model_name)
+                result_d.save_model(model_name)
                 del result_d
             print sklearn.metrics.roc_auc_score(y_test,np.mean(np.array(test_emsemble),0))
 
     zz=data.set_value(range(test,len(data),5),'testPred',np.mean(np.array(test_emsemble),0))
     zz=data.set_value(range(test,len(data),5),'testY',y_test)
-    #data.iloc[range(test,len(data),5)].to_csv('XGB_%s.csv' %test,index=0)
+    data.iloc[range(test,len(data),5)].to_csv('XGB_%s.csv' %test,index=0)
 print sklearn.metrics.roc_auc_score(data.testY,data.testPred)
 data.to_csv('XGB_all.csv',index=0)

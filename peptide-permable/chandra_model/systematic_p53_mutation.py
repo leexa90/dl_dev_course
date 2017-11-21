@@ -101,9 +101,10 @@ for c1 in range(0,13): #first three res #start from4
                 if type(data_p53) == int:
                     data_p53 = data
                 else:
-                    data_p53 = data_p53.merge(data)
+                    data_p53 = pd.concat((data_p53,data))
 
-data['source'] = -999
+data_p53['source'] = -999
+data = data_p53.iloc[0:8000]
 dictt_hydropathy  = {
 'I' : [ 	-0.31, 	-1.12, 	-0.81 ,0 ],
 'L' : [ 	-0.56,	-1.25, 	-0.69 ,0],
@@ -455,7 +456,7 @@ def get_data_from_X(X,i=i,num=8000): #get tensor inputs from X and y
     labels_ = np.nan
     return Inp0_,Inp1_,Inp2_,labels_
 
-Inp0_,Inp1_,Inp2_,names,labels_ =  get_data_from_X(X,0,8000)
+Inp0_,Inp1_,Inp2_,labels_ =  get_data_from_X(X,0,8000)
 data= pd.DataFrame(Inp0_,columns=range(13))
 data['seq'] = map(get_seq,data[range(0,13)].values)
 data['len'] = data['seq'].apply(len)
@@ -465,7 +466,7 @@ data = get_aa_freq(data)
 for extra in ['length','netcharge','Gwif','Goct']:
     data[extra] = 0
 data['length'] = 13
-data[['netcharge','Gwif','Goct']] = Inp2_[:,0:4]
+data[['netcharge','Gwif','Goct']] = Inp2_[:,1:4]
 Inp2_ = np.concatenate([np.array([[13,]*8000]).T,Inp2_,data[features[:-4]].values],1)
 for test_fold in dictt_model:
     for file in  sorted(dictt_model[test_fold],
@@ -482,11 +483,13 @@ data['prob'] =  data['prob'] /counter
 data.to_csv('results/results5_%s_%s_%s.csv' %(c1,c2,c3),index=0)
 print data.sort_values('prob')[-5:]['prob'].values
 
-xgb_features =['per_A', 'num_A', 'per_C', 'num_C', 'per_E', 'num_E', 'per_D', 'num_D', 'per_G',
-               'num_G', 'per_F', 'num_F', 'per_I', 'num_I', 'per_H', 'num_H', 'per_K', 'num_K',
-               'per_M', 'num_M', 'per_L', 'num_L', 'per_N', 'num_N', 'per_Q', 'num_Q', 'per_P',
-               'num_P', 'per_S', 'num_S', 'per_R', 'num_R', 'per_T', 'num_T', 'per_W', 'num_W',
-               'per_V', 'num_V', 'per_Y', 'num_Y', 'netcharge', 'Gwif', 'Goct']
+xgb_features = ['per_A', 'num_A', 'per_C', 'num_C', 'per_E', 'num_E', 'per_D', 'num_D', 'per_G',
+                 'num_G', 'per_F', 'num_F', 'per_I', 'num_I', 'per_H', 'num_H', 'per_K', 'num_K',
+                 'per_M', 'num_M', 'per_L', 'num_L', 'per_N', 'num_N', 'per_Q', 'num_Q', 'per_P',
+                 'num_P', 'per_S', 'num_S', 'per_R', 'num_R', 'per_T', 'num_T', 'per_W', 'num_W',
+                 'per_V', 'num_V', 'per_Y', 'num_Y', 'netcharge', 'Gwif', 'Goct']
+
+
 X = data[xgb_features].copy()
 xgtest    = xgb.DMatrix(X, feature_names=xgb_features)
 for file in [x for x in os.listdir('../') if ('XGB' in x and '.ckpt' in x)]:

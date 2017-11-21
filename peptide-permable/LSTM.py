@@ -155,7 +155,7 @@ with tf.name_scope('RNN') as scope:
     rnn_cell  = rnn.BasicLSTMCell(370,activation= tf.nn.relu)
     output_,state_= tf.nn.bidirectional_dynamic_rnn(rnn_cell,rnn_cell,
                                                     tf.transpose(layer0,(0,2,1)),
-                                                    dtype=tf.float32,
+                                                    dtype=tf.float32,parallel_iterations=32,
                                                     sequence_length=sequence_length)
     last_output = tf.concat([state_[0][1],state_[1][1]],-1,name='last_output')
 with tf.name_scope('dense') as scope:
@@ -197,7 +197,7 @@ for variable in tf.trainable_variables():
     total_parameters += variable_parameters
 print(total_parameters)
 print len(result)
-training_epochs  = 120
+training_epochs  = 100
 
 import sklearn.metrics,random
 '''
@@ -271,91 +271,62 @@ for repeat in range(0,1): #perform 5 repeats
 
         best_roc_val = {}     # stores val ROC for trainnig epochs per CV+repeat run
         for epoch in range(training_epochs):#training_epochs):
-            if epoch%30 ==0 :
+            if epoch%50 ==0 :
                 init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
             logit_train = []
             cost_train = []
             random.seed(epoch)
-            shuffle = range(len(X_train_weighted)) #shuffle index of X_train
+            sorted_data = zip(X_train_weighted,y_train_weighted)
+            shuffle = sorted_data #shuffle index 
             random.shuffle(shuffle)
             counter = 0
-            for i in shuffle[::10]: #training with bagging
-                lr = 0.0025*np.abs(np.cos(0.5*3.142*counter/len(shuffle[::10])))
+            for i in range(0,len(shuffle),32): #training with bagging
+                lr = 0.012*np.abs(np.cos(0.5*3.142*counter/len(shuffle[::32])))
                 counter += 1
-                Inp0_,Inp1_,Inp2_,labels_,length_ = get_data_from_X(X_train_weighted,y_train_weighted,i)        
+                Inp0_,Inp1_,Inp2_,labels_,length_ = get_batch_from_X(sorted_data[i:i+32])       
                 _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,Inp2: Inp2_,
                                                                    Inp1: Inp1_,sequence_length:length_,
                                                                    labels: labels_,
-                                                                   dropout : 0.1,learning_rate : lr}) #sgd
+                                                                   dropout : 0.0,learning_rate : lr}) #sgd
             logit_train = []
             cost_train = []
             lr = 0
             sorted_data = zip(X_train,y_train)#sorted(zip(X_train,y_train),key = lambda x : x[0][-1][0])
-            initial=0
             y_temp = []
-            for i in range(0,len(sorted_data)-1): #train error
-                if sorted_data[i+1][0][-1][0] == sorted_data[i][0][-1][0] and i!= len(sorted_data)-2: #getting same length together
-                    None
-                else:
-                    if i == len(sorted_data)-2:
-                        i = len(sorted_data) #there is a case whereby last in loop is of diff length, will break this code
-                    Inp0_,Inp1_,Inp2_,labels_,length_ = get_batch_from_X(sorted_data[initial:i+1])
-                    c, out = sess.run ([acc, out_softmax],
-                                       feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,sequence_length : length_,
-                                        labels: labels_,dropout : 0,learning_rate : lr})
-                    initial = i+1
-                    cost_train += [c,]*len(Inp0_)
-                    logit_train += list(out[:,0])
-                    y_temp += list(labels_[:,0])
+            Inp0_,Inp1_,Inp2_,labels_,length_ = get_batch_from_X(sorted_data)
+            c, out = sess.run ([acc, out_softmax],
+                               feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,sequence_length : length_,
+                                labels: labels_,dropout : 0,learning_rate : 0})
+            cost_train += [c,]*len(Inp0_)
+            logit_train += list(out[:,0])
+            y_temp += list(labels_[:,0])
             roc_train   = sklearn.metrics.roc_auc_score(y_temp,logit_train)
                     
             logit_val = []
             cost_val = []
             sorted_data = zip(X_val,y_val)#sorted(zip(X_val,y_val),key = lambda x : x[0][-1][0])
-            initial=0
             y_temp = []
-            for i in range(0,len(sorted_data)-1): #train error
-                if sorted_data[i+1][0][-1][0] == sorted_data[i][0][-1][0] and i!= len(sorted_data)-2: #getting same length together
-                    None
-                else:
-                    if i == len(sorted_data)-2:
-                        i = len(sorted_data) #there is a case whereby last in loop is of diff length, will break this code
-                    Inp0_,Inp1_,Inp2_,labels_,length_ = get_batch_from_X(sorted_data[initial:i+1])
-                    c, out = sess.run ([acc, out_softmax],
-                                       feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,sequence_length : length_,
-                                        labels: labels_,dropout : 0,learning_rate : lr})
-                    initial = i+1
-                    cost_val += [c,]*len(Inp0_)
-                    logit_val += list(out[:,0])
-                    y_temp += list(labels_[:,0])
+            Inp0_,Inp1_,Inp2_,labels_,length_ = get_batch_from_X(sorted_data)
+            c, out = sess.run ([acc, out_softmax],
+                               feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,sequence_length : length_,
+                                labels: labels_,dropout : 0,learning_rate : 0})
+            cost_val += [c,]*len(Inp0_)
+            logit_val += list(out[:,0])
+            y_temp += list(labels_[:,0])
             roc_val   = sklearn.metrics.roc_auc_score(y_temp,logit_val)
 
             logit_test = []
             cost_test = []
-            if False: #single is slow
-                for i in range(len(X_test)): #test errror
-                    Inp0_,Inp1_,Inp2_,labels_,length_ = get_data_from_X(X_test,y_test,i)
-                    c, out = sess.run ([acc, out_softmax], feed_dict={Inp0: Inp0_,
-                                      Inp1: Inp1_,Inp2: Inp2_,
-                                      labels: labels_,sequence_length:length_,
-                                      dropout : 0,learning_rate : lr})
-            sorted_data = zip(X_test,y_test)#sorted(zip(X_test,y_test),key = lambda x : x[0][-1][0])
-            initial=0
+
+            sorted_data = zip(X_test,y_test)
             y_temp = []
-            for i in range(0,len(sorted_data)-1): #train error
-                if sorted_data[i+1][0][-1][0] == sorted_data[i][0][-1][0] and i!= len(sorted_data)-2: #getting same length together
-                    None
-                else:
-                    if i == len(sorted_data)-2:
-                        i = len(sorted_data) #there is a case whereby last in loop is of diff length, will break this code 
-                    Inp0_,Inp1_,Inp2_,labels_ = get_batch_from_X(sorted_data[initial:i+1])
-                    c, out = sess.run ([acc, out_softmax],
-                                       feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,sequence_length : length_,
-                                        labels: labels_,dropout : 0,learning_rate : lr})
-                    initial = i+1
-                    cost_test += [c,]*len(Inp0_)
-                    logit_test += list(out[:,0])
-                    y_temp += list(labels_[:,0])
+            Inp0_,Inp1_,Inp2_,labels_,length_ = get_batch_from_X(sorted_data)
+            c, out = sess.run ([acc, out_softmax],
+                               feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,sequence_length : length_,
+                                labels: labels_,dropout : 0,learning_rate : lr})
+            cost_test += [c,]*len(Inp0_)
+            logit_test += list(out[:,0])
+            y_temp += list(labels_[:,0])
             roc_test   = sklearn.metrics.roc_auc_score(y_temp,logit_test)
                     
             print np.mean(cost_train),np.mean(cost_val)
@@ -370,8 +341,8 @@ for repeat in range(0,1): #perform 5 repeats
                 init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
             best_logit_test = sorted([best_roc_val[ep] for ep in best_roc_val], key = lambda x :x[1])[-3:]
             if len(best_logit_test) >=3 and best_logit_test[0][1] <= roc_val:
-                model_name = 'LSTM1_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
-                #saver.save(sess,model_name),
+                model_name = './CNN_layer2_test.pyLSTM1_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
+                saver.save(sess,model_name),
                 print 'SAVED\n'
         for j in best_logit_test:
             test_emsemble += [j[3],]

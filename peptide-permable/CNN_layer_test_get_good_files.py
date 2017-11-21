@@ -234,7 +234,7 @@ for test in range(0,5):
     #print 'train+val  size :', len(X)
     saver = tf.train.Saver( max_to_keep=5000)
     import os
-    all_models = [x[:-5] for x in os.listdir('.') if ('.ckpt.meta' in x and x.startswith('model5'))]
+    all_models = [x[:-5] for x in os.listdir('.') if ('.ckpt.meta' in x and x.startswith('model7'))]
     dictt_model = {}
     for i1 in range(0,5): #test set
         for i2 in range(0,5): #CV set
