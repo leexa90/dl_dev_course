@@ -244,6 +244,7 @@ for i1 in range(0,5): #test set
                     dictt_model[(i1,i2)] += [j,]
 
 for test in range(0,5):
+    X = data['X'].copy(deep=True)
     X_test = []
     y_test = []
     print 'train_val_test size:' , len(X)
@@ -253,6 +254,7 @@ for test in range(0,5):
             X_test += [(x[0],x[1],x[2],x[3]),]
             y_test += [x[-1],]
             X[i] = 'test'
+    X = [x for x in X if x != 'test']
     repeat = 0
     for repeat in range(0,1): #perform 5 repeats
         for CV in range(folds-1): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)# 
@@ -283,23 +285,23 @@ for test in range(0,5):
             for file in dictt_model[(test,CV)]:#training_epochs):
                 print file
                 saver.restore(sess,file)
-                if epoch%50 ==0 :
-                    init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
                 logit_train = []
                 cost_train = []
+                epoch = 0
                 random.seed(epoch)
                 sorted_data = zip(X_train_weighted,y_train_weighted)
                 shuffle = sorted_data #shuffle index 
                 random.shuffle(shuffle)
                 counter = 0
-                for i in range(0,len(shuffle),32): #training with bagging
-                    lr = 0.012*np.abs(np.cos(0.5*3.142*counter/len(shuffle[::32])))
-                    counter += 1
-                    Inp0_,Inp1_,Inp2_,labels_,length_ = get_batch_from_X(sorted_data[i:i+32])       
-                    _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,Inp2: Inp2_,
-                                                                       Inp1: Inp1_,sequence_length:length_,
-                                                                       labels: labels_,
-                                                                       dropout : 0.0,learning_rate : lr}) #sgd
+                if False:
+                    for i in range(0,len(shuffle),32): #training with bagging
+                        lr = 0.012*np.abs(np.cos(0.5*3.142*counter/len(shuffle[::32])))
+                        counter += 1
+                        Inp0_,Inp1_,Inp2_,labels_,length_ = get_batch_from_X(sorted_data[i:i+32])       
+                        _, c = sess.run([optimizer, acc], feed_dict={Inp0: Inp0_,Inp2: Inp2_,
+                                                                           Inp1: Inp1_,sequence_length:length_,
+                                                                           labels: labels_,
+                                                                           dropout : 0.0,learning_rate : lr}) #sgd
                 logit_train = []
                 cost_train = []
                 lr = 0
@@ -357,5 +359,5 @@ for test in range(0,5):
         
 data['pred'] = 0
 data.set_value(range(test,len(data),5),'pred',np.mean(np.array(test_emsemble),0))
-data[['seq','source','pred']].to_csv('model_LSTM1.csv'%test,index=0)
+data[['seq','source','pred']].to_csv('model_LSTM1.csv',index=0)
         
