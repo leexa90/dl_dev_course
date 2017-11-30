@@ -3,9 +3,6 @@ import matplotlib.pyplot as plt
 import  numpy as np
 import xgboost as xgb
 import pandas as pd
-import sys
-sys.path.append('/media/leexa/97ba6a6b-3f4d-4528-84ca-50200ba4594f/Dropbox/dl_dev_course/peptide-permable/pairwise-alignment-in-python')
-import alignment
 float_formatter = lambda x: "%.3f" % x
 np.set_printoptions(formatter={'float_kind':float_formatter})
 dictt = {'A': 0, 'C': 1, 'E': 2, 'D': 3, 'G': 4,
@@ -41,7 +38,7 @@ dictt_hydropathy  = {
 'Z' : [ 1.3,  2.2,  0.9, -0.5], #E or Q (mass spec data cannot differentiate)
 'B' : [ 0.825,  2.245,  1.42 , -0.5  ], #D or N (mass spec data cannot differentiate)
 'X' : [0,0,0,0]} 
-data = pd.read_csv('bioactive_PDB_cpp.csv').dropna()
+data = pd.read_csv('data_kmean.csv').dropna()
 def fn1(str):
     num=0.0
     for i in str:
@@ -112,9 +109,7 @@ for idx in range(len(data)):
     #print '> %s\n%s' %(i,i)
     counter += 1
 data['X'] = X
-kmean = np.load('Kmean.npy')
-data['fold']=kmean
-data = data.sort_values(by = ['len','source']).reset_index(drop=True)
+
 for i in ['length','netcharge','Gwif','Goct']:
     data[i] = 0
 data['y'] = 0
@@ -131,188 +126,6 @@ features=['per_A', 'num_A', 'per_C', 'num_C', 'per_E', 'num_E', 'per_D', 'num_D'
 X = data[features+['y']].copy().values
 import sklearn.metrics,random
 
-sim_matrix = np.zeros((len(data),len(data)))
-
-import sys
-if len(sys.argv) >= 2:
-    start = sys.argv[1]
-else:
-    start = 0
-print start
-start = int(start)
-if False:
-    for i in range(start,len(data),7):
-        seq1 = data.iloc[i]['seq']
-        print seq1
-        for j in range(i+1,len(data)):
-            seq2 = data.iloc[j]['seq']
-            score = alignment.needle(seq1,seq2)[-1]
-            sim_matrix[i,j] = score
-            sim_matrix[j,i] = score
-    np.savez_compressed('sim_matrix%s.npy.zip'%start,sim_matrix)
-if True:
-    for start in range(0,7):
-         sim_matrix =  sim_matrix + np.load('sim_matrix%s.npy.zip.npz' %start).items()[0][1]
-def swap_rows(C, var1, var2):
-        '''
-        Function to swap two rows in a covariance matrix,
-        updating the appropriate columns as well.
-        '''
-        D = C.copy()
-        D[var2, :] = C[var1, :]
-        D[var1, :] = C[var2, :]
-
-        E = D.copy()
-        E[:, var2] = D[:, var1]
-        E[:, var1] = D[:, var2]
-
-        return E
-die
-if True: 
-    from sklearn.cluster import KMeans
-    eigen_values, eigen_vectors = np.linalg.eigh(sim_matrix)
-    means=KMeans(n_clusters=5, init='k-means++').fit_predict(eigen_vectors[:, -2:])
-dictt = {0: 'ro', 1: 'bo', 2: 'go', 3: 'ko', 4: 'co'}
-for mean in range(0,5):
-    x = []
-    y = []
-    for i in np.matmul(sim_matrix[means==mean],eigen_vectors[:, -2:]):
-        x += [i[0],]
-        y += [i[1],]
-    plt.plot(x,y,dictt[mean])
-plt.show()
-        
-
-                
-            
-#https://stats.stackexchange.com/questions/138325/clustering-a-correlation-matrix
-if False:
-    import numpy as np
-    from matplotlib import pyplot as plt
-
-    # This generates 100 variables that could possibly be assigned to 5 clusters
-    n_variables = 9727
-    n_clusters = 5
-    n_samples = 1000
-
-    # To keep this example simple, each cluster will have a fixed size
-    cluster_size = n_variables / n_clusters
-
-    # Assign each variable to a cluster
-    belongs_to_cluster = np.repeat(range(n_clusters), cluster_size)
-    np.random.shuffle(belongs_to_cluster)
-
-    # This latent data is used to make variables that belong
-    # to the same cluster correlated.
-    latent = np.random.randn(n_clusters, n_samples)
-
-##    variables = []
-##    for i in range(n_variables):
-##        variables.append(
-##            np.random.randn(n_samples) + latent[belongs_to_cluster[i], :]
-##        )
-##
-##    variables = np.array(variables)
-
-    C = sim_matrix
-
-    def score(C):
-        '''
-        Function to assign a score to an ordered covariance matrix.
-        High correlations within a cluster improve the score.
-        High correlations between clusters decease the score.
-        '''
-        score = 0
-        for cluster in range(n_clusters):
-            inside_cluster = np.arange(cluster_size) + cluster * cluster_size
-            outside_cluster = np.setdiff1d(range(n_variables), inside_cluster)
-
-            # Belonging to the same cluster
-            score += np.sum(C[inside_cluster, :][:, inside_cluster])
-
-            # Belonging to different clusters
-            score -= np.sum(C[inside_cluster, :][:, outside_cluster])
-            score -= np.sum(C[outside_cluster, :][:, inside_cluster])
-
-        return score
-
-
-    initial_C = C
-    initial_score = score(C)
-    initial_ordering = np.arange(n_variables)
-
-    plt.figure()
-    plt.imshow(C, interpolation='nearest')
-    plt.title('Initial C')
-    print 'Initial ordering:', initial_ordering
-    print 'Initial covariance matrix score:', initial_score
-
-    # Pretty dumb greedy optimization algorithm that continuously
-    # swaps rows to improve the score
-    def swap_rows(C, var1, var2):
-        '''
-        Function to swap two rows in a covariance matrix,
-        updating the appropriate columns as well.
-        '''
-        D = C.copy()
-        D[var2, :] = C[var1, :]
-        D[var1, :] = C[var2, :]
-
-        E = D.copy()
-        E[:, var2] = D[:, var1]
-        E[:, var1] = D[:, var2]
-
-        return E
-
-    current_C = C
-    current_ordering = initial_ordering
-    current_score = initial_score
-
-    max_iter = 100
-    for i in range(max_iter):
-        print i,
-        # Find the best row swap to make
-        best_C = current_C
-        best_ordering = current_ordering
-        best_score = current_score
-        for row1 in range(np.random.randint(0,20),n_variables,20):
-            for row2 in range(row1+np.random.randint(0,20),n_variables,20):
-                if row1 == row2:
-                    continue
-                option_ordering = best_ordering.copy()
-                option_ordering[row1] = best_ordering[row2]
-                option_ordering[row2] = best_ordering[row1]
-                option_C = swap_rows(best_C, row1, row2)
-                option_score = score(option_C)
-
-                if option_score > best_score:
-                    best_C = option_C
-                    best_ordering = option_ordering
-                    best_score = option_score
-
-        if best_score > current_score:
-            # Perform the best row swap
-            current_C = best_C
-            current_ordering = best_ordering
-            current_score = best_score
-            print score
-        else:
-            # No row swap found that improves the solution, we're done
-            break
-
-    # Output the result
-    plt.figure()
-    plt.imshow(current_C, interpolation='nearest')
-    plt.title('Best C')
-    print 'Best ordering:', current_ordering
-    print 'Best score:', current_score
-    print
-    print 'Cluster     [variables assigned to this cluster]'
-    print '------------------------------------------------'
-    for cluster in range(n_clusters):
-        print 'Cluster %02d  %s' % (cluster + 1, current_ordering[cluster*cluster_size:(cluster+1)*cluster_size])
-        
-kill
 
 RESULT = {}
 import sys
@@ -331,14 +144,15 @@ def get_data_from_X(X,y,i): #get tensor inputs from X and y
     return Inp0_,Inp1_,Inp2_,labels_
 folds= 5
 for test in range(0,5):
+    test = 1
     X = data[features+['y']].copy().values
     folds= 5
     # ensure no leakage of train to test, was getting 95 AUC
     X_test = []
     y_test = []
     print 'train_val_test size:' , len(X)
-    for i in range(test,len(X),folds):
-        if i%5 == test:
+    for i in range(len(X)):
+        if data.iloc[i].kmeans%5 == test:
             x = X[i].copy() #or else x is only a reference
             X_test += [x[:-1],]
             y_test += [x[-1],]
@@ -346,9 +160,11 @@ for test in range(0,5):
     X = [x for x in X if -999 not in x]
     print 'train+val  size :', len(X)
     test_emsemble= []
-
+    
     for repeat in range(0,1): #perform 5 repeats
-        for CV in range(folds-1): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)# 
+        for CV in range(0,5): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)#
+            if CV==test:
+                continue
             RESULT[CV] = []
             X_train = []
             y_train = []
@@ -356,7 +172,7 @@ for test in range(0,5):
             y_val = []    
             for i in range(len(X)):
                 x = X[i]
-                if i%5 == CV:
+                if data.iloc[i].kmeans%5 == CV:
                     X_val += [x[:-1],]
                     y_val += [x[-1],]
                 else:
@@ -402,12 +218,12 @@ for test in range(0,5):
 
                 test_emsemble += [result_d.predict(xgtest),]
                 model_name = 'XGB1_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
-                result_d.save_model(model_name)
+                #result_d.save_model(model_name)
                 del result_d
             print sklearn.metrics.roc_auc_score(y_test,np.mean(np.array(test_emsemble),0))
 
-    zz=data.set_value(range(test,len(data),5),'testPred',np.mean(np.array(test_emsemble),0))
-    zz=data.set_value(range(test,len(data),5),'testY',y_test)
-    data.iloc[range(test,len(data),5)].to_csv('XGB_%s.csv' %test,index=0)
+    zz=data.set_value(data[data['kmeans']==test].index,'testPred',np.mean(np.array(test_emsemble),0))
+    zz=data.set_value(data[data['kmeans']==test].index,'testY',y_test)
+    #data.iloc[range(test,len(data),5)].to_csv('XGB_%s.csv' %test,index=0)
 print sklearn.metrics.roc_auc_score(data.testY,data.testPred)
-data.to_csv('XGB_all.csv',index=0)
+data[['seq','source','kmeans','testPred','testY']].to_csv('XGB_all_kmeans.csv',index=0)
