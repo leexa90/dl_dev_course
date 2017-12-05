@@ -401,7 +401,7 @@ for c1 in range(0,13): #first three res #start from4
                     data['length'] = 13
                     data[['netcharge','Gwif','Goct']] = Inp2_[:,0:3]
                     Inp2_ = np.concatenate([np.array([[13,]*10*8000]).T,Inp2_,data[features[:-4]].values],1)
-                    if True:
+                    if False:
                         for test_fold in dictt_model:
                             for file in  sorted(dictt_model[test_fold],
                                 key = lambda x : np.float(x[:-5].split('_')[1:][-2]))[-3:]:
@@ -423,11 +423,12 @@ for c1 in range(0,13): #first three res #start from4
                                    'num_P', 'per_S', 'num_S', 'per_R', 'num_R', 'per_T', 'num_T', 'per_W', 'num_W',
                                    'per_V', 'num_V', 'per_Y', 'num_Y', 'length','netcharge', 'Gwif', 'Goct']
                     X = data[xgb_features].copy().values
-                    xgtest    = xgb.DMatrix(X, feature_names=xgb_features)
+                    xgtest    = xgb.DMatrix(map(np.array,X),missing=np.NAN, feature_names=xgb_features)
+                    # map(np.array,X) --> it is list of arrays, works that way
                     temp_xgb = []
                     data['prob_xgb']=0
-                    for file in [x for x in os.listdir('../') if ('XGB' in x and '.ckpt' in x)]:
-                        bst = xgb.Booster({'nthread':6})
+                    for file in [x for x in os.listdir('../') if ('XGB3' in x and '.ckpt' in x)]:
+                        bst = xgb.Booster({'nthread':4})
                         bst.load_model('../'+file)
                         data['prob'+str(file)]= bst.predict(xgtest)
                         temp_xgb += [bst.predict(xgtest),]
@@ -435,7 +436,7 @@ for c1 in range(0,13): #first three res #start from4
                     data['prob_xgb'] = data['prob_xgb']/20
                     data_all = data_all.append(data)
                     print time.clock()-prev_time,'\n',
-                    prev_time = time.clock()
+                    prev_time = time.clock();die
                     #data.to_csv('results/results5_%s_%s_%s.csv' %(c1,c2,c3),index=0)
                 counter_batch += 1
                 print counter_batch,

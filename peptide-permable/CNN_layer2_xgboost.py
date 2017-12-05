@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt
 import  numpy as np
-import xgboost as xgb
+import tensorflow as tf
 import pandas as pd
+import xgboost as xgb
 float_formatter = lambda x: "%.3f" % x
 np.set_printoptions(formatter={'float_kind':float_formatter})
 dictt = {'A': 0, 'C': 1, 'E': 2, 'D': 3, 'G': 4,
          'F': 5, 'I': 6, 'H': 7, 'K': 8, 'M': 9,
          'L': 10, 'N': 11, 'Q': 12, 'P': 13, 'S': 14,
          'R': 15, 'T': 16, 'W': 17, 'V': 18, 'Y': 19  }
+import xgboost 
 #Interface Scale
 #ΔGwif (kcal/mol) 	Octanol Scale
 #ΔGwoct (kcal/mol) 	Octanol − Interface
@@ -44,7 +46,7 @@ def fn1(str):
     for i in str:
         if i.upper() == 'R' or i.upper() == 'K':
             num += 1
-    if num/len(str) > 0.334: #should be tweaked
+    if num/len(str) > .334: #should be tweaked
         return 0
     return len(set(str))
 def fn2(str): # find if sequence has weird bonds
@@ -56,73 +58,67 @@ def fn2(str): # find if sequence has weird bonds
             return 1    
     return 0
 #notable non-cannonical residues , U - selnocysteine
-data['type_aa'] = data['seq'].apply(fn1)
+if True:
+    data['type_aa'] = data['seq'].apply(fn1)
+    data = data[data['type_aa'] >= 4]
+    print 'removing these number of non-cannonical peptides' ,len(data[data['seq'].apply(fn2) == 1])
+    data = data[data['seq'].apply(fn2) == 0] # remove peptides with weird chemical bonds , and non-cannonical res (mostly negavtives)
+    data['len'] = data.seq.apply(len)
+    data = data.sort_values(by = ['len','source']).reset_index(drop=True)
+    # get frequencies of amino acids
+    all = np.concatenate([data.seq])
+    result = {}
+    for i in all:
+            for j in i :
+                    if j not in result:
+                            result[j] =1
+                    else:
+                            result[j] += 1
+    print result
+    total_aa = np.sum([result[x] for x in result])
+    for i in result:
+            result[i] = np.round(result[i]*1.0 /total_aa,3)
+    print result
+    ######### Start of initilziing data ###
+    X = []
+    counter = 0
+    ## creates num of residue...
+    features = []
+    for i in dictt:
+        def fn(str):
+            result = 0.0
+            for j in str:
+                if j.upper() == i:
+                    result += 1
+            return result
+        data['num_'+str(i)] = data['seq'].apply(fn)
+        data['per_'+str(i)] = data['num_'+str(i)]/data['len']
+        features += ['per_'+str(i),'num_'+str(i)]
 
-data = data[data['type_aa'] >= 4]
-print 'removing these number of non-cannonical peptides' ,len(data[data['seq'].apply(fn2) == 1])
-data = data[data['seq'].apply(fn2) == 0] # remove peptides with weird chemical bonds , and non-cannonical res (mostly negavtives)
-data['len'] = data.seq.apply(len)
-data = data.sort_values(by = ['len','source']).reset_index(drop=True)
-# get frequencies of amino acids
-all = np.concatenate([data.seq])
-result = {}
-for i in all:
-	for j in i :
-		if j not in result:
-			result[j] =1
-		else:
-			result[j] += 1
-print result
-total_aa = np.sum([result[x] for x in result])
-for i in result:
-	result[i] = np.round(result[i]*1.0 /total_aa,3)
-print result
-######### Start of initilziing data ###
-X = []
-counter = 0
-## creates num of residue...
-features = []
-for i in dictt:
-    def fn(str):
-        result = 0.0
-        for j in str:
-            if j.upper() == i:
-                result += 1
-        return result
-    data['num_'+str(i)] = data['seq'].apply(fn)
-    data['per_'+str(i)] = data['num_'+str(i)]/data['len']
-    features += ['per_'+str(i),'num_'+str(i)]
+    for idx in range(len(data)):
+        i = data.iloc[idx]['seq'].upper()
+        temp = np.zeros((len(i),5))
+        for j in  range(len(i)):
+            res = dictt[i[j]]
+            temp[j][0] = res
+            #temp[j][-1] = len(i)*0.01
+            temp[j][-4:] = dictt_hydropathy[i[j]]
+        temp = temp.T
+        alternative = [len(i),np.sum(temp[-1,:]),np.sum(temp[-2,:]),np.sum(temp[-3,:])]
+        alternative += list(data.iloc[idx][features]) #add ratio for aa
+        per = data.iloc[idx]['source'] == 2 
+        X += [[temp[0],temp[1:],alternative,i,per*1],]
+        #print '> %s\n%s' %(i,i)
+        counter += 1
+    data['X'] = X
 
-for idx in range(len(data)):
-    i = data.iloc[idx]['seq'].upper()
-    temp = np.zeros((len(i),5))
-    for j in  range(len(i)):
-        res = dictt[i[j]]
-        temp[j][0] = res
-        #temp[j][-1] = len(i)*0.01
-        temp[j][-4:] = dictt_hydropathy[i[j]]
-    temp = temp.T
-    alternative = [len(i),np.sum(temp[-1,:]),np.sum(temp[-2,:]),np.sum(temp[-3,:])]
-    alternative += list(data.iloc[idx][features]) #add ratio for aa
-    per = data.iloc[idx]['source'] == 2 
-    X += [[temp[0],temp[1:],alternative,i,per*1],]
-    #print '> %s\n%s' %(i,i)
-    counter += 1
-data['X'] = X
-
-for i in ['length','netcharge','Gwif','Goct']:
-    data[i] = 0
-data['y'] = 0
-for i in range(0,len(data)):
-    temp = data.iloc[i]['X'][-3]
-    zz = data.set_value(i,['length','netcharge','Gwif','Goct'],temp[0:4])
-    zz = data.set_value(i,'y',data.iloc[i]['X'][-1])
-
-features=['per_A', 'num_A', 'per_C', 'num_C', 'per_E', 'num_E', 'per_D', 'num_D', 'per_G', 'num_G',
- 'per_F', 'num_F', 'per_I', 'num_I', 'per_H', 'num_H', 'per_K', 'num_K', 'per_M', 'num_M',
- 'per_L', 'num_L', 'per_N', 'num_N', 'per_Q', 'num_Q', 'per_P', 'num_P', 'per_S', 'num_S', 'per_R', 'num_R', 'per_T', 'num_T',
- 'per_W', 'num_W', 'per_V', 'num_V', 'per_Y', 'num_Y', 'length', 'netcharge', 'Gwif', 'Goct']
-
+    for i in ['length','netcharge','Gwif','Goct']:
+        data[i] = 0
+    data['y'] = 0
+    for i in range(0,len(data)):
+        temp = data.iloc[i]['X'][-3]
+        zz = data.set_value(i,['length','netcharge','Gwif','Goct'],temp[0:4])
+        zz = data.set_value(i,'y',data.iloc[i]['X'][-1])
 X = data[features+['y']].copy().values
 import sklearn.metrics,random
 
@@ -176,6 +172,7 @@ for test in range(0,5):
                     X_train += [x[:-1],]
                     y_train += [x[-1],]
             predictors = features
+            print predictors
             xgcv    = xgb.DMatrix(X_val, label=y_val,missing=np.NAN,feature_names=predictors)
             print predictors
             xgtest    = xgb.DMatrix(X_test, label=y_test,missing=np.NAN,feature_names=predictors)
@@ -189,7 +186,7 @@ for test in range(0,5):
             params["subsample"] = 0.7
             params["colsample_bytree"] = 0.7
             params["scale_pos_weight"] = 1.0
-            params["silent"] = 500
+            #params["silent"] = 500
             params["max_depth"] = 6
             params['seed']=1
             #params['maximize'] =True
@@ -214,13 +211,13 @@ for test in range(0,5):
                 all_data += [[roc_train,roc_val,roc_test],]
 
                 test_emsemble += [result_d.predict(xgtest),]
-                model_name = 'XGB1_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
-                result_d.save_model(model_name)
+                model_name = 'XGB3_%s_%s_%s_%s_%s_%s.ckpt' %(test,CV,repeat,str(roc_train)[:5],str(roc_val)[:5],str(roc_test)[:5])
+                result_d.save_model(model_name);dies
                 del result_d
             print sklearn.metrics.roc_auc_score(y_test,np.mean(np.array(test_emsemble),0))
 
     zz=data.set_value(range(test,len(data),5),'testPred',np.mean(np.array(test_emsemble),0))
     zz=data.set_value(range(test,len(data),5),'testY',y_test)
-    data.iloc[range(test,len(data),5)].to_csv('XGB_%s.csv' %test,index=0)
+    data.iloc[range(test,len(data),5)].to_csv('XGB3_%s.csv' %test,index=0)
 print sklearn.metrics.roc_auc_score(data.testY,data.testPred)
-data.to_csv('XGB_all.csv',index=0)
+data.to_csv('XGB3_all.csv',index=0)
