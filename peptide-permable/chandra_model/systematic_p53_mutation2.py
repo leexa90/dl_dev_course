@@ -427,19 +427,26 @@ for c1 in range(0,13): #first three res #start from4
                     # map(np.array,X) --> it is list of arrays, works that way
                     temp_xgb = []
                     data['prob_xgb']=0
-                    for file in [x for x in os.listdir('../') if ('XGB3' in x and '.ckpt' in x)]:
+                    for file in sorted([x for x in os.listdir('../') if ('XGB3' in x and '.ckpt' in x)])[::4]:
                         bst = xgb.Booster({'nthread':4})
                         bst.load_model('../'+file)
                         data['prob'+str(file)]= bst.predict(xgtest)
                         temp_xgb += [bst.predict(xgtest),]
                         data['prob_xgb'] =  data['prob_xgb'] + temp_xgb[-1]
-                    data['prob_xgb'] = data['prob_xgb']/20
+                    data['prob_xgb'] = data['prob_xgb']/5
                     data_all = data_all.append(data)
+                    print data.sort_values('prob_xgb')[-5:]['prob_xgb'].values
                     print time.clock()-prev_time,'\n',
-                    prev_time = time.clock();die
+                    prev_time = time.clock();
                     #data.to_csv('results/results5_%s_%s_%s.csv' %(c1,c2,c3),index=0)
                 counter_batch += 1
                 print counter_batch,
+keys = [x for x in data.keys() if 'XGB3' in str(x)]
+data_all['var']  = np.var(data[keys],1)
+data['source'] = -999
+data[['seq','var','prob_xgb','source']].to_csv('Xgb3.csv',index=0)
+     
+die
 data_all.to_csv('Xgb_CNN.csv',index=0)
 for test in range(0,5):
     temp_xgb = []
