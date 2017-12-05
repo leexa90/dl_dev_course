@@ -237,7 +237,7 @@ def get_data_from_X(X,y,i=i): #get tensor inputs from X and y
     return Inp0_,Inp1_,Inp2_,labels_
 folds= 5
 lr = 0
-p53= 'ETFSDLWKLLPEN'
+p53= 'ETFSDLWKLLPE'
 XX = [(p53[0],p53[1],p53[2]),]
 yy = [p53[-1],]
 Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
@@ -315,10 +315,11 @@ def recursive_tree(seq,ans = []):
             temp += recursive_tree(seq,ans + [i,])
         return  temp
 
-p53_seq='ETFSDLWKLLPEN'
+p53_seq='ETFSDLWKLLPE'
+len_ = len(p53_seq)
 unchanged=(2,6,9)
 iterate  = {}
-for i in range(0,13):
+for i in range(0,len_ ):
     iterate[i] = []
     if i not in (2,6,9): # exclude impt residues
         for j in range(0,20):
@@ -369,12 +370,12 @@ def get_aa_freq(data):
     return data
 features += ['length','netcharge','Gwif','Goct']
 counter_batch=0
-data_all = pd.DataFrame(columns=['seq',]+range(0,13)+['per_A', 'num_A', 'per_C', 'num_C', 'per_E', 'num_E', 'per_D', 'num_D', 'per_G', 'num_G', 'per_F', 'num_F', 'per_I', 'num_I', 'per_H', 'num_H', 'per_K', 'num_K', 'per_M', 'num_M', 'per_L', 'num_L', 'per_N', 'num_N', 'per_Q', 'num_Q', 'per_P', 'num_P', 'per_S', 'num_S', 'per_R', 'num_R', 'per_T', 'num_T', 'per_W', 'num_W', 'per_V', 'num_V', 'per_Y', 'num_Y', 'length', 'netcharge', 'Gwif', 'Goct'])
+data_all = pd.DataFrame(columns=['seq',]+range(0,len_ )+['per_A', 'num_A', 'per_C', 'num_C', 'per_E', 'num_E', 'per_D', 'num_D', 'per_G', 'num_G', 'per_F', 'num_F', 'per_I', 'num_I', 'per_H', 'num_H', 'per_K', 'num_K', 'per_M', 'num_M', 'per_L', 'num_L', 'per_N', 'num_N', 'per_Q', 'num_Q', 'per_P', 'num_P', 'per_S', 'num_S', 'per_R', 'num_R', 'per_T', 'num_T', 'per_W', 'num_W', 'per_V', 'num_V', 'per_Y', 'num_Y', 'length', 'netcharge', 'Gwif', 'Goct'])
 import time
 prev_time= time.clock()
-for c1 in range(0,13): #first three res #start from4
-    for c2 in range(c1+1,13):
-        for c3 in range(c2+1,13):
+for c1 in range(0,len_ ): #first three res #start from4
+    for c2 in range(c1+1,len_ ):
+        for c3 in range(c2+1,len_ ):
              if c2 not in unchanged and c1 not in unchanged and c3 not in unchanged: #readable but slower
                 print 'Run :',c1,c2,c3,
                 if counter_batch %10 == 0: #batch of 40k
@@ -389,18 +390,18 @@ for c1 in range(0,13): #first three res #start from4
                     Inp0_ = np.concatenate((Inp0_,temp0))
                     Inp1_ = np.concatenate((Inp1_,temp1))
                     Inp2_ = np.concatenate((Inp2_,temp2))
-                    data = pd.DataFrame(Inp0_,columns=range(13))
+                    data = pd.DataFrame(Inp0_,columns=range(len_ ))
                         
-                    data['seq'] = map(get_seq,data[range(0,13)].values)
+                    data['seq'] = map(get_seq,data[range(0,len_ )].values)
                     data['len'] = data['seq'].apply(len)
                     data['prob']  = 0
                     counter =0
                     data = get_aa_freq(data)
                     for extra in ['length','netcharge','Gwif','Goct']:
                         data[extra] = 0
-                    data['length'] = 13
+                    data['length'] = len_ 
                     data[['netcharge','Gwif','Goct']] = Inp2_[:,0:3]
-                    Inp2_ = np.concatenate([np.array([[13,]*10*8000]).T,Inp2_,data[features[:-4]].values],1)
+                    Inp2_ = np.concatenate([np.array([[len_ ,]*10*8000]).T,Inp2_,data[features[:-4]].values],1)
                     if False:
                         for test_fold in dictt_model:
                             for file in  sorted(dictt_model[test_fold],
@@ -427,13 +428,13 @@ for c1 in range(0,13): #first three res #start from4
                     # map(np.array,X) --> it is list of arrays, works that way
                     temp_xgb = []
                     data['prob_xgb']=0
-                    for file in sorted([x for x in os.listdir('../') if ('XGB3' in x and '.ckpt' in x)])[::4]:
+                    for file in sorted([x for x in os.listdir('../') if ('XGB3' in x and '.ckpt' in x)])[::10]:
                         bst = xgb.Booster({'nthread':4})
                         bst.load_model('../'+file)
                         data['prob'+str(file)]= bst.predict(xgtest)
                         temp_xgb += [bst.predict(xgtest),]
                         data['prob_xgb'] =  data['prob_xgb'] + temp_xgb[-1]
-                    data['prob_xgb'] = data['prob_xgb']/5
+                    data['prob_xgb'] = data['prob_xgb']/2
                     data_all = data_all.append(data)
                     print data.sort_values('prob_xgb')[-5:]['prob_xgb'].values
                     print time.clock()-prev_time,'\n',
@@ -441,11 +442,28 @@ for c1 in range(0,13): #first three res #start from4
                     #data.to_csv('results/results5_%s_%s_%s.csv' %(c1,c2,c3),index=0)
                 counter_batch += 1
                 print counter_batch,
-keys = [x for x in data.keys() if 'XGB3' in str(x)]
-data_all['var']  = np.var(data[keys],1)
-data['source'] = -999
-data[['seq','var','prob_xgb','source']].to_csv('Xgb3.csv',index=0)
-     
+if True:
+    keys = [x for x in data.keys() if 'XGB3' in str(x)]
+    data_all['var']  = np.var(data[keys],1)
+    data_all['source'] = -999
+    data_all[['seq','var','prob_xgb','source']].to_csv('Xgb3_%s.csv'%p53,index=0)
+p53_peptides= [
+'ETFSDLWKLLPE',
+'TSFAEYWNLLSP',
+'LTFEHYWAQLTS',
+'LTFEHWWAQLTS',
+'LTFEHSWAQLTS',
+'ETFEHNWAQLTS',
+'LTFEHNWAQLTS',
+'LTFEHWWASLTS',
+'LTFEHWWSSLTS',
+'LTFTHWWAQLTS',
+'ETFEHWWAQLTS',
+'LTFEHWWSQLTS',
+'LTFEHWWAQLLS',
+'ETFEHWWSQLLS']
+for i in p53_peptides:
+	print data_all[data_all['seq']==i]['prob_xgb'],i
 die
 data_all.to_csv('Xgb_CNN.csv',index=0)
 for test in range(0,5):
