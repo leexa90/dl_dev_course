@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt
 import  numpy as np
-import tensorflow as tf
+#import tensorflow as tf
 import pandas as pd
 import xgboost as xgb
 float_formatter = lambda x: "%.3f" % x
@@ -183,16 +183,16 @@ for test in range(0,5):
             print '#### train,val,test size',len(y_train),len(y_val),len(y_test)
             predictors = features
             print predictors
-            xgcv    = xgb.DMatrix(X_val, label=y_val,missing=np.NAN,feature_names=predictors)
-            print predictors
-            xgtest    = xgb.DMatrix(X_test, label=y_test,missing=np.NAN,feature_names=predictors)
-            xgtrain = xgb.DMatrix(X_train, label=y_train,missing=np.NAN,feature_names=predictors)
+            xgcv    = xgb.DMatrix(np.stack(X_val), label=y_val,missing=np.NAN,feature_names=predictors)
+            print predictors;
+            xgtest    = xgb.DMatrix(np.stack(X_test), label=y_test,missing=np.NAN,feature_names=predictors)
+            xgtrain = xgb.DMatrix(np.stack(X_train), label=y_train,missing=np.NAN,feature_names=predictors)
             watchlist  = [ (xgtrain,'train'),(xgtest,'test'),(xgcv,'eval')]
             a = {}
             params = {}
             params["objective"] =  "binary:logistic"
             params["eta"] = 0.01
-            params["min_child_weight"] = 2
+            params["min_child_weight"] = 10
             params["subsample"] = 0.7
             params["colsample_bytree"] = 0.7
             params["scale_pos_weight"] = 1.0

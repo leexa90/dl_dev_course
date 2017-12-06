@@ -237,7 +237,8 @@ def get_data_from_X(X,y,i=i): #get tensor inputs from X and y
     return Inp0_,Inp1_,Inp2_,labels_
 folds= 5
 lr = 0
-p53= 'ETFSDLWKLLPE'
+p53 = 'ETFSDLWKLLPE'
+#p53 = 'LTFEHYWAQLTS'
 XX = [(p53[0],p53[1],p53[2]),]
 yy = [p53[-1],]
 Inp0_,Inp1_,Inp2_,labels_ = get_data_from_X(XX,yy,0)
@@ -428,13 +429,13 @@ for c1 in range(0,len_ ): #first three res #start from4
                     # map(np.array,X) --> it is list of arrays, works that way
                     temp_xgb = []
                     data['prob_xgb']=0
-                    for file in sorted([x for x in os.listdir('../') if ('XGB3' in x and '.ckpt' in x)])[::10]:
-                        bst = xgb.Booster({'nthread':4})
+                    for file in sorted([x for x in os.listdir('../') if ('XGB3' in x and '.ckpt' in x)])[::1]:
+                        bst = xgb.Booster({'nthread':7})
                         bst.load_model('../'+file)
                         data['prob'+str(file)]= bst.predict(xgtest)
                         temp_xgb += [bst.predict(xgtest),]
                         data['prob_xgb'] =  data['prob_xgb'] + temp_xgb[-1]
-                    data['prob_xgb'] = data['prob_xgb']/2
+                    data['prob_xgb'] = data['prob_xgb']/20
                     data_all = data_all.append(data)
                     print data.sort_values('prob_xgb')[-5:]['prob_xgb'].values
                     print time.clock()-prev_time,'\n',

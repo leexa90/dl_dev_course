@@ -1,12 +1,13 @@
 import pandas as pd
 import numpy as np
 import os
-
+import xgboost as xgb
 dictt = {'A': 0, 'C': 1, 'E': 2, 'D': 3, 'G': 4,
          'F': 5, 'I': 6, 'H': 7, 'K': 8, 'M': 9,
          'L': 10, 'N': 11, 'Q': 12, 'P': 13, 'S': 14,
          'R': 15, 'T': 16, 'W': 17, 'V': 18, 'Y': 19  }
 data = pd.read_csv('chandra_model/Xgb3.csv')
+data = pd.read_csv('XGB3_4.csv');data['prob_xgb'] = data['testPred'];data = data[data['len'] ==13]
 data['prob'] = data['prob_xgb']
 def seq_to_vec(s):
     result = []
@@ -182,10 +183,21 @@ hydropath = np.array([[0.170, 0.500, 0.330, 0.000],
        [-1.850, -2.090, -0.240, 0.000],
        [0.070, -0.460, -0.530, 0.000],
        [-0.940, -0.710, 0.230, 0.000]])
+def get_aa_freq(data):
+    for i in dictt:
+        def fn(str):
+            result = 0.0
+            for j in str:
+                if j.upper() == i:
+                    result += 1
+            return result
+        data['num_'+str(i)] = data['seq'].apply(fn)
+        data['per_'+str(i)] = data['num_'+str(i)]/data['len']
+    return data
 def make_dataframe(p53_peptides):
     len_ = len(p53_peptides[0])
-    for i in p53_peptides:
-            print data_all[data_all['seq']==i]['prob_xgb'],i
+##    for i in p53_peptides:
+##            print data_all[data_all['seq']==i]['prob_xgb'],i
     new = pd.DataFrame(p53_peptides,columns=['seq'])
     for i in range(len_):
             new[i] = 0
@@ -207,15 +219,69 @@ def make_dataframe(p53_peptides):
                    'num_P', 'per_S', 'num_S', 'per_R', 'num_R', 'per_T', 'num_T', 'per_W', 'num_W',
                    'per_V', 'num_V', 'per_Y', 'num_Y', 'length','netcharge', 'Gwif', 'Goct']
     X = new[xgb_features].copy().values
-    xgtest    = xgb.DMatrix(map(np.array,X),missing=np.NAN, feature_names=xgb_features)
+    xgtest    = xgb.DMatrix(X,missing=np.NAN, feature_names=xgb_features)
     # map(np.array,X) --> it is list of arrays, works that way
     temp_xgb = []
     new['prob_xgb']=0
-    for file in sorted([x for x in os.listdir('../') if ('XGB3' in x and '.ckpt' in x)])[::1]:
-        bst = xgb.Booster({'nthread':4})
-        bst.load_model('../'+file)
+    xgb_model = []
+    for file in sorted([x for x in os.listdir('.') if ('XGB3' in x and '.ckpt' in x)])[::1]:
+        bst = xgb.Booster({'nthread':4});bst.load_model(file)
         new['prob'+str(file)]= bst.predict(xgtest)
         temp_xgb += [bst.predict(xgtest),]
         new['prob_xgb'] =  new['prob_xgb'] + temp_xgb[-1]
+        xgb_model += ['prob'+str(file),]
+    new['var'] = np.var(new[xgb_model],axis=1)
     new['prob_xgb'] = new['prob_xgb']/20
     return new
+seq = []
+for j in dictt:
+	for i in ['LTFIEYWQLLISAA',
+	'ATFIEYWQLLISAA',
+	'LAFIEYWQLLISAA',
+	'LTAIEYWQLLISAA',
+	'LTFIAYWQLLISAA',
+	'LTFIEAWQLLISAA',
+	'LTFIEYAQLLISAA',
+	'LTFIEYWALLISAA',
+	'LTFIEYWQALISAA',
+	'LTFIEYWQLAISAA',
+	'LTFIEYWQLLIAAA',]:
+		seq += [i[:3]+j+i[4:10]+j+i[11:],]
+new = make_dataframe(seq)
+astp7041 = ['LTFIEYWQLLISAA',
+'ATFIEYWQLLISAA',
+'LAFIEYWQLLISAA',
+'LTAIEYWQLLISAA',
+'LTFIAYWQLLISAA',
+'LTFIEAWQLLISAA',
+'LTFIEYAQLLISAA',
+'LTFIEYWALLISAA',
+'LTFIEYWQALISAA',
+'LTFIEYWQLAISAA',
+'LTFIEYWQLLIAAA',
+'LTFMEYWQLLMSAA',
+'ATFMEYWQLLMSAA',
+'LAFMEYWQLLMSAA',
+'LTAMEYWQLLMSAA',
+'LTFMAYWQLLMSAA',
+'LTFMEAWQLLMSAA',
+'LTFMEYAQLLMSAA',
+'LTFMEYWALLMSAA',
+'LTFMEYWQALMSAA',
+'LTFMEYWQLAMSAA',
+'LTFMEYWQLLMAAA',]
+astp70412=['LTFEYWQLLSAA',
+'ATFEYWQLLSAA',
+'LAFEYWQLLSAA',
+'LTAEYWQLLSAA',
+'LTFAYWQLLSAA',
+'LTFEAWQLLSAA',
+'LTFEYAQLLSAA',
+'LTFEYWALLSAA',
+'LTFEYWQALSAA',
+'LTFEYWQLASAA',
+'LTFEYWQLLAAA']
+dictt = {'A': 0, 'C': 1, 'E': 2, 'D': 3, 'G': 4,
+         'F': 5, 'I': 6, 'H': 7, 'K': 8, 'M': 9,
+         'L': 10, 'N': 11, 'Q': 12, 'P': 13, 'S': 14,
+         'R': 15, 'T': 16, 'W': 17, 'V': 18, 'Y': 19  }
