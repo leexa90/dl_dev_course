@@ -10,7 +10,7 @@ dictt = {'A': 0, 'C': 1, 'E': 2, 'D': 3, 'G': 4,
          'F': 5, 'I': 6, 'H': 7, 'K': 8, 'M': 9,
          'L': 10, 'N': 11, 'Q': 12, 'P': 13, 'S': 14,
          'R': 15, 'T': 16, 'W': 17, 'V': 18, 'Y': 19  }
-import xgboost 
+import xgboost
 #Interface Scale
 #ΔGwif (kcal/mol) 	Octanol Scale
 #ΔGwoct (kcal/mol) 	Octanol − Interface
@@ -39,7 +39,7 @@ dictt_hydropathy  = {
 'D' : [ 	1.23 ,	3.64, 	2.41 ,-1],
 'Z' : [ 1.3,  2.2,  0.9, -0.5], #E or Q (mass spec data cannot differentiate)
 'B' : [ 0.825,  2.245,  1.42 , -0.5  ], #D or N (mass spec data cannot differentiate)
-'X' : [0,0,0,0]} 
+'X' : [0,0,0,0]}
 data = pd.read_csv('bioactive_PDB_cpp.csv').dropna()
 def fn1(str):
     num=0.0
@@ -55,7 +55,7 @@ def fn2(str): # find if sequence has weird bonds
             return 2
     for i in list(set(str)):
         if i.upper() not in dictt:
-            return 1    
+            return 1
     return 0
 #notable non-cannonical residues , U - selnocysteine
 if True:
@@ -64,7 +64,7 @@ if True:
     print 'removing these number of non-cannonical peptides' ,len(data[data['seq'].apply(fn2) == 1])
     data = data[data['seq'].apply(fn2) == 0] # remove peptides with weird chemical bonds , and non-cannonical res (mostly negavtives)
     data['len'] = data.seq.apply(len)
-    data = data.sort_values(by = ['len','source']).reset_index(drop=True)
+    data = data.sort_values(by = ['len','seq','source']).reset_index(drop=True)
     # get frequencies of amino acids
     all = np.concatenate([data.seq])
     result = {}
@@ -106,7 +106,7 @@ if True:
         temp = temp.T
         alternative = [len(i),np.sum(temp[-1,:]),np.sum(temp[-2,:]),np.sum(temp[-3,:])]
         alternative += list(data.iloc[idx][features]) #add ratio for aa
-        per = data.iloc[idx]['source'] == 2 
+        per = data.iloc[idx]['source'] == 2
         X += [[temp[0],temp[1:],alternative,i,per*1],]
         #print '> %s\n%s' %(i,i)
         counter += 1
@@ -124,6 +124,13 @@ features = ['per_A', 'num_A', 'per_C', 'num_C', 'per_E', 'num_E', 'per_D', 'num_
             'per_M', 'num_M', 'per_L', 'num_L', 'per_N', 'num_N', 'per_Q', 'num_Q', 'per_P',
             'num_P', 'per_S', 'num_S', 'per_R', 'num_R', 'per_T', 'num_T', 'per_W', 'num_W',
             'per_V', 'num_V', 'per_Y', 'num_Y', 'length', 'netcharge', 'Gwif', 'Goct']
+repeat = []
+for i in range(len(data)):
+    if data.iloc[i]['source']!=2:
+        if data.iloc[i]['seq'] in data[data.source ==2]['seq'].values:
+            print data[data.seq == data.iloc[i]['seq']][['seq','source']]
+            repeat += [i,]
+data =data.drop(repeat).reset_index(drop=True)
 X = data[features+['y']].copy().values
 import sklearn.metrics,random
 
@@ -162,12 +169,12 @@ for test in range(0,5):
     test_emsemble= []
 
     for repeat in range(0,1): #perform 5 repeats
-        for CV in range(folds-1): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)# 
+        for CV in range(folds-1): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)#
             RESULT[CV] = []
             X_train = []
             y_train = []
             X_val = []
-            y_val = []    
+            y_val = []
             for i in range(len(X)):
                 x = X[i]
                 if i%4 == CV:

@@ -1,2 +1,2 @@
-model_checkpoint_path: "temp.ckpt"
-all_model_checkpoint_paths: "temp.ckpt"
+model_checkpoint_path: "CNN_layer2_test.pyLSTM1_1_3_0_0.998_0.929_0.944.ckpt"
+all_model_checkpoint_paths: "CNN_layer2_test.pyLSTM1_1_3_0_0.998_0.929_0.944.ckpt"

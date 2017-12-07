@@ -8,7 +8,7 @@ dictt = {'A': 0, 'C': 1, 'E': 2, 'D': 3, 'G': 4,
          'R': 15, 'T': 16, 'W': 17, 'V': 18, 'Y': 19  }
 data = pd.read_csv('chandra_model/Xgb3_ETFSDLWKLLPE.csv')
 len_ = 12
-#data = pd.read_csv('XGB3_4.csv');data['prob_xgb'] = data['testPred'];data = data[data['len'] ==13]
+#data = pd.read_csv('good_LSTM/model5_0.csv');data['prob_xgb'] = data['pred'];data['len'] = data['seq'].apply(len);data = data[data['len'] ==12]
 data['prob'] = data['prob_xgb']
 def seq_to_vec(s):
     result = []
@@ -148,6 +148,8 @@ for i in below_30[(below_30['seq'].apply(no_K_R) >= 2) & (below_30['seq'].apply(
     print i
     print p53_seq
     print '\n',
+plt.hist([data0[data0.testY ==0]['testPred'],data0[data0.testY ==1]['testPred']], bins = np.linspace(0.01,0.99,49),normed=0,label= ['noncpp','cpp']);plt.xlabel('prob');plt.legend();plt.savefig('prob_nonormed.png',dpi=300)
+
 p53_peptides= [
 'ETFSDLWKLLPE',
 'TSFAEYWNLLSP',
@@ -195,7 +197,7 @@ def get_aa_freq(data):
         data['num_'+str(i)] = data['seq'].apply(fn)
         data['per_'+str(i)] = data['num_'+str(i)]/data['len']
     return data
-def make_dataframe(p53_peptides):
+def make_dataframe(p53_peptides,rnn=False):
     len_ = len(p53_peptides[0])
 ##    for i in p53_peptides:
 ##            print data_all[data_all['seq']==i]['prob_xgb'],i
@@ -233,7 +235,11 @@ def make_dataframe(p53_peptides):
         xgb_model += ['prob'+str(file),]
     new['var'] = np.var(new[xgb_model],axis=1)**.5/len(xgb_model)**.5 #std/n^.5
     new['prob_xgb'] = new['prob_xgb']/20
-    return new
+    if rnn:
+        combined = np.concatenate([np.array([[len_ ,]*len(new)]).T,combined,new[xgb_features[:-4]].values],1)
+        return new[range(len_)].values,seq_hydropath,combined,new.seq.values,[0,]*num
+    else:
+        return new
 seq = []
 for j in dictt:
 	for i in ['LTFIEYWQLLISAA',
@@ -288,4 +294,129 @@ dictt = {'A': 0, 'C': 1, 'E': 2, 'D': 3, 'G': 4,
          'R': 15, 'T': 16, 'W': 17, 'V': 18, 'Y': 19  }
 data_astp=make_dataframe(astp70412)[['var','prob_xgb']]
 data_astp['exp'] = [37.2,35.2,21.3,97.8,149,64.8,587.8,265,60,16.3,68]
+data_astp['exp2'] = [29,28,47,10,6,14,2,4,13,61,17]
 import matplotlib.pyplot as plt
+import tensorflow as tf
+import os
+data['out'] = 0
+
+if True:
+    batch_size = None
+    epsilon = 1e-3
+    def batch_normalization(x,name='batchnorm',feature_norm = False):
+        # ideally i want to do batch norm per row per sample
+        #epsilon = tf.Variable(tf.constant([1e-3,]*x.shape[0])) 
+        if feature_norm : 
+    ##        mean,var = tf.nn.moments(x,[2,3],keep_dims=True)
+    ##        scale = tf.Variable(tf.ones([1,x.shape[1],1,1]))
+    ##        beta = tf.Variable(tf.zeros([1,x.shape[1],1,1]))
+    ##        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
+            x = tf.contrib.layers.layer_norm (x,trainable=False)
+        else:
+            x = tf.contrib.layers.layer_norm (x,trainable=False)
+    ##        mean,var = tf.nn.moments(x,[1,2],keep_dims=True)
+    ##        scale = tf.Variable(tf.ones([1,1,1,x.shape[-1]]))
+    ##        beta = tf.Variable(tf.zeros([1,1,1,x.shape[-1]]))
+    ##        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
+        return x
+
+    with tf.name_scope('inputs') as scope:
+        Inp0 = tf.placeholder(tf.int32,[batch_size,None],name='sequence_factors1')
+        Inp1 = tf.placeholder(tf.float32,[batch_size,4,None],name='sequence_factors2')
+        labels = tf.placeholder(tf.float32 , [batch_size,1],name='labels')
+        dropout = tf.placeholder(tf.float32,name='dropout')
+        Inp2 = tf.placeholder(tf.float32, [batch_size,44] ,name = 'globa_seq_info')
+        sequence_length = tf.placeholder(tf.int32,shape=(batch_size),name='sequence_lenght')
+
+    with tf.name_scope('embedding') as scope:
+        aa_embeddings = tf.get_variable('aa_embeddings',[21, 5])
+        embedded_word_ids = tf.gather(aa_embeddings,range(0,21))
+        embed0 = tf.nn.embedding_lookup(aa_embeddings,Inp0,name='lookup')
+        embed1 = tf.transpose(embed0,(0,2,1))
+        unstack0 = tf.unstack(Inp1,axis=-2,name='unstack0')
+        unstack1 = tf.unstack(embed1 , axis=-2,name='unstack1')
+        layer0 = tf.stack(unstack0+unstack1,axis=1)
+
+
+    from tensorflow.contrib import rnn
+    with tf.name_scope('RNN') as scope:
+        rnn_cell  = rnn.BasicLSTMCell(370,activation= tf.nn.relu)
+        output_,state_= tf.nn.bidirectional_dynamic_rnn(rnn_cell,rnn_cell,
+                                                        tf.transpose(layer0,(0,2,1)),
+                                                        dtype=tf.float32,parallel_iterations=32,
+                                                        sequence_length=sequence_length)
+        last_output = tf.concat([state_[0][1],state_[1][1]],-1,name='last_output')
+    with tf.name_scope('dense') as scope:
+        gbmp_extra = tf.concat([Inp2,last_output],axis = 1, name ='gbmp_extra')
+        dense1 = tf.layers.dense(gbmp_extra,256,activation = tf.nn.relu , name = 'dense1' )
+        layer6_DO = tf.layers.dropout(dense1,rate=dropout,name='Drop6',training=True)
+        dense2 = tf.layers.dense(layer6_DO,128,activation = tf.nn.relu , name = 'dense2' )
+        dense3 = tf.layers.dense(dense2,64,activation = None , name = 'dense3' )
+        dense4 = tf.layers.dense(dense3,1 , name = 'dense4' )
+
+    with tf.name_scope('loss') as scope:
+        loss = tf.nn.sigmoid_cross_entropy_with_logits(labels=labels,
+                                                          logits = dense4,
+                                                          name='loss')
+    with tf.name_scope('output') as scope:
+        out_softmax = tf.nn.sigmoid(dense4)
+    #learning_rate = tf.Variable(0,dtype= np.float32)
+    mean_loss = tf.reduce_mean(loss)
+    update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
+    learning_rate = tf.Variable(0,dtype=tf.float32,name='learning_rate')
+
+    with tf.control_dependencies(update_ops):
+            optimizer = tf.train.MomentumOptimizer(learning_rate=learning_rate,momentum=0.5).minimize(mean_loss)
+    with tf.name_scope('accuracy') as scope:
+        predict_boo = tf.greater(out_softmax,0.5)
+        predict = tf.cast(predict_boo, np.float32)
+        acc = tf.reduce_mean(tf.cast(tf.equal(labels,predict),tf.float32),name='accuracy')
+    import sklearn.metrics,random
+    saver = tf.train.Saver()
+    # Initializing the variables
+    init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
+    total_parameters = 0
+    for variable in tf.trainable_variables():
+        # shape is an array of tf.Dimension
+        shape = variable.get_shape()
+        variable_parameters = 1
+        for dim in shape:
+            variable_parameters *= dim.value
+        total_parameters += variable_parameters
+    print(total_parameters)
+
+def make_LSTM_model(p53_peptides):
+    training_epochs  = 100
+    data = pd.DataFrame(p53_peptides,columns=['seq'])
+    data['out'] = 0
+    for file in [ x[:-5] for x in os.listdir('good_LSTM') if ('CNN_layer2_test.pyLSTM1' in x and 'meta' in x)]:
+        init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
+        saver = tf.train.Saver( max_to_keep=5000)#saver = tf.train.import_meta_graph('./good_LSTM/%s.meta'%file);
+        #file = 'CNN_layer2_test.pyLSTM1_0_0_0_0.998_0.922_0.912.ckpt'
+        saver.restore(sess, "./good_LSTM/%s"%file)
+
+    ##    Inp0 = tf.get_collection('inputs0')[0]
+    ##    Inp1 = tf.get_collection('inputs1')[0]
+    ##    labels = tf.get_collection('inputs2')[0]
+    ##    dropout = tf.get_collection('inputs3')[0]
+    ##    Inp2 = tf.get_collection('inputs4')[0]
+    ##    sequence_length = tf.get_collection('inputs5')[0]
+    ##    learning_rate = tf.get_collection('inputs6')[0]
+    ##    acc = tf.get_collection('acc')[0]
+    ##    out_softmax = tf.get_collection('out_softmax')[0]
+        new = make_dataframe(list(data.seq))
+        Inp0_,Inp1_,Inp2_,names,labels_ = make_dataframe(list(data.seq),True)
+        n1,n2 = len(p53_peptides),30 - len(p53_peptides[0])
+        Inp0_ = np.concatenate((Inp0_,20+np.zeros((n1,n2))),1) #pad sequences with 20
+        Inp1_ = np.concatenate((Inp1_,np.zeros((n1,4,n2))),2)#pad sequences with 0
+        Inp2_[:,0]=30 # error in code of LSTM
+        c, out = sess.run ([acc, out_softmax],
+                           feed_dict={Inp0: Inp0_,Inp1: Inp1_,Inp2: Inp2_,sequence_length : np.array([12,]*len(Inp0_)),
+                            labels: np.reshape(labels_,(len(Inp0_),1)),dropout : 0,learning_rate : 0})
+        data['out'] =  data['out'] + np.reshape(out,len(out))
+        data[file] = np.reshape(out,len(out))
+    data['out'] = data['out'] /60
+    keys= [ x[:-5] for x in os.listdir('good_LSTM') if ('CNN_layer2_test.pyLSTM1' in x and 'meta' in x)]
+    data['var'] = np.var(data[keys],1)
+    return data
+

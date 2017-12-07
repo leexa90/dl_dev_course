@@ -112,81 +112,81 @@ for idx in range(len(data)):
     #print '> %s\n%s' %(i,i)
     counter += 1
 data['X'] = X
+if True:
+    batch_size = None
+    epsilon = 1e-3
+    def batch_normalization(x,name='batchnorm',feature_norm = False):
+        # ideally i want to do batch norm per row per sample
+        #epsilon = tf.Variable(tf.constant([1e-3,]*x.shape[0])) 
+        if feature_norm : 
+    ##        mean,var = tf.nn.moments(x,[2,3],keep_dims=True)
+    ##        scale = tf.Variable(tf.ones([1,x.shape[1],1,1]))
+    ##        beta = tf.Variable(tf.zeros([1,x.shape[1],1,1]))
+    ##        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
+            x = tf.contrib.layers.layer_norm (x,trainable=False)
+        else:
+            x = tf.contrib.layers.layer_norm (x,trainable=False)
+    ##        mean,var = tf.nn.moments(x,[1,2],keep_dims=True)
+    ##        scale = tf.Variable(tf.ones([1,1,1,x.shape[-1]]))
+    ##        beta = tf.Variable(tf.zeros([1,1,1,x.shape[-1]]))
+    ##        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
+        return x
 
-batch_size = None
-epsilon = 1e-3
-def batch_normalization(x,name='batchnorm',feature_norm = False):
-    # ideally i want to do batch norm per row per sample
-    #epsilon = tf.Variable(tf.constant([1e-3,]*x.shape[0])) 
-    if feature_norm : 
-##        mean,var = tf.nn.moments(x,[2,3],keep_dims=True)
-##        scale = tf.Variable(tf.ones([1,x.shape[1],1,1]))
-##        beta = tf.Variable(tf.zeros([1,x.shape[1],1,1]))
-##        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
-        x = tf.contrib.layers.layer_norm (x,trainable=False)
-    else:
-        x = tf.contrib.layers.layer_norm (x,trainable=False)
-##        mean,var = tf.nn.moments(x,[1,2],keep_dims=True)
-##        scale = tf.Variable(tf.ones([1,1,1,x.shape[-1]]))
-##        beta = tf.Variable(tf.zeros([1,1,1,x.shape[-1]]))
-##        x = tf.nn.batch_normalization(x,mean,var,beta,scale,epsilon,name=name)
-    return x
+    with tf.name_scope('inputs') as scope:
+        Inp0 = tf.placeholder(tf.int32,[batch_size,None],name='sequence_factors1')
+        Inp1 = tf.placeholder(tf.float32,[batch_size,4,None],name='sequence_factors2')
+        labels = tf.placeholder(tf.float32 , [batch_size,1],name='labels')
+        dropout = tf.placeholder(tf.float32,name='dropout')
+        Inp2 = tf.placeholder(tf.float32, [batch_size,44] ,name = 'globa_seq_info')
+        sequence_length = tf.placeholder(tf.int32,shape=(batch_size),name='sequence_lenght')
 
-with tf.name_scope('inputs') as scope:
-    Inp0 = tf.placeholder(tf.int32,[batch_size,None],name='sequence_factors1')
-    Inp1 = tf.placeholder(tf.float32,[batch_size,4,None],name='sequence_factors2')
-    labels = tf.placeholder(tf.float32 , [batch_size,1],name='labels')
-    dropout = tf.placeholder(tf.float32,name='dropout')
-    Inp2 = tf.placeholder(tf.float32, [batch_size,44] ,name = 'globa_seq_info')
-    sequence_length = tf.placeholder(tf.int32,shape=(batch_size),name='sequence_lenght')
-
-with tf.name_scope('embedding') as scope:
-    aa_embeddings = tf.get_variable('aa_embeddings',[21, 5])
-    embedded_word_ids = tf.gather(aa_embeddings,range(0,21))
-    embed0 = tf.nn.embedding_lookup(aa_embeddings,Inp0,name='lookup')
-    embed1 = tf.transpose(embed0,(0,2,1))
-    unstack0 = tf.unstack(Inp1,axis=-2,name='unstack0')
-    unstack1 = tf.unstack(embed1 , axis=-2,name='unstack1')
-    layer0 = tf.stack(unstack0+unstack1,axis=1)
+    with tf.name_scope('embedding') as scope:
+        aa_embeddings = tf.get_variable('aa_embeddings',[21, 5])
+        embedded_word_ids = tf.gather(aa_embeddings,range(0,21))
+        embed0 = tf.nn.embedding_lookup(aa_embeddings,Inp0,name='lookup')
+        embed1 = tf.transpose(embed0,(0,2,1))
+        unstack0 = tf.unstack(Inp1,axis=-2,name='unstack0')
+        unstack1 = tf.unstack(embed1 , axis=-2,name='unstack1')
+        layer0 = tf.stack(unstack0+unstack1,axis=1)
 
 
-from tensorflow.contrib import rnn
-with tf.name_scope('RNN') as scope:
-    rnn_cell  = rnn.BasicLSTMCell(370,activation= tf.nn.relu)
-    output_,state_= tf.nn.bidirectional_dynamic_rnn(rnn_cell,rnn_cell,
-                                                    tf.transpose(layer0,(0,2,1)),
-                                                    dtype=tf.float32,parallel_iterations=32,
-                                                    sequence_length=sequence_length)
-    last_output = tf.concat([state_[0][1],state_[1][1]],-1,name='last_output')
-with tf.name_scope('dense') as scope:
-    gbmp_extra = tf.concat([Inp2,last_output],axis = 1, name ='gbmp_extra')
-    dense1 = tf.layers.dense(gbmp_extra,256,activation = tf.nn.relu , name = 'dense1' )
-    layer6_DO = tf.layers.dropout(dense1,rate=dropout,name='Drop6',training=True)
-    dense2 = tf.layers.dense(layer6_DO,128,activation = tf.nn.relu , name = 'dense2' )
-    dense3 = tf.layers.dense(dense2,64,activation = None , name = 'dense3' )
-    dense4 = tf.layers.dense(dense3,1 , name = 'dense4' )
+    from tensorflow.contrib import rnn
+    with tf.name_scope('RNN') as scope:
+        rnn_cell  = rnn.BasicLSTMCell(370,activation= tf.nn.relu)
+        output_,state_= tf.nn.bidirectional_dynamic_rnn(rnn_cell,rnn_cell,
+                                                        tf.transpose(layer0,(0,2,1)),
+                                                        dtype=tf.float32,parallel_iterations=32,
+                                                        sequence_length=sequence_length)
+        last_output = tf.concat([state_[0][1],state_[1][1]],-1,name='last_output')
+    with tf.name_scope('dense') as scope:
+        gbmp_extra = tf.concat([Inp2,last_output],axis = 1, name ='gbmp_extra')
+        dense1 = tf.layers.dense(gbmp_extra,256,activation = tf.nn.relu , name = 'dense1' )
+        layer6_DO = tf.layers.dropout(dense1,rate=dropout,name='Drop6',training=True)
+        dense2 = tf.layers.dense(layer6_DO,128,activation = tf.nn.relu , name = 'dense2' )
+        dense3 = tf.layers.dense(dense2,64,activation = None , name = 'dense3' )
+        dense4 = tf.layers.dense(dense3,1 , name = 'dense4' )
 
-with tf.name_scope('loss') as scope:
-    loss = tf.nn.sigmoid_cross_entropy_with_logits(labels=labels,
-                                                      logits = dense4,
-                                                      name='loss')
-with tf.name_scope('output') as scope:
-    out_softmax = tf.nn.sigmoid(dense4)
-#learning_rate = tf.Variable(0,dtype= np.float32)
-mean_loss = tf.reduce_mean(loss)
-update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
-learning_rate = tf.Variable(0,dtype=tf.float32,name='learning_rate')
+    with tf.name_scope('loss') as scope:
+        loss = tf.nn.sigmoid_cross_entropy_with_logits(labels=labels,
+                                                          logits = dense4,
+                                                          name='loss')
+    with tf.name_scope('output') as scope:
+        out_softmax = tf.nn.sigmoid(dense4)
+    #learning_rate = tf.Variable(0,dtype= np.float32)
+    mean_loss = tf.reduce_mean(loss)
+    update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
+    learning_rate = tf.Variable(0,dtype=tf.float32,name='learning_rate')
 
-with tf.control_dependencies(update_ops):
-        optimizer = tf.train.MomentumOptimizer(learning_rate=learning_rate,momentum=0.5).minimize(mean_loss)
-with tf.name_scope('accuracy') as scope:
-    predict_boo = tf.greater(out_softmax,0.5)
-    predict = tf.cast(predict_boo, np.float32)
-    acc = tf.reduce_mean(tf.cast(tf.equal(labels,predict),tf.float32),name='accuracy')
-import sklearn.metrics,random
-saver = tf.train.Saver()
-# Initializing the variables
-init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
+    with tf.control_dependencies(update_ops):
+            optimizer = tf.train.MomentumOptimizer(learning_rate=learning_rate,momentum=0.5).minimize(mean_loss)
+    with tf.name_scope('accuracy') as scope:
+        predict_boo = tf.greater(out_softmax,0.5)
+        predict = tf.cast(predict_boo, np.float32)
+        acc = tf.reduce_mean(tf.cast(tf.equal(labels,predict),tf.float32),name='accuracy')
+    import sklearn.metrics,random
+    saver = tf.train.Saver()
+    # Initializing the variables
+    init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
 total_parameters = 0
 for variable in tf.trainable_variables():
     # shape is an array of tf.Dimension
@@ -245,6 +245,13 @@ print 'train+val  size :', len(X)
 saver = tf.train.Saver( max_to_keep=5000)
 #saver.restore(sess,'CNN_layer2_test.pyLSTM1_4_3_0_0.999_0.937_0.918.ckpt')
 repeat = 0
+counter = 0
+for i in [Inp0,Inp1,labels,dropout,Inp2,sequence_length,learning_rate]:
+    tf.add_to_collection("inputs%s"%counter, i)
+    counter += 1
+tf.add_to_collection('acc',acc)
+tf.add_to_collection('out_softmax',out_softmax)
+
 for repeat in range(0,1): #perform 5 repeats
     for CV in range(folds-1): #for each repeat, do 4 fold CV. (test set is kept constant throughtout)# 
         init = tf.global_variables_initializer();sess = tf.Session();sess.run(init)
