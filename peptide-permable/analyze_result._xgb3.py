@@ -6,17 +6,18 @@ dictt = {'A': 0, 'C': 1, 'E': 2, 'D': 3, 'G': 4,
          'F': 5, 'I': 6, 'H': 7, 'K': 8, 'M': 9,
          'L': 10, 'N': 11, 'Q': 12, 'P': 13, 'S': 14,
          'R': 15, 'T': 16, 'W': 17, 'V': 18, 'Y': 19  }
-data = pd.read_csv('chandra_model/Xgb3.csv')
-data = pd.read_csv('XGB3_4.csv');data['prob_xgb'] = data['testPred'];data = data[data['len'] ==13]
+data = pd.read_csv('chandra_model/Xgb3_ETFSDLWKLLPE.csv')
+len_ = 12
+#data = pd.read_csv('XGB3_4.csv');data['prob_xgb'] = data['testPred'];data = data[data['len'] ==13]
 data['prob'] = data['prob_xgb']
 def seq_to_vec(s):
     result = []
     for i in s:
         result += [dictt[i],]
     return np.array(result)
-for i in range(13):
+for i in range(len_):
     data[i] = 0
-data[range(13)]= np.stack(data['seq'].apply(seq_to_vec))
+data[range(len_)]= np.stack(data['seq'].apply(seq_to_vec))
 import numpy as np
 import matplotlib.pyplot as plt
 size= np.log10(data.prob)
@@ -36,7 +37,7 @@ p53_seq_vec = np.array([2., 16., 5., 14., 3., 10., 17., 8., 10., 10., 13., 2., 1
 #data['var'] = data['var']/(59**.5)
 best = data.sort_values('prob').reset_index(drop=True)
 def get_diff(x):
-    return np.argsort(p53_seq_vec != x[[str(y) for y in range(13)]].values)[-3:]
+    return np.argsort(p53_seq_vec != x[[str(y) for y in range(len_)]].values)[-3:]
 for i in range(1,10):
     print p53_seq
     #print best.iloc[-i][range(0,13)].values, best.iloc[-i].prob,'\n'
@@ -61,11 +62,11 @@ def no_D_E_G(r):
     return count
 if True:
     above_30 = data[data['prob'] >= 0.60]
-    score = np.zeros((13,20))
+    score = np.zeros((len_,20))
     float_formatter = lambda x: "%.3f" % x
     np.set_printoptions(formatter={'float_kind':float_formatter})
     for aa in range(0,20):
-        for pos in range(0,13):
+        for pos in range(0,len_):
             score[pos,aa] = np.sum(above_30[above_30[pos] == aa].prob)/np.sum(above_30.prob)
 
     import matplotlib as mpl
@@ -117,7 +118,7 @@ if True:
 
     def plot(thres=0.05,name='temp'):
         fig, ax = plt.subplots(figsize=(10,8))
-        for i in range(0,13):
+        for i in range(0,len_):
             y = 0
             for aa in np.argsort(score[i,:]):#for aa in range(0,20)[::-1]:
                 temp_score = score[i,aa]
@@ -132,7 +133,7 @@ if True:
         plt.ylabel('probabilities')
         plt.tight_layout()
         plt.xticks(range(1,14),['E1', 'T2', 'F3', 'S4', 'D5', 'L6', 'W7', 'K8', 'L9', 'L10', 'P11', 'E12', 'N13'])
-        for i in range(0,13):
+        for i in range(0,len_):
             a=letterAt(p53_seq[i],i+1,-0.1,0.09,ax)
         plt.plot((0,14),(0,0),color='black',linewidth='5')
         plt.savefig(name+'.png',dpi=300)
@@ -230,7 +231,7 @@ def make_dataframe(p53_peptides):
         temp_xgb += [bst.predict(xgtest),]
         new['prob_xgb'] =  new['prob_xgb'] + temp_xgb[-1]
         xgb_model += ['prob'+str(file),]
-    new['var'] = np.var(new[xgb_model],axis=1)
+    new['var'] = np.var(new[xgb_model],axis=1)**.5/len(xgb_model)**.5 #std/n^.5
     new['prob_xgb'] = new['prob_xgb']/20
     return new
 seq = []
@@ -285,3 +286,6 @@ dictt = {'A': 0, 'C': 1, 'E': 2, 'D': 3, 'G': 4,
          'F': 5, 'I': 6, 'H': 7, 'K': 8, 'M': 9,
          'L': 10, 'N': 11, 'Q': 12, 'P': 13, 'S': 14,
          'R': 15, 'T': 16, 'W': 17, 'V': 18, 'Y': 19  }
+data_astp=make_dataframe(astp70412)[['var','prob_xgb']]
+data_astp['exp'] = [37.2,35.2,21.3,97.8,149,64.8,587.8,265,60,16.3,68]
+import matplotlib.pyplot as plt
